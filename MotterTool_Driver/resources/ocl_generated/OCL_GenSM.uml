@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:REMP="http:///schemas/REMP/_nrTwkBTBEeWbsKyQNEJPlQ/23" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/REMP/_nrTwkBTBEeWbsKyQNEJPlQ/23 Profile.profile.uml#_zT6LnBTBEeWbsKyQNEJPlQ">
+  <uml:Model xmi:id="_CPQX4EDiEeaKR4O5D-OocQ" name="GeneratedSM">
+    <packageImport xmi:id="_CPQX4UDiEeaKR4O5D-OocQ">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:TimeEvent" xmi:id="_CPQX4kDiEeaKR4O5D-OocQ" name="-Tim-event">
+      <when xmi:id="_CPQX40DiEeaKR4O5D-OocQ" name="-Tim-when">
+        <expr xmi:type="uml:LiteralString" xmi:id="_CPQX5EDiEeaKR4O5D-OocQ" name="-Lit-expr" value="after, 5s"/>
+      </when>
+    </packagedElement>
+    <packagedElement xmi:type="uml:TimeEvent" xmi:id="_CPQX5UDiEeaKR4O5D-OocQ" name="Trigger1-Tim-event">
+      <when xmi:id="_CPQX5kDiEeaKR4O5D-OocQ" name="-Tim-when">
+        <expr xmi:type="uml:LiteralString" xmi:id="_CPQX50DiEeaKR4O5D-OocQ" name="-Lit-expr" value="after, 5s"/>
+      </when>
+    </packagedElement>
+    <packagedElement xmi:type="uml:TimeEvent" xmi:id="_CPQX6EDiEeaKR4O5D-OocQ" name="TimeEvent1">
+      <when xmi:id="_CPQX6UDiEeaKR4O5D-OocQ" name="TimeEvent1-Tim-when">
+        <expr xmi:type="uml:LiteralString" xmi:id="_CPQX6kDiEeaKR4O5D-OocQ" name="-Lit-expr" value="after, 5s"/>
+      </when>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_CPQX60DiEeaKR4O5D-OocQ" name="-Cla-class">
+      <ownedOperation xmi:id="_CPQX7EDiEeaKR4O5D-OocQ" name="-Cla-class"/>
+      <ownedOperation xmi:id="_CPQX7UDiEeaKR4O5D-OocQ" name="-Ope-ownedOperation"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_CPQX7kDiEeaKR4O5D-OocQ" name="StateMachine1-Cla-class">
+      <ownedOperation xmi:id="_CPQX70DiEeaKR4O5D-OocQ" name="StateMachine1-Cla-class"/>
+      <ownedOperation xmi:id="_CPQX8EDiEeaKR4O5D-OocQ" name="-Ope-ownedOperation"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_CPQX8UDiEeaKR4O5D-OocQ" name="OpaqueBehavior1-Cla-class">
+      <ownedOperation xmi:id="_CPQX8kDiEeaKR4O5D-OocQ" name="OpaqueBehavior1-Cla-class"/>
+      <ownedOperation xmi:id="_CPQX80DiEeaKR4O5D-OocQ" name="-Ope-ownedOperation"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_CPQX9EDiEeaKR4O5D-OocQ" name="Operation1-Cla-class">
+      <ownedOperation xmi:id="_CPQX9UDiEeaKR4O5D-OocQ" name="Operation1-Cla-class"/>
+      <ownedOperation xmi:id="_CPQX9kDiEeaKR4O5D-OocQ" name="-Ope-ownedOperation"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_CPQX90DiEeaKR4O5D-OocQ" name="Property1-Cla-class">
+      <ownedOperation xmi:id="_CPQX-EDiEeaKR4O5D-OocQ" name="Property1-Cla-class"/>
+      <ownedOperation xmi:id="_CPQX-UDiEeaKR4O5D-OocQ" name="-Ope-ownedOperation"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_CPQX-kDiEeaKR4O5D-OocQ" name="Reception1-Cla-class">
+      <ownedOperation xmi:id="_CPQX-0DiEeaKR4O5D-OocQ" name="Reception1-Cla-class"/>
+      <ownedOperation xmi:id="_CPQX_EDiEeaKR4O5D-OocQ" name="-Ope-ownedOperation"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_CPQX_UDiEeaKR4O5D-OocQ" name="Class1" isActive="true">
+      <ownedAttribute xmi:id="_CPQX_kDiEeaKR4O5D-OocQ" name="Class1-Pro-ownedAttribute">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CPQX_0DiEeaKR4O5D-OocQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CPQYAEDiEeaKR4O5D-OocQ"/>
+      </ownedAttribute>
+      <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_CPQYAUDiEeaKR4O5D-OocQ" name="Class1-Sta-ownedBehavior">
+        <region xmi:id="_CPQYAkDiEeaKR4O5D-OocQ" name="-Reg-region">
+          <subvertex xmi:type="uml:FinalState" xmi:id="_CPQYA0DiEeaKR4O5D-OocQ" name="-Fin-target"/>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_CPQYBEDiEeaKR4O5D-OocQ" name="-Pse-source"/>
+          <subvertex xmi:type="uml:State" xmi:id="_CPQYBUDiEeaKR4O5D-OocQ" name="Transition1-Sta-target"/>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_CPQYBkDiEeaKR4O5D-OocQ" name="Transition1-Pse-source"/>
+          <transition xmi:id="_CPQYB0DiEeaKR4O5D-OocQ" name="-Tra-transition" source="_CPQYBEDiEeaKR4O5D-OocQ" target="_CPQYA0DiEeaKR4O5D-OocQ">
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_CPQYCEDiEeaKR4O5D-OocQ" name="-Opa-effect">
+              <language>OCL</language>
+              <body>default.body</body>
+            </effect>
+            <trigger xmi:id="_CPQYCUDiEeaKR4O5D-OocQ" name="-Tri-trigger" event="_CPQX4kDiEeaKR4O5D-OocQ"/>
+          </transition>
+          <transition xmi:id="_CPQYCkDiEeaKR4O5D-OocQ" name="Transition1" source="_CPQYBkDiEeaKR4O5D-OocQ" target="_CPQYBUDiEeaKR4O5D-OocQ">
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_CPQYC0DiEeaKR4O5D-OocQ" name="Transition1-Opa-effect">
+              <language>OCL</language>
+              <body>default.body</body>
+            </effect>
+            <trigger xmi:id="_CPQYDEDiEeaKR4O5D-OocQ" name="Transition1-Tri-trigger" event="_CPQX4kDiEeaKR4O5D-OocQ"/>
+          </transition>
+        </region>
+        <region xmi:id="_CPQYDUDiEeaKR4O5D-OocQ" name="stateMachine1-Reg-region"/>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_CPQYDkDiEeaKR4O5D-OocQ" name="Class1"/>
+      <ownedOperation xmi:id="_CPQYD0DiEeaKR4O5D-OocQ" name="Class1-Ope-ownedOperation"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_CPQYEEDiEeaKR4O5D-OocQ" name="-Cla-packagedElement">
+      <ownedOperation xmi:id="_CPQYEUDiEeaKR4O5D-OocQ" name="-Cla-packagedElement"/>
+      <ownedOperation xmi:id="_CPQYEkDiEeaKR4O5D-OocQ" name="-Ope-ownedOperation"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_CPQYE0DiEeaKR4O5D-OocQ" name="Package1-Cla-packagedElement">
+      <ownedAttribute xmi:id="_CPQYFEDiEeaKR4O5D-OocQ" name="-Pro-ownedAttribute">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CPQYFUDiEeaKR4O5D-OocQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CPQYFkDiEeaKR4O5D-OocQ"/>
+      </ownedAttribute>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_CPQYF0DiEeaKR4O5D-OocQ" name="-Opa-ownedBehavior">
+        <language>OCL</language>
+        <body>default.body</body>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_CPQYGEDiEeaKR4O5D-OocQ" name="Package1-Cla-packagedElement"/>
+      <ownedOperation xmi:id="_CPQYGUDiEeaKR4O5D-OocQ" name="-Ope-ownedOperation"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:CallEvent" xmi:id="_CPQYGkDiEeaKR4O5D-OocQ" name="-Cal-event"/>
+    <packagedElement xmi:type="uml:CallEvent" xmi:id="_CPQYG0DiEeaKR4O5D-OocQ" name="Trigger1-Cal-event"/>
+    <packagedElement xmi:type="uml:AnyReceiveEvent" xmi:id="_CPQYHEDiEeaKR4O5D-OocQ" name="-Any-event"/>
+    <packagedElement xmi:type="uml:AnyReceiveEvent" xmi:id="_CPQYHUDiEeaKR4O5D-OocQ" name="Trigger1-Any-event"/>
+    <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_CPQYHkDiEeaKR4O5D-OocQ" name="-Cha-event"/>
+    <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_CPQYH0DiEeaKR4O5D-OocQ" name="Trigger1-Cha-event"/>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_CPQYIEDiEeaKR4O5D-OocQ" name="-Sig-event"/>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_CPQYIUDiEeaKR4O5D-OocQ" name="Trigger1-Sig-event"/>
+    <profileApplication xmi:id="_CPQYIkDiEeaKR4O5D-OocQ">
+      <eAnnotations xmi:id="_CPQYI0DiEeaKR4O5D-OocQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_CPQYJEDiEeaKR4O5D-OocQ">
+      <eAnnotations xmi:id="_CPQYJUDiEeaKR4O5D-OocQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="Default.profile.uml#_zT9POxTBEeWbsKyQNEJPlQ"/>
+      </eAnnotations>
+      <appliedProfile href="Default.profile.uml#_zT9PORTBEeWbsKyQNEJPlQ"/>
+    </profileApplication>
+    <profileApplication xmi:id="_CPQYJkDiEeaKR4O5D-OocQ">
+      <eAnnotations xmi:id="_CPQYJ0DiEeaKR4O5D-OocQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="Profile.profile.uml#_zT6LnBTBEeWbsKyQNEJPlQ"/>
+      </eAnnotations>
+      <appliedProfile href="Profile.profile.uml#_zT6LmhTBEeWbsKyQNEJPlQ"/>
+    </profileApplication>
+  </uml:Model>
+  <REMP:Context xmi:id="_CPQYKEDiEeaKR4O5D-OocQ" base_Class="_CPQX60DiEeaKR4O5D-OocQ"/>
+  <REMP:System xmi:id="_CPQYKUDiEeaKR4O5D-OocQ" base_Class="_CPQX7kDiEeaKR4O5D-OocQ"/>
+  <REMP:Context xmi:id="_CPQYKkDiEeaKR4O5D-OocQ" base_Class="_CPQX8UDiEeaKR4O5D-OocQ"/>
+  <REMP:Context xmi:id="_CPQYK0DiEeaKR4O5D-OocQ" base_Class="_CPQX9EDiEeaKR4O5D-OocQ"/>
+  <REMP:Context xmi:id="_CPQYLEDiEeaKR4O5D-OocQ" base_Class="_CPQX90DiEeaKR4O5D-OocQ"/>
+  <REMP:Context xmi:id="_CPQYLUDiEeaKR4O5D-OocQ" base_Class="_CPQX-kDiEeaKR4O5D-OocQ"/>
+  <REMP:Context xmi:id="_CPQYLkDiEeaKR4O5D-OocQ" base_Class="_CPQX_UDiEeaKR4O5D-OocQ"/>
+  <REMP:NonDeterministic xmi:id="_CPQYL0DiEeaKR4O5D-OocQ" base_Property="_CPQX_kDiEeaKR4O5D-OocQ"/>
+  <REMP:NDChoice xmi:id="_CPQ-8EDiEeaKR4O5D-OocQ" base_Pseudostate="_CPQYBEDiEeaKR4O5D-OocQ"/>
+  <REMP:Failure xmi:id="_CPQ-8UDiEeaKR4O5D-OocQ" base_State="_CPQYBUDiEeaKR4O5D-OocQ"/>
+  <REMP:TimeProbability xmi:id="_CPQ-8kDiEeaKR4O5D-OocQ" base_Transition="_CPQYB0DiEeaKR4O5D-OocQ"/>
+  <REMP:TimeProbability xmi:id="_CPQ-80DiEeaKR4O5D-OocQ" base_Transition="_CPQYCkDiEeaKR4O5D-OocQ"/>
+</xmi:XMI>

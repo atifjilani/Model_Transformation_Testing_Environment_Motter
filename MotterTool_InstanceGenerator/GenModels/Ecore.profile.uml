@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Profile xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_RO8IwAR8EeWOLco5nvUVPg" name="ecore" metaclassReference="_RO8I9gR8EeWOLco5nvUVPg">
+  <eAnnotations xmi:id="_RO8IwQR8EeWOLco5nvUVPg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <contents xmi:type="ecore:EPackage" xmi:id="_RO8IwgR8EeWOLco5nvUVPg" name="ecore" nsURI="http:///schemas/ecore/_ROyXwAR8EeWOLco5nvUVPg/0" nsPrefix="ecore">
+      <eClassifiers xmi:type="ecore:EEnum" xmi:id="_RO8IwwR8EeWOLco5nvUVPg" name="VisibilityKind">
+        <eAnnotations xmi:id="_RO8IxAR8EeWOLco5nvUVPg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_RO8I9wR8EeWOLco5nvUVPg"/>
+        <eLiterals xmi:id="_RO8IxQR8EeWOLco5nvUVPg" name="Unspecified"/>
+        <eLiterals xmi:id="_RO8IxgR8EeWOLco5nvUVPg" name="None" value="1"/>
+        <eLiterals xmi:id="_RO8IxwR8EeWOLco5nvUVPg" name="ReadOnly" value="2"/>
+        <eLiterals xmi:id="_RO8IyAR8EeWOLco5nvUVPg" name="ReadWrite" value="3"/>
+        <eLiterals xmi:id="_RO8IyQR8EeWOLco5nvUVPg" name="ReadOnlyUnsettable" value="4"/>
+        <eLiterals xmi:id="_RO8IygR8EeWOLco5nvUVPg" name="ReadWriteUnsettable" value="5"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EEnum" xmi:id="_RO8IywR8EeWOLco5nvUVPg" name="FeatureKind">
+        <eAnnotations xmi:id="_RO8IzAR8EeWOLco5nvUVPg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_RO8I_gR8EeWOLco5nvUVPg"/>
+        <eLiterals xmi:id="_RO8IzQR8EeWOLco5nvUVPg" name="Unspecified"/>
+        <eLiterals xmi:id="_RO8IzgR8EeWOLco5nvUVPg" name="Simple" value="1"/>
+        <eLiterals xmi:id="_RO8IzwR8EeWOLco5nvUVPg" name="Attribute" value="2"/>
+        <eLiterals xmi:id="_RO8I0AR8EeWOLco5nvUVPg" name="Element" value="3"/>
+        <eLiterals xmi:id="_RO8I0QR8EeWOLco5nvUVPg" name="AttributeWildcard" value="4"/>
+        <eLiterals xmi:id="_RO8I0gR8EeWOLco5nvUVPg" name="ElementWildcard" value="5"/>
+        <eLiterals xmi:id="_RO8I0wR8EeWOLco5nvUVPg" name="Group" value="6"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_RO8I1AR8EeWOLco5nvUVPg" name="EStructuralFeature" abstract="true">
+        <eAnnotations xmi:id="_RO8I1QR8EeWOLco5nvUVPg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_RO8JBgR8EeWOLco5nvUVPg"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_RO8I1gR8EeWOLco5nvUVPg" name="isTransient" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_RO8I2AR8EeWOLco5nvUVPg" name="isUnsettable" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_RO8I2gR8EeWOLco5nvUVPg" name="isVolatile" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_RO8I3AR8EeWOLco5nvUVPg" name="visibility" ordered="false" eType="_RO8IwwR8EeWOLco5nvUVPg" defaultValueLiteral="Unspecified"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_RO8I3gR8EeWOLco5nvUVPg" name="xmlName" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_RO8I4AR8EeWOLco5nvUVPg" name="xmlNamespace" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_RO8I4gR8EeWOLco5nvUVPg" name="xmlFeatureKind" ordered="false" eType="_RO8IywR8EeWOLco5nvUVPg" defaultValueLiteral="Unspecified"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_RO8I5AR8EeWOLco5nvUVPg" name="EAttribute" eSuperTypes="_RO8I1AR8EeWOLco5nvUVPg">
+        <eAnnotations xmi:id="_RO8I5QR8EeWOLco5nvUVPg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_RO8JHgR8EeWOLco5nvUVPg"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_RO8I5gR8EeWOLco5nvUVPg" name="attributeName" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_RO8I6AR8EeWOLco5nvUVPg" name="base_Property" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_RO8I6wR8EeWOLco5nvUVPg" name="EReference" eSuperTypes="_RO8I1AR8EeWOLco5nvUVPg">
+        <eAnnotations xmi:id="_RO8I7AR8EeWOLco5nvUVPg" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_RO8JJAR8EeWOLco5nvUVPg"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_RO8I7QR8EeWOLco5nvUVPg" name="referenceName" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_RO8I7wR8EeWOLco5nvUVPg" name="isResolveProxies" ordered="false" defaultValueLiteral="true">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_RO8I8QR8EeWOLco5nvUVPg" name="base_Property" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/3.0.0/UML#//Property"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+  </eAnnotations>
+  <elementImport xmi:id="_RO8I9AR8EeWOLco5nvUVPg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_RO8I9QR8EeWOLco5nvUVPg">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_RO8I9gR8EeWOLco5nvUVPg">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Property"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Enumeration" xmi:id="_RO8I9wR8EeWOLco5nvUVPg" name="VisibilityKind">
+    <ownedLiteral xmi:id="_RO8I-AR8EeWOLco5nvUVPg" name="Unspecified"/>
+    <ownedLiteral xmi:id="_RO8I-QR8EeWOLco5nvUVPg" name="None"/>
+    <ownedLiteral xmi:id="_RO8I-gR8EeWOLco5nvUVPg" name="ReadOnly"/>
+    <ownedLiteral xmi:id="_RO8I-wR8EeWOLco5nvUVPg" name="ReadWrite"/>
+    <ownedLiteral xmi:id="_RO8I_AR8EeWOLco5nvUVPg" name="ReadOnlyUnsettable"/>
+    <ownedLiteral xmi:id="_RO8I_QR8EeWOLco5nvUVPg" name="ReadWriteUnsettable"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Enumeration" xmi:id="_RO8I_gR8EeWOLco5nvUVPg" name="FeatureKind">
+    <ownedLiteral xmi:id="_RO8I_wR8EeWOLco5nvUVPg" name="Unspecified"/>
+    <ownedLiteral xmi:id="_RO8JAAR8EeWOLco5nvUVPg" name="Simple"/>
+    <ownedLiteral xmi:id="_RO8JAQR8EeWOLco5nvUVPg" name="Attribute"/>
+    <ownedLiteral xmi:id="_RO8JAgR8EeWOLco5nvUVPg" name="Element"/>
+    <ownedLiteral xmi:id="_RO8JAwR8EeWOLco5nvUVPg" name="AttributeWildcard"/>
+    <ownedLiteral xmi:id="_RO8JBAR8EeWOLco5nvUVPg" name="ElementWildcard"/>
+    <ownedLiteral xmi:id="_RO8JBQR8EeWOLco5nvUVPg" name="Group"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_RO8JBgR8EeWOLco5nvUVPg" name="EStructuralFeature" isAbstract="true">
+    <ownedAttribute xmi:id="_RO8JBwR8EeWOLco5nvUVPg" name="isTransient">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RO8JCAR8EeWOLco5nvUVPg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RO8JCQR8EeWOLco5nvUVPg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_RO8JCgR8EeWOLco5nvUVPg" name="isUnsettable">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RO8JCwR8EeWOLco5nvUVPg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RO8JDAR8EeWOLco5nvUVPg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_RO8JDQR8EeWOLco5nvUVPg" name="isVolatile">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RO8JDgR8EeWOLco5nvUVPg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RO8JDwR8EeWOLco5nvUVPg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_RO8JEAR8EeWOLco5nvUVPg" name="visibility" type="_RO8I9wR8EeWOLco5nvUVPg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RO8JEQR8EeWOLco5nvUVPg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RO8JEgR8EeWOLco5nvUVPg"/>
+      <defaultValue xmi:type="uml:InstanceValue" xmi:id="_RO8JEwR8EeWOLco5nvUVPg" instance="_RO8I-AR8EeWOLco5nvUVPg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_RO8JFAR8EeWOLco5nvUVPg" name="xmlName">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RO8JFQR8EeWOLco5nvUVPg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RO8JFgR8EeWOLco5nvUVPg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_RO8JFwR8EeWOLco5nvUVPg" name="xmlNamespace">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RO8JGAR8EeWOLco5nvUVPg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RO8JGQR8EeWOLco5nvUVPg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_RO8JGgR8EeWOLco5nvUVPg" name="xmlFeatureKind" type="_RO8I_gR8EeWOLco5nvUVPg">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RO8JGwR8EeWOLco5nvUVPg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RO8JHAR8EeWOLco5nvUVPg"/>
+      <defaultValue xmi:type="uml:InstanceValue" xmi:id="_RO8JHQR8EeWOLco5nvUVPg" instance="_RO8I_wR8EeWOLco5nvUVPg"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_RO8JHgR8EeWOLco5nvUVPg" name="EAttribute">
+    <generalization xmi:id="_RO8JHwR8EeWOLco5nvUVPg" general="_RO8JBgR8EeWOLco5nvUVPg"/>
+    <ownedAttribute xmi:id="_RO8JIAR8EeWOLco5nvUVPg" name="attributeName">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RO8JIQR8EeWOLco5nvUVPg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RO8JIgR8EeWOLco5nvUVPg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_RO8JIwR8EeWOLco5nvUVPg" name="base_Property" association="_RO8JLgR8EeWOLco5nvUVPg">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Property"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_RO8JJAR8EeWOLco5nvUVPg" name="EReference">
+    <generalization xmi:id="_RO8JJQR8EeWOLco5nvUVPg" general="_RO8JBgR8EeWOLco5nvUVPg"/>
+    <ownedAttribute xmi:id="_RO8JJgR8EeWOLco5nvUVPg" name="referenceName">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RO8JJwR8EeWOLco5nvUVPg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RO8JKAR8EeWOLco5nvUVPg"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_RO8JKQR8EeWOLco5nvUVPg" name="isResolveProxies">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RO8JKgR8EeWOLco5nvUVPg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RO8JKwR8EeWOLco5nvUVPg"/>
+      <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_RO8JLAR8EeWOLco5nvUVPg" value="true"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_RO8JLQR8EeWOLco5nvUVPg" name="base_Property" association="_RO8JMAR8EeWOLco5nvUVPg">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Property"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_RO8JLgR8EeWOLco5nvUVPg" name="Property_EAttribute" memberEnd="_RO8JLwR8EeWOLco5nvUVPg _RO8JIwR8EeWOLco5nvUVPg">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_RO8JLwR8EeWOLco5nvUVPg" name="extension_EAttribute" type="_RO8JHgR8EeWOLco5nvUVPg" aggregation="composite" association="_RO8JLgR8EeWOLco5nvUVPg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_RO8JMAR8EeWOLco5nvUVPg" name="Property_EReference" memberEnd="_RO8JMQR8EeWOLco5nvUVPg _RO8JLQR8EeWOLco5nvUVPg">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_RO8JMQR8EeWOLco5nvUVPg" name="extension_EReference" type="_RO8JJAR8EeWOLco5nvUVPg" aggregation="composite" association="_RO8JMAR8EeWOLco5nvUVPg"/>
+  </packagedElement>
+</uml:Profile>

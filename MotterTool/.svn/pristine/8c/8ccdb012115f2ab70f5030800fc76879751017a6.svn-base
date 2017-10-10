@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:REMP="http:///schemas/REMP/_yuJ6EPC-EeSh8p-e8FE44g/22" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/REMP/_yuJ6EPC-EeSh8p-e8FE44g/22 Profile.profile.uml#_BHnXIfP4EeSJCMHkHDc7uA">
+  <uml:Model xmi:id="_XTCOEPpIEeSnrfyoZRcofg" name="epo2">
+    <packageImport xmi:id="_XTCOEfpIEeSnrfyoZRcofg">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_XTCOEvpIEeSnrfyoZRcofg" name="foo">
+      <packagedElement xmi:type="uml:Package" xmi:id="_XTCOE_pIEeSnrfyoZRcofg" name="bar"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Enumeration" xmi:id="_XTCOFPpIEeSnrfyoZRcofg" name="OrderStatus">
+      <ownedLiteral xmi:id="_XTCOFfpIEeSnrfyoZRcofg" name="Pending"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_XTCOFvpIEeSnrfyoZRcofg" name="Supplier" isActive="true">
+      <generalization xmi:id="_XTCOF_pIEeSnrfyoZRcofg" general="_XTC1N_pIEeSnrfyoZRcofg"/>
+      <ownedAttribute xmi:id="_XTCOGPpIEeSnrfyoZRcofg" name="name">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XTCOGfpIEeSnrfyoZRcofg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XTCOGvpIEeSnrfyoZRcofg"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_XTCOG_pIEeSnrfyoZRcofg" name="Nummber">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XTCOHPpIEeSnrfyoZRcofg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XTCOHfpIEeSnrfyoZRcofg"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_XTCOHvpIEeSnrfyoZRcofg" name="addr" type="_XTC1N_pIEeSnrfyoZRcofg" aggregation="composite" association="_XTC1O_pIEeSnrfyoZRcofg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XTC1IPpIEeSnrfyoZRcofg" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XTC1IfpIEeSnrfyoZRcofg"/>
+      </ownedAttribute>
+      <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_XTC1IvpIEeSnrfyoZRcofg" name="SupplierMachine">
+        <region xmi:id="_XTC1I_pIEeSnrfyoZRcofg" name="SupplierMachine">
+          <subvertex xmi:type="uml:State" xmi:id="_XTC1JPpIEeSnrfyoZRcofg" name="Run"/>
+          <subvertex xmi:type="uml:State" xmi:id="_XTC1JfpIEeSnrfyoZRcofg" name="Stop"/>
+          <subvertex xmi:type="uml:FinalState" xmi:id="_XTC1JvpIEeSnrfyoZRcofg" name="Dead"/>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_XTC1J_pIEeSnrfyoZRcofg" name="Slow" kind="join"/>
+          <transition xmi:id="_XTC1KPpIEeSnrfyoZRcofg" name="trans0" kind="local" source="_XTC1JPpIEeSnrfyoZRcofg" target="_XTC1JPpIEeSnrfyoZRcofg">
+            <trigger xmi:id="_XTC1KfpIEeSnrfyoZRcofg" name="Mytrigger0" event="_XTC1P_pIEeSnrfyoZRcofg"/>
+          </transition>
+          <transition xmi:id="_XTC1KvpIEeSnrfyoZRcofg" name="trans1" kind="local" source="_XTC1JPpIEeSnrfyoZRcofg" target="_XTC1JfpIEeSnrfyoZRcofg">
+            <ownedRule xmi:id="_XTC1K_pIEeSnrfyoZRcofg" name="Const" constrainedElement="_XTC1KvpIEeSnrfyoZRcofg">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_XTC1LPpIEeSnrfyoZRcofg">
+                <language>OCL</language>
+                <body>mybody.action</body>
+              </specification>
+            </ownedRule>
+            <trigger xmi:id="_XTC1LfpIEeSnrfyoZRcofg" name="Mytrigger1" event="_XTC1QPpIEeSnrfyoZRcofg"/>
+          </transition>
+          <transition xmi:id="_XTC1LvpIEeSnrfyoZRcofg" name="trans2" kind="local" source="_XTC1JfpIEeSnrfyoZRcofg" target="_XTC1J_pIEeSnrfyoZRcofg">
+            <trigger xmi:id="_XTC1L_pIEeSnrfyoZRcofg" name="Mytrigger2" event="_XTC1QvpIEeSnrfyoZRcofg"/>
+          </transition>
+          <transition xmi:id="_XTC1MPpIEeSnrfyoZRcofg" name="trans3" kind="local" source="_XTC1J_pIEeSnrfyoZRcofg" target="_XTC1JvpIEeSnrfyoZRcofg">
+            <trigger xmi:id="_XTC1MfpIEeSnrfyoZRcofg" name="Mytrigger3" event="_XTC1Q_pIEeSnrfyoZRcofg"/>
+          </transition>
+          <transition xmi:id="_XTC1MvpIEeSnrfyoZRcofg" name="trans4" kind="local" source="_XTC1J_pIEeSnrfyoZRcofg" target="_XTC1JPpIEeSnrfyoZRcofg">
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_XTC1M_pIEeSnrfyoZRcofg" name="OpaqBehavior1">
+              <language>OCL</language>
+              <body>mybody.action</body>
+            </effect>
+            <trigger xmi:id="_XTC1NPpIEeSnrfyoZRcofg" name="Mytrigger4" event="_XTC1RPpIEeSnrfyoZRcofg"/>
+          </transition>
+        </region>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_XTC1NfpIEeSnrfyoZRcofg" name="Op1" visibility="public"/>
+      <ownedReception xmi:id="_XTC1NvpIEeSnrfyoZRcofg" name="Reception1" signal="_XTC1QfpIEeSnrfyoZRcofg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_XTC1N_pIEeSnrfyoZRcofg" name="SupplierAddress" isActive="true">
+      <ownedAttribute xmi:id="_XTC1OPpIEeSnrfyoZRcofg" name="AddressName">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XTC1OfpIEeSnrfyoZRcofg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XTC1OvpIEeSnrfyoZRcofg"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_XTC1O_pIEeSnrfyoZRcofg" name="Supplier-SupplierAddress" memberEnd="_XTCOHvpIEeSnrfyoZRcofg _XTC1PPpIEeSnrfyoZRcofg">
+      <ownedEnd xmi:id="_XTC1PPpIEeSnrfyoZRcofg" name="" type="_XTCOFvpIEeSnrfyoZRcofg" association="_XTC1O_pIEeSnrfyoZRcofg">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XTC1PfpIEeSnrfyoZRcofg" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XTC1PvpIEeSnrfyoZRcofg" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_XTC1P_pIEeSnrfyoZRcofg" name="ChangeEvent" visibility="private"/>
+    <packagedElement xmi:type="uml:AnyReceiveEvent" xmi:id="_XTC1QPpIEeSnrfyoZRcofg" name="AnyReceieveEvent"/>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_XTC1QfpIEeSnrfyoZRcofg" name="Signal1"/>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_XTC1QvpIEeSnrfyoZRcofg" name="SignalEvent" signal="_XTC1QfpIEeSnrfyoZRcofg"/>
+    <packagedElement xmi:type="uml:CallEvent" xmi:id="_XTC1Q_pIEeSnrfyoZRcofg" name="CallEvent" operation="_XTC1NfpIEeSnrfyoZRcofg"/>
+    <packagedElement xmi:type="uml:TimeEvent" xmi:id="_XTC1RPpIEeSnrfyoZRcofg" name="TimeEvent" isRelative="true">
+      <when xmi:id="_XTC1RfpIEeSnrfyoZRcofg" name="TimeExpression">
+        <expr xmi:type="uml:OpaqueExpression" xmi:id="_XTC1RvpIEeSnrfyoZRcofg" name="OPEXPR1">
+          <language>OCL</language>
+          <body>body.action</body>
+        </expr>
+      </when>
+    </packagedElement>
+    <profileApplication xmi:id="_XTC1R_pIEeSnrfyoZRcofg">
+      <eAnnotations xmi:id="_XTC1SPpIEeSnrfyoZRcofg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="Profile.profile.uml#_BHnXIfP4EeSJCMHkHDc7uA"/>
+      </eAnnotations>
+      <appliedProfile href="Profile.profile.uml#_BHnXH_P4EeSJCMHkHDc7uA"/>
+    </profileApplication>
+  </uml:Model>
+  <REMP:System xmi:id="_XTC1SfpIEeSnrfyoZRcofg" base_Class="_XTCOFvpIEeSnrfyoZRcofg"/>
+  <REMP:Context xmi:id="_XTDcMPpIEeSnrfyoZRcofg" base_Class="_XTC1N_pIEeSnrfyoZRcofg"/>
+</xmi:XMI>

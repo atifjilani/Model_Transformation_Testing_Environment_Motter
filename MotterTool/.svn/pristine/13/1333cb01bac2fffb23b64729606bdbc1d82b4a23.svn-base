@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML">
+  <uml:Package xmi:id="_oJrMADrUEd2xX-zTpxDRuw" name="Library System">
+    <packagedElement xmi:type="uml:Class" xmi:id="_oKH38DrUEd2xX-zTpxDRuw" name="LibraryTerminal">
+      <ownedAttribute xmi:id="_oKH38TrUEd2xX-zTpxDRuw" name="BorrowerPassword" visibility="public" type="_oKH38zrUEd2xX-zTpxDRuw">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_oKH38jrUEd2xX-zTpxDRuw" value="EmptyString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_oKH39DrUEd2xX-zTpxDRuw" name="BookTitle" visibility="public" type="_oKH38zrUEd2xX-zTpxDRuw">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_oKH39TrUEd2xX-zTpxDRuw" value="EmptyString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_oKH39jrUEd2xX-zTpxDRuw" name="BorrowerCode" visibility="public" type="_oKH38zrUEd2xX-zTpxDRuw">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_oKH39zrUEd2xX-zTpxDRuw" value="EmptyString"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_oKRo8DrUEd2xX-zTpxDRuw" name="UpdateBorrowerRecord" visibility="public">
+        <ownedParameter xmi:id="_oKRo8TrUEd2xX-zTpxDRuw" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_oKRo8jrUEd2xX-zTpxDRuw" name="ReadTerminal" visibility="public">
+        <ownedParameter xmi:id="_oKRo8zrUEd2xX-zTpxDRuw" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_oKkj4DrUEd2xX-zTpxDRuw" name="BorrowerInformation">
+      <ownedAttribute xmi:id="_oKkj4TrUEd2xX-zTpxDRuw" name="BorrowerPassword" visibility="public" type="_oKH38zrUEd2xX-zTpxDRuw">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_oKkj4jrUEd2xX-zTpxDRuw" value="EmptyString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_oKkj4zrUEd2xX-zTpxDRuw" name="BorrowerCode" visibility="public" type="_oKH38zrUEd2xX-zTpxDRuw">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_oKkj5DrUEd2xX-zTpxDRuw" value="EmptyString"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_oKkj5TrUEd2xX-zTpxDRuw" name="PerformAthentication" visibility="public">
+        <ownedParameter xmi:id="_oKkj5jrUEd2xX-zTpxDRuw" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_oKkj5zrUEd2xX-zTpxDRuw" name="UpdateBorrowerRecord" visibility="public">
+        <ownedParameter xmi:id="_oKkj6DrUEd2xX-zTpxDRuw" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_oLBP0DrUEd2xX-zTpxDRuw" name="BookInformation">
+      <ownedAttribute xmi:id="_oLBP0TrUEd2xX-zTpxDRuw" name="BookTitle" visibility="public" type="_oKH38zrUEd2xX-zTpxDRuw">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_oLBP0jrUEd2xX-zTpxDRuw" value="EmptyString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_oLBP0zrUEd2xX-zTpxDRuw" name="BookCopyID" visibility="public" type="_oKH38zrUEd2xX-zTpxDRuw">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_oLBP1DrUEd2xX-zTpxDRuw" value="EmptyString"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_oLBP1TrUEd2xX-zTpxDRuw" name="UpdateBookRecord" visibility="public">
+        <ownedParameter xmi:id="_oLBP1jrUEd2xX-zTpxDRuw" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_oLUKwDrUEd2xX-zTpxDRuw" name="DisplayTerminal">
+      <ownedAttribute xmi:id="_oLUKwTrUEd2xX-zTpxDRuw" name="Item-NoItemMessage" visibility="public" type="_oKH38zrUEd2xX-zTpxDRuw">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_oLUKwjrUEd2xX-zTpxDRuw" value="EmptyString"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_oLd7wDrUEd2xX-zTpxDRuw" name="DisplayMessage" visibility="public">
+        <ownedParameter xmi:id="_oLd7wTrUEd2xX-zTpxDRuw" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_oLw2sDrUEd2xX-zTpxDRuw" name="ReservationFormData">
+      <ownedAttribute xmi:id="_oLw2sTrUEd2xX-zTpxDRuw" name="BorrowerCode" visibility="public" type="_oKH38zrUEd2xX-zTpxDRuw">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_oLw2sjrUEd2xX-zTpxDRuw" value="EmptyString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_oLw2szrUEd2xX-zTpxDRuw" name="BookCopyID" visibility="public" type="_oKH38zrUEd2xX-zTpxDRuw">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_oLw2tDrUEd2xX-zTpxDRuw" value="EmptyString"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_oLw2tTrUEd2xX-zTpxDRuw" name="GenerateForm" visibility="public">
+        <ownedParameter xmi:id="_oLw2tjrUEd2xX-zTpxDRuw" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_oLw2tzrUEd2xX-zTpxDRuw" name="UpdateBookRecord" visibility="public">
+        <ownedParameter xmi:id="_oLw2uDrUEd2xX-zTpxDRuw" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_oLw2uTrUEd2xX-zTpxDRuw" name="UpdateBorrowerRecord" visibility="public">
+        <ownedParameter xmi:id="_oLw2ujrUEd2xX-zTpxDRuw" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_oLw2uzrUEd2xX-zTpxDRuw" name="BorrowCopy" visibility="public">
+        <ownedParameter xmi:id="_oLw2vDrUEd2xX-zTpxDRuw" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_oMNioDrUEd2xX-zTpxDRuw" name="Printer">
+      <ownedOperation xmi:id="_oMNioTrUEd2xX-zTpxDRuw" name="GenerateForm" visibility="public">
+        <ownedParameter xmi:id="_oMNiojrUEd2xX-zTpxDRuw" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_oMXToDrUEd2xX-zTpxDRuw" name="Association_Printer_ReservationFormData" memberEnd="_oMXToTrUEd2xX-zTpxDRuw _oMXTojrUEd2xX-zTpxDRuw">
+      <ownedEnd xmi:id="_oMXToTrUEd2xX-zTpxDRuw" name="printer" type="_oMNioDrUEd2xX-zTpxDRuw" association="_oMXToDrUEd2xX-zTpxDRuw"/>
+      <ownedEnd xmi:id="_oMXTojrUEd2xX-zTpxDRuw" name="reservationformdata" type="_oLw2sDrUEd2xX-zTpxDRuw" aggregation="composite" association="_oMXToDrUEd2xX-zTpxDRuw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_oMXTozrUEd2xX-zTpxDRuw" name="FindRequestBook">
+      <ownedAttribute xmi:id="_oMXTpDrUEd2xX-zTpxDRuw" name="BookTitle" visibility="public" type="_oKH38zrUEd2xX-zTpxDRuw">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_oMXTpTrUEd2xX-zTpxDRuw" value="EmptyString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_oMXTpjrUEd2xX-zTpxDRuw" name="BorrowerCode" visibility="public" type="_oKH38zrUEd2xX-zTpxDRuw">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_oMXTpzrUEd2xX-zTpxDRuw" value="EmptyString"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_oMgdkDrUEd2xX-zTpxDRuw" name="FindRequestBook" visibility="public">
+        <ownedParameter xmi:id="_oMgdkTrUEd2xX-zTpxDRuw" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_oMgdkjrUEd2xX-zTpxDRuw" name="Association_FindRequestBook_BookInformation" memberEnd="_oMgdlDrUEd2xX-zTpxDRuw _oMgdkzrUEd2xX-zTpxDRuw">
+      <ownedEnd xmi:id="_oMgdlDrUEd2xX-zTpxDRuw" name="bookinformation" type="_oLBP0DrUEd2xX-zTpxDRuw" aggregation="composite" association="_oMgdkjrUEd2xX-zTpxDRuw"/>
+      <ownedEnd xmi:id="_oMgdkzrUEd2xX-zTpxDRuw" name="findrequestbook" type="_oMXTozrUEd2xX-zTpxDRuw" association="_oMgdkjrUEd2xX-zTpxDRuw"/>
+    </packagedElement>
+  </uml:Package>
+  <uml:DataType xmi:id="_oKH38zrUEd2xX-zTpxDRuw" name="String"/>
+</xmi:XMI>

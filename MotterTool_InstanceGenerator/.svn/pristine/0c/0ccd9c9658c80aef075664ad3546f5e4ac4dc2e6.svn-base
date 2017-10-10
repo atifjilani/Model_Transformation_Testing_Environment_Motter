@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:REMP="http:///schemas/REMP/_yuJ6EPC-EeSh8p-e8FE44g/22" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/REMP/_yuJ6EPC-EeSh8p-e8FE44g/22 Profile.profile.uml#_BHnXIfP4EeSJCMHkHDc7uA">
+  <uml:Model xmi:id="_du8CcAR4EeWprNgdmBozcA" name="epo2">
+    <packageImport xmi:id="_du8CcQR4EeWprNgdmBozcA">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_du8CcgR4EeWprNgdmBozcA" name="Supplier" isActive="true">
+      <ownedAttribute xmi:id="_du8CcwR4EeWprNgdmBozcA" name="name">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_du8CdAR4EeWprNgdmBozcA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_du8CdQR4EeWprNgdmBozcA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_du8CdgR4EeWprNgdmBozcA" name="Nummber">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_du8CdwR4EeWprNgdmBozcA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_du8CeAR4EeWprNgdmBozcA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_du8CeQR4EeWprNgdmBozcA" name="addr" type="_du8CjQR4EeWprNgdmBozcA" aggregation="composite" association="_du8CkQR4EeWprNgdmBozcA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_du8CegR4EeWprNgdmBozcA" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_du8CewR4EeWprNgdmBozcA"/>
+      </ownedAttribute>
+      <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_du8CfAR4EeWprNgdmBozcA" name="SupplierMachine">
+        <region xmi:id="_du8CfQR4EeWprNgdmBozcA" name="SupplierMachine">
+          <subvertex xmi:type="uml:State" xmi:id="_du8CfgR4EeWprNgdmBozcA" name="Run"/>
+          <subvertex xmi:type="uml:State" xmi:id="_du8CfwR4EeWprNgdmBozcA" name="Stop"/>
+          <subvertex xmi:type="uml:FinalState" xmi:id="_du8CgAR4EeWprNgdmBozcA" name="Dead"/>
+          <transition xmi:id="_du8CgQR4EeWprNgdmBozcA" name="trans1" kind="local" source="_du8CfgR4EeWprNgdmBozcA" target="_du8CfwR4EeWprNgdmBozcA">
+            <ownedRule xmi:id="_du8CggR4EeWprNgdmBozcA" name="Const" constrainedElement="_du8CgQR4EeWprNgdmBozcA">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_du8CgwR4EeWprNgdmBozcA">
+                <language>OCL</language>
+                <body>mybody.action</body>
+              </specification>
+            </ownedRule>
+            <trigger xmi:id="_du8ChAR4EeWprNgdmBozcA" name="Mytrigger1" event="_du8ClwR4EeWprNgdmBozcA"/>
+          </transition>
+          <transition xmi:id="_du8ChQR4EeWprNgdmBozcA" name="trans2" kind="local" source="_du8CfwR4EeWprNgdmBozcA" target="_du8CfgR4EeWprNgdmBozcA">
+            <trigger xmi:id="_du8ChgR4EeWprNgdmBozcA" name="Mytrigger2" event="_du8CmQR4EeWprNgdmBozcA"/>
+          </transition>
+          <transition xmi:id="_du8ChwR4EeWprNgdmBozcA" name="trans3" kind="local" source="_du8CfwR4EeWprNgdmBozcA" target="_du8CgAR4EeWprNgdmBozcA">
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_du8CiAR4EeWprNgdmBozcA" name="OpaqBehavior1">
+              <language>OCL</language>
+              <body>mybody.action</body>
+            </effect>
+            <trigger xmi:id="_du8CiQR4EeWprNgdmBozcA" name="Mytrigger3" event="_du8CmgR4EeWprNgdmBozcA"/>
+          </transition>
+        </region>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_du8CigR4EeWprNgdmBozcA" name="add" visibility="public"/>
+      <ownedOperation xmi:id="_du8CiwR4EeWprNgdmBozcA" name="Op1" visibility="public"/>
+      <ownedReception xmi:id="_du8CjAR4EeWprNgdmBozcA" name="Reception1" signal="_du8CmAR4EeWprNgdmBozcA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_du8CjQR4EeWprNgdmBozcA" name="SupplierAddress">
+      <ownedAttribute xmi:id="_du8CjgR4EeWprNgdmBozcA" name="AddressName">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_du8CjwR4EeWprNgdmBozcA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_du8CkAR4EeWprNgdmBozcA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_du8CkQR4EeWprNgdmBozcA" name="Supplier-SupplierAddress" memberEnd="_du8CeQR4EeWprNgdmBozcA _du8CkgR4EeWprNgdmBozcA">
+      <ownedEnd xmi:id="_du8CkgR4EeWprNgdmBozcA" name="" type="_du8CcgR4EeWprNgdmBozcA" association="_du8CkQR4EeWprNgdmBozcA">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_du8CkwR4EeWprNgdmBozcA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_du8ClAR4EeWprNgdmBozcA" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_du8ClQR4EeWprNgdmBozcA" name="ChangeEvent" visibility="private">
+      <changeExpression xmi:type="uml:OpaqueExpression" xmi:id="_du8ClgR4EeWprNgdmBozcA" name="OPEXPR1">
+        <language>OCL</language>
+        <body>body.action</body>
+      </changeExpression>
+    </packagedElement>
+    <packagedElement xmi:type="uml:AnyReceiveEvent" xmi:id="_du8ClwR4EeWprNgdmBozcA" name="AnyReceieveEvent"/>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_du8CmAR4EeWprNgdmBozcA" name="Signal1"/>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_du8CmQR4EeWprNgdmBozcA" name="SignalEvent" signal="_du8CmAR4EeWprNgdmBozcA"/>
+    <packagedElement xmi:type="uml:CallEvent" xmi:id="_du8CmgR4EeWprNgdmBozcA" name="CallEvent" operation="_du8CiwR4EeWprNgdmBozcA"/>
+    <profileApplication xmi:id="_du8CmwR4EeWprNgdmBozcA">
+      <eAnnotations xmi:id="_du8CnAR4EeWprNgdmBozcA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="Profile.profile.uml#_BHnXIfP4EeSJCMHkHDc7uA"/>
+      </eAnnotations>
+      <appliedProfile href="Profile.profile.uml#_BHnXH_P4EeSJCMHkHDc7uA"/>
+    </profileApplication>
+  </uml:Model>
+  <REMP:System xmi:id="_du8CnQR4EeWprNgdmBozcA" base_Class="_du8CcgR4EeWprNgdmBozcA"/>
+  <REMP:Context xmi:id="_du8CngR4EeWprNgdmBozcA" base_Class="_du8CjQR4EeWprNgdmBozcA"/>
+</xmi:XMI>

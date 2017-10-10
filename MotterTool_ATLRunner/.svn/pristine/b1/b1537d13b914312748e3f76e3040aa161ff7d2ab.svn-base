@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nodeSet version="1.0">
+    <view uin="idj31a8esc3fp0yesc3i5ez">
+        <property name="$metaclass" value="Package Diagram"/>
+        <property name="@__options" value="option.printheader = false&#xA;option.printfooter = false&#xA;option.papersize = A4&#xA;option.top = 1&#xA;option.fittopage = true&#xA;option.boundingbox = false&#xA;option.links = Direct&#xA;option.orientation = Landscape&#xA;option.shadows = false"/>
+        <property name="$defaultDiagram" value=""/>
+    </view>
+</nodeSet>

@@ -1,0 +1,70 @@
+package DFDMetaModel {
+
+	abstract class ModelElement {
+		attribute name : String;
+	}
+
+	class Constraint extends ModelElement {
+		
+	}
+
+	abstract class Feature extends ModelElement {
+		
+	}
+
+	class DataProcess extends Feature {
+		
+	}
+
+	class Data extends Feature {
+		reference right[1-*] container : Data;
+	}
+
+	abstract class NameSpace extends ModelElement {
+		reference modelElement[*] container : ModelElement;
+	}
+
+	abstract class Classifier extends NameSpace {
+		reference feature[*] container : Feature;
+	}
+
+	class DataStore extends Classifier {
+		
+	}
+
+	class Process extends Classifier {
+		
+	}
+
+	class ExternalElement extends Classifier {
+		
+	}
+
+	class DataFlowEnd extends ModelElement {
+		attribute direction : String;
+		reference type container : Classifier;
+	}
+
+	abstract class Relationship extends ModelElement {
+		
+	}
+
+	class Abstraction extends Relationship {
+		
+	}
+
+	class DataFlow extends NameSpace, Relationship {
+		reference connection[2-*] container : DataFlowEnd;
+		reference data[*] container : Data;
+	}
+
+	class Package {
+		attribute name : String;
+		reference modelElement[1-*] container : ModelElement;
+	}
+}
+
+package PrimitiveType {
+
+	datatype String;
+}

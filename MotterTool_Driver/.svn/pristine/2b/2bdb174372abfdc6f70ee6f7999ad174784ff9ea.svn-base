@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:REMP="http:///schemas/REMP/_MqBr0FniEeCRuehqYk0blw/21" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/REMP/_MqBr0FniEeCRuehqYk0blw/21 Profile.profile.uml#_p0heDe5wEeCiLsHPPQQd7A">
+  <uml:Model xmi:id="_p0hlyu5wEeCiLsHPPQQd7A" name="Booting_new">
+    <packageImport xmi:id="_p0hly-5wEeCiLsHPPQQd7A">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_p0hlzO5wEeCiLsHPPQQd7A" name="Sensor" isActive="true">
+      <ownedAttribute xmi:id="_p0hlze5wEeCiLsHPPQQd7A" name="sensorBootTime" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_p0hlzu5wEeCiLsHPPQQd7A" name="isConnected" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_p0hlz-5wEeCiLsHPPQQd7A" name="StateMachine1">
+        <region xmi:id="_p0hl0O5wEeCiLsHPPQQd7A" name="BootingBehavior">
+          <subvertex xmi:type="uml:State" xmi:id="_p0hl0e5wEeCiLsHPPQQd7A" name="Booting"/>
+          <subvertex xmi:type="uml:State" xmi:id="_p0hl0u5wEeCiLsHPPQQd7A" name="Waiting">
+            <doActivity xmi:type="uml:OpaqueBehavior" xmi:id="_p0hl0-5wEeCiLsHPPQQd7A" name="Do Activity">
+              <body>this.isConnected = action.connectToServer();</body>
+            </doActivity>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_p0hl1O5wEeCiLsHPPQQd7A" name="Connected"/>
+          <subvertex xmi:type="uml:State" xmi:id="_p0hl1e5wEeCiLsHPPQQd7A" name="Environment Error"/>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_p0hl1u5wEeCiLsHPPQQd7A"/>
+          <subvertex xmi:type="uml:State" xmi:id="_p0hl1-5wEeCiLsHPPQQd7A" name="Failure">
+            <entry xmi:type="uml:OpaqueBehavior" xmi:id="_p0hl2O5wEeCiLsHPPQQd7A" name="Entry">
+              <body>action.closeConnection();</body>
+            </entry>
+          </subvertex>
+          <transition xmi:id="_p0hl2e5wEeCiLsHPPQQd7A" kind="local" source="_p0hl0e5wEeCiLsHPPQQd7A" target="_p0hl0u5wEeCiLsHPPQQd7A">
+            <ownedRule xmi:id="_p0hl2u5wEeCiLsHPPQQd7A" constrainedElement="_p0hl2e5wEeCiLsHPPQQd7A">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_p0hl2-5wEeCiLsHPPQQd7A">
+                <language>OCL</language>
+                <body>not self.oclInState(FailingBehavior::Failure)</body>
+              </specification>
+            </ownedRule>
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_p0hl3O5wEeCiLsHPPQQd7A" name="Effect">
+              <body>action.startConnectionToServer();</body>
+            </effect>
+            <trigger xmi:id="_p0hl3e5wEeCiLsHPPQQd7A" name="" event="_p0hl_O5wEeCiLsHPPQQd7A"/>
+          </transition>
+          <transition xmi:id="_p0hl3u5wEeCiLsHPPQQd7A" kind="local" source="_p0hl0u5wEeCiLsHPPQQd7A" target="_p0hl1O5wEeCiLsHPPQQd7A">
+            <ownedRule xmi:id="_p0hl3-5wEeCiLsHPPQQd7A" constrainedElement="_p0hl3u5wEeCiLsHPPQQd7A">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_p0hl4O5wEeCiLsHPPQQd7A">
+                <language>OCL</language>
+                <body>not self.oclInState(FailingBehavior::Failure)</body>
+              </specification>
+            </ownedRule>
+            <trigger xmi:id="_p0hl4e5wEeCiLsHPPQQd7A" name="" event="_p0hl8e5wEeCiLsHPPQQd7A"/>
+          </transition>
+          <transition xmi:id="_p0hl4u5wEeCiLsHPPQQd7A" kind="local" source="_p0hl0u5wEeCiLsHPPQQd7A" target="_p0hl1e5wEeCiLsHPPQQd7A">
+            <ownedRule xmi:id="_p0hl4-5wEeCiLsHPPQQd7A" constrainedElement="_p0hl4u5wEeCiLsHPPQQd7A">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_p0hl5O5wEeCiLsHPPQQd7A">
+                <language>OCL</language>
+                <body>not self.oclInState(FailingBehavior::Failure)</body>
+              </specification>
+            </ownedRule>
+            <trigger xmi:id="_p0hl5e5wEeCiLsHPPQQd7A" name="" event="_p0hl-e5wEeCiLsHPPQQd7A"/>
+          </transition>
+          <transition xmi:id="_p0hl5u5wEeCiLsHPPQQd7A" name="" source="_p0hl1O5wEeCiLsHPPQQd7A" target="_p0hl1O5wEeCiLsHPPQQd7A">
+            <ownedRule xmi:id="_p0hl5-5wEeCiLsHPPQQd7A" constrainedElement="_p0hl5u5wEeCiLsHPPQQd7A">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_p0hl6O5wEeCiLsHPPQQd7A">
+                <language>OCL</language>
+                <body>not self.oclInState(FailingBehavior::Failure)</body>
+              </specification>
+            </ownedRule>
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_p0hl6e5wEeCiLsHPPQQd7A" name="Effect">
+              <body>action.sendData();</body>
+            </effect>
+            <trigger xmi:id="_p0hl6u5wEeCiLsHPPQQd7A" name="" event="_p0hl_-5wEeCiLsHPPQQd7A"/>
+          </transition>
+          <transition xmi:id="_p0hl6-5wEeCiLsHPPQQd7A" kind="local" source="_p0hl1u5wEeCiLsHPPQQd7A" target="_p0hl0e5wEeCiLsHPPQQd7A"/>
+          <transition xmi:id="_p0hl7O5wEeCiLsHPPQQd7A" source="_p0hl0e5wEeCiLsHPPQQd7A" target="_p0hl1-5wEeCiLsHPPQQd7A"/>
+          <transition xmi:id="_p0hl7e5wEeCiLsHPPQQd7A" source="_p0hl0u5wEeCiLsHPPQQd7A" target="_p0hl1-5wEeCiLsHPPQQd7A"/>
+          <transition xmi:id="_p0hl7u5wEeCiLsHPPQQd7A" source="_p0hl1O5wEeCiLsHPPQQd7A" target="_p0hl1-5wEeCiLsHPPQQd7A"/>
+        </region>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_p0hl7-5wEeCiLsHPPQQd7A" name="Sensor"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:CallEvent" xmi:id="_p0hl8O5wEeCiLsHPPQQd7A" name="CallEvent1" operation="_p0hl7-5wEeCiLsHPPQQd7A"/>
+    <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_p0hl8e5wEeCiLsHPPQQd7A" name="ChangeEvent1">
+      <changeExpression xmi:type="uml:OpaqueExpression" xmi:id="_p0hl8u5wEeCiLsHPPQQd7A">
+        <body>self.isConnected</body>
+      </changeExpression>
+    </packagedElement>
+    <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_p0hl8-5wEeCiLsHPPQQd7A" name="ChangeEvent2" visibility="private">
+      <changeExpression xmi:type="uml:OpaqueExpression" xmi:id="_p0hl9O5wEeCiLsHPPQQd7A">
+        <body>self.exceptionRaised = true</body>
+      </changeExpression>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_p0hl9e5wEeCiLsHPPQQd7A" name="Server" isActive="true">
+      <ownedReception xmi:id="_p0hl9u5wEeCiLsHPPQQd7A" signal="_p0hl9-5wEeCiLsHPPQQd7A"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_p0hl9-5wEeCiLsHPPQQd7A" name="sendData"/>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_p0hl-O5wEeCiLsHPPQQd7A" name="Signal1"/>
+    <packagedElement xmi:type="uml:TimeEvent" xmi:id="_p0hl-e5wEeCiLsHPPQQd7A" name="TimeEvent4" isRelative="true">
+      <when xmi:id="_p0hl-u5wEeCiLsHPPQQd7A">
+        <expr xmi:type="uml:LiteralString" xmi:id="_p0hl--5wEeCiLsHPPQQd7A" value="5, s"/>
+      </when>
+    </packagedElement>
+    <packagedElement xmi:type="uml:TimeEvent" xmi:id="_p0hl_O5wEeCiLsHPPQQd7A" name="TimeEvent5" isRelative="true">
+      <when xmi:id="_p0hl_e5wEeCiLsHPPQQd7A">
+        <expr xmi:type="uml:LiteralString" xmi:id="_p0hl_u5wEeCiLsHPPQQd7A" value="sensorBootTime, ms"/>
+      </when>
+    </packagedElement>
+    <packagedElement xmi:type="uml:TimeEvent" xmi:id="_p0hl_-5wEeCiLsHPPQQd7A" name="TimeEvent6" isRelative="true">
+      <when xmi:id="_p0hmAO5wEeCiLsHPPQQd7A">
+        <expr xmi:type="uml:LiteralString" xmi:id="_p0hmAe5wEeCiLsHPPQQd7A" value="1, s"/>
+      </when>
+    </packagedElement>
+   
+    <profileApplication xmi:id="_p0hmAu5wEeCiLsHPPQQd7A">
+      <eAnnotations xmi:id="_p0hmA-5wEeCiLsHPPQQd7A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+  
+    <profileApplication xmi:id="_p0hmBO5wEeCiLsHPPQQd7A">
+      <eAnnotations xmi:id="_p0hmBe5wEeCiLsHPPQQd7A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="Default.profile.uml#_p0hjPu5wEeCiLsHPPQQd7A"/>
+      </eAnnotations>
+      <appliedProfile href="Default.profile.uml#_p0hjPO5wEeCiLsHPPQQd7A"/>
+    </profileApplication>
+   
+    <profileApplication xmi:id="_p0hmBu5wEeCiLsHPPQQd7A">
+      <eAnnotations xmi:id="_p0hmB-5wEeCiLsHPPQQd7A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="Deployment.profile.uml#_p0hoHu5wEeCiLsHPPQQd7A"/>
+      </eAnnotations>
+      <appliedProfile href="Deployment.profile.uml#_p0hoHO5wEeCiLsHPPQQd7A"/>
+    </profileApplication>
+   
+    <profileApplication xmi:id="_p0hmCO5wEeCiLsHPPQQd7A">
+      <eAnnotations xmi:id="_p0hmCe5wEeCiLsHPPQQd7A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="Profile.profile.uml#_p0heDe5wEeCiLsHPPQQd7A"/>
+      </eAnnotations>
+      <appliedProfile href="Profile.profile.uml#_p0heC-5wEeCiLsHPPQQd7A"/>
+    </profileApplication>
+    
+  </uml:Model>
+  <REMP:Context xmi:id="_p0hmCu5wEeCiLsHPPQQd7A" base_Class="_p0hlzO5wEeCiLsHPPQQd7A"/>
+  <REMP:System xmi:id="_p0hmC-5wEeCiLsHPPQQd7A" base_Class="_p0hl9e5wEeCiLsHPPQQd7A"/>
+  <REMP:Error xmi:id="_p0hmDO5wEeCiLsHPPQQd7A" base_State="_p0hl1e5wEeCiLsHPPQQd7A"/>
+  <REMP:Failure xmi:id="_p0hmDe5wEeCiLsHPPQQd7A" base_State="_p0hl1-5wEeCiLsHPPQQd7A"/>
+  <REMP:NonDeterministic xmi:id="_p0hmDu5wEeCiLsHPPQQd7A" upperBound="3000" lowerBound="100" base_Property="_p0hlze5wEeCiLsHPPQQd7A"/>
+  <REMP:TimeProbability xmi:id="_p0hmD-5wEeCiLsHPPQQd7A" base_Transition="_p0hl7O5wEeCiLsHPPQQd7A"/>
+  <REMP:TimeProbability xmi:id="_p0hmEO5wEeCiLsHPPQQd7A" base_Transition="_p0hl7e5wEeCiLsHPPQQd7A"/>
+  <REMP:TimeProbability xmi:id="_p0hmEe5wEeCiLsHPPQQd7A" base_Transition="_p0hl7u5wEeCiLsHPPQQd7A"/>
+</xmi:XMI>

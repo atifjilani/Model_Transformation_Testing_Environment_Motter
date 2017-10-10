@@ -1,0 +1,315 @@
+16-03-21 11:55:20.689 [main] INFO  test.snt.oclsolver.AbstractTestCase - 
+********TEST******** Solving query No: 0
+
+16-03-21 11:55:20.705 [main] INFO  test.snt.oclsolver.AbstractTestCase - 
+********TEST******** Calling method: TestExample02.java:78
+
+16-03-21 11:55:20.705 [main] INFO  test.snt.oclsolver.AbstractTestCase - 
+********TEST******** Time: 2016/03/21 11:55:20
+16-03-21 11:55:20.846 [main] INFO  snt.oclsolver.reader.PreprocessDataModel - Loading model..
+16-03-21 11:55:21.002 [main] INFO  snt.oclsolver.reader.PreprocessDataModel - Model loaded
+16-03-21 11:55:21.080 [main] INFO  snt.oclsolver.reader.PreprocessDataModel - Saved .....
+16-03-21 11:55:21.174 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - Loading model..
+16-03-21 11:55:21.189 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - Model loaded
+16-03-21 11:55:21.189 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - Model 'Object Diagram' created.
+16-03-21 11:55:21.298 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  parent:p1
+16-03-21 11:55:21.298 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  is_persistent:i1
+16-03-21 11:55:21.298 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  attrs:a1
+16-03-21 11:55:21.298 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  association:a1
+16-03-21 11:55:21.298 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  association:a1
+16-03-21 11:55:21.298 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  class:c1
+16-03-21 11:55:21.298 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  name:n1
+16-03-21 11:55:21.298 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  attribute:a1
+16-03-21 11:55:21.298 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  type:t1
+16-03-21 11:55:21.298 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  name:n1
+16-03-21 11:55:21.298 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  is_primary:i1
+16-03-21 11:55:21.298 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  class:c1
+16-03-21 11:55:21.298 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  src:s1
+16-03-21 11:55:21.298 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  name:n1
+16-03-21 11:55:21.298 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  dest:d1
+16-03-21 11:55:21.330 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - Saved .....
+16-03-21 11:55:21.330 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = Class:Class1
+16-03-21 11:55:21.330 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = Attribute:Attribute1
+16-03-21 11:55:21.330 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = Association:Association1
+16-03-21 11:55:21.330 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = PrimitiveDataType:PrimitiveDataType1
+16-03-21 11:55:21.330 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = null
+16-03-21 11:55:21.330 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = null
+16-03-21 11:55:21.330 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = null
+16-03-21 11:55:21.330 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = null
+16-03-21 11:55:21.330 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = null
+16-03-21 11:55:21.345 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - input resource fetched
+16-03-21 11:55:22.094 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Ass-association
+16-03-21 11:55:22.094 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Class1-Ass-association
+16-03-21 11:55:22.094 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Association1
+16-03-21 11:55:22.094 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Cla-parent
+16-03-21 11:55:22.094 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Class1-Cla-parent
+16-03-21 11:55:22.094 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Cla-class
+16-03-21 11:55:22.094 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Class1-Cla-class
+16-03-21 11:55:22.127 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Attribute1-Cla-class
+16-03-21 11:55:22.127 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Class1
+16-03-21 11:55:22.127 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Cla-type
+16-03-21 11:55:22.127 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Attribute1-Cla-type
+16-03-21 11:55:22.127 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Cla-src
+16-03-21 11:55:22.127 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Association1-Cla-src
+16-03-21 11:55:22.127 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Cla-dest
+16-03-21 11:55:22.127 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Association1-Cla-dest
+16-03-21 11:55:22.143 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Att-attribute
+16-03-21 11:55:22.143 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Class1-Att-attribute
+16-03-21 11:55:22.143 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: PrimitiveDataType1-Att-attribute
+16-03-21 11:55:22.143 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Att-attrs
+16-03-21 11:55:22.143 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Class1-Att-attrs
+16-03-21 11:55:22.143 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Attribute1
+16-03-21 11:55:22.143 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Pri-type
+16-03-21 11:55:22.143 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Attribute1-Pri-type
+16-03-21 11:55:22.143 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: PrimitiveDataType1
+16-03-21 11:55:25.780 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called deleteObject :: -Cla-parent
+16-03-21 11:55:25.795 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called deleteObject :: Class1-Cla-parent
+16-03-21 11:55:25.827 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called deleteObject :: -Cla-class
+16-03-21 11:55:25.827 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called deleteObject :: Class1-Cla-class
+16-03-21 11:55:25.843 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called deleteObject :: Attribute1-Cla-class
+16-03-21 11:55:25.843 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called deleteObject :: Class1
+16-03-21 11:55:25.843 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called deleteObject :: -Cla-type
+16-03-21 11:55:25.843 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called deleteObject :: Association1-Cla-src
+16-03-21 11:55:26.015 [main] INFO  snt.oclsolver.distance.Problem - Query Part: Class.allInstances()-> size() = 4
+16-03-21 11:55:26.015 [main] INFO  snt.oclsolver.distance.Problem - distance obtained :: 6.999999999999999
+16-03-21 11:55:26.030 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called deleteObject :: Attribute1-Pri-type
+16-03-21 11:55:26.046 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called deleteObject :: PrimitiveDataType1
+16-03-21 11:55:26.046 [main] INFO  snt.oclsolver.distance.Problem - Query Part: PrimitiveDataType.allInstances()->size() = 1
+16-03-21 11:55:26.046 [main] INFO  snt.oclsolver.distance.Problem - distance obtained :: 2.333333333333333
+16-03-21 11:55:26.202 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called deleteObject :: -Att-attribute
+16-03-21 11:55:26.202 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called deleteObject :: Class1-Att-attribute
+16-03-21 11:55:26.202 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called deleteObject :: PrimitiveDataType1-Att-attribute
+16-03-21 11:55:26.202 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called deleteObject :: Class1-Att-attrs
+16-03-21 11:55:26.233 [main] INFO  snt.oclsolver.distance.Problem - Query Part: Attribute.allInstances()->size() = 2
+16-03-21 11:55:26.233 [main] INFO  snt.oclsolver.distance.Problem - distance obtained :: 3.833333333333333
+16-03-21 11:55:26.358 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called deleteObject :: -Ass-association
+16-03-21 11:55:26.373 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called deleteObject :: Class1-Ass-association
+16-03-21 11:55:26.389 [main] INFO  snt.oclsolver.distance.Problem - Query Part: Association.allInstances()->size() = 1
+16-03-21 11:55:26.389 [main] INFO  snt.oclsolver.distance.Problem - distance obtained :: 2.5
+16-03-21 11:55:26.483 [main] INFO  snt.oclsolver.distance.Problem - Query Part: PrimitiveDataType.allInstances()->forAll(c|c.name='String')
+16-03-21 11:55:26.483 [main] INFO  snt.oclsolver.distance.Problem - distance obtained :: 0.5
+16-03-21 11:55:26.561 [main] INFO  snt.oclsolver.distance.Problem - Query Part: Class.allInstances()->forAll(c|c.is_persistent=true and c.attrs->forAll(attr |attr.oclIsTypeOf(Attribute)))
+16-03-21 11:55:26.561 [main] INFO  snt.oclsolver.distance.Problem - distance obtained :: 0.0
+16-03-21 11:55:26.607 [main] INFO  snt.oclsolver.distance.Problem - Query Part: Attribute.allInstances()->forAll(at | at.is_primary=true and at.type.oclIsKindOf(Classifier))
+16-03-21 11:55:26.607 [main] INFO  snt.oclsolver.distance.Problem - distance obtained :: 0.0
+16-03-21 11:55:26.670 [main] INFO  snt.oclsolver.distance.Problem - Query Part: Association.allInstances()->forAll(as | as.src.oclIsTypeOf(Class) and as.dest.oclIsTypeOf(Class))
+16-03-21 11:55:26.670 [main] INFO  snt.oclsolver.distance.Problem - distance obtained :: 0.0
+16-03-21 11:55:26.670 [main] INFO  snt.oclsolver.search.Individual - Iteration evaluation count: 1
+16-03-21 11:55:26.670 [main] INFO  snt.oclsolver.search.Individual - Evaluation count: 1
+16-03-21 11:55:26.795 [main] INFO  snt.oclsolver.distance.Problem - Query Part: Class.allInstances()-> size() = 4
+16-03-21 11:55:26.795 [main] INFO  snt.oclsolver.distance.Problem - distance obtained :: 0.0
+16-03-21 11:55:26.827 [main] INFO  snt.oclsolver.distance.Problem - Query Part: PrimitiveDataType.allInstances()->size() = 1
+16-03-21 11:55:26.827 [main] INFO  snt.oclsolver.distance.Problem - distance obtained :: 0.0
+16-03-21 11:55:26.889 [main] INFO  snt.oclsolver.distance.Problem - Query Part: Attribute.allInstances()->size() = 2
+16-03-21 11:55:26.889 [main] INFO  snt.oclsolver.distance.Problem - distance obtained :: 0.0
+16-03-21 11:55:26.952 [main] INFO  snt.oclsolver.distance.Problem - Query Part: Association.allInstances()->size() = 1
+16-03-21 11:55:26.952 [main] INFO  snt.oclsolver.distance.Problem - distance obtained :: 0.0
+16-03-21 11:55:26.967 [main] INFO  snt.oclsolver.distance.Problem - Query Part: PrimitiveDataType.allInstances()->forAll(c|c.name='String')
+16-03-21 11:55:26.967 [main] INFO  snt.oclsolver.distance.Problem - distance obtained :: 0.5
+16-03-21 11:55:27.045 [main] INFO  snt.oclsolver.distance.Problem - Query Part: Class.allInstances()->forAll(c|c.is_persistent=true and c.attrs->forAll(attr |attr.oclIsTypeOf(Attribute)))
+16-03-21 11:55:27.045 [main] INFO  snt.oclsolver.distance.Problem - distance obtained :: 0.0
+16-03-21 11:55:27.108 [main] INFO  snt.oclsolver.distance.Problem - Query Part: Attribute.allInstances()->forAll(at | at.is_primary=true and at.type.oclIsKindOf(Classifier))
+16-03-21 11:55:27.108 [main] INFO  snt.oclsolver.distance.Problem - distance obtained :: 0.0
+16-03-21 11:55:27.108 [main] INFO  snt.oclsolver.distance.Problem - Query Part: Association.allInstances()->forAll(as | as.src.oclIsTypeOf(Class) and as.dest.oclIsTypeOf(Class))
+16-03-21 11:55:27.108 [main] INFO  snt.oclsolver.distance.Problem - distance obtained :: 0.0
+16-03-21 11:55:27.123 [main] INFO  snt.oclsolver.search.Individual - Iteration evaluation count: 2
+16-03-21 11:55:27.123 [main] INFO  snt.oclsolver.search.Individual - Evaluation count: 2
+16-03-21 11:55:27.123 [main] INFO  snt.oclsolver.search.Search - Running iteration incremented# :: 1
+16-03-21 11:55:27.123 [main] INFO  snt.oclsolver.search.Search - Running iteration same# :: 1
+16-03-21 11:55:27.248 [main] INFO  snt.oclsolver.distance.Problem - Query Part: Class.allInstances()-> size() = 4
+16-03-21 11:55:27.248 [main] INFO  snt.oclsolver.distance.Problem - distance obtained :: 0.0
+16-03-21 11:55:27.279 [main] INFO  snt.oclsolver.distance.Problem - Query Part: PrimitiveDataType.allInstances()->size() = 1
+16-03-21 11:55:27.279 [main] INFO  snt.oclsolver.distance.Problem - distance obtained :: 0.0
+16-03-21 11:55:27.279 [main] INFO  snt.oclsolver.distance.Problem - Query Part: Attribute.allInstances()->size() = 2
+16-03-21 11:55:27.279 [main] INFO  snt.oclsolver.distance.Problem - distance obtained :: 0.0
+16-03-21 11:55:27.279 [main] INFO  snt.oclsolver.distance.Problem - Query Part: Association.allInstances()->size() = 1
+16-03-21 11:55:27.279 [main] INFO  snt.oclsolver.distance.Problem - distance obtained :: 0.0
+16-03-21 11:55:27.295 [main] INFO  snt.oclsolver.distance.Problem - Query Part: PrimitiveDataType.allInstances()->forAll(c|c.name='String')
+16-03-21 11:55:27.295 [main] INFO  snt.oclsolver.distance.Problem - distance obtained :: 0.5
+16-03-21 11:55:27.388 [main] INFO  snt.oclsolver.distance.Problem - Query Part: Class.allInstances()->forAll(c|c.is_persistent=true and c.attrs->forAll(attr |attr.oclIsTypeOf(Attribute)))
+16-03-21 11:55:27.388 [main] INFO  snt.oclsolver.distance.Problem - distance obtained :: 0.0
+16-03-21 11:55:27.451 [main] INFO  snt.oclsolver.distance.Problem - Query Part: Attribute.allInstances()->forAll(at | at.is_primary=true and at.type.oclIsKindOf(Classifier))
+16-03-21 11:55:27.451 [main] INFO  snt.oclsolver.distance.Problem - distance obtained :: 0.0
+16-03-21 11:55:27.466 [main] INFO  snt.oclsolver.distance.Problem - Query Part: Association.allInstances()->forAll(as | as.src.oclIsTypeOf(Class) and as.dest.oclIsTypeOf(Class))
+16-03-21 11:55:27.466 [main] INFO  snt.oclsolver.distance.Problem - distance obtained :: 0.0
+16-03-21 11:55:27.466 [main] INFO  snt.oclsolver.search.Individual - Iteration evaluation count: 1
+16-03-21 11:55:27.466 [main] INFO  snt.oclsolver.search.Individual - Evaluation count: 3
+16-03-21 11:55:27.607 [main] INFO  snt.oclsolver.distance.Problem - Query Part: Class.allInstances()-> size() = 4
+16-03-21 11:55:27.607 [main] INFO  snt.oclsolver.distance.Problem - distance obtained :: 0.0
+16-03-21 11:55:27.638 [main] INFO  snt.oclsolver.distance.Problem - Query Part: PrimitiveDataType.allInstances()->size() = 1
+16-03-21 11:55:27.638 [main] INFO  snt.oclsolver.distance.Problem - distance obtained :: 0.0
+16-03-21 11:55:27.638 [main] INFO  snt.oclsolver.distance.Problem - Query Part: Attribute.allInstances()->size() = 2
+16-03-21 11:55:27.638 [main] INFO  snt.oclsolver.distance.Problem - distance obtained :: 0.0
+16-03-21 11:55:27.638 [main] INFO  snt.oclsolver.distance.Problem - Query Part: Association.allInstances()->size() = 1
+16-03-21 11:55:27.638 [main] INFO  snt.oclsolver.distance.Problem - distance obtained :: 0.0
+16-03-21 11:55:27.669 [main] INFO  snt.oclsolver.distance.Problem - Query Part: PrimitiveDataType.allInstances()->forAll(c|c.name='String')
+16-03-21 11:55:27.669 [main] INFO  snt.oclsolver.distance.Problem - distance obtained :: 0.5
+16-03-21 11:55:27.764 [main] INFO  snt.oclsolver.distance.Problem - Query Part: Class.allInstances()->forAll(c|c.is_persistent=true and c.attrs->forAll(attr |attr.oclIsTypeOf(Attribute)))
+16-03-21 11:55:27.764 [main] INFO  snt.oclsolver.distance.Problem - distance obtained :: 0.0
+16-03-21 11:55:27.842 [main] INFO  snt.oclsolver.distance.Problem - Query Part: Attribute.allInstances()->forAll(at | at.is_primary=true and at.type.oclIsKindOf(Classifier))
+16-03-21 11:55:27.842 [main] INFO  snt.oclsolver.distance.Problem - distance obtained :: 0.0
+16-03-21 11:55:27.842 [main] INFO  snt.oclsolver.distance.Problem - Query Part: Association.allInstances()->forAll(as | as.src.oclIsTypeOf(Class) and as.dest.oclIsTypeOf(Class))
+16-03-21 11:55:27.842 [main] INFO  snt.oclsolver.distance.Problem - distance obtained :: 0.0
+16-03-21 11:55:27.842 [main] INFO  snt.oclsolver.search.Individual - Iteration evaluation count: 2
+16-03-21 11:55:27.842 [main] INFO  snt.oclsolver.search.Individual - Evaluation count: 4
+16-03-21 11:55:27.842 [main] INFO  snt.oclsolver.search.Search - Running iteration incremented# :: 2
+16-03-21 11:55:27.842 [main] INFO  snt.oclsolver.search.Search - Running iteration same# :: 2
+16-03-21 11:55:28.003 [main] INFO  snt.oclsolver.distance.Problem - Query Part: Class.allInstances()-> size() = 4
+16-03-21 11:55:28.003 [main] INFO  snt.oclsolver.distance.Problem - distance obtained :: 0.0
+16-03-21 11:55:28.034 [main] INFO  snt.oclsolver.distance.Problem - Query Part: PrimitiveDataType.allInstances()->size() = 1
+16-03-21 11:55:28.034 [main] INFO  snt.oclsolver.distance.Problem - distance obtained :: 0.0
+16-03-21 11:55:28.034 [main] INFO  snt.oclsolver.distance.Problem - Query Part: Attribute.allInstances()->size() = 2
+16-03-21 11:55:28.034 [main] INFO  snt.oclsolver.distance.Problem - distance obtained :: 0.0
+16-03-21 11:55:28.034 [main] INFO  snt.oclsolver.distance.Problem - Query Part: Association.allInstances()->size() = 1
+16-03-21 11:55:28.034 [main] INFO  snt.oclsolver.distance.Problem - distance obtained :: 0.0
+16-03-21 11:55:28.065 [main] INFO  snt.oclsolver.distance.Problem - Query Part: PrimitiveDataType.allInstances()->forAll(c|c.name='String')
+16-03-21 11:55:28.065 [main] INFO  snt.oclsolver.distance.Problem - distance obtained :: 0.0
+16-03-21 11:55:28.174 [main] INFO  snt.oclsolver.distance.Problem - Query Part: Class.allInstances()->forAll(c|c.is_persistent=true and c.attrs->forAll(attr |attr.oclIsTypeOf(Attribute)))
+16-03-21 11:55:28.174 [main] INFO  snt.oclsolver.distance.Problem - distance obtained :: 0.0
+16-03-21 11:55:28.252 [main] INFO  snt.oclsolver.distance.Problem - Query Part: Attribute.allInstances()->forAll(at | at.is_primary=true and at.type.oclIsKindOf(Classifier))
+16-03-21 11:55:28.252 [main] INFO  snt.oclsolver.distance.Problem - distance obtained :: 0.0
+16-03-21 11:55:28.252 [main] INFO  snt.oclsolver.distance.Problem - Query Part: Association.allInstances()->forAll(as | as.src.oclIsTypeOf(Class) and as.dest.oclIsTypeOf(Class))
+16-03-21 11:55:28.252 [main] INFO  snt.oclsolver.distance.Problem - distance obtained :: 0.0
+16-03-21 11:55:28.252 [main] INFO  snt.oclsolver.search.Individual - Iteration evaluation count: 1
+16-03-21 11:55:28.252 [main] INFO  snt.oclsolver.search.Individual - Evaluation count: 5
+16-03-21 11:55:28.252 [main] INFO  snt.oclsolver.driver.SolverRunner - Total number of Runs: 0
+16-03-21 11:55:28.252 [main] INFO  snt.oclsolver.driver.SolverRunner - Total number of iterations: 2
+16-03-21 11:55:28.252 [main] INFO  snt.oclsolver.driver.SolverRunner - Total number of evaluations: 5
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - ----------------------RESULT-----------------------
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - 
+
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - 
+
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - 
+
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - Class 
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - Attribute1-Cla-type 
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - Boolean 
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - is_persistent 
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - true 
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - 
+
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - Class 
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - Attribute1-Cla-type 
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - Attribute 
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - attrs 
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - -Att-attrs 
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - 
+
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - 
+
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - Class 
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - -Cla-src 
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - Boolean 
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - is_persistent 
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - true 
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - 
+
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - Class 
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - -Cla-src 
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - Attribute 
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - attrs 
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - -Att-attrs 
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - 
+
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - 
+
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - Class 
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - -Cla-dest 
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - Boolean 
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - is_persistent 
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - true 
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - 
+
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - Class 
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - -Cla-dest 
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - Attribute 
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - attrs 
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - -Att-attrs 
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - 
+
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - Class 
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - Association1-Cla-dest 
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - Boolean 
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - is_persistent 
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - true 
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - 
+
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - Class 
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - Association1-Cla-dest 
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - Attribute 
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - attrs 
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - -Att-attrs 
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - 
+
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - 
+
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - Attribute 
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - -Att-attrs 
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - Boolean 
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - is_primary 
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - true 
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - 
+
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - Attribute 
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - -Att-attrs 
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - PrimitiveDataType 
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - type 
+16-03-21 11:55:28.486 [main] INFO  snt.oclsolver.driver.SolverRunner - -Pri-type 
+16-03-21 11:55:28.502 [main] INFO  snt.oclsolver.driver.SolverRunner - 
+
+16-03-21 11:55:28.502 [main] INFO  snt.oclsolver.driver.SolverRunner - 
+
+16-03-21 11:55:28.502 [main] INFO  snt.oclsolver.driver.SolverRunner - 
+
+16-03-21 11:55:28.502 [main] INFO  snt.oclsolver.driver.SolverRunner - Attribute 
+16-03-21 11:55:28.502 [main] INFO  snt.oclsolver.driver.SolverRunner - Attribute1 
+16-03-21 11:55:28.502 [main] INFO  snt.oclsolver.driver.SolverRunner - Class 
+16-03-21 11:55:28.502 [main] INFO  snt.oclsolver.driver.SolverRunner - type 
+16-03-21 11:55:28.502 [main] INFO  snt.oclsolver.driver.SolverRunner - Attribute1-Cla-type 
+16-03-21 11:55:28.502 [main] INFO  snt.oclsolver.driver.SolverRunner - 
+
+16-03-21 11:55:28.502 [main] INFO  snt.oclsolver.driver.SolverRunner - Attribute 
+16-03-21 11:55:28.502 [main] INFO  snt.oclsolver.driver.SolverRunner - Attribute1 
+16-03-21 11:55:28.502 [main] INFO  snt.oclsolver.driver.SolverRunner - Boolean 
+16-03-21 11:55:28.502 [main] INFO  snt.oclsolver.driver.SolverRunner - is_primary 
+16-03-21 11:55:28.502 [main] INFO  snt.oclsolver.driver.SolverRunner - true 
+16-03-21 11:55:28.502 [main] INFO  snt.oclsolver.driver.SolverRunner - 
+
+16-03-21 11:55:28.502 [main] INFO  snt.oclsolver.driver.SolverRunner - 
+
+16-03-21 11:55:28.502 [main] INFO  snt.oclsolver.driver.SolverRunner - PrimitiveDataType 
+16-03-21 11:55:28.502 [main] INFO  snt.oclsolver.driver.SolverRunner - -Pri-type 
+16-03-21 11:55:28.502 [main] INFO  snt.oclsolver.driver.SolverRunner - String 
+16-03-21 11:55:28.502 [main] INFO  snt.oclsolver.driver.SolverRunner - name 
+16-03-21 11:55:28.502 [main] INFO  snt.oclsolver.driver.SolverRunner - String 
+16-03-21 11:55:28.502 [main] INFO  snt.oclsolver.driver.SolverRunner - 
+
+16-03-21 11:55:28.502 [main] INFO  snt.oclsolver.driver.SolverRunner - 
+
+16-03-21 11:55:28.502 [main] INFO  snt.oclsolver.driver.SolverRunner - 
+
+16-03-21 11:55:28.502 [main] INFO  snt.oclsolver.driver.SolverRunner - Association 
+16-03-21 11:55:28.502 [main] INFO  snt.oclsolver.driver.SolverRunner - Association1 
+16-03-21 11:55:28.502 [main] INFO  snt.oclsolver.driver.SolverRunner - Class 
+16-03-21 11:55:28.502 [main] INFO  snt.oclsolver.driver.SolverRunner - src 
+16-03-21 11:55:28.502 [main] INFO  snt.oclsolver.driver.SolverRunner - Association1-Cla-src 
+16-03-21 11:55:28.502 [main] INFO  snt.oclsolver.driver.SolverRunner - 
+
+16-03-21 11:55:28.502 [main] INFO  snt.oclsolver.driver.SolverRunner - Association 
+16-03-21 11:55:28.502 [main] INFO  snt.oclsolver.driver.SolverRunner - Association1 
+16-03-21 11:55:28.502 [main] INFO  snt.oclsolver.driver.SolverRunner - Class 
+16-03-21 11:55:28.502 [main] INFO  snt.oclsolver.driver.SolverRunner - dest 
+16-03-21 11:55:28.502 [main] INFO  snt.oclsolver.driver.SolverRunner - Association1-Cla-dest 
+16-03-21 11:55:28.502 [main] INFO  snt.oclsolver.driver.SolverRunner - 
+
+16-03-21 11:55:28.502 [main] INFO  snt.oclsolver.driver.SolverRunner - 
+
+16-03-21 11:55:28.502 [main] INFO  snt.oclsolver.driver.SolverRunner - 
+
+16-03-21 11:55:28.533 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - Object Diagram Successfully saved in xmi file .....
+16-03-21 11:55:28.533 [main] INFO  snt.oclsolver.driver.SolverRunner - 
+
+	============== RUN IS COMPLETE =========== Run Count= 1 -- Total Iteration =2 -- Seed Value =1.0
+
+

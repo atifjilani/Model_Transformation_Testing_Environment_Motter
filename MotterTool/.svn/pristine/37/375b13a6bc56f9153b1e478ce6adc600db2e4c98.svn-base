@@ -1,0 +1,4 @@
+inputModel = resources/traingate/TrainGate.uml
+packageName = simula.artificial_problems.traingate.env
+outputDir = generated_code/
+configFile = resources/traingate/simulator-config.txt

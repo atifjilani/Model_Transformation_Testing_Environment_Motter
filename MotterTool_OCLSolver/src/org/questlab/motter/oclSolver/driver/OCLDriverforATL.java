@@ -1,0 +1,92 @@
+package org.questlab.motter.oclSolver.driver;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import org.questlab.motter.oclSolver.MOFExperiment;
+
+
+ public class OCLDriverforATL {
+
+//	private ArrayList<String> logs = new ArrayList<String>();
+
+	public static void main(String[] args) {
+		try {
+			String umlFile = null;
+			String objDiagramPath=null;
+            if(args.length !=0){
+                umlFile = args[0];
+    			objDiagramPath = args[1];
+            }
+
+			int noOfIterations = 1000;
+			int noOfRuns = 1;
+			MOFExperiment.setUpExperiment(noOfIterations, noOfRuns,1, umlFile, objDiagramPath);
+			SetUpDiagram(objDiagramPath);
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	private static ArrayList<List<Object>> SetUpDiagram(String filepath){
+		ArrayList<List<Object>> result = new ArrayList<List<Object>>();
+		
+
+		String query2 = 
+				"Class.allInstances()-> size() > 0 "
+			     + "and PrimitiveDataType.allInstances()->size() = 1 " 
+			     + "and Attribute.allInstances()->size() > 0 " 
+			     + "and Association.allInstances()->size() > 0 "
+			     + "and PrimitiveDataType.allInstances()->forAll(c|c.name='String') "
+				 + "and Class.allInstances()->forAll(c|c.is_persistent=true and c.attrs->forAll(attr |attr.oclIsTypeOf(Attribute))) "
+			     + "and Attribute.allInstances()->forAll(at | at.is_primary=true and at.type.oclIsKindOf(Classifier)) "
+				 + "and Association.allInstances()->forAll(as | as.src.oclIsTypeOf(Class) and as.dest.oclIsTypeOf(Class)) "
+				 + "and Class.allInstances()->select(c | c.parent.oclIsTypeOf(Class))-> size() = 1"
+	//			 + "and Class.allInstances()->exists(c | c.parent.oclIsTypeOf(Class))"
+				;
+		MOFExperiment.SolveQuery(query2);
+		
+		BufferedReader br = null;
+		try {
+			br = new BufferedReader(new FileReader(filepath+"/OCLSolverResult.txt"));
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		    try {
+		        StringBuilder sb = new StringBuilder();
+		        String line = br.readLine();
+		       // System.out.println(line);
+		        while (line != null) {
+		            sb.append(line);  
+		            List<Object> myList=new ArrayList<Object>() ;
+		           String array[]= line.split(",");
+		          for(String s:array){
+		        	  myList.add((Object)s);
+		          }
+		          result.add(myList);
+		            line = br.readLine();
+		        }
+		     //   String everything = sb.toString();
+		    } catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		    finally {
+		        try {
+					br.close();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+		    }
+		
+		return result;
+	
+	}
+}
+

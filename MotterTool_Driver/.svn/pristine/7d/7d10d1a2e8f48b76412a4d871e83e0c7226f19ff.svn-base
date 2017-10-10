@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:REMP="http:///schemas/REMP/_nrTwkBTBEeWbsKyQNEJPlQ/23" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/REMP/_nrTwkBTBEeWbsKyQNEJPlQ/23 Profile.profile.uml#_zT6LnBTBEeWbsKyQNEJPlQ">
+  <uml:Model xmi:id="_X-yLoCb8EeW07eKzOPiZ5g" name="GeneratedSM">
+    <packageImport xmi:id="_X-yLoSb8EeW07eKzOPiZ5g">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_X-yLoib8EeW07eKzOPiZ5g" name="StateMachine1-C-class">
+      <ownedAttribute xmi:id="_X-yLoyb8EeW07eKzOPiZ5g" name="-P-ownedAttribute">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_X-yLpCb8EeW07eKzOPiZ5g" name="StateMachine1-C-class"/>
+      <ownedOperation xmi:id="_X-yLpSb8EeW07eKzOPiZ5g" name="-O-ownedOperation"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_X-yLpib8EeW07eKzOPiZ5g" name="OpaqueBehavior1-C-class" isActive="true">
+      <ownedAttribute xmi:id="_X-yLpyb8EeW07eKzOPiZ5g" name="-P-ownedAttribute">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_X-yLqCb8EeW07eKzOPiZ5g" name="OpaqueBehavior1-C-class"/>
+      <ownedOperation xmi:id="_X-yLqSb8EeW07eKzOPiZ5g" name="-O-ownedOperation"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_X-yLqib8EeW07eKzOPiZ5g" name="Reception1-C-class" isActive="true">
+      <ownedAttribute xmi:id="_X-yLqyb8EeW07eKzOPiZ5g" name="-P-ownedAttribute">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_X-yLrCb8EeW07eKzOPiZ5g" name="Reception1-C-class"/>
+      <ownedOperation xmi:id="_X-yLrSb8EeW07eKzOPiZ5g" name="-O-ownedOperation"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_X-yLrib8EeW07eKzOPiZ5g" name="-C-class" isActive="true">
+      <ownedAttribute xmi:id="_X-yLryb8EeW07eKzOPiZ5g" name="-P-ownedAttribute">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_X-yLsCb8EeW07eKzOPiZ5g" name="-P-ownedAttribute">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_X-yLsSb8EeW07eKzOPiZ5g" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_X-yLsib8EeW07eKzOPiZ5g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_X-yLsyb8EeW07eKzOPiZ5g" name="Class1-P-ownedAttribute">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_X-yLtCb8EeW07eKzOPiZ5g" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_X-yLtSb8EeW07eKzOPiZ5g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_X-yLtib8EeW07eKzOPiZ5g" name="-P-navigableOwnedEnd">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_X-yLtyb8EeW07eKzOPiZ5g" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_X-yLuCb8EeW07eKzOPiZ5g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_X-yLuSb8EeW07eKzOPiZ5g" name="Association1-P-navigableOwnedEnd">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_X-yLuib8EeW07eKzOPiZ5g" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_X-yLuyb8EeW07eKzOPiZ5g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_X-yLvCb8EeW07eKzOPiZ5g" name="-P-memberEnd" association="_X-yL-ib8EeW07eKzOPiZ5g">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_X-yLvSb8EeW07eKzOPiZ5g" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_X-yLvib8EeW07eKzOPiZ5g"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_X-yLvyb8EeW07eKzOPiZ5g" name="Association1-P-memberEnd" association="_X-yL8yb8EeW07eKzOPiZ5g">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_X-yLwCb8EeW07eKzOPiZ5g" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_X-yLwSb8EeW07eKzOPiZ5g"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_X-yLwib8EeW07eKzOPiZ5g" name="-C-class"/>
+      <ownedOperation xmi:id="_X-yLwyb8EeW07eKzOPiZ5g" name="-O-ownedOperation"/>
+      <ownedOperation xmi:id="_X-yLxCb8EeW07eKzOPiZ5g" name="-O-operation" visibility="public"/>
+      <ownedOperation xmi:id="_X-yLxSb8EeW07eKzOPiZ5g" name="CallEvent1-O-operation" visibility="public"/>
+      <ownedOperation xmi:id="_X-yLxib8EeW07eKzOPiZ5g" name="-O-ownedOperation" visibility="public"/>
+      <ownedOperation xmi:id="_X-yLxyb8EeW07eKzOPiZ5g" name="Class1-O-ownedOperation" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_X-yLyCb8EeW07eKzOPiZ5g" name="Property1-C-class" isActive="true">
+      <ownedAttribute xmi:id="_X-yLySb8EeW07eKzOPiZ5g" name="-P-ownedAttribute">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_X-yLyib8EeW07eKzOPiZ5g" name="Property1">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_X-yLyyb8EeW07eKzOPiZ5g" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_X-yLzCb8EeW07eKzOPiZ5g"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_X-yLzSb8EeW07eKzOPiZ5g" name="Property1-C-class"/>
+      <ownedOperation xmi:id="_X-yLzib8EeW07eKzOPiZ5g" name="-O-ownedOperation"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_X-yLzyb8EeW07eKzOPiZ5g" name="Operation1-C-class" isActive="true">
+      <ownedAttribute xmi:id="_X-yL0Cb8EeW07eKzOPiZ5g" name="-P-ownedAttribute">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_X-yL0Sb8EeW07eKzOPiZ5g" name="Operation1-C-class"/>
+      <ownedOperation xmi:id="_X-yL0ib8EeW07eKzOPiZ5g" name="-O-ownedOperation"/>
+      <ownedOperation xmi:id="_X-yL0yb8EeW07eKzOPiZ5g" name="Operation1" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_X-yL1Cb8EeW07eKzOPiZ5g" name="Class1" isActive="true">
+      <ownedAttribute xmi:id="_X-yL1Sb8EeW07eKzOPiZ5g" name="Class1-P-ownedAttribute">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_X-yL1ib8EeW07eKzOPiZ5g" name="Class1-S-ownedBehavior">
+        <region xmi:id="_X-yL1yb8EeW07eKzOPiZ5g" name="r1">
+          <subvertex xmi:type="uml:State" xmi:id="_X-yL2Cb8EeW07eKzOPiZ5g" name="-S-target"/>
+          <subvertex xmi:type="uml:State" xmi:id="_X-yL2Sb8EeW07eKzOPiZ5g" name="-S-source"/>
+          <transition xmi:id="_X-yL2ib8EeW07eKzOPiZ5g" name="-T-transition" source="_X-yL2Sb8EeW07eKzOPiZ5g" target="_X-yL2Cb8EeW07eKzOPiZ5g">
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_X-yL2yb8EeW07eKzOPiZ5g" name="-O-effect">
+              <language>OCL</language>
+              <body>default.body</body>
+            </effect>
+            <trigger xmi:id="_X-yL3Cb8EeW07eKzOPiZ5g" name="-T-trigger" event="_X-yMCyb8EeW07eKzOPiZ5g"/>
+          </transition>
+        </region>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X-yL3Sb8EeW07eKzOPiZ5g" name="Class1-O-ownedBehavior">
+        <language>OCL</language>
+        <body>default.body</body>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_X-yL3ib8EeW07eKzOPiZ5g" name="Class1"/>
+      <ownedOperation xmi:id="_X-yL3yb8EeW07eKzOPiZ5g" name="Class1-O-ownedOperation"/>
+      <ownedReception xmi:id="_X-yL4Cb8EeW07eKzOPiZ5g" name="Class1-R-ownedReception" signal="_X-yMFCb8EeW07eKzOPiZ5g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_X-yL4Sb8EeW07eKzOPiZ5g" name="-C-packagedElement" isActive="true">
+      <ownedAttribute xmi:id="_X-yL4ib8EeW07eKzOPiZ5g" name="-P-ownedAttribute">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_X-yL4yb8EeW07eKzOPiZ5g" name="-C-packagedElement"/>
+      <ownedOperation xmi:id="_X-yL5Cb8EeW07eKzOPiZ5g" name="-O-ownedOperation"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_X-yL5Sb8EeW07eKzOPiZ5g" name="Package1-C-packagedElement" isActive="true">
+      <ownedAttribute xmi:id="_X-yL5ib8EeW07eKzOPiZ5g" name="-P-ownedAttribute">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_X-yL5yb8EeW07eKzOPiZ5g" name="-O-ownedBehavior">
+        <language>OCL</language>
+        <body>default.body</body>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_X-yL6Cb8EeW07eKzOPiZ5g" name="Package1-C-packagedElement"/>
+      <ownedOperation xmi:id="_X-yL6Sb8EeW07eKzOPiZ5g" name="-O-ownedOperation"/>
+      <ownedReception xmi:id="_X-yL6ib8EeW07eKzOPiZ5g" name="-R-ownedReception" signal="_X-yMFCb8EeW07eKzOPiZ5g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_X-yL6yb8EeW07eKzOPiZ5g" name="-A-owningAssociation"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_X-yL7Cb8EeW07eKzOPiZ5g" name="-A-owningAssociation"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_X-yL7Sb8EeW07eKzOPiZ5g" name="Property1-A-owningAssociation"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_X-yL7ib8EeW07eKzOPiZ5g" name="Property1-A-owningAssociation"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_X-yL7yb8EeW07eKzOPiZ5g" name="-A-association"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_X-yL8Cb8EeW07eKzOPiZ5g" name="-A-association"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_X-yL8Sb8EeW07eKzOPiZ5g" name="Property1-A-association"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_X-yL8ib8EeW07eKzOPiZ5g" name="Property1-A-association"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_X-yL8yb8EeW07eKzOPiZ5g" name="Association1" memberEnd="_X-yL9Cb8EeW07eKzOPiZ5g _X-yLvyb8EeW07eKzOPiZ5g">
+      <ownedEnd xmi:id="_X-yL9Cb8EeW07eKzOPiZ5g" name="Association1-P-ownedEnd" association="_X-yL8yb8EeW07eKzOPiZ5g">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_X-yL9Sb8EeW07eKzOPiZ5g" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_X-yL9ib8EeW07eKzOPiZ5g"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_X-yL9yb8EeW07eKzOPiZ5g" name="Association1"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_X-yL-Cb8EeW07eKzOPiZ5g" name="-A-packagedElement"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_X-yL-Sb8EeW07eKzOPiZ5g" name="-A-packagedElement"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_X-yL-ib8EeW07eKzOPiZ5g" name="Package1-A-packagedElement" memberEnd="_X-yL-yb8EeW07eKzOPiZ5g _X-yLvCb8EeW07eKzOPiZ5g">
+      <ownedEnd xmi:id="_X-yL-yb8EeW07eKzOPiZ5g" name="-P-ownedEnd" association="_X-yL-ib8EeW07eKzOPiZ5g">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_X-yL_Cb8EeW07eKzOPiZ5g" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_X-yL_Sb8EeW07eKzOPiZ5g"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_X-yL_ib8EeW07eKzOPiZ5g" name="Package1-A-packagedElement"/>
+    <packagedElement xmi:type="uml:CallEvent" xmi:id="_X-yL_yb8EeW07eKzOPiZ5g" name="-C-event" operation="_X-yLxCb8EeW07eKzOPiZ5g"/>
+    <packagedElement xmi:type="uml:CallEvent" xmi:id="_X-yMACb8EeW07eKzOPiZ5g" name="Trigger1-C-event" operation="_X-yLxCb8EeW07eKzOPiZ5g"/>
+    <packagedElement xmi:type="uml:CallEvent" xmi:id="_X-yMASb8EeW07eKzOPiZ5g" name="CallEvent1" operation="_X-yLxSb8EeW07eKzOPiZ5g"/>
+    <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_X-yMAib8EeW07eKzOPiZ5g" name="ChangeEvent1">
+      <changeExpression xmi:type="uml:OpaqueExpression" xmi:id="_X-yMAyb8EeW07eKzOPiZ5g" name="ChangeEvent1-O-changeExpression">
+        <language>OCL</language>
+        <body>self.isDefault</body>
+      </changeExpression>
+    </packagedElement>
+    <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_X-yMBCb8EeW07eKzOPiZ5g" name="ChangeEvent2">
+      <changeExpression xmi:type="uml:OpaqueExpression" xmi:id="_X-yMBSb8EeW07eKzOPiZ5g" name="ChangeEvent2-O-changeExpression">
+        <language>OCL</language>
+        <body>self.isDefault</body>
+      </changeExpression>
+    </packagedElement>
+    <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_X-yMBib8EeW07eKzOPiZ5g" name="ChangeEvent3">
+      <changeExpression xmi:type="uml:OpaqueExpression" xmi:id="_X-yMByb8EeW07eKzOPiZ5g" name="ChangeEvent3-O-changeExpression">
+        <language>OCL</language>
+        <body>self.isDefault</body>
+      </changeExpression>
+    </packagedElement>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_X-yMCCb8EeW07eKzOPiZ5g" name="-S-event" signal="_X-yMFCb8EeW07eKzOPiZ5g"/>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_X-yMCSb8EeW07eKzOPiZ5g" name="Trigger1-S-event" signal="_X-yMFCb8EeW07eKzOPiZ5g"/>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_X-yMCib8EeW07eKzOPiZ5g" name="SignalEvent1" signal="_X-yMFSb8EeW07eKzOPiZ5g"/>
+    <packagedElement xmi:type="uml:TimeEvent" xmi:id="_X-yMCyb8EeW07eKzOPiZ5g" name="-T-event">
+      <when xmi:id="_X-yMDCb8EeW07eKzOPiZ5g" name="-T-when">
+        <expr xmi:type="uml:LiteralString" xmi:id="_X-yMDSb8EeW07eKzOPiZ5g" name="-L-expr" value="after, 5s"/>
+      </when>
+    </packagedElement>
+    <packagedElement xmi:type="uml:TimeEvent" xmi:id="_X-yMDib8EeW07eKzOPiZ5g" name="Trigger1-T-event">
+      <when xmi:id="_X-yMDyb8EeW07eKzOPiZ5g" name="-T-when">
+        <expr xmi:type="uml:LiteralString" xmi:id="_X-yMECb8EeW07eKzOPiZ5g" name="-L-expr" value="after, 5s"/>
+      </when>
+    </packagedElement>
+    <packagedElement xmi:type="uml:TimeEvent" xmi:id="_X-yMESb8EeW07eKzOPiZ5g" name="TimeEvent1">
+      <when xmi:id="_X-yMEib8EeW07eKzOPiZ5g" name="TimeEvent1-T-when">
+        <expr xmi:type="uml:LiteralString" xmi:id="_X-yMEyb8EeW07eKzOPiZ5g" name="-L-expr" value="after, 5s"/>
+      </when>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_X-yMFCb8EeW07eKzOPiZ5g" name="-S-signal"/>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_X-yMFSb8EeW07eKzOPiZ5g" name="SignalEvent1-S-signal"/>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_X-yMFib8EeW07eKzOPiZ5g" name="Reception1-S-signal"/>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_X-yMFyb8EeW07eKzOPiZ5g" name="Signal1"/>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_X-yMGCb8EeW07eKzOPiZ5g" name="-S-packagedElement"/>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_X-yMGSb8EeW07eKzOPiZ5g" name="Package1-S-packagedElement"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_X-yMGib8EeW07eKzOPiZ5g" name="-P-packagedElement"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_X-yMGyb8EeW07eKzOPiZ5g" name="Package1-P-packagedElement"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_X-yMHCb8EeW07eKzOPiZ5g" name="Package1"/>
+    <packagedElement xmi:type="uml:AnyReceiveEvent" xmi:id="_X-yMHSb8EeW07eKzOPiZ5g" name="-A-event"/>
+    <packagedElement xmi:type="uml:AnyReceiveEvent" xmi:id="_X-yMHib8EeW07eKzOPiZ5g" name="Trigger1-A-event"/>
+    <profileApplication xmi:id="_X-yMHyb8EeW07eKzOPiZ5g">
+      <eAnnotations xmi:id="_X-yMICb8EeW07eKzOPiZ5g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_X-yMISb8EeW07eKzOPiZ5g">
+      <eAnnotations xmi:id="_X-yMIib8EeW07eKzOPiZ5g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="Default.profile.uml#_zT9POxTBEeWbsKyQNEJPlQ"/>
+      </eAnnotations>
+      <appliedProfile href="Default.profile.uml#_zT9PORTBEeWbsKyQNEJPlQ"/>
+    </profileApplication>
+    <profileApplication xmi:id="_X-yMIyb8EeW07eKzOPiZ5g">
+      <eAnnotations xmi:id="_X-yMJCb8EeW07eKzOPiZ5g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="Profile.profile.uml#_zT6LnBTBEeWbsKyQNEJPlQ"/>
+      </eAnnotations>
+      <appliedProfile href="Profile.profile.uml#_zT6LmhTBEeWbsKyQNEJPlQ"/>
+    </profileApplication>
+  </uml:Model>
+  <REMP:Context xmi:id="_X-yysCb8EeW07eKzOPiZ5g" base_Class="_X-yL1Cb8EeW07eKzOPiZ5g"/>
+</xmi:XMI>

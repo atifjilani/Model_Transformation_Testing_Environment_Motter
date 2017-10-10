@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Default="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2" xmlns:REMP="http:///schemas/REMP/_LTJskEjYEeC39PYTslUM0g/20" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/Default/_fNm3AAqoEd6-N_NOT9vsCA/2 Default.profile.uml#_p_foPUqNEeCWmNraFWJ84g http:///schemas/REMP/_LTJskEjYEeC39PYTslUM0g/20 Profile.profile.uml#_p_V070qNEeCWmNraFWJ84g">
+  <uml:Model xmi:id="_p_fkmkqNEeCWmNraFWJ84g" name="Rebooting">
+    <packageImport xmi:id="_p_fkm0qNEeCWmNraFWJ84g">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_p_fknEqNEeCWmNraFWJ84g" name="Sensor" isActive="true">
+      <ownedAttribute xmi:id="_p_fknUqNEeCWmNraFWJ84g" name="server" visibility="private" type="_p_fktUqNEeCWmNraFWJ84g" association="_p_fkuEqNEeCWmNraFWJ84g"/>
+      <ownedAttribute xmi:id="_p_fknkqNEeCWmNraFWJ84g" name="signalRepeatTime" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_p_fkn0qNEeCWmNraFWJ84g" name="myId" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_p_fkoEqNEeCWmNraFWJ84g" name="exceptionRaised" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      </ownedAttribute>
+      <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_p_fkoUqNEeCWmNraFWJ84g" name="SensorSM">
+        <region xmi:id="_p_fkokqNEeCWmNraFWJ84g" name="NormalBehavior">
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_p_fko0qNEeCWmNraFWJ84g"/>
+          <subvertex xmi:type="uml:State" xmi:id="_p_fkpEqNEeCWmNraFWJ84g" name="Working"/>
+          <subvertex xmi:type="uml:State" xmi:id="_p_fkpUqNEeCWmNraFWJ84g" name="Environment Illegal"/>
+          <subvertex xmi:type="uml:State" xmi:id="_p_fkpkqNEeCWmNraFWJ84g" name="Failure"/>
+          <transition xmi:id="_p_fkp0qNEeCWmNraFWJ84g" kind="local" source="_p_fko0qNEeCWmNraFWJ84g" target="_p_fkpEqNEeCWmNraFWJ84g">
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_p_fkqEqNEeCWmNraFWJ84g" name="Effect">
+              <language></language>
+              <body>action.openConnection();</body>
+            </effect>
+          </transition>
+          <transition xmi:id="_p_fkqUqNEeCWmNraFWJ84g" name="" source="_p_fkpEqNEeCWmNraFWJ84g" target="_p_fkpEqNEeCWmNraFWJ84g">
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_p_fkqkqNEeCWmNraFWJ84g" name="Effect">
+              <language xsi:nil="true"/>
+              <language></language>
+              <body>action.sendId(this.myId);</body>
+              <body></body>
+            </effect>
+            <trigger xmi:id="_p_fkq0qNEeCWmNraFWJ84g" name="" event="_p_fkw0qNEeCWmNraFWJ84g"/>
+          </transition>
+          <transition xmi:id="_p_fkrEqNEeCWmNraFWJ84g" kind="local" source="_p_fkpEqNEeCWmNraFWJ84g" target="_p_fkpUqNEeCWmNraFWJ84g">
+            <trigger xmi:id="_p_fkrUqNEeCWmNraFWJ84g" name="" event="_p_fkwUqNEeCWmNraFWJ84g"/>
+          </transition>
+          <transition xmi:id="_p_fkrkqNEeCWmNraFWJ84g" kind="local" source="_p_fkpkqNEeCWmNraFWJ84g" target="_p_fkpEqNEeCWmNraFWJ84g">
+            <trigger xmi:id="_p_fkr0qNEeCWmNraFWJ84g" name="" event="_p_fkwUqNEeCWmNraFWJ84g"/>
+          </transition>
+          <transition xmi:id="_p_fksEqNEeCWmNraFWJ84g" name="" kind="local" source="_p_fkpEqNEeCWmNraFWJ84g" target="_p_fkpkqNEeCWmNraFWJ84g">
+            <eAnnotations xmi:id="_p_fksUqNEeCWmNraFWJ84g" source="http://www.eclipse.org/uml2/2.0.0/UML"/>
+          </transition>
+        </region>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_p_fkskqNEeCWmNraFWJ84g" name="Sensor"/>
+      <ownedReception xmi:id="_p_fks0qNEeCWmNraFWJ84g" signal="_p_fkwEqNEeCWmNraFWJ84g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:CallEvent" xmi:id="_p_fktEqNEeCWmNraFWJ84g" name="CallEvent1" operation="_p_fkskqNEeCWmNraFWJ84g"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_p_fktUqNEeCWmNraFWJ84g" name="RebootingSUT" isActive="true">
+      <ownedAttribute xmi:id="_p_fktkqNEeCWmNraFWJ84g" name="sensor" visibility="private" type="_p_fknEqNEeCWmNraFWJ84g" association="_p_fkuEqNEeCWmNraFWJ84g"/>
+      <ownedReception xmi:id="_p_fkt0qNEeCWmNraFWJ84g" signal="_p_fkuUqNEeCWmNraFWJ84g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_p_fkuEqNEeCWmNraFWJ84g" memberEnd="_p_fknUqNEeCWmNraFWJ84g _p_fktkqNEeCWmNraFWJ84g"/>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_p_fkuUqNEeCWmNraFWJ84g" name="sendId">
+      <ownedAttribute xmi:id="_p_fkukqNEeCWmNraFWJ84g" name="id" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:CallEvent" xmi:id="_p_fku0qNEeCWmNraFWJ84g" name="CallEvent2"/>
+    <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_p_fkvEqNEeCWmNraFWJ84g" name="ChangeEvent1">
+      <changeExpression xmi:type="uml:OpaqueExpression" xmi:id="_p_fkvUqNEeCWmNraFWJ84g">
+        <body>when (exceptionRaised = true)</body>
+      </changeExpression>
+    </packagedElement>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_p_fkvkqNEeCWmNraFWJ84g" name="SignalEvent1" signal="_p_fkv0qNEeCWmNraFWJ84g"/>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_p_fkv0qNEeCWmNraFWJ84g" name="exceptionRaised"/>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_p_fkwEqNEeCWmNraFWJ84g" name="reboot"/>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_p_fkwUqNEeCWmNraFWJ84g" name="SignalEvent2" signal="_p_fkwEqNEeCWmNraFWJ84g"/>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_p_fkwkqNEeCWmNraFWJ84g" name="SignalEvent3" signal="_p_fkwEqNEeCWmNraFWJ84g"/>
+    <packagedElement xmi:type="uml:TimeEvent" xmi:id="_p_fkw0qNEeCWmNraFWJ84g" name="TimeEvent3" isRelative="true">
+      <when xmi:id="_p_fkxEqNEeCWmNraFWJ84g">
+        <expr xmi:type="uml:LiteralString" xmi:id="_p_fkxUqNEeCWmNraFWJ84g" value="signalRepeatTime, ms"/>
+      </when>
+    </packagedElement>
+    <profileApplication xmi:id="_p_fkxkqNEeCWmNraFWJ84g">
+      <eAnnotations xmi:id="_p_fkx0qNEeCWmNraFWJ84g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_p_fkyEqNEeCWmNraFWJ84g">
+      <eAnnotations xmi:id="_p_fkyUqNEeCWmNraFWJ84g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="Default.profile.uml#_p_foPUqNEeCWmNraFWJ84g"/>
+      </eAnnotations>
+      <appliedProfile href="Default.profile.uml#_p_foO0qNEeCWmNraFWJ84g"/>
+    </profileApplication>
+    <profileApplication xmi:id="_p_fkykqNEeCWmNraFWJ84g">
+      <eAnnotations xmi:id="_p_fky0qNEeCWmNraFWJ84g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="Deployment.profile.uml#_p_fsjUqNEeCWmNraFWJ84g"/>
+      </eAnnotations>
+      <appliedProfile href="Deployment.profile.uml#_p_fsi0qNEeCWmNraFWJ84g"/>
+    </profileApplication>
+    <profileApplication xmi:id="_p_fkzEqNEeCWmNraFWJ84g">
+      <eAnnotations xmi:id="_p_fkzUqNEeCWmNraFWJ84g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="Profile.profile.uml#_p_V070qNEeCWmNraFWJ84g"/>
+      </eAnnotations>
+      <appliedProfile href="Profile.profile.uml#_p_V07UqNEeCWmNraFWJ84g"/>
+    </profileApplication>
+  </uml:Model>
+  <REMP:Context xmi:id="_p_fkzkqNEeCWmNraFWJ84g" base_Class="_p_fknEqNEeCWmNraFWJ84g"/>
+  <REMP:System xmi:id="_p_fkz0qNEeCWmNraFWJ84g" base_Class="_p_fktUqNEeCWmNraFWJ84g"/>
+  <REMP:Error xmi:id="_p_fk0EqNEeCWmNraFWJ84g" base_State="_p_fkpUqNEeCWmNraFWJ84g"/>
+  <REMP:Failure xmi:id="_p_fk0UqNEeCWmNraFWJ84g" base_State="_p_fkpkqNEeCWmNraFWJ84g"/>
+  <REMP:NonDeterministic xmi:id="_p_fk0kqNEeCWmNraFWJ84g" upperBound="1000" lowerBound="200" base_Property="_p_fknkqNEeCWmNraFWJ84g"/>
+  <REMP:TimeProbability xmi:id="_p_fk00qNEeCWmNraFWJ84g" base_Transition="_p_fksEqNEeCWmNraFWJ84g"/>
+  <Default:DefaultLanguage xmi:id="_p_fk1EqNEeCWmNraFWJ84g" base_Package="_p_fkmkqNEeCWmNraFWJ84g" defaultLanguage="Java"/>
+</xmi:XMI>

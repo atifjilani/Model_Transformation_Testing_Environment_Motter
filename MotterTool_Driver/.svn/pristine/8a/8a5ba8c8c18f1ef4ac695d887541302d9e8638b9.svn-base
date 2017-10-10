@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20110701" xmlns:xmi="http://www.omg.org/spec/XMI/20110701" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xmi:id="_aSbo0AVIEeWy-pdPUZUAHw" name="GeneratedSM">
+  <packageImport xmi:id="_aScP4AVIEeWy-pdPUZUAHw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_aScP4QVIEeWy-pdPUZUAHw" name="-C-class">
+    <ownedOperation xmi:id="_aScP4gVIEeWy-pdPUZUAHw" name="-O-operation" visibility="public"/>
+    <ownedOperation xmi:id="_aScP4wVIEeWy-pdPUZUAHw" name="CallEvent1-O-operation" visibility="public"/>
+    <ownedOperation xmi:id="_aScP5AVIEeWy-pdPUZUAHw" name="-O-ownedOperation" visibility="public"/>
+    <ownedOperation xmi:id="_aScP5QVIEeWy-pdPUZUAHw" name="Class1-O-ownedOperation" visibility="public"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_aScP5gVIEeWy-pdPUZUAHw" name="StateMachine1-C-class" isActive="true"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_aScP5wVIEeWy-pdPUZUAHw" name="OpaqueBehavior1-C-class" isActive="true"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_aScP6AVIEeWy-pdPUZUAHw" name="Operation1-C-class" isActive="true">
+    <ownedOperation xmi:id="_aScP6QVIEeWy-pdPUZUAHw" name="Operation1" visibility="public"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_aScP6gVIEeWy-pdPUZUAHw" name="Property1-C-class" isActive="true"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_aScP6wVIEeWy-pdPUZUAHw" name="Reception1-C-class" isActive="true"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_aScP7AVIEeWy-pdPUZUAHw" name="Class1" isActive="true">
+    <ownedAttribute xmi:id="_aScP7QVIEeWy-pdPUZUAHw" name="Class1-P-ownedAttribute">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aScP7gVIEeWy-pdPUZUAHw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aScP7wVIEeWy-pdPUZUAHw" value="1"/>
+    </ownedAttribute>
+    <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_aScP8AVIEeWy-pdPUZUAHw" name="Class1-S-ownedBehavior">
+      <region xmi:id="_aScP8QVIEeWy-pdPUZUAHw" name="r1"/>
+      <region xmi:id="_aScP8gVIEeWy-pdPUZUAHw" name="r1">
+        <transition xmi:id="_aScP8wVIEeWy-pdPUZUAHw" name="-T-transition" source="_aScP9wVIEeWy-pdPUZUAHw" target="_aScP9gVIEeWy-pdPUZUAHw">
+          <effect xmi:type="uml:OpaqueBehavior" xmi:id="_aScP9AVIEeWy-pdPUZUAHw" name="-O-effect"/>
+          <trigger xmi:id="_aScP9QVIEeWy-pdPUZUAHw" name="-T-trigger" event="_aScQCwVIEeWy-pdPUZUAHw"/>
+        </transition>
+        <subvertex xmi:type="uml:State" xmi:id="_aScP9gVIEeWy-pdPUZUAHw" name="-S-target"/>
+        <subvertex xmi:type="uml:State" xmi:id="_aScP9wVIEeWy-pdPUZUAHw" name="-S-source"/>
+      </region>
+    </ownedBehavior>
+    <ownedReception xmi:id="_aScP-AVIEeWy-pdPUZUAHw" name="Class1-R-ownedReception" signal="_aScQFAVIEeWy-pdPUZUAHw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_aScP-QVIEeWy-pdPUZUAHw" name="-C-packagedElement" isActive="true"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_aScP-gVIEeWy-pdPUZUAHw" name="Package1-C-packagedElement" isActive="true">
+    <ownedAttribute xmi:id="_aScP-wVIEeWy-pdPUZUAHw" name="-P-ownedAttribute">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_aScP_AVIEeWy-pdPUZUAHw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_aScP_QVIEeWy-pdPUZUAHw" value="1"/>
+    </ownedAttribute>
+    <ownedReception xmi:id="_aScP_gVIEeWy-pdPUZUAHw" name="-R-ownedReception" signal="_aScQFAVIEeWy-pdPUZUAHw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:CallEvent" xmi:id="_aScP_wVIEeWy-pdPUZUAHw" name="-C-event" operation="_aScP4gVIEeWy-pdPUZUAHw"/>
+  <packagedElement xmi:type="uml:CallEvent" xmi:id="_aScQAAVIEeWy-pdPUZUAHw" name="Trigger1-C-event" operation="_aScP4gVIEeWy-pdPUZUAHw"/>
+  <packagedElement xmi:type="uml:CallEvent" xmi:id="_aScQAQVIEeWy-pdPUZUAHw" name="CallEvent1" operation="_aScP4wVIEeWy-pdPUZUAHw"/>
+  <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_aScQAgVIEeWy-pdPUZUAHw" name="ChangeEvent1">
+    <changeExpression xmi:type="uml:OpaqueExpression" xmi:id="_aScQAwVIEeWy-pdPUZUAHw" name="ChangeEvent1-O-changeExpression"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_aScQBAVIEeWy-pdPUZUAHw" name="ChangeEvent2">
+    <changeExpression xmi:type="uml:OpaqueExpression" xmi:id="_aScQBQVIEeWy-pdPUZUAHw" name="ChangeEvent2-O-changeExpression"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_aScQBgVIEeWy-pdPUZUAHw" name="ChangeEvent3">
+    <changeExpression xmi:type="uml:OpaqueExpression" xmi:id="_aScQBwVIEeWy-pdPUZUAHw" name="ChangeEvent3-O-changeExpression"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:SignalEvent" xmi:id="_aScQCAVIEeWy-pdPUZUAHw" name="-S-event" signal="_aScQFAVIEeWy-pdPUZUAHw"/>
+  <packagedElement xmi:type="uml:SignalEvent" xmi:id="_aScQCQVIEeWy-pdPUZUAHw" name="Trigger1-S-event" signal="_aScQFAVIEeWy-pdPUZUAHw"/>
+  <packagedElement xmi:type="uml:SignalEvent" xmi:id="_aScQCgVIEeWy-pdPUZUAHw" name="SignalEvent1" signal="_aScQFQVIEeWy-pdPUZUAHw"/>
+  <packagedElement xmi:type="uml:TimeEvent" xmi:id="_aScQCwVIEeWy-pdPUZUAHw" name="-T-event">
+    <when xmi:id="_aScQDAVIEeWy-pdPUZUAHw" name="-T-when">
+      <expr xmi:type="uml:OpaqueExpression" xmi:id="_aScQDQVIEeWy-pdPUZUAHw" name="-O-expr"/>
+    </when>
+  </packagedElement>
+  <packagedElement xmi:type="uml:TimeEvent" xmi:id="_aScQDgVIEeWy-pdPUZUAHw" name="Trigger1-T-event">
+    <when xmi:id="_aScQDwVIEeWy-pdPUZUAHw" name="-T-when">
+      <expr xmi:type="uml:OpaqueExpression" xmi:id="_aScQEAVIEeWy-pdPUZUAHw" name="-O-expr"/>
+    </when>
+  </packagedElement>
+  <packagedElement xmi:type="uml:TimeEvent" xmi:id="_aScQEQVIEeWy-pdPUZUAHw" name="TimeEvent1">
+    <when xmi:id="_aScQEgVIEeWy-pdPUZUAHw" name="TimeEvent1-T-when">
+      <expr xmi:type="uml:OpaqueExpression" xmi:id="_aScQEwVIEeWy-pdPUZUAHw" name="-O-expr"/>
+    </when>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Signal" xmi:id="_aScQFAVIEeWy-pdPUZUAHw" name="-S-signal"/>
+  <packagedElement xmi:type="uml:Signal" xmi:id="_aScQFQVIEeWy-pdPUZUAHw" name="SignalEvent1-S-signal"/>
+  <packagedElement xmi:type="uml:Signal" xmi:id="_aScQFgVIEeWy-pdPUZUAHw" name="Reception1-S-signal"/>
+  <packagedElement xmi:type="uml:Signal" xmi:id="_aScQFwVIEeWy-pdPUZUAHw" name="Signal1"/>
+  <packagedElement xmi:type="uml:Signal" xmi:id="_aScQGAVIEeWy-pdPUZUAHw" name="-S-packagedElement"/>
+  <packagedElement xmi:type="uml:Signal" xmi:id="_aScQGQVIEeWy-pdPUZUAHw" name="Package1-S-packagedElement"/>
+  <packagedElement xmi:type="uml:AnyReceiveEvent" xmi:id="_aScQGgVIEeWy-pdPUZUAHw" name="-A-event"/>
+  <packagedElement xmi:type="uml:AnyReceiveEvent" xmi:id="_aScQGwVIEeWy-pdPUZUAHw" name="Trigger1-A-event"/>
+  <packagedElement xmi:type="uml:AnyReceiveEvent" xmi:id="_aScQHAVIEeWy-pdPUZUAHw" name="AnyRecieveEvent1"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_aScQHQVIEeWy-pdPUZUAHw" name="Package1"/>
+</uml:Model>

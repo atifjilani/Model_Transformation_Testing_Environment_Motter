@@ -1,0 +1,517 @@
+module DFD2CD; -- Module Template
+create CD : CDMM from DD : DDMM, DFD : DFDMM;
+
+--Used to map Data Dictionary Metamodel types to Class Meta model types
+helper def: getprimitiveTypeMapping : Map(String, String) =
+	Map {
+		('String', 'String'),
+		('Integer', 'Integer'),
+		('Boolean', 'Boolean'),
+		('Comment', 'String')
+
+	};  
+--Used to get the value of the primitive as well as composite data elements
+	--Primitive will return as a single value
+	--Composite will return an 'and' seperated list of primitive data elements value
+helper context DDMM!DataElement def: getElementValue (de : DDMM!DataElement ) : String =
+	if ( de.valueSpecification.name = 'String' ) 
+		then de.valueSpecification.value
+	else if ( de.valueSpecification.name = 'Integer' ) 
+		then de.valueSpecification.value.toString()
+			else if ( de.valueSpecification.name = 'Boolean' ) 
+					then de.valueSpecification.value.toString()
+				else if ( de.valueSpecification.name = 'Comment' ) then de.valueSpecification.value
+					else	 self.valueSpecification.value.asSet()->iterate(a ; acc : String = '' | acc + if acc = '' then a.name else ' and ' + a.name endif)
+					endif
+				endif
+			endif
+		endif;
+
+--Used to create a set of Created Methods in classes, which will help in removing redundency among methods in classes
+--It will also help during creation of association classes, since we know which methods are created, we don't include those in association classes
+helper def: createdMethods : Set(String) = Set{};
+
+--Used to create a set of those methods, which are not created before the association classes
+--it will based on those methods which are not in CreatedMethod Set
+helper def: notCreatedMethods : Set(String) = Set{}; 
+
+--Used to get all the DataFlows present in the Data Flow Diagram Model
+helper def: getAllToDataFlows : Set(DFDMM!DataFlow) = 
+	DFDMM!ModelElement.allInstances()->select(e | e.oclIsTypeOf(DFDMM!DataFlow));
+
+--Used to create a map of primitive data types, which will help during primitive data type referencing in generated Class diagram
+helper def: dataTypeByName : Map(String, CDMM!DataType) = Map {};
+
+--Used to create a map of classes, it will contain all the classes which are created
+--it will help during associations, before we refered an existing class during association 
+helper def: classByName : Map(String, CDMM!Class) = Map {};
+
+--It is a main rule which takes data dictionary as an input and generates a package and include all the classes in the generated package
+rule createAllClasses {
+	from
+		dataDictionary : DDMM!DataDictionary
+	using{
+			matched : Boolean = false; --It will be used during match finding in loops and if-conditions
+			fullyMatched : Boolean = true; --It will be used during match finding in nested loops and if-conditions
+			inside : Boolean = true; --It will help in finding that whether specific loop or condition is traversed or not
+			parametersInMethod : Set(String)  = Set{}; --It will contain the parameter list required for a single method/operation
+			noCreatedMethod : Set(String) = Set{}; --It will be used to contain the result of all methods subtracting created methods; the not created methods set will also be helpful in finding the subtraction
+			attributes : Set(DDMM!DataElement) = Set{}; --It will contain the list of attributes present in a specific class
+			operations : Set(String) = Set{}; --It will contain the list of operations in a specific class
+			className : String = ''; --It will contain the name of the class
+			aME : String = ''; --It will contain the name of the param referred from parametersInMethod Set to use in loops and if-conditions
+			createdAssociations : Set(String) = Set{}; --It will contain the list of associated classes against a specific class
+			tmp : String = ''; --It is used for temprary storage of String during the life time of the rule
+			externalEntities : Set(String) = Set{}; --It will contain all the external entities names containated with the interacting data seperated by '_'
+			DETemp : DDMM!DataElement = DDMM!DataElement; --It will contain a DataElement for temprary storage during the life time of the rule
+		}
+	to
+		out : CDMM!Package(
+				name <- dataDictionary.name
+			)
+	do
+	{
+		'Transformation Started..........'.println();
+
+		--Region#1
+		--It will extract all the external entities from Data flow diagram
+		--And Add them in the external entities list defined above
+		for(dfdMEDF in thisModule.getAllToDataFlows){
+			matched <- false;
+			tmp <- '';
+			for(dCon in dfdMEDF.connection->asSequence()){
+				if(dCon.type.oclIsTypeOf(DFDMM!ExternalElement)){
+					matched <- true;
+					tmp <- dCon.name;
+				}
+				if(matched = true){
+					for(dfdD in dfdMEDF.data->asSequence()){
+						tmp <- tmp+'_'+dfdD.name;
+					}
+					externalEntities <- externalEntities.including(tmp);
+				}
+			}
+		}
+		--EndRegion#1
+		--Region#2
+		--It will create user defined classes for all comment classes
+		for(de in DDMM!DataElement.allInstances()->select( e | e.valueSpecification.oclIsTypeOf(DDMM!Comment))){
+			className <- de.name;
+			attributes <- Set{};
+			attributes <- attributes.including(de); -- comment class always have only one attribute
+			--Region#2.1
+			--It will find whether a class interacts with the external entity by its name or by the name of its attributes
+			--If the interaction is found then we can say that the class name should be renamed by the external entity name
+			--As we are using string method "indexOf", so their is 1% possibility that we may find a partial match and we may have wrong mappings 
+			for(ee in externalEntities->asSequence()){
+				tmp <- ee;
+				if(tmp.indexOf(className) > 0){
+	
+					tmp <- ee.substring(1,ee.indexOf('_'));
+					className <- tmp;
+				}
+				for(att in attributes->asSequence()){
+					tmp <- ee;
+					if(tmp.indexOf(att.name) > 0){
+						tmp <- ee.substring(1,ee.indexOf('_'));
+						className <- tmp;
+					}
+				}
+			}
+			--EndRegion#2.1
+			operations <- Set{}; -- comment class does not have any methods
+			out.packagedElement <- thisModule.CreateUserDefinedClass(className, attributes, operations); -- It will create a new user defined class by rule defined below and add it to the package
+		}
+		--EndRegion#2
+		--Region#3
+		--It will create user defined class with attributes and operations against the composite data elements 
+		for(de in DDMM!DataElement.allInstances()->select( e | e.valueSpecification.oclIsTypeOf(DDMM!SequenceConstruct))){
+			className <- de.name;
+			attributes <- Set{};
+			createdAssociations <- Set{};
+			--Region#3.1
+			--It will create a list of attributes included in the class
+			for(oA in de.valueSpecification.value->asSequence()){
+				if(not(oA.valueSpecification.oclIsTypeOf(DDMM!Comment) or oA.valueSpecification.oclIsTypeOf(DDMM!SequenceConstruct))){
+					attributes <- attributes.including(oA);
+				}
+			}
+			--EndRegion#3.1
+			--Refer Region#2.1
+			for(ee in externalEntities->asSequence()){
+				tmp <- ee;
+
+				if(tmp.indexOf(className) > 0){
+					tmp <- ee.substring(1,ee.indexOf('_'));
+					className <- tmp;
+				}
+				for(att in attributes){
+					tmp <- ee;
+					if(tmp.indexOf(att.name) > 0){
+						tmp <- ee.substring(1,ee.indexOf('_'));
+						className <- tmp;
+					}
+				}
+			}
+			--EndRefer Region#2.1
+			operations <- Set{};
+			--Region#3.2
+			--It will extract all the operations associated with a class by checking the data/arguments required to execute an opertaions
+			--If all the data/arguments require to execute an operation found in a newly created class then the operation would be included in the class
+			for(dfdMEDF in thisModule.getAllToDataFlows){ --It will iterate all the data flows one by one
+				for(dfdCon in dfdMEDF.connection->asSequence()){ --It will iterate all the connections in each data flow
+					if(dfdCon.direction = 'To' and dfdCon.type.oclIsTypeOf(DFDMM!Process) ){ --It will only validate 'To' connection direction and 'Process' connection type
+						parametersInMethod <- Set{};
+						--Region#3.2.1
+						--It will create a list data/arguments/parameters required to execute an operations
+						for(dfdMEDF1 in thisModule.getAllToDataFlows){
+							for(dfdCon1 in dfdMEDF1.connection->asSequence()){
+								if(dfdCon1.direction = 'To' and dfdCon1.type.oclIsTypeOf(DFDMM!Process) ){
+									if(dfdCon1.name = dfdCon.name){
+										--Region#3.2.1.1
+										--It will check the duplication and if their is no duplication, then the data is included in parameter Set
+										for(dfdD in dfdMEDF1.data->asSequence()){
+												if( parametersInMethod->select( e | e = dfdD.name ) <> Set{} ){
+													parametersInMethod <- parametersInMethod.including(dfdD.name);
+												}	
+										}
+										--EndRegion#3.2.1.1
+									}
+								}
+							}
+						}
+						--EndRegion#3.2.1
+						fullyMatched <- true;
+						inside <- false;
+						--Region#3.2.2
+						--It will match the parameters required to execute an operation with newly created class name and the attributes present in that class
+						--If all the parameters are found in the newly created class then that operation is created in the newly created class
+						for(operation in parametersInMethod){
+							inside <- true;
+							matched <- false;
+							if(operation = de.name){
+								matched <- true;
+							}else{
+								for(deValue in de.valueSpecification.value->asSequence()){
+									if(deValue.name = operation){
+										matched <- true;
+									}
+								}
+							}
+							if(fullyMatched = true){
+								if(matched = false){
+									fullyMatched <- false;
+								}
+							}
+						
+						}
+						--EndRegion#3.2.2
+						if(inside = true){
+							if(fullyMatched = true){
+								operations <- operations.including(dfdCon.name);
+								thisModule.createdMethods <- thisModule.createdMethods.including(dfdCon.name);
+							}else{							
+								thisModule.notCreatedMethods <- thisModule.notCreatedMethods.including(dfdCon.name);
+							}
+						}else{						
+							thisModule.notCreatedMethods <- thisModule.notCreatedMethods.including(dfdCon.name);
+						}
+					}
+				}
+			}
+			--EndRegion3.2
+			out.packagedElement <- thisModule.CreateUserDefinedClass(className, attributes, operations);
+		}
+		--EndRegion#3
+		--Region#4
+		--It will create associations among the created user defined classes
+		for(de in DDMM!DataElement.allInstances()->select( e | e.valueSpecification.oclIsTypeOf(DDMM!SequenceConstruct))){
+			className <- de.name;
+			--Refer Region#2.1
+			for(ee in externalEntities->asSequence()){
+				tmp <- ee;
+				if(tmp.indexOf(className) > 0){
+					tmp <- ee.substring(1,ee.indexOf('_'));
+					className <- tmp;
+				}
+				for(att in de.valueSpecification.value->asSequence()->select(e | not e.valueSpecification.oclIsTypeOf(DDMM!SequenceConstruct))){
+					tmp <- ee;
+					if(tmp.indexOf(att.name) > 0){
+						tmp <- ee.substring(1,ee.indexOf('_'));
+						className <- tmp;
+					}
+				}
+			}
+			--EndRefer Region#2.1
+			createdAssociations <- Set{};
+			--Region#4.1
+			--It will create a list of associations among the newly created class
+			for(oA in de.valueSpecification.value->asSequence()){
+				if(oA.valueSpecification.oclIsTypeOf(DDMM!Comment) or oA.valueSpecification.oclIsTypeOf(DDMM!SequenceConstruct)){
+					matched <- false;
+					for(ca in createdAssociations){
+						if(ca = oA.name){
+							matched <- true;
+						}
+					}
+					if(matched = false){
+						createdAssociations <- createdAssociations.including(oA.name);
+						DETemp <- oA;
+						--Refer Region#2.1
+						for(ee in externalEntities->asSequence()){
+							tmp <- ee;
+							if(tmp.indexOf(DETemp.name) > 0){
+								tmp <- ee.substring(1,ee.indexOf('_'));
+								DETemp.name <- tmp;
+							}
+							if(not oA.valueSpecification.oclIsTypeOf(DDMM!Comment)){
+								for(att in DETemp.valueSpecification.value->asSequence()->select(e | not e.valueSpecification.oclIsTypeOf(DDMM!SequenceConstruct))){
+									tmp <- ee;
+									if(tmp.indexOf(att.name) > 0){
+										tmp <- ee.substring(1,ee.indexOf('_'));
+										DETemp.name <- tmp;	
+									}
+								}
+							}
+						}
+						--EndEndRefer Region#2.1
+						out.packagedElement <- thisModule.CreateAssociation(className,DETemp.name);
+					}
+				}
+			}
+			--EndRegion#4.1
+		}
+		--EndRegion#4
+		--Region#5
+		--It will create a list of those methods, which are not placed in any user defined class
+		if(thisModule.notCreatedMethods.size() > 0){
+			noCreatedMethod <- Set{};
+			for(operation in thisModule.notCreatedMethods){
+				matched <- false;
+				for(operation1 in thisModule.createdMethods){
+					if(operation1 = operation){				
+						matched <- true;
+					}
+				}
+				if(matched = false){
+					noCreatedMethod <- noCreatedMethod.including(operation);
+				}
+			}
+		}
+		--EndRegion#5
+		--Region#6
+		--It will create association classes with name, attributes, associations and opertaions
+		--These classes will be created on the basis of those operations that are not created methods
+		for(operation in noCreatedMethod){
+			parametersInMethod <- Set{};
+			--Refer Region#3.2.1
+			for(dfdMEDF1 in thisModule.getAllToDataFlows){
+				for(dfdCon1 in dfdMEDF1.connection->asSequence()){
+					if(dfdCon1.direction = 'To' and dfdCon1.type.oclIsTypeOf(DFDMM!Process) ){
+						if(dfdCon1.name = operation){
+							for(dfdD in dfdMEDF1.data->asSequence()){
+								if( parametersInMethod->select( e | e = dfdD.name ) <> Set{} ){
+									parametersInMethod <- parametersInMethod.including(dfdD.name);
+								}	
+							}
+						}
+					}
+				}
+			}
+			--EndRefer Region#3.2.1
+			className <- operation;
+			attributes <- Set{};
+			matched <- false;
+			createdAssociations <- Set{};
+			--Region#6.1
+			--It will extract primitive data elements from the param list and add them in the attribute list
+			for(param in parametersInMethod){
+				matched <- false;
+				aME <- param;
+				for(deVal in DDMM!DataElement.allInstances()){
+					if(deVal.name = param){
+						if(deVal.valueSpecification.oclIsTypeOf(DDMM!SequenceConstruct) or deVal.valueSpecification.oclIsTypeOf(DDMM!Comment)){
+							matched <- true;
+							DETemp <- deVal;
+						}
+					}
+				}
+				if(matched = false){
+					for(deVal in DDMM!DataElement.allInstances()){
+						if(deVal.name = aME){
+							attributes <- attributes.including(deVal);
+						}
+					}
+				}
+			}
+			--Region#6.1
+			--Refer Region#2.1
+			for(ee in externalEntities->asSequence()){
+				tmp <- ee;
+				if(tmp.indexOf(className) > 0){
+					tmp <- ee.substring(1,ee.indexOf('_'));
+					className <- tmp;
+				}
+				for(att in attributes){
+					tmp <- ee;
+					if(tmp.indexOf(att.name) > 0){
+						tmp <- ee.substring(1,ee.indexOf('_'));
+						className <- tmp;
+					}
+				}
+			}
+			--EndRefer Region#2.1
+			operations <- Set{};
+			operations <- operations.including(operation); --One association class is generated against one not created method
+			out.packagedElement <- thisModule.CreateAssociationClass(className, attributes, operations);
+			createdAssociations <- Set{};
+			--Refer Region#4.1
+			for(param in parametersInMethod){
+				matched <- false;
+				aME <- param;
+				for(deVal in DDMM!DataElement.allInstances()){
+					if(deVal.name = param){
+						if(deVal.valueSpecification.oclIsTypeOf(DDMM!SequenceConstruct) or deVal.valueSpecification.oclIsTypeOf(DDMM!Comment)){
+							matched <- true;
+							DETemp <- deVal;
+						}
+					}
+				}
+				if(matched = true){
+					createdAssociations <- createdAssociations.including(aME);	
+					for(ee in externalEntities->asSequence()){
+						tmp <- ee;
+						if(tmp.indexOf(aME) > 0){
+							tmp <- ee.substring(1,ee.indexOf('_'));
+							DETemp.name <- tmp;
+				
+						}
+					
+					}
+					out.packagedElement <- thisModule.CreateAssociation(className,DETemp.name);
+				}
+			}
+			--EndRefer Region#4.1
+		}
+		--EndRegion#6
+		'Transformation Completed..........'.println();
+	}
+}
+
+--This rule will create a new user defined class with the help of className, attributes and operations
+--It will also include generated classes in a class Map created above with the help of helper which is very useful while creating associations
+--It will return the created user defined class to include it in the package
+rule CreateUserDefinedClass (className : String, attributes : Set(DDMM!DataElement), operations : Set(String)){
+	to
+		out : CDMM!Class(
+			name <- className,
+			ownedAttribute <- attributes->collect(e | thisModule.CreateAttribute(e)),
+			ownedOperation <- operations->collect(e | thisModule.CreateOperation(e))
+			)
+	do{
+		thisModule.classByName <- thisModule.classByName.including(className, out);
+		out;
+	}
+}
+
+--This rule will create a new attribute with values extracted from data element in a specified class
+--The name of the attribute is extracted from data element name
+--The type of the attribute is extracted from the data element "Value specification" type
+--The default value of the attribute is extracted from data element with the help of the helper defined above
+lazy rule CreateAttribute{
+	from
+		de : DDMM!DataElement
+	to
+		out : CDMM!Property(
+			name <- de.name,
+			defaultValue <- new_dValue,
+			visibility <- #public,
+			type <- thisModule.getType(thisModule.getprimitiveTypeMapping.get(de.valueSpecification.name))
+		),
+		new_dValue:CDMM!LiteralString(
+			value<- de.getElementValue(de)
+		)
+}
+
+--This rule will extract a type from the data type Map created above with the help of helper
+--If the type is not avaliable in the data type Map then it will create a new type of the specified name
+rule getType(name : String) {
+	do {	
+		if(thisModule.dataTypeByName.containsKey(name)) {
+				thisModule.dataTypeByName.get(name);
+		} else {
+				thisModule.dataType(name);
+		}
+	}
+}
+
+--This rule will create a new Data Type with the specified name
+--It also include the generated Data Type in the Map created above with the help of a helper
+--It will also return the created data type to assign as an attribute type
+rule dataType(name : String) {
+	to
+		t : CDMM!DataType(
+			name <- name
+		)
+	do {
+		thisModule.dataTypeByName <- thisModule.dataTypeByName.including(name, t);
+		t;
+	}
+}
+
+--This rule will create a new operation with the specified operationName in a speficied class
+--In our senario operations don't have any arguments because all the arguments required to execute an operation are included in the class
+lazy rule CreateOperation{
+	from
+		operationName : String
+	to
+		out : CDMM!Operation(
+			name <- operationName,
+			visibility <- #public,
+			ownedParameter <- Sequence { new_ownedParameter }
+		),
+		new_ownedParameter : CDMM!Parameter(
+				direction <- #return
+		)
+}
+
+--This rule will create association between two classes on the basis of values passed in the rule
+--de refers to that class in which oA class attribute is included
+--de and oA are both class names whose instances will be in lower case while classes are in Title case
+--It will also return the created association so can be included in the package
+rule CreateAssociation (de : String, oA : String){
+	to
+		association : CDMM!Association(
+				name <- 'Association_'+de+'_'+oA,
+				ownedEnd <- Set { new_ownedEnd, new_ownedEnd1 }
+			)
+			,
+		new_ownedEnd : CDMM!Property(
+				name <- de.toLower(),
+				type <- thisModule.classByName.get(de)
+				),
+		new_ownedEnd1 : CDMM!Property(
+				name <- oA.toLower(),
+				type <- thisModule.classByName.get(oA),
+				aggregation<-#composite
+				)
+	do{
+		association;
+	}
+}
+
+--This rule will create a new association class with the specified className, attributes and operations
+--It will add a create association class in classes Map created above with the help of a helper; althought there's no use of adding association classes in a class Map but it can be benefical later on
+--It will return the created association class so can be included in the package
+rule CreateAssociationClass (className : String, attributes : Set(DDMM!DataElement), operations : Set(String)){
+	to
+		out : CDMM!Class(
+			name <- className,
+			ownedAttribute <- attributes->collect(e | thisModule.CreateAttribute(e)),
+			ownedOperation <- operations->collect(e | thisModule.CreateOperation(e))
+			)
+	do{
+		thisModule.classByName <- thisModule.classByName.including(className, out);
+		out;
+	}
+}

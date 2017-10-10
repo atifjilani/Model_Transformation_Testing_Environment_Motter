@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:REMP="http:///schemas/REMP/_MqBr0FniEeCRuehqYk0blw/21" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/REMP/_MqBr0FniEeCRuehqYk0blw/21 Profile.profile.uml#_QCadC8fxEeC0pdLJbJCpsA">
+  <uml:Model xmi:id="_QCaRV8fxEeC0pdLJbJCpsA" name="TM05">
+    <packageImport xmi:id="_QCaRWMfxEeC0pdLJbJCpsA">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_QCaRWcfxEeC0pdLJbJCpsA" name="SM" isActive="true">
+      <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_QCaRWsfxEeC0pdLJbJCpsA" name="SM">
+        <region xmi:id="_QCaRW8fxEeC0pdLJbJCpsA" name="Region1">
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_QCaRXMfxEeC0pdLJbJCpsA"/>
+          <subvertex xmi:type="uml:State" xmi:id="_QCaRXcfxEeC0pdLJbJCpsA" name="A"/>
+          <subvertex xmi:type="uml:State" xmi:id="_QCaRXsfxEeC0pdLJbJCpsA" name="B"/>
+          <subvertex xmi:type="uml:State" xmi:id="_QCaRX8fxEeC0pdLJbJCpsA" name="State1">
+            <region xmi:id="_QCaRYMfxEeC0pdLJbJCpsA" name="InternalRegion">
+              <subvertex xmi:type="uml:Pseudostate" xmi:id="_QCaRYcfxEeC0pdLJbJCpsA"/>
+              <subvertex xmi:type="uml:State" xmi:id="_QCaRYsfxEeC0pdLJbJCpsA" name="Internal1"/>
+              <transition xmi:id="_QCaRY8fxEeC0pdLJbJCpsA" source="_QCaRYcfxEeC0pdLJbJCpsA" target="_QCaRYsfxEeC0pdLJbJCpsA"/>
+              <transition xmi:id="_QCaRZMfxEeC0pdLJbJCpsA" source="_QCaRYsfxEeC0pdLJbJCpsA" target="_QCaRYsfxEeC0pdLJbJCpsA">
+                <trigger xmi:id="_QCaRZcfxEeC0pdLJbJCpsA" name="" event="_QCaRc8fxEeC0pdLJbJCpsA"/>
+              </transition>
+            </region>
+          </subvertex>
+          <transition xmi:id="_QCaRZsfxEeC0pdLJbJCpsA" source="_QCaRXMfxEeC0pdLJbJCpsA" target="_QCaRXsfxEeC0pdLJbJCpsA"/>
+          <transition xmi:id="_QCaRZ8fxEeC0pdLJbJCpsA" source="_QCaRXsfxEeC0pdLJbJCpsA" target="_QCaRX8fxEeC0pdLJbJCpsA">
+            <trigger xmi:id="_QCaRaMfxEeC0pdLJbJCpsA" name="" event="_QCaRcMfxEeC0pdLJbJCpsA"/>
+          </transition>
+          <transition xmi:id="_QCaRacfxEeC0pdLJbJCpsA" source="_QCaRX8fxEeC0pdLJbJCpsA" target="_QCaRXcfxEeC0pdLJbJCpsA">
+            <trigger xmi:id="_QCaRasfxEeC0pdLJbJCpsA" name="" event="_QCaRccfxEeC0pdLJbJCpsA"/>
+          </transition>
+        </region>
+      </ownedBehavior>
+      <ownedReception xmi:id="_QCaRa8fxEeC0pdLJbJCpsA" signal="_QCaRbsfxEeC0pdLJbJCpsA"/>
+      <ownedReception xmi:id="_QCaRbMfxEeC0pdLJbJCpsA" signal="_QCaRb8fxEeC0pdLJbJCpsA"/>
+      <ownedReception xmi:id="_QCaRbcfxEeC0pdLJbJCpsA" signal="_QCaRcsfxEeC0pdLJbJCpsA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_QCaRbsfxEeC0pdLJbJCpsA" name="Signal_a"/>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_QCaRb8fxEeC0pdLJbJCpsA" name="Signal_b"/>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_QCaRcMfxEeC0pdLJbJCpsA" name="SignalEvent1" signal="_QCaRb8fxEeC0pdLJbJCpsA"/>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_QCaRccfxEeC0pdLJbJCpsA" name="SignalEvent2" signal="_QCaRbsfxEeC0pdLJbJCpsA"/>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_QCaRcsfxEeC0pdLJbJCpsA" name="Signal_c"/>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_QCaRc8fxEeC0pdLJbJCpsA" name="" signal="_QCaRcsfxEeC0pdLJbJCpsA"/>
+    <profileApplication xmi:id="_QCaRdMfxEeC0pdLJbJCpsA">
+      <eAnnotations xmi:id="_QCaRdcfxEeC0pdLJbJCpsA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_QCaRdsfxEeC0pdLJbJCpsA">
+      <eAnnotations xmi:id="_QCaRd8fxEeC0pdLJbJCpsA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="Default.profile.uml#_QCaY-sfxEeC0pdLJbJCpsA"/>
+      </eAnnotations>
+      <appliedProfile href="Default.profile.uml#_QCaY-MfxEeC0pdLJbJCpsA"/>
+    </profileApplication>
+    <profileApplication xmi:id="_QCaReMfxEeC0pdLJbJCpsA">
+      <eAnnotations xmi:id="_QCaRecfxEeC0pdLJbJCpsA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="Deployment.profile.uml#_QCaUqsfxEeC0pdLJbJCpsA"/>
+      </eAnnotations>
+      <appliedProfile href="Deployment.profile.uml#_QCaUqMfxEeC0pdLJbJCpsA"/>
+    </profileApplication>
+    <profileApplication xmi:id="_QCaResfxEeC0pdLJbJCpsA">
+      <eAnnotations xmi:id="_QCaRe8fxEeC0pdLJbJCpsA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="Profile.profile.uml#_QCadC8fxEeC0pdLJbJCpsA"/>
+      </eAnnotations>
+      <appliedProfile href="Profile.profile.uml#_QCadCcfxEeC0pdLJbJCpsA"/>
+    </profileApplication>
+  </uml:Model>
+  <REMP:Context xmi:id="_QCaRfMfxEeC0pdLJbJCpsA" base_Class="_QCaRWcfxEeC0pdLJbJCpsA"/>
+  <REMP:Error xmi:id="_QCaRfcfxEeC0pdLJbJCpsA" base_State="_QCaRXcfxEeC0pdLJbJCpsA"/>
+</xmi:XMI>

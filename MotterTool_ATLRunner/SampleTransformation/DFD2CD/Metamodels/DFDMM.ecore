@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore">
+  <ecore:EPackage name="DFDMetaModel">
+    <eClassifiers xsi:type="ecore:EClass" name="ModelElement" abstract="true">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" ordered="false" unique="false" lowerBound="1" eType="/1/String"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Constraint" eSuperTypes="/0/ModelElement"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Feature" abstract="true" eSuperTypes="/0/ModelElement"/>
+    <eClassifiers xsi:type="ecore:EClass" name="DataProcess" eSuperTypes="/0/Feature"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Data" eSuperTypes="/0/Feature">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="right" ordered="false" lowerBound="1" upperBound="-1" eType="/0/Data" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="NameSpace" abstract="true" eSuperTypes="/0/ModelElement">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="modelElement" ordered="false" upperBound="-1" eType="/0/ModelElement" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Classifier" abstract="true" eSuperTypes="/0/NameSpace">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="feature" ordered="false" upperBound="-1" eType="/0/Feature" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="DataStore" eSuperTypes="/0/Classifier"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Process" eSuperTypes="/0/Classifier"/>
+    <eClassifiers xsi:type="ecore:EClass" name="ExternalElement" eSuperTypes="/0/Classifier"/>
+    <eClassifiers xsi:type="ecore:EClass" name="DataFlowEnd" eSuperTypes="/0/ModelElement">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="direction" ordered="false" unique="false" lowerBound="1" eType="/1/String"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="type" ordered="false" lowerBound="1" eType="/0/Classifier" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Relationship" abstract="true" eSuperTypes="/0/ModelElement"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Abstraction" eSuperTypes="/0/Relationship"/>
+    <eClassifiers xsi:type="ecore:EClass" name="DataFlow" eSuperTypes="/0/NameSpace /0/Relationship">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="connection" ordered="false" lowerBound="2" upperBound="-1" eType="/0/DataFlowEnd" containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="data" ordered="false" upperBound="-1" eType="/0/Data" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Package">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" ordered="false" unique="false" lowerBound="1" eType="/1/String"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="modelElement" ordered="false" lowerBound="1" upperBound="-1" eType="/0/ModelElement" containment="true"/>
+    </eClassifiers>
+  </ecore:EPackage>
+  <ecore:EPackage name="PrimitiveType">
+    <eClassifiers xsi:type="ecore:EDataType" name="String"/>
+  </ecore:EPackage>
+</xmi:XMI>

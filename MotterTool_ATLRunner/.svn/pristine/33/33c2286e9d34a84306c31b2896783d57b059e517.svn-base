@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DFDMetaModel.DFDMetaModel:Package xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:DFDMetaModel.DFDMetaModel="DFDMetaModel">
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:ExternalElement" name="ControlPanel"/>
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:ExternalElement" name="Sensors"/>
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:ExternalElement" name="ControlPanelDisplay"/>
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:ExternalElement" name="Alarm"/>
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:ExternalElement" name="TelephoneLine"/>
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:Process" name="InteractWithUser"/>
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:Process" name="ProcessPassword"/>
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:Process" name="ActivateDeactivateSystem"/>
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:Process" name="ConfigureSystem"/>
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:Process" name="DisplayMessagesAndStatus"/>
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:Process" name="FormatForDisplay"/>
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:Process" name="ReadSensor"/>
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:Process" name="AssesAgainstSetup"/>
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:Process" name="GenerateAlarmSignal"/>
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:Process" name="DialPhone"/>
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:DataStore" name="ConfigurationInformation"/>
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:DataFlow" name="DataFlow_ControlPanel_InteractWithUser">
+    <connection name="InteractWithUser" direction="To">
+      <type xsi:type="DFDMetaModel.DFDMetaModel:Process" name=""/>
+    </connection>
+    <connection name="ControlPanel" direction="From">
+      <type xsi:type="DFDMetaModel.DFDMetaModel:ExternalElement" name=""/>
+    </connection>
+    <data name="UserCommandAndData"/>
+  </modelElement>
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:DataFlow" name="DataFlow_InteractWithUser_ProcessPassword">
+  	<data name="Password"/>
+    <connection name="InteractWithUser" direction="From">
+    	<type xsi:type="DFDMetaModel.DFDMetaModel:Process" name=""/>
+    </connection>
+    <connection name="ProcessPassword" direction="To">
+    	<type xsi:type="DFDMetaModel.DFDMetaModel:Process" name=""/>
+    </connection>
+  </modelElement>
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:DataFlow" name="DataFlow_ProcessPassword_DisplayMessagesAndStatus">
+    <data name="ValidIdMessage"/>
+    <connection name="ProcessPassword" direction="From">
+    	<type xsi:type="DFDMetaModel.DFDMetaModel:Process" name=""/>
+    </connection>
+    <connection name="DisplayMessagesAndStatus" direction="To">
+    	<type xsi:type="DFDMetaModel.DFDMetaModel:Process" name=""/>
+    </connection>
+  </modelElement>
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:DataFlow" name="DataFlow_InteractWithUser_ActivateDeactivateSystem">
+    <data name="StartStop"/>
+    <connection name="InteractWithUser" direction="From">
+    	<type xsi:type="DFDMetaModel.DFDMetaModel:Process" name=""/>
+    </connection>
+    <connection name="ActivateDeactivateSystem" direction="To">
+    	<type xsi:type="DFDMetaModel.DFDMetaModel:Process" name=""/>
+    </connection>
+  </modelElement>
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:DataFlow" name="DataFlow_InteractWithUser_ConfigureSystem">
+    <data name="ConfigurationRequest"/>
+    <connection name="InteractWithUser" direction="From">
+    	<type xsi:type="DFDMetaModel.DFDMetaModel:Process" name=""/>
+    </connection>
+    <connection name="ConfigureSystem" direction="To">
+    	<type xsi:type="DFDMetaModel.DFDMetaModel:Process" name=""/>
+    </connection>
+  </modelElement>
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:DataFlow" name="DataFlow_ActivateDeactivateSystem_DisplayMessagesAndStatus">
+    <data name="ActivateDeactivateMessage"/>
+    <connection name="ActivateDeactivateSystem" direction="From">
+    	<type xsi:type="DFDMetaModel.DFDMetaModel:Process" name=""/>
+    </connection>
+    <connection name="DisplayMessagesAndStatus" direction="To">
+    	<type xsi:type="DFDMetaModel.DFDMetaModel:Process" name=""/>
+    </connection>
+  </modelElement>
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:DataFlow" name="DataFlow_ConfigureSystem_ConfigurationInformation">
+    <data name="ConfigurationData"/>
+    <connection name="ConfigureSystem" direction="From">
+    	<type xsi:type="DFDMetaModel.DFDMetaModel:Process" name=""/>
+    </connection>
+    <connection name="ConfigurationInformation" direction="To">
+    	<type xsi:type="DFDMetaModel.DFDMetaModel:DataStore" name=""/>
+    </connection>
+  </modelElement>
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:DataFlow" name="DataFlow_ConfigurationInformation_DisplayMessagesAndStatus">
+    <data name="ConfigurationData"/>
+    <connection name="ConfigurationInformation" direction="From">
+    	<type xsi:type="DFDMetaModel.DFDMetaModel:DataStore" name=""/>
+    </connection>
+    <connection name="DisplayMessagesAndStatus" direction="To">
+    	<type xsi:type="DFDMetaModel.DFDMetaModel:Process" name=""/>
+    </connection>
+  </modelElement>
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:DataFlow" name="DataFlow_ConfigurationInformation_AssesAgainstSetup">
+    <data name="ConfigurationData"/>
+    <connection name="ConfigurationInformation" direction="From">
+    	<type xsi:type="DFDMetaModel.DFDMetaModel:DataStore" name=""/>
+    </connection>
+    <connection name="AssesAgainstSetup" direction="To">
+    	<type xsi:type="DFDMetaModel.DFDMetaModel:Process" name=""/>
+    </connection>
+  </modelElement>
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:DataFlow" name="DataFlow_Sensors_ReadSensor">
+    <data name="SensorStatus"/>
+    <connection name="Sensors" direction="From">
+      <type xsi:type="DFDMetaModel.DFDMetaModel:ExternalElement" name=""/>
+    </connection>
+    <connection name="ReadSensor" direction="To">
+    	<type xsi:type="DFDMetaModel.DFDMetaModel:Process" name=""/>
+    </connection>
+  </modelElement>
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:DataFlow" name="DataFlow_ReadSensor_AssesAgainstSetup">
+    <data name="SensorId"/>
+    <data name="SensorType"/>
+    <connection name="ReadSensor" direction="From">
+    	<type xsi:type="DFDMetaModel.DFDMetaModel:Process" name=""/>
+    </connection>
+    <connection name="AssesAgainstSetup" direction="To">
+    	<type xsi:type="DFDMetaModel.DFDMetaModel:Process" name=""/>
+    </connection>
+  </modelElement>
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:DataFlow" name="DataFlow_AssesAgainstSetup_FormatForDisplay">
+    <data name="SensorId"/>
+    <data name="SensorType"/>
+    <data name="SensorLocation"/>
+    <connection name="AssesAgainstSetup" direction="From">
+    	<type xsi:type="DFDMetaModel.DFDMetaModel:Process" name=""/>
+    </connection>
+    <connection name="FormatForDisplay" direction="To">
+    	<type xsi:type="DFDMetaModel.DFDMetaModel:Process" name=""/>
+    </connection>
+  </modelElement>
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:DataFlow" name="DataFlow_AssesAgainstSetup_GenerateAlarmSignal">
+    <data name="AlarmData"/>
+    <connection name="AssesAgainstSetup" direction="From">
+    	<type xsi:type="DFDMetaModel.DFDMetaModel:Process" name=""/>
+    </connection>
+    <connection name="GenerateAlarmSignal" direction="To">
+    	<type xsi:type="DFDMetaModel.DFDMetaModel:Process" name=""/>
+    </connection>
+  </modelElement>
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:DataFlow" name="DataFlow_AssesAgainstSetup_DialPhone">
+    <data name="TelephoneNumber"/>
+    <connection name="AssesAgainstSetup" direction="From">
+    	<type xsi:type="DFDMetaModel.DFDMetaModel:Process" name=""/>
+    </connection>
+    <connection name="DialPhone" direction="To">
+    	<type xsi:type="DFDMetaModel.DFDMetaModel:Process" name=""/>
+    </connection>
+  </modelElement>
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:DataFlow" name="DataFlow_DialPhone_TelephoneLine">
+    <data name="TelephoneNumberTones"/>
+    <connection name="DialPhone" direction="From">
+    	<type xsi:type="DFDMetaModel.DFDMetaModel:Process" name=""/>
+    </connection>
+    <connection name="TelephoneLine" direction="To">
+      <type xsi:type="DFDMetaModel.DFDMetaModel:ExternalElement" name=""/>
+    </connection>
+  </modelElement>
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:DataFlow" name="DataFlow_GenerateAlarmSignal_Alarm">
+    <data name="AlarmType"/>
+    <connection name="GenerateAlarmSignal" direction="From">
+    	<type xsi:type="DFDMetaModel.DFDMetaModel:Process" name=""/>
+    </connection>
+    <connection name="Alarm" direction="To">
+      <type xsi:type="DFDMetaModel.DFDMetaModel:ExternalElement" name=""/>
+    </connection>
+  </modelElement>
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:DataFlow" name="DataFlow_FormatForDisplay_DisplayMessagesAndStatus">
+    <data name="SensorInformation"/>
+    <connection name="FormatForDisplay" direction="From">
+    	<type xsi:type="DFDMetaModel.DFDMetaModel:Process" name=""/>
+    </connection>
+    <connection name="DisplayMessagesAndStatus" direction="To">
+    	<type xsi:type="DFDMetaModel.DFDMetaModel:Process" name=""/>
+    </connection>
+  </modelElement>
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:DataFlow" name="DataFlow_DisplayMessagesAndStatus_ControlPanelDisplay">
+    <data name="DisplayInformation"/>
+    <connection name="DisplayMessagesAndStatus" direction="From">
+    	<type xsi:type="DFDMetaModel.DFDMetaModel:Process" name=""/>
+    </connection>
+    <connection name="ControlPanelDisplay" direction="To">
+      <type xsi:type="DFDMetaModel.DFDMetaModel:ExternalElement" name=""/>
+    </connection>
+  </modelElement>
+</DFDMetaModel.DFDMetaModel:Package>

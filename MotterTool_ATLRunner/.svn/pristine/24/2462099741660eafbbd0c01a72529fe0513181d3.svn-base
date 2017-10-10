@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="SimpleRDBMS">
+  <Table name="Attribute1-C-type"/>
+  <Table name="-C-type"/>
+  <Table name="-C-parent"/>
+  <Table name="Class1"/>
+  <Table name="Class1-C-parent"/>
+  <Table name="Class1-C-class"/>
+  <Table name="-C-dest"/>
+  <Table name="-C-src"/>
+  <Table name="-C-class"/>
+  <Table name="Association1-C-src"/>
+  <Table name="Association1-C-dest"/>
+  <Table name="Attribute1-C-class"/>
+</xmi:XMI>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="SimpleRDBMS">
+  <Table name="Attribute1-C-type" pkey="/0/@cols.0">
+    <cols name="-A-attrs" type="String"/>
+  </Table>
+  <Table name="-C-type" pkey="/1/@cols.0">
+    <cols name="-A-attrs" type="String"/>
+  </Table>
+  <Table name="-C-parent" pkey="/2/@cols.0">
+    <cols name="-A-attrs" type="String"/>
+  </Table>
+  <Table name="Class1" pkey="/3/@cols.0">
+    <cols name="Class1-A-attrs" type="String"/>
+  </Table>
+  <Table name="Class1-C-parent" pkey="/4/@cols.0">
+    <cols name="-A-attrs" type="String"/>
+  </Table>
+  <Table name="Class1-C-class" pkey="/5/@cols.0">
+    <cols name="-A-attrs" type="String"/>
+  </Table>
+  <Table name="-C-dest" pkey="/6/@cols.0">
+    <cols name="-A-attrs" type="String"/>
+  </Table>
+  <Table name="-C-src" pkey="/7/@cols.0">
+    <fkeys references="/6" cols="/7/@cols.1"/>
+    <fkeys references="/6" cols="/7/@cols.2"/>
+    <cols name="-A-attrs" type="String"/>
+    <cols name="Class1-A-association_-A-attrs" type="String"/>
+    <cols name="-A-association_-A-attrs" type="String"/>
+  </Table>
+  <Table name="-C-class" pkey="/8/@cols.0">
+    <cols name="-A-attrs" type="String"/>
+  </Table>
+  <Table name="Association1-C-src" pkey="/9/@cols.0">
+    <fkeys references="/10" cols="/9/@cols.1"/>
+    <cols name="-A-attrs" type="String"/>
+    <cols name="Association1_-A-attrs" type="String"/>
+  </Table>
+  <Table name="Association1-C-dest" pkey="/10/@cols.0">
+    <cols name="-A-attrs" type="String"/>
+  </Table>
+  <Table name="Attribute1-C-class" pkey="/11/@cols.0">
+    <cols name="-A-attrs" type="String"/>
+  </Table>
+</xmi:XMI>

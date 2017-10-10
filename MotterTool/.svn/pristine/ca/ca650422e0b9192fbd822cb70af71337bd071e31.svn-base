@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nodeSet version="1.0">
+    <view uin="idhg3ksetfsd6g9etg4e4rj">
+        <property name="$metaclass" value="State Diagram"/>
+        <property name="@__options" value="option.shadows = false&#xA;option.orientation = Landscape&#xA;option.papersize = A4&#xA;option.fittopage = true"/>
+        <reference df-class-name="reference" referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa">
+            <property name="$shortcutReference" value="true"/>
+            <property name="bounds" value="300,20,600,410"/>
+            <property name="bounds_setted_by_user" value="true"/>
+            <reference referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa">
+                <property name="bounds" value="10,25,580,365"/>
+                <property name="bounds_setted_by_user" value="true"/>
+                <reference referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeiddl5o8eti78ok8eti9r8y3:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa">
+                    <property name="bounds" value="410,175,144,40"/>
+                    <reference referencedUin="design:link:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeiddl5o8eti78ok8eti9r8y3.linkiddql0eti78ok8eti9r90m:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeiddl5o8eti78ok8eti9r8y3:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa">
+                        <property name="sourceAnchor" value="792,260"/>
+                        <property name="bendpoints" value=""/>
+                        <property name="targetAnchor" value="792,290"/>
+                        <reference referencedUin="linklabel:$transitionInplaceEditing:design:link:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeiddl5o8eti78ok8eti9r8y3.linkiddql0eti78ok8eti9r90m:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeiddl5o8eti78ok8eti9r8y3:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa">
+                            <property name="bounds" value="802,267,144,15"/>
+                        </reference>
+                    </reference>
+                </reference>
+                <reference referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeiddrhz1eti78ok8eti9r8xu:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa">
+                    <property name="bounds" value="210,255,154,40"/>
+                    <reference referencedUin="design:link:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeiddrhz1eti78ok8eti9r8xu.linkidb6w0ieti78ok8eti9r90s:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeiddrhz1eti78ok8eti9r8xu:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa">
+                        <property name="sourceAnchor" value="600,340"/>
+                        <property name="bendpoints" value="600,440"/>
+                        <property name="targetAnchor" value="216,440"/>
+                        <property name="bounds_setted_by_user" value="true"/>
+                        <reference referencedUin="linklabel:$transitionInplaceEditing:design:link:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeiddrhz1eti78ok8eti9r8xu.linkidb6w0ieti78ok8eti9r90s:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeiddrhz1eti78ok8eti9r8xu:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa">
+                            <property name="bounds" value="600,370,74,15"/>
+                        </reference>
+                    </reference>
+                </reference>
+                <reference referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidcolmketi78ok8eti9r8xl:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa">
+                    <property name="bounds" value="10,35,150,40"/>
+                    <reference referencedUin="design:link:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidcolmketi78ok8eti9r8xl.linkidid55meti78ok8eti9r8zo:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidcolmketi78ok8eti9r8xl:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa">
+                        <property name="sourceAnchor" value="390,120"/>
+                        <property name="bendpoints" value=""/>
+                        <property name="targetAnchor" value="390,150"/>
+                        <reference referencedUin="linklabel:$transitionInplaceEditing:design:link:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidcolmketi78ok8eti9r8xl.linkidid55meti78ok8eti9r8zo:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidcolmketi78ok8eti9r8xl:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa">
+                            <property name="bounds" value="260,130,120,15"/>
+                        </reference>
+                    </reference>
+                </reference>
+                <reference referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidef7iueti78ok8eti9r8x5:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa">
+                    <property name="bounds" value="240,175,107,40"/>
+                    <reference referencedUin="design:link:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidef7iueti78ok8eti9r8x5.linkide4yb4eti78ok8eti9r8z9:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidef7iueti78ok8eti9r8x5:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa">
+                        <property name="sourceAnchor" value="603,260"/>
+                        <property name="bendpoints" value=""/>
+                        <property name="targetAnchor" value="603,300"/>
+                        <reference referencedUin="linklabel:$transitionInplaceEditing:design:link:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidef7iueti78ok8eti9r8x5.linkide4yb4eti78ok8eti9r8z9:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidef7iueti78ok8eti9r8x5:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa">
+                            <property name="bounds" value="613,272,122,15"/>
+                        </reference>
+                    </reference>
+                </reference>
+                <reference referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeid2ksc3eti78ok8eti9r8xq:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa">
+                    <property name="bounds" value="390,35,156,40"/>
+                    <reference referencedUin="design:link:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeid2ksc3eti78ok8eti9r8xq.linkide4viaeti78ok8eti9r8zh:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeid2ksc3eti78ok8eti9r8xq:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa">
+                        <property name="sourceAnchor" value="700,100"/>
+                        <property name="bendpoints" value="600,100,600,130,460,130"/>
+                        <property name="targetAnchor" value="460,150"/>
+                        <property name="bounds_setted_by_user" value="true"/>
+                        <reference referencedUin="linklabel:$transitionInplaceEditing:design:link:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeid2ksc3eti78ok8eti9r8xq.linkide4viaeti78ok8eti9r8zh:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeid2ksc3eti78ok8eti9r8xq:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa">
+                            <property name="bounds" value="480,110,120,15"/>
+                        </reference>
+                    </reference>
+                </reference>
+                <reference referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidewqareti78ok8eti9r8y7:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa">
+                    <property name="bounds" value="200,105,178,40"/>
+                    <reference referencedUin="design:link:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidewqareti78ok8eti9r8y7.linkidicigzeti78ok8eti9r909:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidewqareti78ok8eti9r8y7:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa">
+                        <property name="sourceAnchor" value="688,160"/>
+                        <property name="bendpoints" value=""/>
+                        <property name="targetAnchor" value="730,160"/>
+                        <reference referencedUin="linklabel:$transitionInplaceEditing:design:link:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidewqareti78ok8eti9r8y7.linkidicigzeti78ok8eti9r909:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidewqareti78ok8eti9r8y7:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa">
+                            <property name="bounds" value="660,130,95,15"/>
+                        </reference>
+                    </reference>
+                </reference>
+                <reference referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidbtuc9eti78ok8eti9r8xy:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa">
+                    <property name="bounds" value="10,255,154,40"/>
+                    <reference referencedUin="design:link:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidbtuc9eti78ok8eti9r8xy.linkid2c7zjeti78ok8eti9r8zz:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidbtuc9eti78ok8eti9r8xy:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa">
+                        <property name="sourceAnchor" value="390,340"/>
+                        <property name="bendpoints" value="390,420"/>
+                        <property name="targetAnchor" value="216,420"/>
+                        <property name="bounds_setted_by_user" value="true"/>
+                        <reference referencedUin="linklabel:$transitionInplaceEditing:design:link:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidbtuc9eti78ok8eti9r8xy.linkid2c7zjeti78ok8eti9r8zz:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidbtuc9eti78ok8eti9r8xy:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa">
+                            <property name="bounds" value="390,380,74,15"/>
+                        </reference>
+                    </reference>
+                </reference>
+                <reference referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidgavqfeti78ok8eti9r8xb:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa">
+                    <property name="bounds" value="440,315,119,40"/>
+                    <reference referencedUin="design:link:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidgavqfeti78ok8eti9r8xb.linkid19wkqeti78ok8eti9r8zw:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidgavqfeti78ok8eti9r8xb:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa">
+                        <property name="sourceAnchor" value="820,400"/>
+                        <property name="bendpoints" value="820,500,160,500"/>
+                        <property name="targetAnchor" value="160,450"/>
+                        <property name="bounds_setted_by_user" value="true"/>
+                        <reference referencedUin="linklabel:$transitionInplaceEditing:design:link:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidgavqfeti78ok8eti9r8xb.linkid19wkqeti78ok8eti9r8zw:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidgavqfeti78ok8eti9r8xb:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa">
+                            <property name="bounds" value="820,450,74,15"/>
+                        </reference>
+                    </reference>
+                </reference>
+                <reference referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidf07hieti78ok8eti9r8wt:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa">
+                    <property name="bounds" value="10,105,152,40"/>
+                    <reference referencedUin="design:link:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidf07hieti78ok8eti9r8wt.linkidbtfayeti78ok8eti9r90i:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidf07hieti78ok8eti9r8wt:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa">
+                        <property name="sourceAnchor" value="472,180"/>
+                        <property name="bendpoints" value=""/>
+                        <property name="targetAnchor" value="510,180"/>
+                        <reference referencedUin="linklabel:$transitionInplaceEditing:design:link:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidf07hieti78ok8eti9r8wt.linkidbtfayeti78ok8eti9r90i:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidf07hieti78ok8eti9r8wt:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa">
+                            <property name="bounds" value="433,190,115,15"/>
+                        </reference>
+                    </reference>
+                    <reference referencedUin="design:link:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidf07hieti78ok8eti9r8wt.linkid93fgoeti78ok8eti9r8zt:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidf07hieti78ok8eti9r8wt:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa">
+                        <property name="sourceAnchor" value="393,190"/>
+                        <property name="bendpoints" value=""/>
+                        <property name="targetAnchor" value="393,220"/>
+                        <reference referencedUin="linklabel:$transitionInplaceEditing:design:link:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidf07hieti78ok8eti9r8wt.linkid93fgoeti78ok8eti9r8zt:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidf07hieti78ok8eti9r8wt:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa">
+                            <property name="bounds" value="340,200,44,15"/>
+                        </reference>
+                    </reference>
+                </reference>
+                <reference referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidfxi2ceti78ok8eti9r8wp:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa">
+                    <property name="bounds" value="380,245,176,40"/>
+                    <reference referencedUin="design:link:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidfxi2ceti78ok8eti9r8wp.linkidi61tjeti78ok8eti9r90p:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidfxi2ceti78ok8eti9r8wp:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa">
+                        <property name="sourceAnchor" value="808,330"/>
+                        <property name="bendpoints" value=""/>
+                        <property name="targetAnchor" value="808,360"/>
+                        <reference referencedUin="linklabel:$transitionInplaceEditing:design:link:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidfxi2ceti78ok8eti9r8wp.linkidi61tjeti78ok8eti9r90p:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidfxi2ceti78ok8eti9r8wp:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa">
+                            <property name="bounds" value="818,337,87,15"/>
+                        </reference>
+                    </reference>
+                </reference>
+                <reference referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidflmqheti78ok8eti9r8wx:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa">
+                    <property name="bounds" value="30,175,107,40"/>
+                    <reference referencedUin="design:link:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidflmqheti78ok8eti9r8wx.linkiden9xqeti78ok8eti9r8zd:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidflmqheti78ok8eti9r8wx:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa">
+                        <property name="sourceAnchor" value="393,260"/>
+                        <property name="bendpoints" value=""/>
+                        <property name="targetAnchor" value="393,300"/>
+                        <reference referencedUin="linklabel:$transitionInplaceEditing:design:link:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidflmqheti78ok8eti9r8wx.linkiden9xqeti78ok8eti9r8zd:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidflmqheti78ok8eti9r8wx:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa">
+                            <property name="bounds" value="403,272,122,15"/>
+                        </reference>
+                    </reference>
+                </reference>
+                <reference referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeid9bo0feti78ok8eti9r8xg:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa">
+                    <property name="bounds" value="420,105,127,40"/>
+                    <reference referencedUin="design:link:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeid9bo0feti78ok8eti9r8xg.linkid7t1xaeti78ok8eti9r90c:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeid9bo0feti78ok8eti9r8xg:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa">
+                        <property name="sourceAnchor" value="793,150"/>
+                        <property name="bendpoints" value=""/>
+                        <property name="targetAnchor" value="793,120"/>
+                        <reference referencedUin="linklabel:$transitionInplaceEditing:design:link:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeid9bo0feti78ok8eti9r8xg.linkid7t1xaeti78ok8eti9r90c:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeid9bo0feti78ok8eti9r8xg:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa">
+                            <property name="bounds" value="803,127,93,15"/>
+                        </reference>
+                    </reference>
+                    <reference referencedUin="design:link:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeid9bo0feti78ok8eti9r8xg.linkidcj4dzeti78ok8eti9r8z6:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeid9bo0feti78ok8eti9r8xg:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa">
+                        <property name="sourceAnchor" value="770,190"/>
+                        <property name="bendpoints" value="770,200,610,200"/>
+                        <property name="targetAnchor" value="610,220"/>
+                        <property name="bounds_setted_by_user" value="true"/>
+                        <reference referencedUin="linklabel:$transitionInplaceEditing:design:link:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeid9bo0feti78ok8eti9r8xg.linkidcj4dzeti78ok8eti9r8z6:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeid9bo0feti78ok8eti9r8xg:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa">
+                            <property name="bounds" value="668,210,44,15"/>
+                        </reference>
+                    </reference>
+                    <reference referencedUin="design:link:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeid9bo0feti78ok8eti9r8xg.linkid7occceti78ok8eti9r90f:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeid9bo0feti78ok8eti9r8xg:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa">
+                        <property name="sourceAnchor" value="813,190"/>
+                        <property name="bendpoints" value=""/>
+                        <property name="targetAnchor" value="813,220"/>
+                        <reference referencedUin="linklabel:$transitionInplaceEditing:design:link:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeid9bo0feti78ok8eti9r8xg.linkid7occceti78ok8eti9r90f:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeid9bo0feti78ok8eti9r8xg:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa">
+                            <property name="bounds" value="823,197,81,15"/>
+                        </reference>
+                    </reference>
+                </reference>
+            </reference>
+        </reference>
+        <reference df-class-name="reference50" referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw">
+            <property name="$shortcutReference" value="true"/>
+            <property name="bounds" value="50,20,210,460"/>
+            <property name="bounds_setted_by_user" value="true"/>
+            <reference referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeid894u4eti78ok8eti9r8u6:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw">
+                <property name="bounds" value="10,30,190,230"/>
+                <property name="bounds_setted_by_user" value="true"/>
+                <reference referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeid894u4eti78ok8eti9r8u6.nodeidhd9aweti78ok8eti9r8ue:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeid894u4eti78ok8eti9r8u6:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw">
+                    <property name="bounds" value="20,180,128,40"/>
+                    <reference referencedUin="design:link:::idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeid894u4eti78ok8eti9r8u6.nodeidhd9aweti78ok8eti9r8ue.linkidhfp91eti78ok8eti9r8yp:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeid894u4eti78ok8eti9r8u6.nodeidhd9aweti78ok8eti9r8ue:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeid894u4eti78ok8eti9r8u6:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw">
+                        <property name="sourceAnchor" value="144,230"/>
+                        <property name="bendpoints" value=""/>
+                        <property name="targetAnchor" value="144,200"/>
+                        <reference referencedUin="linklabel:$transitionInplaceEditing:design:link:::idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeid894u4eti78ok8eti9r8u6.nodeidhd9aweti78ok8eti9r8ue.linkidhfp91eti78ok8eti9r8yp:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeid894u4eti78ok8eti9r8u6.nodeidhd9aweti78ok8eti9r8ue:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeid894u4eti78ok8eti9r8u6:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw">
+                            <property name="bounds" value="154,207,133,15"/>
+                        </reference>
+                    </reference>
+                </reference>
+                <reference referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeid894u4eti78ok8eti9r8u6.nodeidip25heti78ok8eti9r8vj:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeid894u4eti78ok8eti9r8u6:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw">
+                    <property name="bounds" value="60,30,56,40"/>
+                    <reference referencedUin="design:link:::idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeid894u4eti78ok8eti9r8u6.nodeidip25heti78ok8eti9r8vj.linkidgyl16eti78ok8eti9r8ys:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeid894u4eti78ok8eti9r8u6.nodeidip25heti78ok8eti9r8vj:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeid894u4eti78ok8eti9r8u6:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw">
+                        <property name="sourceAnchor" value="148,120"/>
+                        <property name="bendpoints" value=""/>
+                        <property name="targetAnchor" value="148,160"/>
+                        <reference referencedUin="linklabel:$transitionInplaceEditing:design:link:::idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeid894u4eti78ok8eti9r8u6.nodeidip25heti78ok8eti9r8vj.linkidgyl16eti78ok8eti9r8ys:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeid894u4eti78ok8eti9r8u6.nodeidip25heti78ok8eti9r8vj:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeid894u4eti78ok8eti9r8u6:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw">
+                            <property name="bounds" value="20,130,133,15"/>
+                        </reference>
+                    </reference>
+                </reference>
+                <reference referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeid894u4eti78ok8eti9r8u6.nodeidjgymceti78ok8eti9r8ua:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeid894u4eti78ok8eti9r8u6:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw">
+                    <property name="bounds" value="10,110,165,40"/>
+                    <reference referencedUin="design:link:::idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeid894u4eti78ok8eti9r8u6.nodeidjgymceti78ok8eti9r8ua.linkidfpfhjeti78ok8eti9r8z2:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeid894u4eti78ok8eti9r8u6.nodeidjgymceti78ok8eti9r8ua:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeid894u4eti78ok8eti9r8u6:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw">
+                        <property name="sourceAnchor" value="210,160"/>
+                        <property name="bendpoints" value="210,100"/>
+                        <property name="targetAnchor" value="320,100"/>
+                        <property name="bounds_setted_by_user" value="true"/>
+                        <reference referencedUin="linklabel:$transitionInplaceEditing:design:link:::idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeid894u4eti78ok8eti9r8u6.nodeidjgymceti78ok8eti9r8ua.linkidfpfhjeti78ok8eti9r8z2:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeid894u4eti78ok8eti9r8u6.nodeidjgymceti78ok8eti9r8ua:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeid894u4eti78ok8eti9r8u6:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw">
+                            <property name="bounds" value="220,80,87,15"/>
+                        </reference>
+                    </reference>
+                </reference>
+            </reference>
+            <reference referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeidcclfjeti78ok8eti9r8vq:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw">
+                <property name="bounds" value="10,280,180,170"/>
+                <property name="bounds_setted_by_user" value="true"/>
+                <reference referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeidcclfjeti78ok8eti9r8vq.nodeid9joe7eti78ok8eti9r8vy:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeidcclfjeti78ok8eti9r8vq:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw">
+                    <property name="bounds" value="20,40,153,40"/>
+                    <reference referencedUin="design:link:::idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeidcclfjeti78ok8eti9r8vq.nodeid9joe7eti78ok8eti9r8vy.linkidgqe21eti78ok8eti9r905:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeidcclfjeti78ok8eti9r8vq.nodeid9joe7eti78ok8eti9r8vy:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeidcclfjeti78ok8eti9r8vq:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw">
+                        <property name="sourceAnchor" value="144,340"/>
+                        <property name="bendpoints" value=""/>
+                        <property name="targetAnchor" value="144,270"/>
+                        <reference referencedUin="linklabel:$transitionInplaceEditing:design:link:::idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeidcclfjeti78ok8eti9r8vq.nodeid9joe7eti78ok8eti9r8vy.linkidgqe21eti78ok8eti9r905:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeidcclfjeti78ok8eti9r8vq.nodeid9joe7eti78ok8eti9r8vy:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeidcclfjeti78ok8eti9r8vq:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw">
+                            <property name="bounds" value="150,280,65,15"/>
+                        </reference>
+                    </reference>
+                </reference>
+                <reference referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeidcclfjeti78ok8eti9r8vq.nodeid2jovbeti78ok8eti9r8w2:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeidcclfjeti78ok8eti9r8vq:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw">
+                    <property name="bounds" value="50,110,106,40"/>
+                    <reference referencedUin="design:link:::idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeidcclfjeti78ok8eti9r8vq.nodeid2jovbeti78ok8eti9r8w2.linkidf99qbeti78ok8eti9r902:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeidcclfjeti78ok8eti9r8vq.nodeid2jovbeti78ok8eti9r8w2:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeidcclfjeti78ok8eti9r8vq:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw">
+                        <property name="sourceAnchor" value="163,410"/>
+                        <property name="bendpoints" value=""/>
+                        <property name="targetAnchor" value="163,380"/>
+                        <reference referencedUin="linklabel:$transitionInplaceEditing:design:link:::idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeidcclfjeti78ok8eti9r8vq.nodeid2jovbeti78ok8eti9r8w2.linkidf99qbeti78ok8eti9r902:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeidcclfjeti78ok8eti9r8vq.nodeid2jovbeti78ok8eti9r8w2:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeidcclfjeti78ok8eti9r8vq:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw">
+                            <property name="bounds" value="173,387,121,15"/>
+                        </reference>
+                    </reference>
+                </reference>
+            </reference>
+        </reference>
+        <reference df-class-name="reference51" referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeidi7ypeeti78ok8eti9r8tn">
+            <property name="$shortcutReference" value="true"/>
+            <property name="background_color" value="0,0,0"/>
+            <property name="bounds" value="10,20,12,12"/>
+            <reference referencedUin="design:link:::idhg3ksetfsd6g9etg4e4rj.nodeidi7ypeeti78ok8eti9r8tn.linkideaseeeti78ok8eti9r8zl:idhg3ksetfsd6g9etg4e4rj.nodeidi7ypeeti78ok8eti9r8tn">
+                <property name="sourceAnchor" value="20,32"/>
+                <property name="bendpoints" value="20,100"/>
+                <property name="targetAnchor" value="120,100"/>
+                <property name="bounds_setted_by_user" value="true"/>
+            </reference>
+        </reference>
+    </view>
+    <node uin="idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa">
+        <property name="$metaclass" value="State"/>
+        <property name="$name" value="atm.cardIn=true"/>
+        <node uin="idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi">
+            <property name="$metaclass" value="State"/>
+            <property name="$name" value="atm.cardHalfWay=false"/>
+            <node uin="idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidfxi2ceti78ok8eti9r8wp">
+                <property name="$metaclass" value="State"/>
+                <property name="$name" value="bad_account_message_sent"/>
+                <link uin="idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidfxi2ceti78ok8eti9r8wp.linkidi61tjeti78ok8eti9r90p">
+                    <participant role="Supplier" referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidgavqfeti78ok8eti9r8xb:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa"/>
+                    <participant role="Client" referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidfxi2ceti78ok8eti9r8wp:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa"/>
+                    <property name="$metaclass" value="Transition"/>
+                    <property name="$action_expression" value="print_receipt"/>
+                </link>
+            </node>
+            <node uin="idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidf07hieti78ok8eti9r8wt">
+                <property name="$metaclass" value="State"/>
+                <property name="$name" value="request_password_sent"/>
+                <link uin="idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidf07hieti78ok8eti9r8wt.linkid93fgoeti78ok8eti9r8zt">
+                    <participant role="Supplier" referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidflmqheti78ok8eti9r8wx:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa"/>
+                    <participant role="Client" referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidf07hieti78ok8eti9r8wt:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa"/>
+                    <property name="$metaclass" value="Transition"/>
+                    <property name="$event_name" value="cancel"/>
+                </link>
+                <link uin="idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidf07hieti78ok8eti9r8wt.linkidbtfayeti78ok8eti9r90i">
+                    <participant role="Supplier" referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidewqareti78ok8eti9r8y7:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa"/>
+                    <participant role="Client" referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidf07hieti78ok8eti9r8wt:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa"/>
+                    <property name="$metaclass" value="Transition"/>
+                    <property name="$event_name" value="enter_password(x)"/>
+                </link>
+            </node>
+            <node uin="idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidflmqheti78ok8eti9r8wx">
+                <property name="$metaclass" value="State"/>
+                <property name="$name" value="cancel_received"/>
+                <link uin="idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidflmqheti78ok8eti9r8wx.linkiden9xqeti78ok8eti9r8zd">
+                    <participant role="Supplier" referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidbtuc9eti78ok8eti9r8xy:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa"/>
+                    <participant role="Client" referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidflmqheti78ok8eti9r8wx:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa"/>
+                    <property name="$metaclass" value="Transition"/>
+                    <property name="$action_expression" value="canceled_message"/>
+                </link>
+            </node>
+            <node uin="idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidef7iueti78ok8eti9r8x5">
+                <property name="$metaclass" value="State"/>
+                <property name="$name" value="cancel_received"/>
+                <link uin="idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidef7iueti78ok8eti9r8x5.linkide4yb4eti78ok8eti9r8z9">
+                    <participant role="Supplier" referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeiddrhz1eti78ok8eti9r8xu:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa"/>
+                    <participant role="Client" referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidef7iueti78ok8eti9r8x5:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa"/>
+                    <property name="$metaclass" value="Transition"/>
+                    <property name="$action_expression" value="canceled_message"/>
+                </link>
+            </node>
+            <node uin="idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidgavqfeti78ok8eti9r8xb">
+                <property name="$metaclass" value="State"/>
+                <property name="$name" value="print_receipt_sent"/>
+                <link uin="idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidgavqfeti78ok8eti9r8xb.linkid19wkqeti78ok8eti9r8zw">
+                    <participant role="Supplier" referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeidcclfjeti78ok8eti9r8vq.nodeid2jovbeti78ok8eti9r8w2:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeidcclfjeti78ok8eti9r8vq:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw"/>
+                    <participant role="Client" referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidgavqfeti78ok8eti9r8xb:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa"/>
+                    <property name="$metaclass" value="Transition"/>
+                    <property name="$action_expression" value="eject_card"/>
+                </link>
+            </node>
+            <node uin="idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeid9bo0feti78ok8eti9r8xg">
+                <property name="$metaclass" value="State"/>
+                <property name="$name" value="verify_account_sent"/>
+                <link uin="idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeid9bo0feti78ok8eti9r8xg.linkidcj4dzeti78ok8eti9r8z6">
+                    <participant role="Supplier" referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidef7iueti78ok8eti9r8x5:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa"/>
+                    <participant role="Client" referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeid9bo0feti78ok8eti9r8xg:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa"/>
+                    <property name="$metaclass" value="Transition"/>
+                    <property name="$event_name" value="cancel"/>
+                </link>
+                <link uin="idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeid9bo0feti78ok8eti9r8xg.linkid7t1xaeti78ok8eti9r90c">
+                    <participant role="Supplier" referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeid2ksc3eti78ok8eti9r8xq:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa"/>
+                    <participant role="Client" referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeid9bo0feti78ok8eti9r8xg:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa"/>
+                    <property name="$metaclass" value="Transition"/>
+                    <property name="$event_name" value="bad_password"/>
+                </link>
+                <link uin="idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeid9bo0feti78ok8eti9r8xg.linkid7occceti78ok8eti9r90f">
+                    <participant role="Supplier" referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeiddl5o8eti78ok8eti9r8y3:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa"/>
+                    <participant role="Client" referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeid9bo0feti78ok8eti9r8xg:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa"/>
+                    <property name="$metaclass" value="Transition"/>
+                    <property name="$event_name" value="bad_account"/>
+                </link>
+            </node>
+            <node uin="idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidcolmketi78ok8eti9r8xl">
+                <property name="$metaclass" value="State"/>
+                <property name="$name" value="insert_card(x)_received"/>
+                <link uin="idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidcolmketi78ok8eti9r8xl.linkidid55meti78ok8eti9r8zo">
+                    <participant role="Supplier" referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidf07hieti78ok8eti9r8wt:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa"/>
+                    <participant role="Client" referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidcolmketi78ok8eti9r8xl:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa"/>
+                    <property name="$metaclass" value="Transition"/>
+                    <property name="$action_expression" value="request_password"/>
+                </link>
+            </node>
+            <node uin="idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeid2ksc3eti78ok8eti9r8xq">
+                <property name="$metaclass" value="State"/>
+                <property name="$name" value="bad_password_received"/>
+                <link uin="idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeid2ksc3eti78ok8eti9r8xq.linkide4viaeti78ok8eti9r8zh">
+                    <participant role="Supplier" referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidf07hieti78ok8eti9r8wt:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa"/>
+                    <participant role="Client" referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeid2ksc3eti78ok8eti9r8xq:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa"/>
+                    <property name="$metaclass" value="Transition"/>
+                    <property name="$action_expression" value="request_password"/>
+                </link>
+            </node>
+            <node uin="idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeiddrhz1eti78ok8eti9r8xu">
+                <property name="$metaclass" value="State"/>
+                <property name="$name" value="canceled_message_sent"/>
+                <link uin="idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeiddrhz1eti78ok8eti9r8xu.linkidb6w0ieti78ok8eti9r90s">
+                    <participant role="Supplier" referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeidcclfjeti78ok8eti9r8vq.nodeid2jovbeti78ok8eti9r8w2:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeidcclfjeti78ok8eti9r8vq:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw"/>
+                    <participant role="Client" referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeiddrhz1eti78ok8eti9r8xu:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa"/>
+                    <property name="$metaclass" value="Transition"/>
+                    <property name="$action_expression" value="eject_card"/>
+                </link>
+            </node>
+            <node uin="idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidbtuc9eti78ok8eti9r8xy">
+                <property name="$metaclass" value="State"/>
+                <property name="$name" value="canceled_message_sent"/>
+                <link uin="idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidbtuc9eti78ok8eti9r8xy.linkid2c7zjeti78ok8eti9r8zz">
+                    <participant role="Supplier" referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeidcclfjeti78ok8eti9r8vq.nodeid2jovbeti78ok8eti9r8w2:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeidcclfjeti78ok8eti9r8vq:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw"/>
+                    <participant role="Client" referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidbtuc9eti78ok8eti9r8xy:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa"/>
+                    <property name="$metaclass" value="Transition"/>
+                    <property name="$action_expression" value="eject_card"/>
+                </link>
+            </node>
+            <node uin="idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeiddl5o8eti78ok8eti9r8y3">
+                <property name="$metaclass" value="State"/>
+                <property name="$name" value="bad_account_received"/>
+                <link uin="idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeiddl5o8eti78ok8eti9r8y3.linkiddql0eti78ok8eti9r90m">
+                    <participant role="Supplier" referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidfxi2ceti78ok8eti9r8wp:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa"/>
+                    <participant role="Client" referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeiddl5o8eti78ok8eti9r8y3:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa"/>
+                    <property name="$metaclass" value="Transition"/>
+                    <property name="$action_expression" value="bad_account_message"/>
+                </link>
+            </node>
+            <node uin="idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidewqareti78ok8eti9r8y7">
+                <property name="$metaclass" value="State"/>
+                <property name="$name" value="enter_password(x)_received"/>
+                <link uin="idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidewqareti78ok8eti9r8y7.linkidicigzeti78ok8eti9r909">
+                    <participant role="Supplier" referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeid9bo0feti78ok8eti9r8xg:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa"/>
+                    <participant role="Client" referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidewqareti78ok8eti9r8y7:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa"/>
+                    <property name="$metaclass" value="Transition"/>
+                    <property name="$action_expression" value="verify_account"/>
+                </link>
+            </node>
+        </node>
+    </node>
+    <node uin="idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw">
+        <property name="$metaclass" value="State"/>
+        <property name="$name" value="atm.cardIn=false"/>
+        <node uin="idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeid894u4eti78ok8eti9r8u6">
+            <property name="$metaclass" value="State"/>
+            <property name="$name" value="atm.cardHalfWay=false"/>
+            <node uin="idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeid894u4eti78ok8eti9r8u6.nodeidjgymceti78ok8eti9r8ua">
+                <property name="$metaclass" value="State"/>
+                <property name="$name" value="display_main_screen_sent"/>
+                <link uin="idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeid894u4eti78ok8eti9r8u6.nodeidjgymceti78ok8eti9r8ua.linkidfpfhjeti78ok8eti9r8z2">
+                    <participant role="Supplier" referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi.nodeidcolmketi78ok8eti9r8xl:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa.nodeid5xjhweti78ok8eti9r8wi:idhg3ksetfsd6g9etg4e4rj.nodeid30tsleti78ok8eti9r8wa"/>
+                    <participant role="Client" referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeid894u4eti78ok8eti9r8u6.nodeidjgymceti78ok8eti9r8ua:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeid894u4eti78ok8eti9r8u6:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw"/>
+                    <property name="$metaclass" value="Transition"/>
+                    <property name="$event_name" value="insert_card(x)"/>
+                </link>
+            </node>
+            <node uin="idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeid894u4eti78ok8eti9r8u6.nodeidhd9aweti78ok8eti9r8ue">
+                <property name="$metaclass" value="State"/>
+                <property name="$name" value="take_card_received"/>
+                <link uin="idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeid894u4eti78ok8eti9r8u6.nodeidhd9aweti78ok8eti9r8ue.linkidhfp91eti78ok8eti9r8yp">
+                    <participant role="Supplier" referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeid894u4eti78ok8eti9r8u6.nodeidjgymceti78ok8eti9r8ua:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeid894u4eti78ok8eti9r8u6:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw"/>
+                    <participant role="Client" referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeid894u4eti78ok8eti9r8u6.nodeidhd9aweti78ok8eti9r8ue:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeid894u4eti78ok8eti9r8u6:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw"/>
+                    <property name="$metaclass" value="Transition"/>
+                    <property name="$action_expression" value="display_main_screen"/>
+                </link>
+            </node>
+            <node uin="idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeid894u4eti78ok8eti9r8u6.nodeidip25heti78ok8eti9r8vj">
+                <property name="$metaclass" value="State"/>
+                <property name="$name" value="default"/>
+                <link uin="idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeid894u4eti78ok8eti9r8u6.nodeidip25heti78ok8eti9r8vj.linkidgyl16eti78ok8eti9r8ys">
+                    <participant role="Supplier" referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeid894u4eti78ok8eti9r8u6.nodeidjgymceti78ok8eti9r8ua:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeid894u4eti78ok8eti9r8u6:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw"/>
+                    <participant role="Client" referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeid894u4eti78ok8eti9r8u6.nodeidip25heti78ok8eti9r8vj:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeid894u4eti78ok8eti9r8u6:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw"/>
+                    <property name="$metaclass" value="Transition"/>
+                    <property name="$action_expression" value="display_main_screen"/>
+                </link>
+            </node>
+        </node>
+        <node uin="idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeidcclfjeti78ok8eti9r8vq">
+            <property name="$metaclass" value="State"/>
+            <property name="$name" value="atm.cardHalfWay=true"/>
+            <node uin="idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeidcclfjeti78ok8eti9r8vq.nodeid9joe7eti78ok8eti9r8vy">
+                <property name="$metaclass" value="State"/>
+                <property name="$name" value="request_take_card_sent"/>
+                <link uin="idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeidcclfjeti78ok8eti9r8vq.nodeid9joe7eti78ok8eti9r8vy.linkidgqe21eti78ok8eti9r905">
+                    <participant role="Supplier" referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeid894u4eti78ok8eti9r8u6.nodeidhd9aweti78ok8eti9r8ue:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeid894u4eti78ok8eti9r8u6:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw"/>
+                    <participant role="Client" referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeidcclfjeti78ok8eti9r8vq.nodeid9joe7eti78ok8eti9r8vy:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeidcclfjeti78ok8eti9r8vq:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw"/>
+                    <property name="$metaclass" value="Transition"/>
+                    <property name="$event_name" value="take_card"/>
+                </link>
+            </node>
+            <node uin="idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeidcclfjeti78ok8eti9r8vq.nodeid2jovbeti78ok8eti9r8w2">
+                <property name="$metaclass" value="State"/>
+                <property name="$name" value="eject_card_sent"/>
+                <link uin="idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeidcclfjeti78ok8eti9r8vq.nodeid2jovbeti78ok8eti9r8w2.linkidf99qbeti78ok8eti9r902">
+                    <participant role="Supplier" referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeidcclfjeti78ok8eti9r8vq.nodeid9joe7eti78ok8eti9r8vy:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeidcclfjeti78ok8eti9r8vq:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw"/>
+                    <participant role="Client" referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeidcclfjeti78ok8eti9r8vq.nodeid2jovbeti78ok8eti9r8w2:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeidcclfjeti78ok8eti9r8vq:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw"/>
+                    <property name="$metaclass" value="Transition"/>
+                    <property name="$action_expression" value="request_take_card"/>
+                </link>
+            </node>
+        </node>
+    </node>
+    <node uin="idhg3ksetfsd6g9etg4e4rj.nodeidi7ypeeti78ok8eti9r8tn">
+        <property name="$metaclass" value="Start State"/>
+        <property name="$name" value="StartState1"/>
+        <link uin="idhg3ksetfsd6g9etg4e4rj.nodeidi7ypeeti78ok8eti9r8tn.linkideaseeeti78ok8eti9r8zl">
+            <participant role="Supplier" referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeid894u4eti78ok8eti9r8u6.nodeidip25heti78ok8eti9r8vj:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw.nodeid894u4eti78ok8eti9r8u6:idhg3ksetfsd6g9etg4e4rj.nodeidtk8eeti78ok8eti9r8tw"/>
+            <participant role="Client" referencedUin="design:node:::idhg3ksetfsd6g9etg4e4rj.nodeidi7ypeeti78ok8eti9r8tn"/>
+            <property name="$metaclass" value="Transition"/>
+        </link>
+    </node>
+</nodeSet>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="SimpleRDBMS">
+  <Table name="-Cla-src" pkey="/0/@cols.0">
+    <cols name="-Att-attrs" type="String"/>
+  </Table>
+  <Table name="-Cla-dest" pkey="/1/@cols.0">
+    <cols name="-Att-attrs" type="String"/>
+  </Table>
+  <Table name="Association1-Cla-dest" pkey="/2/@cols.0">
+    <cols name="-Att-attrs" type="String"/>
+  </Table>
+  <Table name="Attribute1-Cla-type" pkey="/3/@cols.0">
+    <cols name="-Att-attrs" type="String"/>
+  </Table>
+</xmi:XMI>

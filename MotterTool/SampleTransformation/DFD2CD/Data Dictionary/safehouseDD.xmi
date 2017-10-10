@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DDMetaModel.DDMetaModel:DataDictionary xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:DDMetaModel.DDMetaModel="DDMetaModel" name="Safe House">
+  <dataElements name="Password">
+    <valueSpecification xsi:type="DDMetaModel.DDMetaModel:PrimitiveString" name="String" value="emptyString"/>
+  </dataElements>
+  <dataElements name="StartStop">
+    <valueSpecification xsi:type="DDMetaModel.DDMetaModel:PrimitiveBoolean" name="Boolean" value="false"/>
+  </dataElements>
+  <dataElements name="ConfigurationRequest">
+    <valueSpecification xsi:type="DDMetaModel.DDMetaModel:PrimitiveBoolean" name="Boolean" value="false"/>
+  </dataElements>
+  <dataElements name="ValidIdMessage">
+    <valueSpecification xsi:type="DDMetaModel.DDMetaModel:PrimitiveBoolean" name="Boolean" value="false"/>
+  </dataElements>
+  <dataElements name="ActivateDeactivateMessage">
+    <valueSpecification xsi:type="DDMetaModel.DDMetaModel:PrimitiveBoolean" name="Boolean" value="false"/>
+  </dataElements>
+  <dataElements name="ConfigurationData">
+    <valueSpecification xsi:type="DDMetaModel.DDMetaModel:Comment" name="Comment" value="emptyComment"/>
+  </dataElements>
+  <dataElements name="SensorId">
+    <valueSpecification xsi:type="DDMetaModel.DDMetaModel:PrimitiveInteger" name="Integer" value="-1"/>
+  </dataElements>
+  <dataElements name="SensorType">
+    <valueSpecification xsi:type="DDMetaModel.DDMetaModel:PrimitiveString" name="String" value="emptyString"/>
+  </dataElements>
+  <dataElements name="SensorLocation">
+    <valueSpecification xsi:type="DDMetaModel.DDMetaModel:PrimitiveString" name="String" value="emptyString"/>
+  </dataElements>
+  <dataElements name="AlarmType">
+    <valueSpecification xsi:type="DDMetaModel.DDMetaModel:PrimitiveString" name="String" value="emptyString"/>
+  </dataElements>
+  <dataElements name="TelephoneNo">
+    <valueSpecification xsi:type="DDMetaModel.DDMetaModel:Comment" name="Comment" value="emptyComment"/>
+  </dataElements>
+  <dataElements name="TelephoneNumberTones">
+    <valueSpecification xsi:type="DDMetaModel.DDMetaModel:PrimitiveBoolean" name="Boolean" value="false"/>
+  </dataElements>
+  <dataElements name="UserCommandAndData">
+    <valueSpecification xsi:type="DDMetaModel.DDMetaModel:SequenceConstruct" value="//@dataElements.0 //@dataElements.1 //@dataElements.2"/>
+  </dataElements>
+  <dataElements name="AlarmData">
+    <valueSpecification xsi:type="DDMetaModel.DDMetaModel:SequenceConstruct" value="//@dataElements.9"/>
+  </dataElements>
+  <dataElements name="SensorInformation">
+    <valueSpecification xsi:type="DDMetaModel.DDMetaModel:SequenceConstruct" value="//@dataElements.6 //@dataElements.7 //@dataElements.8"/>
+  </dataElements>
+  <dataElements name="SensorStatus">
+    <valueSpecification xsi:type="DDMetaModel.DDMetaModel:SequenceConstruct" value="//@dataElements.6 //@dataElements.7"/>
+  </dataElements>
+  <dataElements name="DisplayInformation">
+    <valueSpecification xsi:type="DDMetaModel.DDMetaModel:SequenceConstruct" value="//@dataElements.5 //@dataElements.14"/>
+  </dataElements>
+  <dataElements name="TelephoneNumber">
+    	<valueSpecification xsi:type="DDMetaModel.DDMetaModel:SequenceConstruct" value="//@dataElements.10 //@dataElements.11"/>
+  </dataElements>
+</DDMetaModel.DDMetaModel:DataDictionary>
+

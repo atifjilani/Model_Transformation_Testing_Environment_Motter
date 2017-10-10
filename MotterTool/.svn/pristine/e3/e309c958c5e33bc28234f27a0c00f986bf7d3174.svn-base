@@ -1,0 +1,4 @@
+inputModel = OCLSolverOutput/OCL_GenSM.uml
+packageName = quest.test_problems.Statemachinetry.env
+outputDir = generated_code/
+configFile = resources/ocl_generated/simulator-config.txt

@@ -1,0 +1,4 @@
+inputModel = resources/booting/Booting.uml
+packageName = simula.artificial_problems.booting.env
+outputDir = generated_code/
+configFile = resources/booting/simulator-config.txt

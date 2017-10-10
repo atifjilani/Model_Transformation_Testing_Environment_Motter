@@ -1,0 +1,1754 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XMI xmlns:UML="org.omg.xmi.namespace.UML" xmi.version="1.2" timestamp="Mon Oct 23 22:50:57 CEST 2006">
+  <XMI.header>
+    <XMI.documentation>
+      <XMI.exporter>Netbeans XMI Writer</XMI.exporter>
+      <XMI.exporterVersion>1.0</XMI.exporterVersion>
+    </XMI.documentation>
+  </XMI.header>
+  <XMI.content>
+    <UML:Model xmi.id="a1" isSpecification="false" isRoot="false" isLeaf="false" isAbstract="false">
+      <UML:Namespace.ownedElement>
+        <UML:Package xmi.id="a2" name="java" isSpecification="false" isRoot="false" isLeaf="false" isAbstract="false">
+          <UML:Namespace.ownedElement>
+            <UML:Package xmi.id="a3" name="lang" isSpecification="false" isRoot="false" isLeaf="false" isAbstract="false"/>
+          </UML:Namespace.ownedElement>
+        </UML:Package>
+        <UML:SignalEvent xmi.id="a4" name="insert_card(x)" isSpecification="false"/>
+        <UML:StateMachine xmi.id="a5" name="atm in cancel_2" isSpecification="false">
+          <UML:StateMachine.context>
+            <UML:Class xmi.idref="a6"/>
+          </UML:StateMachine.context>
+          <UML:StateMachine.top>
+            <UML:CompositeState xmi.id="a7" isSpecification="false" isConcurrent="false">
+              <UML:CompositeState.subvertex>
+                <UML:SimpleState xmi.id="a8" name="display_main_screen_sent" isSpecification="false">
+                  <UML:ModelElement.constraint>
+                    <UML:Constraint xmi.idref="a9"/>
+                    <UML:Constraint xmi.idref="a10"/>
+                  </UML:ModelElement.constraint>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="a11"/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="a12"/>
+                  </UML:StateVertex.incoming>
+                </UML:SimpleState>
+                <UML:SimpleState xmi.id="a13" name="display_main_screen_sent" isSpecification="false">
+                  <UML:ModelElement.constraint>
+                    <UML:Constraint xmi.idref="a14"/>
+                    <UML:Constraint xmi.idref="a9"/>
+                    <UML:Constraint xmi.idref="a10"/>
+                  </UML:ModelElement.constraint>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="a15"/>
+                  </UML:StateVertex.incoming>
+                </UML:SimpleState>
+                <UML:SimpleState xmi.id="a16" name="verify_account_sent" isSpecification="false">
+                  <UML:ModelElement.constraint>
+                    <UML:Constraint xmi.idref="a17"/>
+                    <UML:Constraint xmi.idref="a18"/>
+                    <UML:Constraint xmi.idref="a10"/>
+                  </UML:ModelElement.constraint>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="a19"/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="a20"/>
+                  </UML:StateVertex.incoming>
+                </UML:SimpleState>
+                <UML:SimpleState xmi.id="a21" name="take_card_received" isSpecification="false">
+                  <UML:ModelElement.constraint>
+                    <UML:Constraint xmi.idref="a14"/>
+                    <UML:Constraint xmi.idref="a9"/>
+                    <UML:Constraint xmi.idref="a10"/>
+                  </UML:ModelElement.constraint>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="a15"/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="a22"/>
+                  </UML:StateVertex.incoming>
+                </UML:SimpleState>
+                <UML:SimpleState xmi.id="a23" name="eject_card_sent" isSpecification="false">
+                  <UML:ModelElement.constraint>
+                    <UML:Constraint xmi.idref="a14"/>
+                    <UML:Constraint xmi.idref="a24"/>
+                    <UML:Constraint xmi.idref="a9"/>
+                  </UML:ModelElement.constraint>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="a25"/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="a26"/>
+                  </UML:StateVertex.incoming>
+                </UML:SimpleState>
+                <UML:SimpleState xmi.id="a27" name="request_password_sent" isSpecification="false">
+                  <UML:ModelElement.constraint>
+                    <UML:Constraint xmi.idref="a17"/>
+                    <UML:Constraint xmi.idref="a14"/>
+                    <UML:Constraint xmi.idref="a10"/>
+                  </UML:ModelElement.constraint>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="a28"/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="a29"/>
+                  </UML:StateVertex.incoming>
+                </UML:SimpleState>
+                <UML:SimpleState xmi.id="a30" name="request_take_card_sent" isSpecification="false">
+                  <UML:ModelElement.constraint>
+                    <UML:Constraint xmi.idref="a14"/>
+                    <UML:Constraint xmi.idref="a24"/>
+                    <UML:Constraint xmi.idref="a9"/>
+                  </UML:ModelElement.constraint>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="a22"/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="a25"/>
+                  </UML:StateVertex.incoming>
+                </UML:SimpleState>
+                <UML:SimpleState xmi.id="a31" name="insert_card(x)_received" isSpecification="false">
+                  <UML:ModelElement.constraint>
+                    <UML:Constraint xmi.idref="a17"/>
+                    <UML:Constraint xmi.idref="a10"/>
+                  </UML:ModelElement.constraint>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="a29"/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="a11"/>
+                  </UML:StateVertex.incoming>
+                </UML:SimpleState>
+                <UML:SimpleState xmi.id="a32" name="canceled_message_sent" isSpecification="false">
+                  <UML:ModelElement.constraint>
+                    <UML:Constraint xmi.idref="a17"/>
+                    <UML:Constraint xmi.idref="a18"/>
+                    <UML:Constraint xmi.idref="a10"/>
+                  </UML:ModelElement.constraint>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="a26"/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="a33"/>
+                  </UML:StateVertex.incoming>
+                </UML:SimpleState>
+                <UML:SimpleState xmi.id="a34" name="default" isSpecification="false">
+                  <UML:ModelElement.constraint>
+                    <UML:Constraint xmi.idref="a9"/>
+                    <UML:Constraint xmi.idref="a10"/>
+                  </UML:ModelElement.constraint>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="a12"/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="a35"/>
+                  </UML:StateVertex.incoming>
+                </UML:SimpleState>
+                <UML:Pseudostate xmi.id="a36" isSpecification="false" kind="initial">
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="a35"/>
+                  </UML:StateVertex.outgoing>
+                </UML:Pseudostate>
+                <UML:SimpleState xmi.id="a37" name="enter_password(x)_received" isSpecification="false">
+                  <UML:ModelElement.constraint>
+                    <UML:Constraint xmi.idref="a17"/>
+                    <UML:Constraint xmi.idref="a18"/>
+                    <UML:Constraint xmi.idref="a10"/>
+                  </UML:ModelElement.constraint>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="a20"/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="a28"/>
+                  </UML:StateVertex.incoming>
+                </UML:SimpleState>
+                <UML:SimpleState xmi.id="a38" name="cancel_received" isSpecification="false">
+                  <UML:ModelElement.constraint>
+                    <UML:Constraint xmi.idref="a17"/>
+                    <UML:Constraint xmi.idref="a18"/>
+                    <UML:Constraint xmi.idref="a10"/>
+                  </UML:ModelElement.constraint>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="a33"/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="a19"/>
+                  </UML:StateVertex.incoming>
+                </UML:SimpleState>
+              </UML:CompositeState.subvertex>
+            </UML:CompositeState>
+          </UML:StateMachine.top>
+          <UML:StateMachine.transitions>
+            <UML:Transition source="a37" target="a16" xmi.id="a20" name="Message_48" isSpecification="false">
+<UML:Transition.effect>
+                <UML:ActionSequence xmi.id="a39" isSpecification="false" isAsynchronous="false">
+<UML:ActionSequence.action>
+<UML:UninterpretedAction xmi.id="a40" name="verify_account"/>
+</UML:ActionSequence.action>
+</UML:ActionSequence>
+              </UML:Transition.effect>
+<UML:Transition.source>
+                <UML:SimpleState xmi.idref="a37"/>
+              </UML:Transition.source>
+<UML:Transition.target>
+                <UML:SimpleState xmi.idref="a16"/>
+              </UML:Transition.target>
+</UML:Transition>
+            <UML:Transition source="a23" target="a30" xmi.id="a25" name="Message_36" isSpecification="false">
+<UML:Transition.effect>
+                <UML:ActionSequence xmi.id="a41" isSpecification="false" isAsynchronous="false">
+<UML:ActionSequence.action>
+<UML:UninterpretedAction xmi.id="a42" name="request_take_card"/>
+</UML:ActionSequence.action>
+</UML:ActionSequence>
+              </UML:Transition.effect>
+<UML:Transition.source>
+                <UML:SimpleState xmi.idref="a23"/>
+              </UML:Transition.source>
+<UML:Transition.target>
+                <UML:SimpleState xmi.idref="a30"/>
+              </UML:Transition.target>
+</UML:Transition>
+            <UML:Transition source="a32" target="a23" xmi.id="a26" name="Message_1" isSpecification="false">
+<UML:Transition.effect>
+                <UML:ActionSequence xmi.id="a43" isSpecification="false" isAsynchronous="false">
+<UML:ActionSequence.action>
+<UML:UninterpretedAction xmi.id="a44" name="eject_card"/>
+</UML:ActionSequence.action>
+</UML:ActionSequence>
+              </UML:Transition.effect>
+<UML:Transition.source>
+                <UML:SimpleState xmi.idref="a32"/>
+              </UML:Transition.source>
+<UML:Transition.target>
+                <UML:SimpleState xmi.idref="a23"/>
+              </UML:Transition.target>
+</UML:Transition>
+            <UML:Transition source="a16" target="a38" xmi.id="a19" name="stim_49" isSpecification="false">
+<UML:Transition.trigger>
+                <UML:Event xmi.idref="a45"/>
+              </UML:Transition.trigger>
+<UML:Transition.source>
+                <UML:SimpleState xmi.idref="a16"/>
+              </UML:Transition.source>
+<UML:Transition.target>
+                <UML:SimpleState xmi.idref="a38"/>
+              </UML:Transition.target>
+</UML:Transition>
+            <UML:Transition source="a27" target="a37" xmi.id="a28" name="stim_47" isSpecification="false">
+<UML:Transition.trigger>
+                <UML:Event xmi.idref="a46"/>
+              </UML:Transition.trigger>
+<UML:Transition.source>
+                <UML:SimpleState xmi.idref="a27"/>
+              </UML:Transition.source>
+<UML:Transition.target>
+                <UML:SimpleState xmi.idref="a37"/>
+              </UML:Transition.target>
+</UML:Transition>
+            <UML:Transition source="a31" target="a27" xmi.id="a29" name="Message_34" isSpecification="false">
+<UML:Transition.effect>
+                <UML:ActionSequence xmi.id="a47" isSpecification="false" isAsynchronous="false">
+<UML:ActionSequence.action>
+<UML:UninterpretedAction xmi.id="a48" name="request_password"/>
+</UML:ActionSequence.action>
+</UML:ActionSequence>
+              </UML:Transition.effect>
+<UML:Transition.source>
+                <UML:SimpleState xmi.idref="a31"/>
+              </UML:Transition.source>
+<UML:Transition.target>
+                <UML:SimpleState xmi.idref="a27"/>
+              </UML:Transition.target>
+</UML:Transition>
+            <UML:Transition source="a36" target="a34" xmi.id="a35" name="default" isSpecification="false">
+<UML:Transition.source>
+                <UML:Pseudostate xmi.idref="a36"/>
+              </UML:Transition.source>
+<UML:Transition.target>
+                <UML:SimpleState xmi.idref="a34"/>
+              </UML:Transition.target>
+</UML:Transition>
+            <UML:Transition source="a8" target="a31" xmi.id="a11" name="stim_33" isSpecification="false">
+<UML:Transition.trigger>
+                <UML:Event xmi.idref="a4"/>
+              </UML:Transition.trigger>
+<UML:Transition.source>
+                <UML:SimpleState xmi.idref="a8"/>
+              </UML:Transition.source>
+<UML:Transition.target>
+                <UML:SimpleState xmi.idref="a31"/>
+              </UML:Transition.target>
+</UML:Transition>
+            <UML:Transition source="a21" target="a13" xmi.id="a15" name="Message_38" isSpecification="false">
+<UML:Transition.effect>
+                <UML:ActionSequence xmi.id="a49" isSpecification="false" isAsynchronous="false">
+<UML:ActionSequence.action>
+<UML:UninterpretedAction xmi.id="a50" name="display_main_screen"/>
+</UML:ActionSequence.action>
+</UML:ActionSequence>
+              </UML:Transition.effect>
+<UML:Transition.source>
+                <UML:SimpleState xmi.idref="a21"/>
+              </UML:Transition.source>
+<UML:Transition.target>
+                <UML:SimpleState xmi.idref="a13"/>
+              </UML:Transition.target>
+</UML:Transition>
+            <UML:Transition source="a38" target="a32" xmi.id="a33" name="Message_35" isSpecification="false">
+<UML:Transition.effect>
+                <UML:ActionSequence xmi.id="a51" isSpecification="false" isAsynchronous="false">
+<UML:ActionSequence.action>
+<UML:UninterpretedAction xmi.id="a52" name="canceled_message"/>
+</UML:ActionSequence.action>
+</UML:ActionSequence>
+              </UML:Transition.effect>
+<UML:Transition.source>
+                <UML:SimpleState xmi.idref="a38"/>
+              </UML:Transition.source>
+<UML:Transition.target>
+                <UML:SimpleState xmi.idref="a32"/>
+              </UML:Transition.target>
+</UML:Transition>
+            <UML:Transition source="a30" target="a21" xmi.id="a22" name="stim_37" isSpecification="false">
+<UML:Transition.trigger>
+                <UML:Event xmi.idref="a53"/>
+              </UML:Transition.trigger>
+<UML:Transition.source>
+                <UML:SimpleState xmi.idref="a30"/>
+              </UML:Transition.source>
+<UML:Transition.target>
+                <UML:SimpleState xmi.idref="a21"/>
+              </UML:Transition.target>
+</UML:Transition>
+            <UML:Transition source="a34" target="a8" xmi.id="a12" name="Message_32" isSpecification="false">
+<UML:Transition.effect>
+                <UML:ActionSequence xmi.id="a54" isSpecification="false" isAsynchronous="false">
+<UML:ActionSequence.action>
+<UML:UninterpretedAction xmi.id="a55" name="display_main_screen"/>
+</UML:ActionSequence.action>
+</UML:ActionSequence>
+              </UML:Transition.effect>
+<UML:Transition.source>
+                <UML:SimpleState xmi.idref="a34"/>
+              </UML:Transition.source>
+<UML:Transition.target>
+                <UML:SimpleState xmi.idref="a8"/>
+              </UML:Transition.target>
+</UML:Transition>
+          </UML:StateMachine.transitions>
+        </UML:StateMachine>
+        <UML:Class xmi.id="a56" name="PasswdGiven" isSpecification="false" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+          <UML:Classifier.feature>
+            <UML:Attribute xmi.id="a57" name="true" visibility="public" isSpecification="false"/>
+            <UML:Attribute xmi.id="a58" name="false" visibility="public" isSpecification="false"/>
+          </UML:Classifier.feature>
+        </UML:Class>
+        <UML:SignalEvent xmi.id="a59" name="take_card" isSpecification="false"/>
+        <UML:SignalEvent xmi.id="a60" name="insert_card(x)" isSpecification="false"/>
+        <UML:SignalEvent xmi.id="a61" name="cancel" isSpecification="false"/>
+        <UML:SignalEvent xmi.id="a45" name="cancel" isSpecification="false"/>
+        <UML:SignalEvent xmi.id="a46" name="enter_password(x)" isSpecification="false"/>
+        <UML:SignalEvent xmi.id="a62" name="bad_account" isSpecification="false"/>
+        <UML:SignalEvent xmi.id="a63" name="take_card" isSpecification="false"/>
+        <UML:Class xmi.id="a64" name="Consortium" isSpecification="false" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+          <UML:Classifier.feature>
+            <UML:Operation xmi.id="a65" name="verify_account" isSpecification="false" isQuery="false" isRoot="false" isLeaf="false" isAbstract="false"/>
+            <UML:Method xmi.id="a66" isSpecification="false" isQuery="false">
+              <UML:Method.specification>
+                <UML:Operation xmi.idref="a65"/>
+              </UML:Method.specification>
+            </UML:Method>
+            <UML:Operation xmi.id="a67" name="bad_account" isSpecification="false" isQuery="false" isRoot="false" isLeaf="false" isAbstract="false"/>
+            <UML:Method xmi.id="a68" isSpecification="false" isQuery="false">
+              <UML:Method.specification>
+                <UML:Operation xmi.idref="a67"/>
+              </UML:Method.specification>
+            </UML:Method>
+            <UML:Operation xmi.id="a69" name="bad_password" isSpecification="false" isQuery="false" isRoot="false" isLeaf="false" isAbstract="false"/>
+            <UML:Method xmi.id="a70" isSpecification="false" isQuery="false">
+              <UML:Method.specification>
+                <UML:Operation xmi.idref="a69"/>
+              </UML:Method.specification>
+            </UML:Method>
+          </UML:Classifier.feature>
+        </UML:Class>
+        <UML:SignalEvent xmi.id="a71" name="insert_card(x)" isSpecification="false"/>
+        <UML:SignalEvent xmi.id="a72" name="cancel" isSpecification="false"/>
+        <UML:Stereotype xmi.id="a73" name="statevariable" isSpecification="false" isRoot="false" isLeaf="false" isAbstract="false">
+          <UML:Stereotype.baseClass>Class</UML:Stereotype.baseClass>
+        </UML:Stereotype>
+        <UML:StateMachine xmi.id="a74" name="atm in bad_password" isSpecification="false">
+          <UML:StateMachine.context>
+            <UML:Class xmi.idref="a6"/>
+          </UML:StateMachine.context>
+          <UML:StateMachine.top>
+            <UML:CompositeState xmi.id="a75" isSpecification="false" isConcurrent="false">
+              <UML:CompositeState.subvertex>
+                <UML:Pseudostate xmi.id="a76" isSpecification="false" kind="initial">
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="a77"/>
+                  </UML:StateVertex.outgoing>
+                </UML:Pseudostate>
+                <UML:SimpleState xmi.id="a78" name="default" isSpecification="false">
+                  <UML:ModelElement.constraint>
+                    <UML:Constraint xmi.idref="a9"/>
+                    <UML:Constraint xmi.idref="a10"/>
+                  </UML:ModelElement.constraint>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="a79"/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="a77"/>
+                  </UML:StateVertex.incoming>
+                </UML:SimpleState>
+                <UML:SimpleState xmi.id="a80" name="display_main_screen_sent" isSpecification="false">
+                  <UML:ModelElement.constraint>
+                    <UML:Constraint xmi.idref="a9"/>
+                    <UML:Constraint xmi.idref="a10"/>
+                  </UML:ModelElement.constraint>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="a81"/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="a79"/>
+                  </UML:StateVertex.incoming>
+                </UML:SimpleState>
+                <UML:SimpleState xmi.id="a82" name="display_main_screen_sent" isSpecification="false">
+                  <UML:ModelElement.constraint>
+                    <UML:Constraint xmi.idref="a14"/>
+                    <UML:Constraint xmi.idref="a9"/>
+                    <UML:Constraint xmi.idref="a10"/>
+                  </UML:ModelElement.constraint>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="a83"/>
+                  </UML:StateVertex.incoming>
+                </UML:SimpleState>
+                <UML:SimpleState xmi.id="a84" name="take_card_received" isSpecification="false">
+                  <UML:ModelElement.constraint>
+                    <UML:Constraint xmi.idref="a14"/>
+                    <UML:Constraint xmi.idref="a9"/>
+                    <UML:Constraint xmi.idref="a10"/>
+                  </UML:ModelElement.constraint>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="a83"/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="a85"/>
+                  </UML:StateVertex.incoming>
+                </UML:SimpleState>
+                <UML:SimpleState xmi.id="a86" name="enter_password(x)_received" isSpecification="false">
+                  <UML:ModelElement.constraint>
+                    <UML:Constraint xmi.idref="a17"/>
+                    <UML:Constraint xmi.idref="a18"/>
+                    <UML:Constraint xmi.idref="a10"/>
+                  </UML:ModelElement.constraint>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="a87"/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="a88"/>
+                  </UML:StateVertex.incoming>
+                </UML:SimpleState>
+                <UML:SimpleState xmi.id="a89" name="request_take_card_sent" isSpecification="false">
+                  <UML:ModelElement.constraint>
+                    <UML:Constraint xmi.idref="a14"/>
+                    <UML:Constraint xmi.idref="a24"/>
+                    <UML:Constraint xmi.idref="a9"/>
+                  </UML:ModelElement.constraint>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="a85"/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="a90"/>
+                  </UML:StateVertex.incoming>
+                </UML:SimpleState>
+                <UML:SimpleState xmi.id="a91" name="request_password_sent" isSpecification="false">
+                  <UML:ModelElement.constraint>
+                    <UML:Constraint xmi.idref="a17"/>
+                    <UML:Constraint xmi.idref="a14"/>
+                    <UML:Constraint xmi.idref="a10"/>
+                  </UML:ModelElement.constraint>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="a88"/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="a92"/>
+                  </UML:StateVertex.incoming>
+                </UML:SimpleState>
+                <UML:SimpleState xmi.id="a93" name="eject_card_sent" isSpecification="false">
+                  <UML:ModelElement.constraint>
+                    <UML:Constraint xmi.idref="a14"/>
+                    <UML:Constraint xmi.idref="a24"/>
+                    <UML:Constraint xmi.idref="a9"/>
+                  </UML:ModelElement.constraint>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="a90"/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="a94"/>
+                  </UML:StateVertex.incoming>
+                </UML:SimpleState>
+                <UML:SimpleState xmi.id="a95" name="bad_password_received" isSpecification="false">
+                  <UML:ModelElement.constraint>
+                    <UML:Constraint xmi.idref="a17"/>
+                    <UML:Constraint xmi.idref="a14"/>
+                    <UML:Constraint xmi.idref="a10"/>
+                  </UML:ModelElement.constraint>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="a96"/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="a97"/>
+                  </UML:StateVertex.incoming>
+                </UML:SimpleState>
+                <UML:SimpleState xmi.id="a98" name="request_password_sent" isSpecification="false">
+                  <UML:ModelElement.constraint>
+                    <UML:Constraint xmi.idref="a17"/>
+                    <UML:Constraint xmi.idref="a14"/>
+                    <UML:Constraint xmi.idref="a10"/>
+                  </UML:ModelElement.constraint>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="a99"/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="a96"/>
+                  </UML:StateVertex.incoming>
+                </UML:SimpleState>
+                <UML:SimpleState xmi.id="a100" name="verify_account_sent" isSpecification="false">
+                  <UML:ModelElement.constraint>
+                    <UML:Constraint xmi.idref="a17"/>
+                    <UML:Constraint xmi.idref="a18"/>
+                    <UML:Constraint xmi.idref="a10"/>
+                  </UML:ModelElement.constraint>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="a97"/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="a87"/>
+                  </UML:StateVertex.incoming>
+                </UML:SimpleState>
+                <UML:SimpleState xmi.id="a101" name="insert_card(x)_received" isSpecification="false">
+                  <UML:ModelElement.constraint>
+                    <UML:Constraint xmi.idref="a17"/>
+                    <UML:Constraint xmi.idref="a10"/>
+                  </UML:ModelElement.constraint>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="a92"/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="a81"/>
+                  </UML:StateVertex.incoming>
+                </UML:SimpleState>
+                <UML:SimpleState xmi.id="a102" name="cancel_received" isSpecification="false">
+                  <UML:ModelElement.constraint>
+                    <UML:Constraint xmi.idref="a17"/>
+                    <UML:Constraint xmi.idref="a14"/>
+                    <UML:Constraint xmi.idref="a10"/>
+                  </UML:ModelElement.constraint>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="a103"/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="a99"/>
+                  </UML:StateVertex.incoming>
+                </UML:SimpleState>
+                <UML:SimpleState xmi.id="a104" name="canceled_message_sent" isSpecification="false">
+                  <UML:ModelElement.constraint>
+                    <UML:Constraint xmi.idref="a17"/>
+                    <UML:Constraint xmi.idref="a14"/>
+                    <UML:Constraint xmi.idref="a10"/>
+                  </UML:ModelElement.constraint>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="a94"/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="a103"/>
+                  </UML:StateVertex.incoming>
+                </UML:SimpleState>
+              </UML:CompositeState.subvertex>
+            </UML:CompositeState>
+          </UML:StateMachine.top>
+          <UML:StateMachine.transitions>
+            <UML:Transition source="a101" target="a91" xmi.id="a92" name="Message_16" isSpecification="false">
+<UML:Transition.effect>
+                <UML:ActionSequence xmi.id="a105" isSpecification="false" isAsynchronous="false">
+<UML:ActionSequence.action>
+<UML:UninterpretedAction xmi.id="a106" name="request_password"/>
+</UML:ActionSequence.action>
+</UML:ActionSequence>
+              </UML:Transition.effect>
+<UML:Transition.source>
+                <UML:SimpleState xmi.idref="a101"/>
+              </UML:Transition.source>
+<UML:Transition.target>
+                <UML:SimpleState xmi.idref="a91"/>
+              </UML:Transition.target>
+</UML:Transition>
+            <UML:Transition source="a78" target="a80" xmi.id="a79" name="Message_14" isSpecification="false">
+<UML:Transition.effect>
+                <UML:ActionSequence xmi.id="a107" isSpecification="false" isAsynchronous="false">
+<UML:ActionSequence.action>
+<UML:UninterpretedAction xmi.id="a108" name="display_main_screen"/>
+</UML:ActionSequence.action>
+</UML:ActionSequence>
+              </UML:Transition.effect>
+<UML:Transition.source>
+                <UML:SimpleState xmi.idref="a78"/>
+              </UML:Transition.source>
+<UML:Transition.target>
+                <UML:SimpleState xmi.idref="a80"/>
+              </UML:Transition.target>
+</UML:Transition>
+            <UML:Transition source="a95" target="a98" xmi.id="a96" name="Message_18" isSpecification="false">
+<UML:Transition.effect>
+                <UML:ActionSequence xmi.id="a109" isSpecification="false" isAsynchronous="false">
+<UML:ActionSequence.action>
+<UML:UninterpretedAction xmi.id="a110" name="request_password"/>
+</UML:ActionSequence.action>
+</UML:ActionSequence>
+              </UML:Transition.effect>
+<UML:Transition.source>
+                <UML:SimpleState xmi.idref="a95"/>
+              </UML:Transition.source>
+<UML:Transition.target>
+                <UML:SimpleState xmi.idref="a98"/>
+              </UML:Transition.target>
+</UML:Transition>
+            <UML:Transition source="a76" target="a78" xmi.id="a77" name="default" isSpecification="false">
+<UML:Transition.source>
+                <UML:Pseudostate xmi.idref="a76"/>
+              </UML:Transition.source>
+<UML:Transition.target>
+                <UML:SimpleState xmi.idref="a78"/>
+              </UML:Transition.target>
+</UML:Transition>
+            <UML:Transition source="a84" target="a82" xmi.id="a83" name="Message_23" isSpecification="false">
+<UML:Transition.effect>
+                <UML:ActionSequence xmi.id="a111" isSpecification="false" isAsynchronous="false">
+<UML:ActionSequence.action>
+<UML:UninterpretedAction xmi.id="a112" name="display_main_screen"/>
+</UML:ActionSequence.action>
+</UML:ActionSequence>
+              </UML:Transition.effect>
+<UML:Transition.source>
+                <UML:SimpleState xmi.idref="a84"/>
+              </UML:Transition.source>
+<UML:Transition.target>
+                <UML:SimpleState xmi.idref="a82"/>
+              </UML:Transition.target>
+</UML:Transition>
+            <UML:Transition source="a100" target="a95" xmi.id="a97" name="stim_25" isSpecification="false">
+<UML:Transition.trigger>
+                <UML:Event xmi.idref="a113"/>
+              </UML:Transition.trigger>
+<UML:Transition.source>
+                <UML:SimpleState xmi.idref="a100"/>
+              </UML:Transition.source>
+<UML:Transition.target>
+                <UML:SimpleState xmi.idref="a95"/>
+              </UML:Transition.target>
+</UML:Transition>
+            <UML:Transition source="a80" target="a101" xmi.id="a81" name="stim_15" isSpecification="false">
+<UML:Transition.trigger>
+                <UML:Event xmi.idref="a114"/>
+              </UML:Transition.trigger>
+<UML:Transition.source>
+                <UML:SimpleState xmi.idref="a80"/>
+              </UML:Transition.source>
+<UML:Transition.target>
+                <UML:SimpleState xmi.idref="a101"/>
+              </UML:Transition.target>
+</UML:Transition>
+            <UML:Transition source="a102" target="a104" xmi.id="a103" name="Message_19" isSpecification="false">
+<UML:Transition.effect>
+                <UML:ActionSequence xmi.id="a115" isSpecification="false" isAsynchronous="false">
+<UML:ActionSequence.action>
+<UML:UninterpretedAction xmi.id="a116" name="canceled_message"/>
+</UML:ActionSequence.action>
+</UML:ActionSequence>
+              </UML:Transition.effect>
+<UML:Transition.source>
+                <UML:SimpleState xmi.idref="a102"/>
+              </UML:Transition.source>
+<UML:Transition.target>
+                <UML:SimpleState xmi.idref="a104"/>
+              </UML:Transition.target>
+</UML:Transition>
+            <UML:Transition source="a86" target="a100" xmi.id="a87" name="Message_22" isSpecification="false">
+<UML:Transition.effect>
+                <UML:ActionSequence xmi.id="a117" isSpecification="false" isAsynchronous="false">
+<UML:ActionSequence.action>
+<UML:UninterpretedAction xmi.id="a118" name="verify_account"/>
+</UML:ActionSequence.action>
+</UML:ActionSequence>
+              </UML:Transition.effect>
+<UML:Transition.source>
+                <UML:SimpleState xmi.idref="a86"/>
+              </UML:Transition.source>
+<UML:Transition.target>
+                <UML:SimpleState xmi.idref="a100"/>
+              </UML:Transition.target>
+</UML:Transition>
+            <UML:Transition source="a91" target="a86" xmi.id="a88" name="stim_17" isSpecification="false">
+<UML:Transition.trigger>
+                <UML:Event xmi.idref="a119"/>
+              </UML:Transition.trigger>
+<UML:Transition.source>
+                <UML:SimpleState xmi.idref="a91"/>
+              </UML:Transition.source>
+<UML:Transition.target>
+                <UML:SimpleState xmi.idref="a86"/>
+              </UML:Transition.target>
+</UML:Transition>
+            <UML:Transition source="a98" target="a102" xmi.id="a99" name="stim_28" isSpecification="false">
+<UML:Transition.trigger>
+                <UML:Event xmi.idref="a61"/>
+              </UML:Transition.trigger>
+<UML:Transition.source>
+                <UML:SimpleState xmi.idref="a98"/>
+              </UML:Transition.source>
+<UML:Transition.target>
+                <UML:SimpleState xmi.idref="a102"/>
+              </UML:Transition.target>
+</UML:Transition>
+            <UML:Transition source="a104" target="a93" xmi.id="a94" name="Message_20" isSpecification="false">
+<UML:Transition.effect>
+                <UML:ActionSequence xmi.id="a120" isSpecification="false" isAsynchronous="false">
+<UML:ActionSequence.action>
+<UML:UninterpretedAction xmi.id="a121" name="eject_card"/>
+</UML:ActionSequence.action>
+</UML:ActionSequence>
+              </UML:Transition.effect>
+<UML:Transition.source>
+                <UML:SimpleState xmi.idref="a104"/>
+              </UML:Transition.source>
+<UML:Transition.target>
+                <UML:SimpleState xmi.idref="a93"/>
+              </UML:Transition.target>
+</UML:Transition>
+            <UML:Transition source="a93" target="a89" xmi.id="a90" name="Message_21" isSpecification="false">
+<UML:Transition.effect>
+                <UML:ActionSequence xmi.id="a122" isSpecification="false" isAsynchronous="false">
+<UML:ActionSequence.action>
+<UML:UninterpretedAction xmi.id="a123" name="request_take_card"/>
+</UML:ActionSequence.action>
+</UML:ActionSequence>
+              </UML:Transition.effect>
+<UML:Transition.source>
+                <UML:SimpleState xmi.idref="a93"/>
+              </UML:Transition.source>
+<UML:Transition.target>
+                <UML:SimpleState xmi.idref="a89"/>
+              </UML:Transition.target>
+</UML:Transition>
+            <UML:Transition source="a89" target="a84" xmi.id="a85" name="stim_22" isSpecification="false">
+<UML:Transition.trigger>
+                <UML:Event xmi.idref="a63"/>
+              </UML:Transition.trigger>
+<UML:Transition.source>
+                <UML:SimpleState xmi.idref="a89"/>
+              </UML:Transition.source>
+<UML:Transition.target>
+                <UML:SimpleState xmi.idref="a84"/>
+              </UML:Transition.target>
+</UML:Transition>
+          </UML:StateMachine.transitions>
+        </UML:StateMachine>
+        <UML:Class xmi.id="a124" name="UI" isSpecification="false" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+          <UML:Classifier.feature>
+            <UML:Operation xmi.id="a125" name="display_main_screen" isSpecification="false" isQuery="false" isRoot="false" isLeaf="false" isAbstract="false"/>
+            <UML:Method xmi.id="a126" isSpecification="false" isQuery="false">
+              <UML:Method.specification>
+                <UML:Operation xmi.idref="a125"/>
+              </UML:Method.specification>
+            </UML:Method>
+            <UML:Operation xmi.id="a127" name="request_password" isSpecification="false" isQuery="false" isRoot="false" isLeaf="false" isAbstract="false"/>
+            <UML:Method xmi.id="a128" isSpecification="false" isQuery="false">
+              <UML:Method.specification>
+                <UML:Operation xmi.idref="a127"/>
+              </UML:Method.specification>
+            </UML:Method>
+            <UML:Operation xmi.id="a129" name="bad_account_message" isSpecification="false" isQuery="false" isRoot="false" isLeaf="false" isAbstract="false"/>
+            <UML:Method xmi.id="a130" isSpecification="false" isQuery="false">
+              <UML:Method.specification>
+                <UML:Operation xmi.idref="a129"/>
+              </UML:Method.specification>
+            </UML:Method>
+            <UML:Operation xmi.id="a131" name="print_receipt" isSpecification="false" isQuery="false" isRoot="false" isLeaf="false" isAbstract="false"/>
+            <UML:Method xmi.id="a132" isSpecification="false" isQuery="false">
+              <UML:Method.specification>
+                <UML:Operation xmi.idref="a131"/>
+              </UML:Method.specification>
+            </UML:Method>
+            <UML:Operation xmi.id="a133" name="eject_card" isSpecification="false" isQuery="false" isRoot="false" isLeaf="false" isAbstract="false"/>
+            <UML:Method xmi.id="a134" isSpecification="false" isQuery="false">
+              <UML:Method.specification>
+                <UML:Operation xmi.idref="a133"/>
+              </UML:Method.specification>
+            </UML:Method>
+            <UML:Operation xmi.id="a135" name="request_take_card" isSpecification="false" isQuery="false" isRoot="false" isLeaf="false" isAbstract="false"/>
+            <UML:Method xmi.id="a136" isSpecification="false" isQuery="false">
+              <UML:Method.specification>
+                <UML:Operation xmi.idref="a135"/>
+              </UML:Method.specification>
+            </UML:Method>
+            <UML:Operation xmi.id="a137" name="canceled_message" isSpecification="false" isQuery="false" isRoot="false" isLeaf="false" isAbstract="false"/>
+            <UML:Method xmi.id="a138" isSpecification="false" isQuery="false">
+              <UML:Method.specification>
+                <UML:Operation xmi.idref="a137"/>
+              </UML:Method.specification>
+            </UML:Method>
+          </UML:Classifier.feature>
+        </UML:Class>
+        <UML:Class xmi.id="a139" name="CardIn" isSpecification="false" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+          <UML:Classifier.feature>
+            <UML:Attribute xmi.id="a140" name="true" visibility="public" isSpecification="false"/>
+            <UML:Attribute xmi.id="a141" name="false" visibility="public" isSpecification="false"/>
+          </UML:Classifier.feature>
+        </UML:Class>
+        <UML:Stereotype xmi.id="a142" name="invariant" isSpecification="false" isRoot="false" isLeaf="false" isAbstract="false">
+          <UML:Stereotype.baseClass>Constraint</UML:Stereotype.baseClass>
+        </UML:Stereotype>
+        <UML:SignalEvent xmi.id="a113" name="bad_password" isSpecification="false"/>
+        <UML:SignalEvent xmi.id="a114" name="insert_card(x)" isSpecification="false"/>
+        <UML:SignalEvent xmi.id="a53" name="take_card" isSpecification="false"/>
+        <UML:Stereotype xmi.id="a143" name="enumeration" isSpecification="false" isRoot="false" isLeaf="false" isAbstract="false">
+          <UML:Stereotype.baseClass>Class</UML:Stereotype.baseClass>
+        </UML:Stereotype>
+        <UML:SignalEvent xmi.id="a144" name="enter_password(x)" isSpecification="false"/>
+        <UML:SignalEvent xmi.id="a119" name="enter_password(x)" isSpecification="false"/>
+        <UML:Class xmi.id="a145" name="CardHalfWay" isSpecification="false" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+          <UML:Classifier.feature>
+            <UML:Attribute xmi.id="a146" name="true" visibility="public" isSpecification="false"/>
+            <UML:Attribute xmi.id="a147" name="false" visibility="public" isSpecification="false"/>
+          </UML:Classifier.feature>
+        </UML:Class>
+        <UML:StateMachine xmi.id="a148" name="atm in bad_account" isSpecification="false">
+          <UML:StateMachine.context>
+            <UML:Class xmi.idref="a6"/>
+          </UML:StateMachine.context>
+          <UML:StateMachine.top>
+            <UML:CompositeState xmi.id="a149" isSpecification="false" isConcurrent="false">
+              <UML:CompositeState.subvertex>
+                <UML:SimpleState xmi.id="a150" name="bad_account_received" isSpecification="false">
+                  <UML:ModelElement.constraint>
+                    <UML:Constraint xmi.idref="a17"/>
+                    <UML:Constraint xmi.idref="a18"/>
+                    <UML:Constraint xmi.idref="a10"/>
+                  </UML:ModelElement.constraint>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="a151"/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="a152"/>
+                  </UML:StateVertex.incoming>
+                </UML:SimpleState>
+                <UML:SimpleState xmi.id="a153" name="request_take_card_sent" isSpecification="false">
+                  <UML:ModelElement.constraint>
+                    <UML:Constraint xmi.idref="a14"/>
+                    <UML:Constraint xmi.idref="a24"/>
+                    <UML:Constraint xmi.idref="a9"/>
+                  </UML:ModelElement.constraint>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="a154"/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="a155"/>
+                  </UML:StateVertex.incoming>
+                </UML:SimpleState>
+                <UML:SimpleState xmi.id="a156" name="display_main_screen_sent" isSpecification="false">
+                  <UML:ModelElement.constraint>
+                    <UML:Constraint xmi.idref="a9"/>
+                    <UML:Constraint xmi.idref="a10"/>
+                  </UML:ModelElement.constraint>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="a157"/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="a158"/>
+                  </UML:StateVertex.incoming>
+                </UML:SimpleState>
+                <UML:SimpleState xmi.id="a159" name="display_main_screen_sent" isSpecification="false">
+                  <UML:ModelElement.constraint>
+                    <UML:Constraint xmi.idref="a14"/>
+                    <UML:Constraint xmi.idref="a9"/>
+                    <UML:Constraint xmi.idref="a10"/>
+                  </UML:ModelElement.constraint>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="a160"/>
+                  </UML:StateVertex.incoming>
+                </UML:SimpleState>
+                <UML:SimpleState xmi.id="a161" name="request_password_sent" isSpecification="false">
+                  <UML:ModelElement.constraint>
+                    <UML:Constraint xmi.idref="a17"/>
+                    <UML:Constraint xmi.idref="a14"/>
+                    <UML:Constraint xmi.idref="a10"/>
+                  </UML:ModelElement.constraint>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="a162"/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="a163"/>
+                  </UML:StateVertex.incoming>
+                </UML:SimpleState>
+                <UML:SimpleState xmi.id="a164" name="eject_card_sent" isSpecification="false">
+                  <UML:ModelElement.constraint>
+                    <UML:Constraint xmi.idref="a14"/>
+                    <UML:Constraint xmi.idref="a24"/>
+                    <UML:Constraint xmi.idref="a9"/>
+                  </UML:ModelElement.constraint>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="a155"/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="a165"/>
+                  </UML:StateVertex.incoming>
+                </UML:SimpleState>
+                <UML:SimpleState xmi.id="a166" name="insert_card(x)_received" isSpecification="false">
+                  <UML:ModelElement.constraint>
+                    <UML:Constraint xmi.idref="a17"/>
+                    <UML:Constraint xmi.idref="a10"/>
+                  </UML:ModelElement.constraint>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="a163"/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="a157"/>
+                  </UML:StateVertex.incoming>
+                </UML:SimpleState>
+                <UML:SimpleState xmi.id="a167" name="take_card_received" isSpecification="false">
+                  <UML:ModelElement.constraint>
+                    <UML:Constraint xmi.idref="a14"/>
+                    <UML:Constraint xmi.idref="a9"/>
+                    <UML:Constraint xmi.idref="a10"/>
+                  </UML:ModelElement.constraint>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="a160"/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="a154"/>
+                  </UML:StateVertex.incoming>
+                </UML:SimpleState>
+                <UML:SimpleState xmi.id="a168" name="verify_account_sent" isSpecification="false">
+                  <UML:ModelElement.constraint>
+                    <UML:Constraint xmi.idref="a17"/>
+                    <UML:Constraint xmi.idref="a18"/>
+                    <UML:Constraint xmi.idref="a10"/>
+                  </UML:ModelElement.constraint>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="a152"/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="a169"/>
+                  </UML:StateVertex.incoming>
+                </UML:SimpleState>
+                <UML:SimpleState xmi.id="a170" name="enter_password(x)_received" isSpecification="false">
+                  <UML:ModelElement.constraint>
+                    <UML:Constraint xmi.idref="a17"/>
+                    <UML:Constraint xmi.idref="a18"/>
+                    <UML:Constraint xmi.idref="a10"/>
+                  </UML:ModelElement.constraint>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="a169"/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="a162"/>
+                  </UML:StateVertex.incoming>
+                </UML:SimpleState>
+                <UML:SimpleState xmi.id="a171" name="print_receipt_sent" isSpecification="false">
+                  <UML:ModelElement.constraint>
+                    <UML:Constraint xmi.idref="a17"/>
+                    <UML:Constraint xmi.idref="a18"/>
+                    <UML:Constraint xmi.idref="a10"/>
+                  </UML:ModelElement.constraint>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="a165"/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="a172"/>
+                  </UML:StateVertex.incoming>
+                </UML:SimpleState>
+                <UML:Pseudostate xmi.id="a173" isSpecification="false" kind="initial">
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="a174"/>
+                  </UML:StateVertex.outgoing>
+                </UML:Pseudostate>
+                <UML:SimpleState xmi.id="a175" name="bad_account_message_sent" isSpecification="false">
+                  <UML:ModelElement.constraint>
+                    <UML:Constraint xmi.idref="a17"/>
+                    <UML:Constraint xmi.idref="a18"/>
+                    <UML:Constraint xmi.idref="a10"/>
+                  </UML:ModelElement.constraint>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="a172"/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="a151"/>
+                  </UML:StateVertex.incoming>
+                </UML:SimpleState>
+                <UML:SimpleState xmi.id="a176" name="default" isSpecification="false">
+                  <UML:ModelElement.constraint>
+                    <UML:Constraint xmi.idref="a9"/>
+                    <UML:Constraint xmi.idref="a10"/>
+                  </UML:ModelElement.constraint>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="a158"/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="a174"/>
+                  </UML:StateVertex.incoming>
+                </UML:SimpleState>
+              </UML:CompositeState.subvertex>
+            </UML:CompositeState>
+          </UML:StateMachine.top>
+          <UML:StateMachine.transitions>
+            <UML:Transition source="a175" target="a171" xmi.id="a172" name="Message_12" isSpecification="false">
+<UML:Transition.effect>
+                <UML:ActionSequence xmi.id="a177" isSpecification="false" isAsynchronous="false">
+<UML:ActionSequence.action>
+<UML:UninterpretedAction xmi.id="a178" name="print_receipt"/>
+</UML:ActionSequence.action>
+</UML:ActionSequence>
+              </UML:Transition.effect>
+<UML:Transition.source>
+                <UML:SimpleState xmi.idref="a175"/>
+              </UML:Transition.source>
+<UML:Transition.target>
+                <UML:SimpleState xmi.idref="a171"/>
+              </UML:Transition.target>
+</UML:Transition>
+            <UML:Transition source="a153" target="a167" xmi.id="a154" name="stim_12" isSpecification="false">
+<UML:Transition.trigger>
+                <UML:Event xmi.idref="a59"/>
+              </UML:Transition.trigger>
+<UML:Transition.source>
+                <UML:SimpleState xmi.idref="a153"/>
+              </UML:Transition.source>
+<UML:Transition.target>
+                <UML:SimpleState xmi.idref="a167"/>
+              </UML:Transition.target>
+</UML:Transition>
+            <UML:Transition source="a176" target="a156" xmi.id="a158" name="Message_2" isSpecification="false">
+<UML:Transition.effect>
+                <UML:ActionSequence xmi.id="a179" isSpecification="false" isAsynchronous="false">
+<UML:ActionSequence.action>
+<UML:UninterpretedAction xmi.id="a180" name="display_main_screen"/>
+</UML:ActionSequence.action>
+</UML:ActionSequence>
+              </UML:Transition.effect>
+<UML:Transition.source>
+                <UML:SimpleState xmi.idref="a176"/>
+              </UML:Transition.source>
+<UML:Transition.target>
+                <UML:SimpleState xmi.idref="a156"/>
+              </UML:Transition.target>
+</UML:Transition>
+            <UML:Transition source="a168" target="a150" xmi.id="a152" name="stim_9" isSpecification="false">
+<UML:Transition.trigger>
+                <UML:Event xmi.idref="a62"/>
+              </UML:Transition.trigger>
+<UML:Transition.source>
+                <UML:SimpleState xmi.idref="a168"/>
+              </UML:Transition.source>
+<UML:Transition.target>
+                <UML:SimpleState xmi.idref="a150"/>
+              </UML:Transition.target>
+</UML:Transition>
+            <UML:Transition source="a171" target="a164" xmi.id="a165" name="Message_10" isSpecification="false">
+<UML:Transition.effect>
+                <UML:ActionSequence xmi.id="a181" isSpecification="false" isAsynchronous="false">
+<UML:ActionSequence.action>
+<UML:UninterpretedAction xmi.id="a182" name="eject_card"/>
+</UML:ActionSequence.action>
+</UML:ActionSequence>
+              </UML:Transition.effect>
+<UML:Transition.source>
+                <UML:SimpleState xmi.idref="a171"/>
+              </UML:Transition.source>
+<UML:Transition.target>
+                <UML:SimpleState xmi.idref="a164"/>
+              </UML:Transition.target>
+</UML:Transition>
+            <UML:Transition source="a170" target="a168" xmi.id="a169" name="Message_6" isSpecification="false">
+<UML:Transition.effect>
+                <UML:ActionSequence xmi.id="a183" isSpecification="false" isAsynchronous="false">
+<UML:ActionSequence.action>
+<UML:UninterpretedAction xmi.id="a184" name="verify_account"/>
+</UML:ActionSequence.action>
+</UML:ActionSequence>
+              </UML:Transition.effect>
+<UML:Transition.source>
+                <UML:SimpleState xmi.idref="a170"/>
+              </UML:Transition.source>
+<UML:Transition.target>
+                <UML:SimpleState xmi.idref="a168"/>
+              </UML:Transition.target>
+</UML:Transition>
+            <UML:Transition source="a167" target="a159" xmi.id="a160" name="Message_13" isSpecification="false">
+<UML:Transition.effect>
+                <UML:ActionSequence xmi.id="a185" isSpecification="false" isAsynchronous="false">
+<UML:ActionSequence.action>
+<UML:UninterpretedAction xmi.id="a186" name="display_main_screen"/>
+</UML:ActionSequence.action>
+</UML:ActionSequence>
+              </UML:Transition.effect>
+<UML:Transition.source>
+                <UML:SimpleState xmi.idref="a167"/>
+              </UML:Transition.source>
+<UML:Transition.target>
+                <UML:SimpleState xmi.idref="a159"/>
+              </UML:Transition.target>
+</UML:Transition>
+            <UML:Transition source="a164" target="a153" xmi.id="a155" name="Message_11" isSpecification="false">
+<UML:Transition.effect>
+                <UML:ActionSequence xmi.id="a187" isSpecification="false" isAsynchronous="false">
+<UML:ActionSequence.action>
+<UML:UninterpretedAction xmi.id="a188" name="request_take_card"/>
+</UML:ActionSequence.action>
+</UML:ActionSequence>
+              </UML:Transition.effect>
+<UML:Transition.source>
+                <UML:SimpleState xmi.idref="a164"/>
+              </UML:Transition.source>
+<UML:Transition.target>
+                <UML:SimpleState xmi.idref="a153"/>
+              </UML:Transition.target>
+</UML:Transition>
+            <UML:Transition source="a173" target="a176" xmi.id="a174" name="default" isSpecification="false">
+<UML:Transition.source>
+                <UML:Pseudostate xmi.idref="a173"/>
+              </UML:Transition.source>
+<UML:Transition.target>
+                <UML:SimpleState xmi.idref="a176"/>
+              </UML:Transition.target>
+</UML:Transition>
+            <UML:Transition source="a161" target="a170" xmi.id="a162" name="stim_5" isSpecification="false">
+<UML:Transition.trigger>
+                <UML:Event xmi.idref="a144"/>
+              </UML:Transition.trigger>
+<UML:Transition.source>
+                <UML:SimpleState xmi.idref="a161"/>
+              </UML:Transition.source>
+<UML:Transition.target>
+                <UML:SimpleState xmi.idref="a170"/>
+              </UML:Transition.target>
+</UML:Transition>
+            <UML:Transition source="a150" target="a175" xmi.id="a151" name="Message_11" isSpecification="false">
+<UML:Transition.effect>
+                <UML:ActionSequence xmi.id="a189" isSpecification="false" isAsynchronous="false">
+<UML:ActionSequence.action>
+<UML:UninterpretedAction xmi.id="a190" name="bad_account_message"/>
+</UML:ActionSequence.action>
+</UML:ActionSequence>
+              </UML:Transition.effect>
+<UML:Transition.source>
+                <UML:SimpleState xmi.idref="a150"/>
+              </UML:Transition.source>
+<UML:Transition.target>
+                <UML:SimpleState xmi.idref="a175"/>
+              </UML:Transition.target>
+</UML:Transition>
+            <UML:Transition source="a156" target="a166" xmi.id="a157" name="stim_3" isSpecification="false">
+<UML:Transition.trigger>
+                <UML:Event xmi.idref="a71"/>
+              </UML:Transition.trigger>
+<UML:Transition.source>
+                <UML:SimpleState xmi.idref="a156"/>
+              </UML:Transition.source>
+<UML:Transition.target>
+                <UML:SimpleState xmi.idref="a166"/>
+              </UML:Transition.target>
+</UML:Transition>
+            <UML:Transition source="a166" target="a161" xmi.id="a163" name="Message_4" isSpecification="false">
+<UML:Transition.effect>
+                <UML:ActionSequence xmi.id="a191" isSpecification="false" isAsynchronous="false">
+<UML:ActionSequence.action>
+<UML:UninterpretedAction xmi.id="a192" name="request_password"/>
+</UML:ActionSequence.action>
+</UML:ActionSequence>
+              </UML:Transition.effect>
+<UML:Transition.source>
+                <UML:SimpleState xmi.idref="a166"/>
+              </UML:Transition.source>
+<UML:Transition.target>
+                <UML:SimpleState xmi.idref="a161"/>
+              </UML:Transition.target>
+</UML:Transition>
+          </UML:StateMachine.transitions>
+        </UML:StateMachine>
+        <UML:Stereotype xmi.id="a193" name="precondition" isSpecification="false" isRoot="false" isLeaf="false" isAbstract="false">
+          <UML:Stereotype.baseClass>Constraint</UML:Stereotype.baseClass>
+        </UML:Stereotype>
+        <UML:Class xmi.id="a194" name="Bank" isSpecification="false" isRoot="false" isLeaf="false" isAbstract="false" isActive="false">
+          <UML:Classifier.feature>
+            <UML:Operation xmi.id="a195" name="verify_card" isSpecification="false" isQuery="false" isRoot="false" isLeaf="false" isAbstract="false"/>
+            <UML:Method xmi.id="a196" isSpecification="false" isQuery="false">
+              <UML:Method.specification>
+                <UML:Operation xmi.idref="a195"/>
+              </UML:Method.specification>
+            </UML:Method>
+          </UML:Classifier.feature>
+        </UML:Class>
+        <UML:StateMachine xmi.id="a197" name="atm in cancel_1" isSpecification="false">
+          <UML:StateMachine.context>
+            <UML:Class xmi.idref="a6"/>
+          </UML:StateMachine.context>
+          <UML:StateMachine.top>
+            <UML:CompositeState xmi.id="a198" isSpecification="false" isConcurrent="false">
+              <UML:CompositeState.subvertex>
+                <UML:SimpleState xmi.id="a199" name="insert_card(x)_received" isSpecification="false">
+                  <UML:ModelElement.constraint>
+                    <UML:Constraint xmi.idref="a17"/>
+                    <UML:Constraint xmi.idref="a10"/>
+                  </UML:ModelElement.constraint>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="a200"/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="a201"/>
+                  </UML:StateVertex.incoming>
+                </UML:SimpleState>
+                <UML:SimpleState xmi.id="a202" name="take_card_received" isSpecification="false">
+                  <UML:ModelElement.constraint>
+                    <UML:Constraint xmi.idref="a14"/>
+                    <UML:Constraint xmi.idref="a9"/>
+                    <UML:Constraint xmi.idref="a10"/>
+                  </UML:ModelElement.constraint>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="a203"/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="a204"/>
+                  </UML:StateVertex.incoming>
+                </UML:SimpleState>
+                <UML:SimpleState xmi.id="a205" name="display_main_screen_sent" isSpecification="false">
+                  <UML:ModelElement.constraint>
+                    <UML:Constraint xmi.idref="a14"/>
+                    <UML:Constraint xmi.idref="a9"/>
+                    <UML:Constraint xmi.idref="a10"/>
+                  </UML:ModelElement.constraint>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="a203"/>
+                  </UML:StateVertex.incoming>
+                </UML:SimpleState>
+                <UML:SimpleState xmi.id="a206" name="canceled_message_sent" isSpecification="false">
+                  <UML:ModelElement.constraint>
+                    <UML:Constraint xmi.idref="a17"/>
+                    <UML:Constraint xmi.idref="a14"/>
+                    <UML:Constraint xmi.idref="a10"/>
+                  </UML:ModelElement.constraint>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="a207"/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="a208"/>
+                  </UML:StateVertex.incoming>
+                </UML:SimpleState>
+                <UML:SimpleState xmi.id="a209" name="display_main_screen_sent" isSpecification="false">
+                  <UML:ModelElement.constraint>
+                    <UML:Constraint xmi.idref="a9"/>
+                    <UML:Constraint xmi.idref="a10"/>
+                  </UML:ModelElement.constraint>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="a201"/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="a210"/>
+                  </UML:StateVertex.incoming>
+                </UML:SimpleState>
+                <UML:SimpleState xmi.id="a211" name="default" isSpecification="false">
+                  <UML:ModelElement.constraint>
+                    <UML:Constraint xmi.idref="a9"/>
+                    <UML:Constraint xmi.idref="a10"/>
+                  </UML:ModelElement.constraint>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="a210"/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="a212"/>
+                  </UML:StateVertex.incoming>
+                </UML:SimpleState>
+                <UML:SimpleState xmi.id="a213" name="cancel_received" isSpecification="false">
+                  <UML:ModelElement.constraint>
+                    <UML:Constraint xmi.idref="a17"/>
+                    <UML:Constraint xmi.idref="a14"/>
+                    <UML:Constraint xmi.idref="a10"/>
+                  </UML:ModelElement.constraint>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="a208"/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="a214"/>
+                  </UML:StateVertex.incoming>
+                </UML:SimpleState>
+                <UML:SimpleState xmi.id="a215" name="request_take_card_sent" isSpecification="false">
+                  <UML:ModelElement.constraint>
+                    <UML:Constraint xmi.idref="a14"/>
+                    <UML:Constraint xmi.idref="a24"/>
+                    <UML:Constraint xmi.idref="a9"/>
+                  </UML:ModelElement.constraint>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="a204"/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="a216"/>
+                  </UML:StateVertex.incoming>
+                </UML:SimpleState>
+                <UML:SimpleState xmi.id="a217" name="eject_card_sent" isSpecification="false">
+                  <UML:ModelElement.constraint>
+                    <UML:Constraint xmi.idref="a14"/>
+                    <UML:Constraint xmi.idref="a24"/>
+                    <UML:Constraint xmi.idref="a9"/>
+                  </UML:ModelElement.constraint>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="a216"/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="a207"/>
+                  </UML:StateVertex.incoming>
+                </UML:SimpleState>
+                <UML:SimpleState xmi.id="a218" name="request_password_sent" isSpecification="false">
+                  <UML:ModelElement.constraint>
+                    <UML:Constraint xmi.idref="a17"/>
+                    <UML:Constraint xmi.idref="a14"/>
+                    <UML:Constraint xmi.idref="a10"/>
+                  </UML:ModelElement.constraint>
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="a214"/>
+                  </UML:StateVertex.outgoing>
+                  <UML:StateVertex.incoming>
+                    <UML:Transition xmi.idref="a200"/>
+                  </UML:StateVertex.incoming>
+                </UML:SimpleState>
+                <UML:Pseudostate xmi.id="a219" isSpecification="false" kind="initial">
+                  <UML:StateVertex.outgoing>
+                    <UML:Transition xmi.idref="a212"/>
+                  </UML:StateVertex.outgoing>
+                </UML:Pseudostate>
+              </UML:CompositeState.subvertex>
+            </UML:CompositeState>
+          </UML:StateMachine.top>
+          <UML:StateMachine.transitions>
+            <UML:Transition source="a211" target="a209" xmi.id="a210" name="Message_24" isSpecification="false">
+<UML:Transition.effect>
+                <UML:ActionSequence xmi.id="a220" isSpecification="false" isAsynchronous="false">
+<UML:ActionSequence.action>
+<UML:UninterpretedAction xmi.id="a221" name="display_main_screen"/>
+</UML:ActionSequence.action>
+</UML:ActionSequence>
+              </UML:Transition.effect>
+<UML:Transition.source>
+                <UML:SimpleState xmi.idref="a211"/>
+              </UML:Transition.source>
+<UML:Transition.target>
+                <UML:SimpleState xmi.idref="a209"/>
+              </UML:Transition.target>
+</UML:Transition>
+            <UML:Transition source="a202" target="a205" xmi.id="a203" name="Message_31" isSpecification="false">
+<UML:Transition.effect>
+                <UML:ActionSequence xmi.id="a222" isSpecification="false" isAsynchronous="false">
+<UML:ActionSequence.action>
+<UML:UninterpretedAction xmi.id="a223" name="display_main_screen"/>
+</UML:ActionSequence.action>
+</UML:ActionSequence>
+              </UML:Transition.effect>
+<UML:Transition.source>
+                <UML:SimpleState xmi.idref="a202"/>
+              </UML:Transition.source>
+<UML:Transition.target>
+                <UML:SimpleState xmi.idref="a205"/>
+              </UML:Transition.target>
+</UML:Transition>
+            <UML:Transition source="a217" target="a215" xmi.id="a216" name="Message_29" isSpecification="false">
+<UML:Transition.effect>
+                <UML:ActionSequence xmi.id="a224" isSpecification="false" isAsynchronous="false">
+<UML:ActionSequence.action>
+<UML:UninterpretedAction xmi.id="a225" name="request_take_card"/>
+</UML:ActionSequence.action>
+</UML:ActionSequence>
+              </UML:Transition.effect>
+<UML:Transition.source>
+                <UML:SimpleState xmi.idref="a217"/>
+              </UML:Transition.source>
+<UML:Transition.target>
+                <UML:SimpleState xmi.idref="a215"/>
+              </UML:Transition.target>
+</UML:Transition>
+            <UML:Transition source="a209" target="a199" xmi.id="a201" name="stim_25" isSpecification="false">
+<UML:Transition.trigger>
+                <UML:Event xmi.idref="a60"/>
+              </UML:Transition.trigger>
+<UML:Transition.source>
+                <UML:SimpleState xmi.idref="a209"/>
+              </UML:Transition.source>
+<UML:Transition.target>
+                <UML:SimpleState xmi.idref="a199"/>
+              </UML:Transition.target>
+</UML:Transition>
+            <UML:Transition source="a218" target="a213" xmi.id="a214" name="stim_38" isSpecification="false">
+<UML:Transition.trigger>
+                <UML:Event xmi.idref="a72"/>
+              </UML:Transition.trigger>
+<UML:Transition.source>
+                <UML:SimpleState xmi.idref="a218"/>
+              </UML:Transition.source>
+<UML:Transition.target>
+                <UML:SimpleState xmi.idref="a213"/>
+              </UML:Transition.target>
+</UML:Transition>
+            <UML:Transition source="a215" target="a202" xmi.id="a204" name="stim_30" isSpecification="false">
+<UML:Transition.trigger>
+                <UML:Event xmi.idref="a226"/>
+              </UML:Transition.trigger>
+<UML:Transition.source>
+                <UML:SimpleState xmi.idref="a215"/>
+              </UML:Transition.source>
+<UML:Transition.target>
+                <UML:SimpleState xmi.idref="a202"/>
+              </UML:Transition.target>
+</UML:Transition>
+            <UML:Transition source="a206" target="a217" xmi.id="a207" name="Message_28" isSpecification="false">
+<UML:Transition.effect>
+                <UML:ActionSequence xmi.id="a227" isSpecification="false" isAsynchronous="false">
+<UML:ActionSequence.action>
+<UML:UninterpretedAction xmi.id="a228" name="eject_card"/>
+</UML:ActionSequence.action>
+</UML:ActionSequence>
+              </UML:Transition.effect>
+<UML:Transition.source>
+                <UML:SimpleState xmi.idref="a206"/>
+              </UML:Transition.source>
+<UML:Transition.target>
+                <UML:SimpleState xmi.idref="a217"/>
+              </UML:Transition.target>
+</UML:Transition>
+            <UML:Transition source="a213" target="a206" xmi.id="a208" name="Message_27" isSpecification="false">
+<UML:Transition.effect>
+                <UML:ActionSequence xmi.id="a229" isSpecification="false" isAsynchronous="false">
+<UML:ActionSequence.action>
+<UML:UninterpretedAction xmi.id="a230" name="canceled_message"/>
+</UML:ActionSequence.action>
+</UML:ActionSequence>
+              </UML:Transition.effect>
+<UML:Transition.source>
+                <UML:SimpleState xmi.idref="a213"/>
+              </UML:Transition.source>
+<UML:Transition.target>
+                <UML:SimpleState xmi.idref="a206"/>
+              </UML:Transition.target>
+</UML:Transition>
+            <UML:Transition source="a199" target="a218" xmi.id="a200" name="Message_26" isSpecification="false">
+<UML:Transition.effect>
+                <UML:ActionSequence xmi.id="a231" isSpecification="false" isAsynchronous="false">
+<UML:ActionSequence.action>
+<UML:UninterpretedAction xmi.id="a232" name="request_password"/>
+</UML:ActionSequence.action>
+</UML:ActionSequence>
+              </UML:Transition.effect>
+<UML:Transition.source>
+                <UML:SimpleState xmi.idref="a199"/>
+              </UML:Transition.source>
+<UML:Transition.target>
+                <UML:SimpleState xmi.idref="a218"/>
+              </UML:Transition.target>
+</UML:Transition>
+            <UML:Transition source="a219" target="a211" xmi.id="a212" name="default" isSpecification="false">
+<UML:Transition.source>
+                <UML:Pseudostate xmi.idref="a219"/>
+              </UML:Transition.source>
+<UML:Transition.target>
+                <UML:SimpleState xmi.idref="a211"/>
+              </UML:Transition.target>
+</UML:Transition>
+          </UML:StateMachine.transitions>
+        </UML:StateMachine>
+        <UML:Class xmi.id="a6" name="ATM" isSpecification="false" isRoot="false" isLeaf="false" isAbstract="false" isActive="true">
+          <UML:Classifier.feature>
+            <UML:Operation xmi.id="a233" name="insert_card" isSpecification="false" isQuery="false" isRoot="false" isLeaf="false" isAbstract="false">
+              <UML:ModelElement.constraint>
+                <UML:Constraint xmi.idref="a17"/>
+                <UML:Constraint xmi.idref="a9"/>
+              </UML:ModelElement.constraint>
+            </UML:Operation>
+            <UML:Method xmi.id="a234" isSpecification="false" isQuery="false">
+              <UML:Method.specification>
+                <UML:Operation xmi.idref="a233"/>
+              </UML:Method.specification>
+            </UML:Method>
+            <UML:Operation xmi.id="a235" name="enter_password" isSpecification="false" isQuery="false" isRoot="false" isLeaf="false" isAbstract="false">
+              <UML:ModelElement.constraint>
+                <UML:Constraint xmi.idref="a14"/>
+                <UML:Constraint xmi.idref="a18"/>
+              </UML:ModelElement.constraint>
+            </UML:Operation>
+            <UML:Method xmi.id="a236" isSpecification="false" isQuery="false">
+              <UML:Method.specification>
+                <UML:Operation xmi.idref="a235"/>
+              </UML:Method.specification>
+            </UML:Method>
+            <UML:Operation xmi.id="a237" name="bad_account" isSpecification="false" isQuery="false" isRoot="false" isLeaf="false" isAbstract="false"/>
+            <UML:Method xmi.id="a238" isSpecification="false" isQuery="false">
+              <UML:Method.specification>
+                <UML:Operation xmi.idref="a237"/>
+              </UML:Method.specification>
+            </UML:Method>
+            <UML:Operation xmi.id="a239" name="take_card" isSpecification="false" isQuery="false" isRoot="false" isLeaf="false" isAbstract="false">
+              <UML:ModelElement.constraint>
+                <UML:Constraint xmi.idref="a24"/>
+                <UML:Constraint xmi.idref="a10"/>
+              </UML:ModelElement.constraint>
+            </UML:Operation>
+            <UML:Method xmi.id="a240" isSpecification="false" isQuery="false">
+              <UML:Method.specification>
+                <UML:Operation xmi.idref="a239"/>
+              </UML:Method.specification>
+            </UML:Method>
+            <UML:Operation xmi.id="a241" name="cancel" isSpecification="false" isQuery="false" isRoot="false" isLeaf="false" isAbstract="false"/>
+            <UML:Method xmi.id="a242" isSpecification="false" isQuery="false">
+              <UML:Method.specification>
+                <UML:Operation xmi.idref="a241"/>
+              </UML:Method.specification>
+            </UML:Method>
+            <UML:Operation xmi.id="a243" name="bad_password" isSpecification="false" isQuery="false" isRoot="false" isLeaf="false" isAbstract="false"/>
+            <UML:Method xmi.id="a244" isSpecification="false" isQuery="false">
+              <UML:Method.specification>
+                <UML:Operation xmi.idref="a243"/>
+              </UML:Method.specification>
+            </UML:Method>
+            <UML:Attribute xmi.id="a245" name="cardIn" visibility="public" isSpecification="false">
+              <UML:StructuralFeature.type>
+                <UML:Class xmi.idref="a139"/>
+              </UML:StructuralFeature.type>
+            </UML:Attribute>
+            <UML:Attribute xmi.id="a246" name="cardHalfWay" visibility="public" isSpecification="false">
+              <UML:StructuralFeature.type>
+                <UML:Class xmi.idref="a145"/>
+              </UML:StructuralFeature.type>
+            </UML:Attribute>
+            <UML:Attribute xmi.id="a247" name="passwdGiven" visibility="private" isSpecification="false">
+              <UML:StructuralFeature.type>
+                <UML:Class xmi.idref="a56"/>
+              </UML:StructuralFeature.type>
+            </UML:Attribute>
+          </UML:Classifier.feature>
+        </UML:Class>
+        <UML:SignalEvent xmi.id="a226" name="take_card" isSpecification="false"/>
+        <UML:Stereotype xmi.id="a248" name="postcondition" isSpecification="false" isRoot="false" isLeaf="false" isAbstract="false">
+          <UML:Stereotype.baseClass>Constraint</UML:Stereotype.baseClass>
+        </UML:Stereotype>
+      </UML:Namespace.ownedElement>
+    </UML:Model>
+    <UML:Constraint xmi.id="a17" name="c2" isSpecification="false">
+      <UML:Constraint.body>
+        <UML:BooleanExpression xmi.id="a249" body="atm.cardIn=true"/>
+      </UML:Constraint.body>
+      <UML:ModelElement.stereotype>
+        <UML:Stereotype xmi.idref="a248"/>
+      </UML:ModelElement.stereotype>
+      <UML:Constraint.constrainedElement>
+        <UML:Operation xmi.idref="a233"/>
+        <UML:SimpleState xmi.idref="a104"/>
+        <UML:SimpleState xmi.idref="a32"/>
+        <UML:SimpleState xmi.idref="a16"/>
+        <UML:SimpleState xmi.idref="a171"/>
+        <UML:SimpleState xmi.idref="a91"/>
+        <UML:SimpleState xmi.idref="a168"/>
+        <UML:SimpleState xmi.idref="a27"/>
+        <UML:SimpleState xmi.idref="a98"/>
+        <UML:SimpleState xmi.idref="a206"/>
+        <UML:SimpleState xmi.idref="a175"/>
+        <UML:SimpleState xmi.idref="a161"/>
+        <UML:SimpleState xmi.idref="a218"/>
+        <UML:SimpleState xmi.idref="a100"/>
+        <UML:SimpleState xmi.idref="a95"/>
+        <UML:SimpleState xmi.idref="a199"/>
+        <UML:SimpleState xmi.idref="a170"/>
+        <UML:SimpleState xmi.idref="a31"/>
+        <UML:SimpleState xmi.idref="a38"/>
+        <UML:SimpleState xmi.idref="a101"/>
+        <UML:SimpleState xmi.idref="a102"/>
+        <UML:SimpleState xmi.idref="a166"/>
+        <UML:SimpleState xmi.idref="a150"/>
+        <UML:SimpleState xmi.idref="a37"/>
+        <UML:SimpleState xmi.idref="a86"/>
+        <UML:SimpleState xmi.idref="a213"/>
+      </UML:Constraint.constrainedElement>
+    </UML:Constraint>
+    <UML:Constraint xmi.id="a14" name="c1" isSpecification="false">
+      <UML:Constraint.body>
+        <UML:BooleanExpression xmi.id="a250" body="atm.passwdGiven=false"/>
+      </UML:Constraint.body>
+      <UML:ModelElement.stereotype>
+        <UML:Stereotype xmi.idref="a193"/>
+      </UML:ModelElement.stereotype>
+      <UML:Constraint.constrainedElement>
+        <UML:Operation xmi.idref="a235"/>
+        <UML:SimpleState xmi.idref="a23"/>
+        <UML:SimpleState xmi.idref="a104"/>
+        <UML:SimpleState xmi.idref="a217"/>
+        <UML:SimpleState xmi.idref="a91"/>
+        <UML:SimpleState xmi.idref="a164"/>
+        <UML:SimpleState xmi.idref="a159"/>
+        <UML:SimpleState xmi.idref="a13"/>
+        <UML:SimpleState xmi.idref="a215"/>
+        <UML:SimpleState xmi.idref="a27"/>
+        <UML:SimpleState xmi.idref="a98"/>
+        <UML:SimpleState xmi.idref="a206"/>
+        <UML:SimpleState xmi.idref="a153"/>
+        <UML:SimpleState xmi.idref="a89"/>
+        <UML:SimpleState xmi.idref="a161"/>
+        <UML:SimpleState xmi.idref="a205"/>
+        <UML:SimpleState xmi.idref="a30"/>
+        <UML:SimpleState xmi.idref="a218"/>
+        <UML:SimpleState xmi.idref="a82"/>
+        <UML:SimpleState xmi.idref="a93"/>
+        <UML:SimpleState xmi.idref="a21"/>
+        <UML:SimpleState xmi.idref="a95"/>
+        <UML:SimpleState xmi.idref="a167"/>
+        <UML:SimpleState xmi.idref="a202"/>
+        <UML:SimpleState xmi.idref="a102"/>
+        <UML:SimpleState xmi.idref="a213"/>
+        <UML:SimpleState xmi.idref="a84"/>
+      </UML:Constraint.constrainedElement>
+    </UML:Constraint>
+    <UML:Constraint xmi.id="a24" name="c1" isSpecification="false">
+      <UML:Constraint.body>
+        <UML:BooleanExpression xmi.id="a251" body="atm.cardHalfWay=true"/>
+      </UML:Constraint.body>
+      <UML:ModelElement.stereotype>
+        <UML:Stereotype xmi.idref="a193"/>
+      </UML:ModelElement.stereotype>
+      <UML:Constraint.constrainedElement>
+        <UML:Operation xmi.idref="a239"/>
+        <UML:SimpleState xmi.idref="a23"/>
+        <UML:SimpleState xmi.idref="a217"/>
+        <UML:SimpleState xmi.idref="a164"/>
+        <UML:SimpleState xmi.idref="a215"/>
+        <UML:SimpleState xmi.idref="a153"/>
+        <UML:SimpleState xmi.idref="a89"/>
+        <UML:SimpleState xmi.idref="a30"/>
+        <UML:SimpleState xmi.idref="a93"/>
+      </UML:Constraint.constrainedElement>
+    </UML:Constraint>
+    <UML:Constraint xmi.id="a9" name="c1" isSpecification="false">
+      <UML:Constraint.body>
+        <UML:BooleanExpression xmi.id="a252" body="atm.cardIn=false"/>
+      </UML:Constraint.body>
+      <UML:ModelElement.stereotype>
+        <UML:Stereotype xmi.idref="a193"/>
+      </UML:ModelElement.stereotype>
+      <UML:Constraint.constrainedElement>
+        <UML:Operation xmi.idref="a233"/>
+        <UML:SimpleState xmi.idref="a34"/>
+        <UML:SimpleState xmi.idref="a176"/>
+        <UML:SimpleState xmi.idref="a211"/>
+        <UML:SimpleState xmi.idref="a78"/>
+        <UML:SimpleState xmi.idref="a23"/>
+        <UML:SimpleState xmi.idref="a217"/>
+        <UML:SimpleState xmi.idref="a209"/>
+        <UML:SimpleState xmi.idref="a164"/>
+        <UML:SimpleState xmi.idref="a8"/>
+        <UML:SimpleState xmi.idref="a159"/>
+        <UML:SimpleState xmi.idref="a13"/>
+        <UML:SimpleState xmi.idref="a215"/>
+        <UML:SimpleState xmi.idref="a153"/>
+        <UML:SimpleState xmi.idref="a89"/>
+        <UML:SimpleState xmi.idref="a205"/>
+        <UML:SimpleState xmi.idref="a30"/>
+        <UML:SimpleState xmi.idref="a80"/>
+        <UML:SimpleState xmi.idref="a156"/>
+        <UML:SimpleState xmi.idref="a82"/>
+        <UML:SimpleState xmi.idref="a93"/>
+        <UML:SimpleState xmi.idref="a21"/>
+        <UML:SimpleState xmi.idref="a167"/>
+        <UML:SimpleState xmi.idref="a202"/>
+        <UML:SimpleState xmi.idref="a84"/>
+      </UML:Constraint.constrainedElement>
+    </UML:Constraint>
+    <UML:Constraint xmi.id="a10" name="c2" isSpecification="false">
+      <UML:Constraint.body>
+        <UML:BooleanExpression xmi.id="a253" body="atm.cardHalfWay=false"/>
+      </UML:Constraint.body>
+      <UML:ModelElement.stereotype>
+        <UML:Stereotype xmi.idref="a248"/>
+      </UML:ModelElement.stereotype>
+      <UML:Constraint.constrainedElement>
+        <UML:Operation xmi.idref="a239"/>
+        <UML:SimpleState xmi.idref="a34"/>
+        <UML:SimpleState xmi.idref="a176"/>
+        <UML:SimpleState xmi.idref="a211"/>
+        <UML:SimpleState xmi.idref="a78"/>
+        <UML:SimpleState xmi.idref="a104"/>
+        <UML:SimpleState xmi.idref="a32"/>
+        <UML:SimpleState xmi.idref="a209"/>
+        <UML:SimpleState xmi.idref="a16"/>
+        <UML:SimpleState xmi.idref="a171"/>
+        <UML:SimpleState xmi.idref="a91"/>
+        <UML:SimpleState xmi.idref="a168"/>
+        <UML:SimpleState xmi.idref="a8"/>
+        <UML:SimpleState xmi.idref="a159"/>
+        <UML:SimpleState xmi.idref="a13"/>
+        <UML:SimpleState xmi.idref="a27"/>
+        <UML:SimpleState xmi.idref="a98"/>
+        <UML:SimpleState xmi.idref="a206"/>
+        <UML:SimpleState xmi.idref="a175"/>
+        <UML:SimpleState xmi.idref="a161"/>
+        <UML:SimpleState xmi.idref="a205"/>
+        <UML:SimpleState xmi.idref="a80"/>
+        <UML:SimpleState xmi.idref="a156"/>
+        <UML:SimpleState xmi.idref="a218"/>
+        <UML:SimpleState xmi.idref="a82"/>
+        <UML:SimpleState xmi.idref="a100"/>
+        <UML:SimpleState xmi.idref="a21"/>
+        <UML:SimpleState xmi.idref="a95"/>
+        <UML:SimpleState xmi.idref="a199"/>
+        <UML:SimpleState xmi.idref="a170"/>
+        <UML:SimpleState xmi.idref="a31"/>
+        <UML:SimpleState xmi.idref="a167"/>
+        <UML:SimpleState xmi.idref="a38"/>
+        <UML:SimpleState xmi.idref="a101"/>
+        <UML:SimpleState xmi.idref="a202"/>
+        <UML:SimpleState xmi.idref="a102"/>
+        <UML:SimpleState xmi.idref="a166"/>
+        <UML:SimpleState xmi.idref="a150"/>
+        <UML:SimpleState xmi.idref="a37"/>
+        <UML:SimpleState xmi.idref="a86"/>
+        <UML:SimpleState xmi.idref="a213"/>
+        <UML:SimpleState xmi.idref="a84"/>
+      </UML:Constraint.constrainedElement>
+    </UML:Constraint>
+    <UML:Constraint xmi.id="a254" name="c1" isSpecification="false">
+      <UML:Constraint.body>
+        <UML:BooleanExpression xmi.id="a255" body="atm.state=notCardIn"/>
+      </UML:Constraint.body>
+      <UML:ModelElement.stereotype>
+        <UML:Stereotype xmi.idref="a248"/>
+      </UML:ModelElement.stereotype>
+    </UML:Constraint>
+    <UML:Constraint xmi.id="a18" name="c2" isSpecification="false">
+      <UML:Constraint.body>
+        <UML:BooleanExpression xmi.id="a256" body="atm.passwdGiven=true"/>
+      </UML:Constraint.body>
+      <UML:ModelElement.stereotype>
+        <UML:Stereotype xmi.idref="a248"/>
+      </UML:ModelElement.stereotype>
+      <UML:Constraint.constrainedElement>
+        <UML:Operation xmi.idref="a235"/>
+        <UML:SimpleState xmi.idref="a32"/>
+        <UML:SimpleState xmi.idref="a16"/>
+        <UML:SimpleState xmi.idref="a171"/>
+        <UML:SimpleState xmi.idref="a168"/>
+        <UML:SimpleState xmi.idref="a175"/>
+        <UML:SimpleState xmi.idref="a100"/>
+        <UML:SimpleState xmi.idref="a170"/>
+        <UML:SimpleState xmi.idref="a38"/>
+        <UML:SimpleState xmi.idref="a150"/>
+        <UML:SimpleState xmi.idref="a37"/>
+        <UML:SimpleState xmi.idref="a86"/>
+      </UML:Constraint.constrainedElement>
+    </UML:Constraint>
+  </XMI.content>
+</XMI>

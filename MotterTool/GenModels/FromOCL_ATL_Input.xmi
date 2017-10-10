@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:SimpleClass="http:///SimpleClass.ecore">
+  <SimpleClass:PrimitiveDataType name="PrimitiveDataType1"/>
+  <SimpleClass:Class name="Attribute1-C-type" is_persistent="true"/>
+  <SimpleClass:Class name="-C-type" is_persistent="true"/>
+  <SimpleClass:Class name="-C-parent" is_persistent="true"/>
+  <SimpleClass:Class name="Class1" parent="/6" is_persistent="true"/>
+  <SimpleClass:PrimitiveDataType name="-P-type"/>
+  <SimpleClass:Class name="Class1-C-parent" is_persistent="true"/>
+  <SimpleClass:PrimitiveDataType name="Attribute1-P-type"/>
+  <SimpleClass:Class name="Class1-C-class" is_persistent="true"/>
+  <SimpleClass:Association name="Class1-A-association"/>
+  <SimpleClass:Class name="-C-dest" is_persistent="true"/>
+  <SimpleClass:Class name="-C-src" is_persistent="true"/>
+  <SimpleClass:Class name="-C-class" is_persistent="true"/>
+  <SimpleClass:Class name="Association1-C-src" is_persistent="true"/>
+  <SimpleClass:Class name="Association1-C-dest" is_persistent="true"/>
+  <SimpleClass:Association src="/13" name="Association1" dest="/14"/>
+  <SimpleClass:Class name="Attribute1-C-class" is_persistent="true"/>
+  <SimpleClass:Association name="-A-association"/>
+</xmi:XMI>

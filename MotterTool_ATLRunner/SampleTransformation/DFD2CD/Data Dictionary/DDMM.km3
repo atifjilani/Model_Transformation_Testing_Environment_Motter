@@ -1,0 +1,67 @@
+package DDMetaModel {
+
+	class DataElement extends NamedElement {
+		reference valueSpecification container : ValueSpecification;
+	}
+
+	class Comment extends ValueSpecification {
+		attribute value : String;
+	}
+
+	abstract class ValueSpecification extends NamedElement {
+		
+	}
+
+	abstract class DataConstructSpecification extends ValueSpecification {
+		reference value[*] : DataElement;
+	}
+
+	abstract class LiteralSpecification extends ValueSpecification {
+		
+	}
+
+	class SequenceConstruct extends DataConstructSpecification {
+		
+	}
+
+	class LoopConstruct extends DataConstructSpecification {
+		
+	}
+
+	class SelectionConstruct extends DataConstructSpecification {
+		
+	}
+
+	class OptionalConstruct extends DataConstructSpecification {
+		
+	}
+
+	class PrimitiveBoolean extends LiteralSpecification {
+		attribute value : Boolean;
+	}
+
+	class PrimitiveInteger extends LiteralSpecification {
+		attribute value : Integer;
+	}
+
+	class PrimitiveString extends LiteralSpecification {
+		attribute value : String;
+	}
+
+	class DataDictionary extends NamedElement {
+		reference dataElements[1-*] container : DataElement;
+	}
+
+	abstract class NamedElement {
+		attribute name : String;
+	}
+}
+
+package PrimitiveType {
+
+	datatype String;
+
+	datatype Boolean;
+
+	datatype Integer;
+}

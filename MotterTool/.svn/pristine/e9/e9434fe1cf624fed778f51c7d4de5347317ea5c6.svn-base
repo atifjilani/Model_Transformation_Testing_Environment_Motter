@@ -1,0 +1,377 @@
+package org.questlab.motter.mof;
+
+import static org.junit.Assert.fail;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.URL;
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Date;
+import java.util.Enumeration;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Properties;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.eclipse.m2m.atl.drivers.emf4atl.AtlEMFModelHandler;
+import org.eclipse.m2m.atl.engine.vm.ASMStackFrame;
+import org.eclipse.m2m.atl.engine.vm.AtlLauncher;
+import org.eclipse.m2m.atl.engine.vm.AtlModelHandler;
+import org.eclipse.m2m.atl.engine.vm.Debugger;
+import org.eclipse.m2m.atl.engine.vm.ModelLoader;
+import org.eclipse.m2m.atl.engine.vm.StackFrame;
+import org.eclipse.m2m.atl.engine.vm.nativelib.ASMModel;
+import org.questlab.motter.atl.CreateSaveTester;
+import org.questlab.motter.oclSolver.MOFExperiment;
+import org.questlab.motter.oclSolver.OCLSolverTest;
+
+import questlab.motter.CFG.CFG;
+import questlab.motter.CFG.CFGATLDriverNew;
+import questlab.motter.CFG.Condition;
+import questlab.motter.CFG.DecisionNode;
+import questlab.motter.CFG.Node;
+import questlab.motter.CFG.conditionMap;
+import questlab.motter.atl.parser.Generator;
+import questlab.motter.mofscript.CFG.MOFMain;
+import simula.embt.simulator.CaseSpecificInputsReader;
+import simula.embt.simulator.MofscriptParser;
+import simula.embt.simulator.driver.MofScriptDriver;
+import snt.oclsolver.distance.ClassDiagramTestData;
+import snt.oclsolver.distance.Problem;
+import snt.oclsolver.driver.SolverRunner;
+import snt.oclsolver.reader.ObjScriptGenerator;
+import snt.oclsolver.search.SearchAlgorithmEnum;
+import snt.oclsolver.tuples.ClassifierTuple;
+import snt.oclsolver.tuples.TempTuple;
+
+public class MOFTransformationLaunch {
+
+	private ArrayList<String> logs = new ArrayList<String>();
+
+	public static void main(String[] args) {
+		try {
+
+			String query = "" +
+					"Class.allInstances()->size() = 2 " 
+			      +  "and Class.allInstances()->exists(c|c.isActive=false) "
+				  + ""
+				  ;
+					
+					
+//			   + " Class.allInstances()->forAll(c|c.isActive=true " 
+//			   + " and c.ownedOperation->forAll(o|o.name='op')"
+//			   + " and c.ownedAttribute->forAll(a|a.name='at' and a.type.oclIsTypeOf(String))"
+//			   + " and c.ownedBehavior->select(ob|ob.oclIsTypeOf(StateMachine))->size() = 1"
+//			   + " )->size()=1"
+//			   + " and Class.allInstances()->forAll(c|c.isActive=false " 
+//			   + " and c.ownedOperation->forAll(o|o.name='op2')"
+//			   + " and c.ownedAttribute->forAll(o|o.name='at2' and o.type.oclIsTypeOf(Integer))"
+////			   + " and c.ownedBehavior->select(o|o.oclIsTypeOf(StateMachine))->size() = 1"
+//			   + " )->size()=1"
+//			   ;
+				
+			// Get Result from OCL Solver
+			
+			String umlFile = "OCLSolverInput/StateMachineMetaModel.uml";
+			String objDiagramPath = "resources/ocl_generated";
+			ClassDiagramTestData.getInstance().reset(umlFile);
+			int noOfIterations = 100;
+			int noOfRuns = 1;
+			ArrayList<ClassifierTuple> result = null;
+			MOFExperiment mofe1 = new MOFExperiment();
+			mofe1.setUpExperiment(noOfIterations, noOfRuns,
+					SearchAlgorithmEnum.AVM, umlFile, objDiagramPath);
+			result = mofe1.SolveQuery(query);
+
+			// Create UML StateMachine from ClassifierTuple
+			String objDiagramFileName = "OCL_GenSM";
+			CreateSaveTester s = new CreateSaveTester();
+			s.retrieveTuppleForState(result);
+			s.generateUMLStateMachine(objDiagramFileName, objDiagramPath);
+
+			// Call MOF Transformation
+			MOFTransformationLaunch launch = new MOFTransformationLaunch();
+			String InputModel = "OCLSolverOutput/MOFLogFile.txt";
+//			launch.executeMOF();
+//			launch.printCFG(launch.executeTransformation(InputModel));
+//			launch.CalculateFitness(launch.executeTransformation(InputModel));
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void executeMOF() {
+
+		// System.setProperty(CaseSpecificInputsReader.PROPERTY_FILE_NAME_PROPERTY,
+		// "booting_new/booting_new-user-config.properties");
+
+		System.setProperty(
+				CaseSpecificInputsReader.PROPERTY_FILE_NAME_PROPERTY,
+				"ocl_generated/ocl-generated-user-config.properties");
+		System.setProperty(MofscriptParser.TRANSFORMATION_DIR_PROPERTY,
+				"../VERDE_SimulatorGenerator");
+
+		try {
+			MofScriptDriver.main(null);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+
+	private String removeSpaces(String line) {
+		String l = "";
+		for (int i = 1; i < line.length(); i += 2) {
+			l += line.charAt(i);
+		}
+		return l;
+	}
+
+	public HashMap<String, conditionMap> executeTransformation(String InputModel) {
+
+		System.out.println("\n MOTTER Execution Started");
+		try {
+
+			BufferedReader br = new BufferedReader(new FileReader(InputModel));
+			try {
+
+				String line = null;
+
+				while ((line = br.readLine()) != null) {
+					// System.out.println(line);
+					line = removeSpaces(line);
+					// System.out.println(line);
+					String part[] = line.split("#");
+					if (part.length > 2) {
+						String number = part[0];
+						String temp = part[1];
+						temp = number + "#" + temp;
+						// System.out.println(temp);
+						if (!logs.contains(temp)) {
+							logs.add(temp);
+						}
+					}
+					// line = br.readLine();
+
+				}
+
+			} finally {
+				br.close();
+			}
+
+			for (int l = 0; l < logs.size(); l++) {
+				// System.out.println((l+1)+": "+logs.get(l));
+				// System.out.println(logs.+": "+logs.get(l));
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		HashMap<String, conditionMap> nodeIds = cfgCompare();
+		return nodeIds;
+	}
+
+	public void printCFG(HashMap<String, conditionMap> nodeIds) {
+		System.out.println("\nCGF Traversal of the Input Model  : \n");
+		int l = 1;
+		for (String key : nodeIds.keySet()) {
+			System.out.print((l++) + ": ");
+			conditionMap c = nodeIds.get(key);
+			c.print();
+		}
+	}
+
+	private ArrayList<String> printParentTree(String key,
+			HashMap<String, conditionMap> conditionStatements) {
+		ArrayList<String> pList = new ArrayList<String>();
+		CFG TP = MOFMain.mainMethod();
+		Node n = TP.BFS(key, 1);
+
+		// TP.reInitializeIsVisisted(TP.getRootNode());
+		conditionMap c = conditionStatements.get(key);
+		if (c.getConditionStatus() != true) {
+			if (getParentDecisionNode(n) == null) {
+				pList.add("  ");
+			} else {
+				pList.add(" -> "
+						+ getParentDecisionNode(n).getNodeId().split("#")[1]
+								.split(":")[0].toString());
+				pList.addAll(printParentTree(getParentDecisionNode(n)
+						.getNodeId().split("#")[1].split(":")[0].toString(),
+						conditionStatements));
+
+			}
+		}
+
+		return pList;
+	}
+
+	private double calculateApproachLevel(String key,
+			HashMap<String, conditionMap> conditionStatements) {
+		double appLevel = 0.0;
+		conditionMap c = conditionStatements.get(key);
+		if (!c.getParentConditionNode().equals("null")) {
+			// appLevel=1.0;
+			if (conditionStatements.get(c.getParentConditionNode())
+					.getConditionStatus() == false) {
+				appLevel = calculateApproachLevel(c.getParentConditionNode(),
+						conditionStatements);
+				appLevel++;
+			}
+		}
+		return appLevel;
+	}
+
+	public double CalculateFitness(
+			HashMap<String, conditionMap> conditionStatements) {
+		double approach = 0.0;
+		for (String key : conditionStatements.keySet()) {
+			conditionMap c = conditionStatements.get(key);
+			if (!c.getConditionStatus()) { // find target nodes which are not
+											// yet covered
+				approach = calculateApproachLevel(key, conditionStatements);
+				System.out.print("App-Level of " + key + "  = " + approach
+						+ "  :  ");
+				for (String u : printParentTree(key, conditionStatements)) {
+					System.out.print(u);
+				}
+				System.out.print("\n");
+			}
+		}
+		return approach;
+	}
+
+	private String clearName(String name) {
+		if (name.contains("__match")) {
+			return name.replace("__match", "");
+		} else if (name.contains("__init")) {
+			return name.replace("__init", "");
+		} else if (name.contains("__apply")) {
+			return name.replace("__apply", "");
+		}
+		return name;
+	}
+
+	private Node getParentDecisionNode(Node n) {
+		Node PNode = new Node();
+		n = n.getParentNode();
+		if (n.getParentNode() != null) {
+
+			if (n.getNodeId().contains(":")) {// /specific node DecisionNode or
+												// Comp
+				// String nodeNumber=n.getNodeId().split(":")[0].split("#")[1];
+				if (n.getNodeId().split(":")[1].endsWith("DecisionNode"))
+					PNode = n;
+				else
+					PNode = getParentDecisionNode(n);
+			} else {
+				PNode = getParentDecisionNode(n);
+			}
+			return PNode;
+		}
+		return null;
+	}
+
+	private HashMap<String, conditionMap> cfgCompare() {
+		// CFGATLDriverNew d=new CFGATLDriverNew();
+		CFG TP = MOFMain.mainMethod();
+		ArrayList<String> nodeIds = new ArrayList<String>();
+		for (int l = 0; l < logs.size(); l++) {
+			// System.out.println((l+1)+": "+logs.get(l));
+			Node n = TP.BFS(logs.get(l));
+			if (n != null) {
+				// System.out.println(logs.get(l)+" GOESTO "+n.getAtlCode());
+				// if(nodeIds.contains(n.getNodeId()))
+				if (nodeIds.size() != 0) {
+					// String s=nodeIds.get((nodeIds.size() - 1));
+					// String ss=n.getNodeId();
+					if (!nodeIds.get((nodeIds.size() - 1))
+							.equals(n.getNodeId()))
+						nodeIds.add(n.getNodeId());
+				} else
+					nodeIds.add(n.getNodeId());
+				// System.out.println("Found-"+(l+1)+": "+logs.get(l));
+			}
+			// else {
+			// System.out.println("NotFound: "+(l+1)+": "+logs.get(l));//not
+			// found
+			// System.out.println("NotFound "+logs.get(l));//not found
+			TP.reInitializeIsVisisted(TP.getRootNode());// }
+		}
+
+		HashMap<String, conditionMap> conList = new HashMap<String, conditionMap>();// =new
+																					// ArrayList<>();
+		for (int l = 0; l < nodeIds.size(); l++) {
+			// System.out.println((l+1)+": "+nodeIds.get(l));
+			Node n = TP.BFS(nodeIds.get(l), true);
+			// System.out.println(n.getNodeId()+" ****** "+n.getAtlCode()+"\n");
+			// //visitedNode
+			conditionMap cm1 = new conditionMap();
+			// ArrayList<conditionMap> conList;
+			// if(n!=null)
+			if (n.getNodeId().contains(":")) {// /specific node DecisionNode or
+												// Comp
+				String nodeNumber = n.getNodeId().split(":")[0].split("#")[1];
+
+				if (n.getNodeId().split(":")[1].endsWith("DecisionNode")) {
+					DecisionNode ddec = (DecisionNode) n;
+					Condition cond = ddec.getcondition();
+					String decStatement = cond.getDecstatement();
+					Node pNode = getParentDecisionNode(n);
+					cm1.setDecNode(n);
+					cm1.setConditionNodeNumber(nodeNumber);
+					cm1.setConditionValue(decStatement);
+					cm1.setApproachLevel(0);
+					if (pNode != null) {
+						cm1.setParentConditionNode(pNode.getNodeId().split(":")[0]
+								.split("#")[1]);
+						cm1.setParentCondition(pNode);
+					} else {
+						cm1.setParentConditionNode("null");
+						cm1.setParentCondition(new Node("null", ""));
+					}
+					conList.put(nodeNumber, cm1);
+				}
+				if (n.getNodeId().split(":")[1].endsWith("then")) {
+					conditionMap thcon = conList
+							.get(n.getNodeId().split(":")[2]);
+					if (thcon != null) {
+						String thenNode = n.getNodeId().split(":")[0]
+								.split("#")[1];
+						thcon.setConditionStatus(true);
+						thcon.setThenNodeNumber(thenNode);
+						thcon.setNodeThen(n);
+						conList.put(n.getNodeId().split(":")[2], thcon);
+					}
+
+				}
+				if (n.getNodeId().split(":")[1].endsWith("else")) {
+					conditionMap thcon = conList
+							.get(n.getNodeId().split(":")[2]);
+					if (thcon != null) {
+						String elseNode = n.getNodeId().split(":")[0]
+								.split("#")[1];
+						thcon.setConditionStatus(false);
+						thcon.setElseNodeNumber(elseNode);
+						thcon.setNodeElse(n);
+						conList.put(n.getNodeId().split(":")[2], thcon);
+					}
+				}
+			}
+			// conList.add(cm1);
+			TP.reInitializeIsVisisted(TP.getRootNode());
+		}
+		return conList;
+	}
+
+}

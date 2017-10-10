@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML">
+  <uml:Package name="Library System">
+    <packagedElement xsi:type="uml:Class" name="LibraryTerminal">
+      <ownedAttribute name="BorrowerPassword" visibility="public" type="/1">
+        <defaultValue xsi:type="uml:LiteralString" value="EmptyString"/>
+      </ownedAttribute>
+      <ownedAttribute name="BookTitle" visibility="public" type="/1">
+        <defaultValue xsi:type="uml:LiteralString" value="EmptyString"/>
+      </ownedAttribute>
+      <ownedAttribute name="BorrowerCode" visibility="public" type="/1">
+        <defaultValue xsi:type="uml:LiteralString" value="EmptyString"/>
+      </ownedAttribute>
+      <ownedOperation name="ReadTerminal" visibility="public">
+        <ownedParameter direction="return"/>
+      </ownedOperation>
+      <ownedOperation name="UpdateBorrowerRecord" visibility="public">
+        <ownedParameter direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xsi:type="uml:Class" name="BorrowerInformation">
+      <ownedAttribute name="BorrowerPassword" visibility="public" type="/1">
+        <defaultValue xsi:type="uml:LiteralString" value="EmptyString"/>
+      </ownedAttribute>
+      <ownedAttribute name="BorrowerCode" visibility="public" type="/1">
+        <defaultValue xsi:type="uml:LiteralString" value="EmptyString"/>
+      </ownedAttribute>
+      <ownedOperation name="PerformAthentication" visibility="public">
+        <ownedParameter direction="return"/>
+      </ownedOperation>
+      <ownedOperation name="UpdateBorrowerRecord" visibility="public">
+        <ownedParameter direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xsi:type="uml:Class" name="BookInformation">
+      <ownedAttribute name="BookCopyID" visibility="public" type="/1">
+        <defaultValue xsi:type="uml:LiteralString" value="EmptyString"/>
+      </ownedAttribute>
+      <ownedAttribute name="BookTitle" visibility="public" type="/1">
+        <defaultValue xsi:type="uml:LiteralString" value="EmptyString"/>
+      </ownedAttribute>
+      <ownedOperation name="UpdateBookRecord" visibility="public">
+        <ownedParameter direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xsi:type="uml:Class" name="DisplayTerminal">
+      <ownedAttribute name="Item-NoItemMessage" visibility="public" type="/1">
+        <defaultValue xsi:type="uml:LiteralString" value="EmptyString"/>
+      </ownedAttribute>
+      <ownedOperation name="DisplayMessage" visibility="public">
+        <ownedParameter direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xsi:type="uml:Class" name="ReservationFormData">
+      <ownedAttribute name="BookCopyID" visibility="public" type="/1">
+        <defaultValue xsi:type="uml:LiteralString" value="EmptyString"/>
+      </ownedAttribute>
+      <ownedAttribute name="BorrowerCode" visibility="public" type="/1">
+        <defaultValue xsi:type="uml:LiteralString" value="EmptyString"/>
+      </ownedAttribute>
+      <ownedOperation name="UpdateBookRecord" visibility="public">
+        <ownedParameter direction="return"/>
+      </ownedOperation>
+      <ownedOperation name="BorrowCopy" visibility="public">
+        <ownedParameter direction="return"/>
+      </ownedOperation>
+      <ownedOperation name="UpdateBorrowerRecord" visibility="public">
+        <ownedParameter direction="return"/>
+      </ownedOperation>
+      <ownedOperation name="GenerateForm" visibility="public">
+        <ownedParameter direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xsi:type="uml:Class" name="Printer">
+      <ownedOperation name="GenerateForm" visibility="public">
+        <ownedParameter direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xsi:type="uml:Association" name="Association_Printer_ReservationFormData" memberEnd="/0/Association_Printer_ReservationFormData/reservationformdata /0/Association_Printer_ReservationFormData/printer">
+      <ownedEnd name="reservationformdata" type="/0/ReservationFormData" aggregation="composite" association="/0/Association_Printer_ReservationFormData"/>
+      <ownedEnd name="printer" type="/0/Printer" association="/0/Association_Printer_ReservationFormData"/>
+    </packagedElement>
+    <packagedElement xsi:type="uml:Class" name="FindRequestBook">
+      <ownedAttribute name="BookTitle" visibility="public" type="/1">
+        <defaultValue xsi:type="uml:LiteralString" value="EmptyString"/>
+      </ownedAttribute>
+      <ownedAttribute name="BorrowerCode" visibility="public" type="/1">
+        <defaultValue xsi:type="uml:LiteralString" value="EmptyString"/>
+      </ownedAttribute>
+      <ownedOperation name="FindRequestBook" visibility="public">
+        <ownedParameter direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xsi:type="uml:Association" name="Association_FindRequestBook_BookInformation" memberEnd="/0/Association_FindRequestBook_BookInformation/bookinformation /0/Association_FindRequestBook_BookInformation/findrequestbook">
+      <ownedEnd name="bookinformation" type="/0/BookInformation" aggregation="composite" association="/0/Association_FindRequestBook_BookInformation"/>
+      <ownedEnd name="findrequestbook" type="/0/FindRequestBook" association="/0/Association_FindRequestBook_BookInformation"/>
+    </packagedElement>
+  </uml:Package>
+  <uml:DataType name="String"/>
+</xmi:XMI>

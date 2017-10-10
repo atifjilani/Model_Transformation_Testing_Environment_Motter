@@ -1,0 +1,712 @@
+package org.questlab.motter.uml2instance;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.Map;
+
+import org.eclipse.emf.common.util.EList;
+import org.eclipse.emf.common.util.TreeIterator;
+import org.eclipse.emf.common.util.URI;
+import org.eclipse.emf.common.util.WrappedException;
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.resource.Resource;
+import org.eclipse.emf.ecore.resource.ResourceSet;
+import org.eclipse.emf.ecore.resource.URIConverter;
+import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
+import org.eclipse.emf.ecore.util.EcoreUtil;
+import org.eclipse.uml2.uml.Classifier;
+import org.eclipse.uml2.uml.Element;
+import org.eclipse.uml2.uml.Enumeration;
+import org.eclipse.uml2.uml.EnumerationLiteral;
+import org.eclipse.uml2.uml.Extension;
+import org.eclipse.uml2.uml.Generalization;
+import org.eclipse.uml2.uml.InstanceValue;
+import org.eclipse.uml2.uml.LiteralBoolean;
+import org.eclipse.uml2.uml.LiteralString;
+import org.eclipse.uml2.uml.LiteralUnlimitedNatural;
+import org.eclipse.uml2.uml.Model;
+import org.eclipse.uml2.uml.NamedElement;
+import org.eclipse.uml2.uml.PrimitiveType;
+import org.eclipse.uml2.uml.Profile;
+import org.eclipse.uml2.uml.Property;
+import org.eclipse.uml2.uml.Stereotype;
+import org.eclipse.uml2.uml.Type;
+import org.eclipse.uml2.uml.UMLFactory;
+import org.eclipse.uml2.uml.UMLPackage;
+import org.eclipse.uml2.uml.resource.UMLResource;
+//import org.eclipse.uml2.uml.resources.util.UMLResourcesUtil;
+import org.eclipse.uml2.uml.util.UMLUtil;
+
+
+/**
+ * A Java program that may be run stand-alone (with the required EMF and UML2
+ * bundle JARs on the classpath) to create the example profile illustrated in
+ * the <em>Introduction to UML Profiles</em> article on the Wiki.
+ * 
+ * @see http://wiki.eclipse.org/MDT/UML2/Introduction_to_UML2_Profiles
+ */
+public class ProfileTest {
+
+	private  boolean DEBUG = true;
+
+	private  File outputDir;
+
+	private  ResourceSet RESOURCE_SET;
+
+	public ProfileTest() {
+
+		RESOURCE_SET = new ResourceSetImpl();
+		//String JAR_FILE_ECLIPSE_UML2_UML_RESOURCES = "jar:file:I:/workspace-xp/MotterTool/Lib_InstanceProfile/org.eclipse.uml2.uml.resources_5.0.2.v20150202-0947.jar!/";
+		String JAR_FILE_ECLIPSE_UML2_UML_RESOURCES = "jar:file:I:/workspace-xp/MotterTool_InstanceGenerator/Lib_Instance2.5-3.1/org.eclipse.uml2.uml.resources_3.1.1.v201008191505.jar!/";
+		File test = new File(JAR_FILE_ECLIPSE_UML2_UML_RESOURCES.substring(9,JAR_FILE_ECLIPSE_UML2_UML_RESOURCES.length()-2)).getAbsoluteFile();
+		if (!test.exists()){
+		          throw new NullPointerException("JAR_FILE_ECLIPSE_UML2_UML_RESOURCES PATH ERROR, "+test.toString()+"not found!");
+		}
+		RESOURCE_SET.getPackageRegistry().put(UMLPackage.eNS_URI, UMLPackage.eINSTANCE);
+		RESOURCE_SET.getResourceFactoryRegistry().getExtensionToFactoryMap().put(UMLResource.FILE_EXTENSION,UMLResource.Factory.INSTANCE);
+		Map<URI, URI> _resourceSetURIMap = RESOURCE_SET.getURIConverter().getURIMap();
+		URI model = URI.createURI(JAR_FILE_ECLIPSE_UML2_UML_RESOURCES);
+		_resourceSetURIMap.put(URI.createURI(UMLResource.LIBRARIES_PATHMAP), model.appendSegment("libraries").appendSegment(""));
+		_resourceSetURIMap.put(URI.createURI(UMLResource.METAMODELS_PATHMAP), model.appendSegment("metamodels").appendSegment(""));
+		_resourceSetURIMap.put(URI.createURI(UMLResource.PROFILES_PATHMAP), model.appendSegment("profiles").appendSegment(""));
+	//	_resourceSetURIMap.put(URI.createURI("pathmap://CUSTOM_PROFILE/Profile.profile.uml"), URI.createURI("I:/workspace-xp/MotterTool_InstanceGenerator/GenStateMachine/Profile.profile.uml"));
+
+	}
+
+	/**
+	 * The main program. It expects one argument, which is the local filesystem
+	 * path of a directory in which to create the <tt>Ecore.profile.uml</tt>
+	 * file.
+	 * 
+	 * @param the
+	 *            program arguments, which must consist of a single filesystem
+	 *            path
+	 */
+	public static void main(String[] args)
+			throws Exception {
+		ProfileTest PT=new ProfileTest();
+		args[0]="GenModels";
+			if (!PT.processArgs(args)) {
+		System.exit(1);
+	    }
+			PT.processArgs(args);
+
+			PT.banner("Creating root profile package and importing primitive types.");
+
+		// Create the root profile package.
+		Profile ecoreProfile = PT.createProfile("ecore",
+			"http://www.eclipse.org/schema/UML2/examples/ecore");
+
+		// Import UML standard primitive types to be used as types of attributes
+		// in our stereotypes.
+		PrimitiveType booleanPrimitiveType = PT.importPrimitiveType(ecoreProfile,
+			"Boolean");
+		PrimitiveType stringPrimitiveType = PT.importPrimitiveType(ecoreProfile,
+			"String");
+
+		PT.banner("Creating profile enumeration types.");
+
+		// Create enumerations to be used as types of attributes in our
+		// stereotypes.
+		Enumeration visibilityKindEnumeration = PT.createEnumeration(ecoreProfile,
+			"VisibilityKind");
+		Enumeration featureKindEnumeration = PT.createEnumeration(ecoreProfile,
+			"FeatureKind");
+		PT.createEnumerationLiteral(visibilityKindEnumeration, "Unspecified");
+		PT.createEnumerationLiteral(visibilityKindEnumeration, "None");
+		PT.createEnumerationLiteral(visibilityKindEnumeration, "ReadOnly");
+		PT.createEnumerationLiteral(visibilityKindEnumeration, "ReadWrite");
+		PT.createEnumerationLiteral(visibilityKindEnumeration,
+			"ReadOnlyUnsettable");
+		PT.createEnumerationLiteral(visibilityKindEnumeration,
+			"ReadWriteUnsettable");
+		PT.createEnumerationLiteral(featureKindEnumeration, "Unspecified");
+		PT.createEnumerationLiteral(featureKindEnumeration, "Simple");
+		PT.createEnumerationLiteral(featureKindEnumeration, "Attribute");
+		PT.createEnumerationLiteral(featureKindEnumeration, "Element");
+		PT.createEnumerationLiteral(featureKindEnumeration, "AttributeWildcard");
+		PT.createEnumerationLiteral(featureKindEnumeration, "ElementWildcard");
+		PT.createEnumerationLiteral(featureKindEnumeration, "Group");
+
+		PT.banner("Creating stereotypes.");
+
+		// Create the stereotypes.
+		Stereotype eStructuralFeatureStereotype = PT.createStereotype(
+			ecoreProfile, "EStructuralFeature", true);
+		Stereotype eAttributeStereotype = PT.createStereotype(ecoreProfile,
+			"EAttribute", false);
+		Stereotype eReferenceStereotype = PT.createStereotype(ecoreProfile,
+			"EReference", false);
+
+		// Create generalization relationships amongst our stereotypes.
+		PT.createGeneralization(eAttributeStereotype, eStructuralFeatureStereotype);
+		PT.createGeneralization(eReferenceStereotype, eStructuralFeatureStereotype);
+
+		PT.banner("Creating attributes (\"tagged values\") of the stereotypes.");
+
+		// Create attributes in our stereotypes.
+		Property isTransientProperty = PT.createAttribute(
+			eStructuralFeatureStereotype, "isTransient", booleanPrimitiveType,
+			0, 1, null);
+		Property isUnsettableProperty = PT.createAttribute(
+			eStructuralFeatureStereotype, "isUnsettable", booleanPrimitiveType,
+			0, 1, null);
+		Property isVolatileProperty = PT.createAttribute(
+			eStructuralFeatureStereotype, "isVolatile", booleanPrimitiveType,
+			0, 1, null);
+		Property visibilityProperty = PT.createAttribute(
+			eStructuralFeatureStereotype, "visibility",
+			visibilityKindEnumeration, 0, 1, "Unspecified");
+		Property xmlNameProperty = PT.createAttribute(
+			eStructuralFeatureStereotype, "xmlName", stringPrimitiveType, 0, 1,
+			null);
+		Property xmlNamespaceProperty = PT.createAttribute(
+			eStructuralFeatureStereotype, "xmlNamespace", stringPrimitiveType,
+			0, 1, null);
+		Property xmlFeatureKindProperty = PT.createAttribute(
+			eStructuralFeatureStereotype, "xmlFeatureKind",
+			featureKindEnumeration, 0, 1, "Unspecified");
+		Property attributeNameProperty =PT. createAttribute(eAttributeStereotype,
+			"attributeName", stringPrimitiveType, 0, 1, null);
+		Property referenceNameProperty = PT.createAttribute(eReferenceStereotype,
+			"referenceName", stringPrimitiveType, 0, 1, null);
+		Property isResolveProxiesProperty = PT.createAttribute(
+			eReferenceStereotype, "isResolveProxies", booleanPrimitiveType, 0,
+			1, true);
+
+		PT.banner("Creating metaclass extensions for the stereotypes.");
+
+		// Reference metaclasses from UML that we will extend with our
+		// stereotypes.
+		org.eclipse.uml2.uml.Class propertyMetaclass = PT.referenceMetaclass(
+			ecoreProfile, UMLPackage.Literals.PROPERTY.getName());
+
+		// Create metaclass extensions for our stereotypes.
+		PT.createExtension(propertyMetaclass, eAttributeStereotype, false);
+		PT.createExtension(propertyMetaclass, eReferenceStereotype, false);
+
+		PT.banner("Defining the profile (creating the Ecore metamodel).");
+
+		// Create the Ecore definition of the profile to prepare for use.
+		PT.defineProfile(ecoreProfile);
+
+		// Save our profile to a file in the user-specified output directory
+		URI outputURI = URI.createFileURI(PT.getOutputDir().getAbsolutePath())
+			.appendSegment("Ecore")
+			.appendFileExtension(UMLResource.PROFILE_FILE_EXTENSION);
+		PT.banner("Saving the profile to %s.", outputURI.toFileString());
+		PT.save(ecoreProfile, outputURI);
+
+		//UMLProfileTestCase PT1=new UMLProfileTestCase();
+		PT.banner("Applying the profile to an example model.");
+		// Load a model to which to apply the profile
+		Model epo2Model = (Model) PT.load(URI.createFileURI(args[0])
+			.appendSegment("ExtendedPO2")
+			.appendFileExtension(UMLResource.FILE_EXTENSION));
+		
+       Profile ecoreProfile1=PT.loadProfile("GenModels/Ecore.profile.uml");
+		// Apply the profile to the model
+	
+		PT.applyProfile(epo2Model, ecoreProfile1);
+
+		PT.banner("Applying stereotypes to elements in the model.");
+
+		// Apply stereotypes to some model elements
+		org.eclipse.uml2.uml.Class supplierClass = (org.eclipse.uml2.uml.Class) epo2Model
+			.getOwnedType("Supplier");
+		Property pendingOrdersProperty = supplierClass.getOwnedAttribute(
+			"pendingOrders", null);
+		PT.applyStereotype(pendingOrdersProperty, eReferenceStereotype);
+		Property shippedOrdersProperty = supplierClass.getOwnedAttribute(
+			"shippedOrders", null);
+		PT.applyStereotype(shippedOrdersProperty, eReferenceStereotype);
+		org.eclipse.uml2.uml.Class customerClass = (org.eclipse.uml2.uml.Class) epo2Model
+			.getOwnedType("Customer");
+		Property ordersProperty = customerClass.getOwnedAttribute("orders",
+			null);
+		PT.applyStereotype(ordersProperty, eReferenceStereotype);
+		org.eclipse.uml2.uml.Class purchaseOrderClass = (org.eclipse.uml2.uml.Class) epo2Model
+			.getOwnedType("PurchaseOrder");
+		Property customerProperty = purchaseOrderClass.getOwnedAttribute(
+			"customer", null);
+		PT.applyStereotype(customerProperty, eReferenceStereotype);
+		Property previousOrderProperty = purchaseOrderClass.getOwnedAttribute(
+			"previousOrder", null);
+		PT.applyStereotype(previousOrderProperty, eReferenceStereotype);
+		Property totalAmountProperty = purchaseOrderClass.getOwnedAttribute(
+			"totalAmount", null);
+		// This is not a reference property
+		PT.applyStereotype(totalAmountProperty, eAttributeStereotype);
+
+		PT.banner("Inspecting stereotype attribute values (\"tagged values\") in the model.");
+
+		// Inspect some stereotype property values
+		PT.getStereotypePropertyValue(pendingOrdersProperty, eReferenceStereotype,
+			isVolatileProperty);
+		PT.getStereotypePropertyValue(pendingOrdersProperty, eReferenceStereotype,
+			isTransientProperty);
+		PT.getStereotypePropertyValue(pendingOrdersProperty, eReferenceStereotype,
+			visibilityProperty);
+		PT.getStereotypePropertyValue(pendingOrdersProperty, eReferenceStereotype,
+			referenceNameProperty);
+		PT.getStereotypePropertyValue(pendingOrdersProperty, eReferenceStereotype,
+			isResolveProxiesProperty);
+		PT.getStereotypePropertyValue(totalAmountProperty, eAttributeStereotype,
+			isUnsettableProperty);
+		PT.getStereotypePropertyValue(totalAmountProperty, eAttributeStereotype,
+			xmlNameProperty);
+		PT.getStereotypePropertyValue(totalAmountProperty, eAttributeStereotype,
+			xmlNamespaceProperty);
+		PT.getStereotypePropertyValue(totalAmountProperty, eAttributeStereotype,
+			xmlFeatureKindProperty);
+		PT.getStereotypePropertyValue(totalAmountProperty, eAttributeStereotype,
+			attributeNameProperty);
+
+		PT.banner("Setting stereotype attribute values in the model.");
+
+		// Set new values for the stereotype properties
+		PT.setStereotypePropertyValue(pendingOrdersProperty, eReferenceStereotype,
+			isVolatileProperty, true);
+		PT.setStereotypePropertyValue(pendingOrdersProperty, eReferenceStereotype,
+			isTransientProperty, true);
+		PT.setStereotypePropertyValue(pendingOrdersProperty, eReferenceStereotype,
+			visibilityProperty, "ReadWrite");
+		PT.setStereotypePropertyValue(pendingOrdersProperty, eReferenceStereotype,
+			referenceNameProperty, "pending");
+		PT.setStereotypePropertyValue(pendingOrdersProperty, eReferenceStereotype,
+			isResolveProxiesProperty, false);
+		PT.setStereotypePropertyValue(totalAmountProperty, eAttributeStereotype,
+			isUnsettableProperty, true);
+		PT.setStereotypePropertyValue(totalAmountProperty, eAttributeStereotype,
+			xmlNameProperty, "total");
+		PT.setStereotypePropertyValue(totalAmountProperty, eAttributeStereotype,
+			xmlNamespaceProperty,
+			"http://www.eclipse.org/schema/UML2/examples/ecore/xml");
+		PT.setStereotypePropertyValue(totalAmountProperty, eAttributeStereotype,
+			xmlFeatureKindProperty, "Element");
+		PT.setStereotypePropertyValue(totalAmountProperty, eAttributeStereotype,
+			attributeNameProperty, "total");
+
+		PT.banner("Reading new stereotype attribute values in the model.");
+
+		// Inspect the stereotype property values again
+		PT.getStereotypePropertyValue(pendingOrdersProperty, eReferenceStereotype,
+			isVolatileProperty);
+		PT.getStereotypePropertyValue(pendingOrdersProperty, eReferenceStereotype,
+			isTransientProperty);
+		PT.getStereotypePropertyValue(pendingOrdersProperty, eReferenceStereotype,
+			visibilityProperty);
+		PT.getStereotypePropertyValue(pendingOrdersProperty, eReferenceStereotype,
+			referenceNameProperty);
+		PT.getStereotypePropertyValue(pendingOrdersProperty, eReferenceStereotype,
+			isResolveProxiesProperty);
+		PT.getStereotypePropertyValue(totalAmountProperty, eAttributeStereotype,
+			isUnsettableProperty);
+		PT.getStereotypePropertyValue(totalAmountProperty, eAttributeStereotype,
+			xmlNameProperty);
+		PT.getStereotypePropertyValue(totalAmountProperty, eAttributeStereotype,
+			xmlNamespaceProperty);
+		PT.getStereotypePropertyValue(totalAmountProperty, eAttributeStereotype,
+			xmlFeatureKindProperty);
+		PT.getStereotypePropertyValue(totalAmountProperty, eAttributeStereotype,
+			attributeNameProperty);
+		
+		// Save our profile to a file in the user-specified output directory
+		
+		//System.out.println("\n\n****************************** B ************** " + shippedOrdersProperty.getAppliedStereotypes().get(0));
+		
+		URI outputURI2 = URI.createFileURI(PT.getOutputDir().getAbsolutePath())
+			.appendSegment("ProfileExtendedPO2")
+			.appendFileExtension(UMLResource.FILE_EXTENSION);
+		PT.banner("Saving the Model to %s.", outputURI2.toFileString());
+		PT.save(epo2Model, outputURI2);
+	}
+
+	//
+	// Profile- and model-building utilities
+	//
+
+	protected File getOutputDir() {
+		return outputDir;
+	}
+
+	protected void setOutputDir(File outputDir) {
+		this.outputDir = outputDir;
+	}
+
+	protected  Profile createProfile(String name, String nsURI) {
+		Profile profile = UMLFactory.eINSTANCE.createProfile();
+		profile.setName(name);
+		//profile.setURI(nsURI);
+
+		out("Profile '%s' created.", profile.getQualifiedName());
+
+		return profile;
+	}
+
+	protected PrimitiveType importPrimitiveType(
+			org.eclipse.uml2.uml.Package package_, String name) {
+
+		org.eclipse.uml2.uml.Package umlLibrary = (org.eclipse.uml2.uml.Package) load(URI
+			.createURI(UMLResource.UML_PRIMITIVE_TYPES_LIBRARY_URI));
+
+		PrimitiveType primitiveType = (PrimitiveType) umlLibrary
+			.getOwnedType(name);
+
+		package_.createElementImport(primitiveType);
+
+		out("Primitive type '%s' imported.", primitiveType.getQualifiedName());
+
+		return primitiveType;
+	}
+
+	protected Enumeration createEnumeration(
+			org.eclipse.uml2.uml.Package package_, String name) {
+
+		Enumeration enumeration = package_.createOwnedEnumeration(name);
+
+		out("Enumeration '%s' created.", enumeration.getQualifiedName());
+
+		return enumeration;
+	}
+
+	protected EnumerationLiteral createEnumerationLiteral(
+			Enumeration enumeration, String name) {
+
+		EnumerationLiteral enumerationLiteral = enumeration
+			.createOwnedLiteral(name);
+
+		out("Enumeration literal '%s' created.",
+			enumerationLiteral.getQualifiedName());
+
+		return enumerationLiteral;
+	}
+
+	protected Stereotype createStereotype(Profile profile, String name,
+			boolean isAbstract) {
+
+		Stereotype stereotype = profile.createOwnedStereotype(name, isAbstract);
+
+		out("Stereotype '%s' created.", stereotype.getQualifiedName());
+
+		return stereotype;
+	}
+
+	protected Generalization createGeneralization(
+			Classifier specificClassifier, Classifier generalClassifier) {
+
+		Generalization generalization = specificClassifier
+			.createGeneralization(generalClassifier);
+
+		out("Generalization %s --|> %s created.",
+			specificClassifier.getQualifiedName(),
+			generalClassifier.getQualifiedName());
+
+		return generalization;
+	}
+
+	protected  Property createAttribute(
+			org.eclipse.uml2.uml.Class class_, String name, Type type,
+			int lowerBound, int upperBound, Object defaultValue) {
+
+		Property attribute = class_.createOwnedAttribute(name, type,
+			lowerBound, upperBound);
+
+		if (defaultValue instanceof Boolean) {
+			LiteralBoolean literal = (LiteralBoolean) attribute
+				.createDefaultValue(null, null,
+					UMLPackage.Literals.LITERAL_BOOLEAN);
+			literal.setValue(((Boolean) defaultValue).booleanValue());
+		} else if (defaultValue instanceof String) {
+			if (type instanceof Enumeration) {
+				InstanceValue value = (InstanceValue) attribute
+					.createDefaultValue(null, null,
+						UMLPackage.Literals.INSTANCE_VALUE);
+				value.setInstance(((Enumeration) type)
+					.getOwnedLiteral((String) defaultValue));
+			} else {
+				LiteralString literal = (LiteralString) attribute
+					.createDefaultValue(null, null,
+						UMLPackage.Literals.LITERAL_STRING);
+				literal.setValue((String) defaultValue);
+			}
+		}
+
+		out("Attribute '%s' : %s [%s..%s]%s created.", //
+			attribute.getQualifiedName(), // attribute name
+			type.getQualifiedName(), // type name
+			lowerBound, // no special case for multiplicity lower bound
+			(upperBound == LiteralUnlimitedNatural.UNLIMITED)
+				? "*" // special case for unlimited bound
+				: upperBound, // finite upper bound
+			(defaultValue == null)
+				? "" // no default value (use type's intrinsic default)
+				: String.format(" = %s", defaultValue));
+
+		return attribute;
+	}
+
+	protected  org.eclipse.uml2.uml.Class referenceMetaclass(
+			Profile profile, String name) {
+
+		Model umlMetamodel = (Model) load(URI
+			.createURI(UMLResource.UML_METAMODEL_URI));
+
+		org.eclipse.uml2.uml.Class metaclass = (org.eclipse.uml2.uml.Class) umlMetamodel
+			.getOwnedType(name);
+
+		profile.createMetaclassReference(metaclass);
+
+		out("Metaclass '%s' referenced.", metaclass.getQualifiedName());
+
+		return metaclass;
+	}
+
+	protected  Extension createExtension(org.eclipse.uml2.uml.Class metaclass, Stereotype stereotype,
+			boolean required) {
+		Extension extension=null;
+		try{
+		 extension = stereotype.createExtension(metaclass, required);
+		out("%sxtension '%s' created.", required? "Required e" : "E", extension.getQualifiedName());
+		}
+		catch (Exception e){
+			out(e.getMessage());
+		}
+		
+
+		return extension;
+	}
+
+	protected  void defineProfile(Profile profile) {
+		profile.define();
+
+		out("Profile '%s' defined.", profile.getQualifiedName());
+	}
+
+	protected  void applyProfile(org.eclipse.uml2.uml.Package package_,
+			Profile profile) {
+
+		package_.applyProfile(profile);
+
+		out("Profile '%s' applied to package '%s'.",
+			profile.getQualifiedName(), package_.getQualifiedName());
+	}
+
+	protected  void applyStereotype(NamedElement namedElement,
+			Stereotype stereotype) {
+
+		namedElement.applyStereotype(stereotype);
+
+		out("Stereotype '%s' applied to element '%s'.",
+			stereotype.getQualifiedName(), namedElement.getQualifiedName());
+	}
+
+	protected Object getStereotypePropertyValue(
+			NamedElement namedElement, Stereotype stereotype, Property property) {
+
+		Object value = namedElement.getValue(stereotype, property.getName());
+
+		out("Value of stereotype property '%s' on element '%s' is %s.",
+			property.getQualifiedName(), namedElement.getQualifiedName(), value);
+
+		return value;
+	}
+
+	protected  void setStereotypePropertyValue(NamedElement namedElement,
+			Stereotype stereotype, Property property, Object value) {
+
+		Object valueToSet = value;
+
+		if ((value instanceof String)
+			&& (property.getType() instanceof Enumeration)) {
+			// Get the corresponding enumeration literal
+			valueToSet = ((Enumeration) property.getType())
+				.getOwnedLiteral((String) value);
+		}
+
+		namedElement.setValue(stereotype, property.getName(), valueToSet);
+
+		out("Value of stereotype property '%s' on element '%s' set to %s.",
+			property.getQualifiedName(), namedElement.getQualifiedName(), value);
+	}
+
+	//
+	// Program control
+	//
+
+	protected boolean processArgs(String[] args)
+			throws IOException {
+
+		if (args.length != 1) {
+			err("Expected 1 argument.");
+			err("Usage: java -jar ... %s <dir>",
+				ProfileTest.class.getSimpleName());
+			err("where");
+			err("<dir> - path to output folder in which to save the UML profile");
+			return false;
+		}
+
+		outputDir = new File(args[0]).getCanonicalFile();
+		if (!outputDir.exists()) {
+			err("No such directory: %s", outputDir.getAbsolutePath());
+			return false;
+		}
+
+		if (!outputDir.isDirectory()) {
+			err("Not a directory: %s", outputDir.getAbsolutePath());
+			return false;
+		}
+
+		if (!outputDir.canWrite()) {
+			err("Cannot create a file in directory: %s",
+				outputDir.getAbsolutePath());
+			return false;
+		}
+
+		return true;
+	}
+
+//	protected static void save(org.eclipse.uml2.uml.Package package_, URI uri) {
+//		// Create the resource to be saved and add the package to it
+//		Resource resource = RESOURCE_SET.createResource(uri);
+//		resource.getContents().add(package_);
+//
+//		// And save.
+//		try {
+//			resource.save(null);
+//			out("Done.");
+//		} catch (IOException ioe) {
+//			err(ioe.getMessage());
+//		}
+//	}
+	
+	protected  void save(org.eclipse.uml2.uml.Package package_, URI uri) {
+		Resource resource = RESOURCE_SET.createResource(uri);
+		EList<EObject> contents = resource.getContents();
+
+		contents.add(package_);
+
+		for (TreeIterator<Object> allContents = UMLUtil.getAllContents(package_, true,
+				false); allContents.hasNext();) {
+
+			EObject eObject = (EObject) allContents.next();
+			if (eObject instanceof Element) {
+				contents.addAll(((Element) eObject).getStereotypeApplications());
+			}
+		}
+		try {
+			resource.save(null);
+			out("Done.");
+		} catch (IOException ioe) {
+			err(ioe.getMessage());
+		}
+	}
+	protected  org.eclipse.uml2.uml.Package load(URI uri) {
+		org.eclipse.uml2.uml.Package package_ = null;
+
+		try {
+			// Load the requested resource
+			Resource resource = RESOURCE_SET.getResource(uri, true);
+
+			// Get the first (should be only) package from it
+			package_ = (org.eclipse.uml2.uml.Package) EcoreUtil
+				.getObjectByType(resource.getContents(),
+					UMLPackage.Literals.PACKAGE);
+		} catch (WrappedException we) {
+			err(we.getMessage());
+			System.exit(1);
+		}
+
+		return package_;
+	}
+	protected  Profile loadProfileURI(String uri) {
+		
+//		String uri = new File(FName).toURI().toString();
+	URI model = URI.createURI(uri);
+	org.eclipse.uml2.uml.Profile _profile = null;
+  
+     ///////////
+	String transDir = "Lib_Instance2.5-3.1/";
+			URIConverter.URI_MAP.put(
+			URI.createURI("platform:/plugin/org.eclipse.uml2.uml/"),
+			URI.createURI("jar:file:" + transDir
+					+ "org.eclipse.uml2.uml_3.1.2.v201010261927.jar!/"));
+	/////////////////////////
+	
+			
+   ////////////////////			
+	try {
+		
+		Resource resource = RESOURCE_SET.getResource(model, true);
+		 _profile = (Profile) EcoreUtil.getObjectByType(
+				resource.getContents(), UMLPackage.Literals.PROFILE);
+	} catch (Exception we) {
+		err(we.getMessage() );
+		//System.exit(1);
+	}	
+	return _profile;
+}
+	protected  Profile loadProfile(String FName) {
+		
+			String uri = new File(FName).toURI().toString();
+		URI model = URI.createURI(uri);
+		org.eclipse.uml2.uml.Profile _profile = null;
+	  
+         ///////////
+		String transDir = "Lib_Instance2.5-3.1/";
+				URIConverter.URI_MAP.put(
+				URI.createURI("platform:/plugin/org.eclipse.uml2.uml/"),
+				URI.createURI("jar:file:" + transDir
+						+ "org.eclipse.uml2.uml_3.1.2.v201010261927.jar!/"));
+		/////////////////////////
+		
+				
+	   ////////////////////			
+		try {
+			
+			Resource resource = RESOURCE_SET.getResource(model, true);
+			 _profile = (Profile) EcoreUtil.getObjectByType(
+					resource.getContents(), UMLPackage.Literals.PROFILE);
+		} catch (Exception we) {
+			err(we.getMessage() );
+			//System.exit(1);
+		}	
+		return _profile;
+	}
+	//
+	// Logging utilities
+	//
+
+	protected  void banner(String format, Object... args) {
+		System.out.println();
+		hrule();
+
+		System.out.printf(format, args);
+		if (!format.endsWith("%n")) {
+			System.out.println();
+		}
+
+		hrule();
+		System.out.println();
+	}
+
+	protected  void hrule() {
+		System.out.println("------------------------------------");
+	}
+
+	protected void out(String format, Object... args) {
+		if (DEBUG) {
+			System.out.printf(format, args);
+			if (!format.endsWith("%n")) {
+				System.out.println();
+			}
+		}
+	}
+
+	protected void err(String format, Object... args) {
+		System.err.printf(format, args);
+		if (!format.endsWith("%n")) {
+			System.err.println();
+		}
+	}
+}

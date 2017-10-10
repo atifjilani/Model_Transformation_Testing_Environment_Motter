@@ -1,0 +1,196 @@
+package org.questlab.motter.oclSolver.driver;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import org.questlab.motter.oclSolver.MOFExperiment;
+
+
+ public class OCLDriverforMOF {
+
+//	private ArrayList<String> logs = new ArrayList<String>();
+
+	public static void main(String[] args) {
+		try {
+			String umlFile = null;
+			String objDiagramPath=null;
+            if(args.length ==0){
+            	umlFile = "OCLSolverInput/StateMachineMetaModel.uml";
+    			objDiagramPath = "OCLSolverOutput";	
+            }
+            else{
+                umlFile = args[0];
+    			objDiagramPath = args[1];
+            }
+
+			int noOfIterations = 1000;
+			int noOfRuns = 1;
+		//	MOFExperiment mofe1 = new MOFExperiment();
+	    // random = 0 and AVM =1
+			MOFExperiment.setUpExperiment(noOfIterations, noOfRuns,
+					1, umlFile, objDiagramPath);
+			SetUpDiagram(objDiagramPath);
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	@SuppressWarnings("unused")
+	private static ArrayList<List<Object>> SetUpDiagram(String filepath){
+		ArrayList<List<Object>> result = new ArrayList<List<Object>>();
+		
+		String query1 = "" 
+				+ "Class.allInstances()->size()>0" 
+				+ " and Property.allInstances()->size()>0" 
+				+ " and Association.allInstances()->size()>0" 
+				+ " and Operation.allInstances()->size()>0" 
+				+ " and StateMachine.allInstances()->size()=1"
+		//		+ " and Region.allInstances()->size()>0" 
+				+ " and State.allInstances()->size()>0"
+				+ " and Transition.allInstances()->size()>0" 
+				+ " and Trigger.allInstances()->size()>0" 
+				+ " and CallEvent.allInstances()->size()>=1"
+				+ " and ChangeEvent.allInstances()->size()>=1"
+				+ " and SignalEvent.allInstances()->size()>=1" 
+				+ " and TimeEvent.allInstances()->size()>=1"
+				+ " and TimeExpression.allInstances()->size()>0" 
+				+ " and Signal.allInstances()->size()>0"
+				+ " and Reception.allInstances()->size()>0"
+				+ " and Package.allInstances()->size()=1"
+				+ " and OpaqueBehavior.allInstances()->size()>0"
+				+ " and CallEvent.allInstances()->exists(ca|ca.operation.oclIsTypeOf(Operation))" 
+				+ " and SignalEvent.allInstances()->exists(ca|ca.signal.oclIsTypeOf(Signal))" 
+				+ " and TimeEvent.allInstances()->exists(ca|ca.when.oclIsTypeOf(TimeExpression))"
+				+ " and ChangeEvent.allInstances()->exists(ca|ca.changeExpression.oclIsTypeOf(OpaqueExpression))"
+				+ " and TimeExpression.allInstances()->exists(ca|ca.expr.oclIsTypeOf(OpaqueExpression))"
+				+ " and Reception.allInstances()->exists(ca|ca.signal.oclIsTypeOf(Signal))"
+				+ " and Operation.allInstances()->forAll(s|s.class.oclIsTypeOf(Class))"
+				+ " and Class.allInstances()->select(c|c.isActive=false)->size()=1" 
+				+ " and Class.allInstances()->select(c|c.isActive=true and c.ownedOperation->forAll(o|o.oclIsTypeOf(Operation))"
+				+ " and c.ownedAttribute->forAll(a|a.oclIsTypeOf(Property)) and c.ownedBehavior->forAll(ob| ob.oclIsTypeOf(StateMachine)) and c.ownedReception->forAll(ob| ob.oclIsTypeOf(Reception))"
+				+ ")->size()=1"
+				+ " and StateMachine.allInstances()->exists(s |s.region->exists(r|r.name='r1'))" 
+				+ " and Region.allInstances()->select(m|m.name='r1')->exists(r|r.transition->exists(t|t.source.oclIsTypeOf(State) and t.target.oclIsTypeOf(State)))"
+		//		+ " and Region.allInstances()->select(m|m.name='r1')->exists(r|r.transition->exists(t|t.source.oclIsTypeOf(State) and t.target.oclIsTypeOf(FinalState)))"
+		//		+ " and Region.allInstances()->select(m|m.name='r1')->select(r|r.transition->select(t|t.source.oclIsTypeOf(Vertex) and t.target.oclIsTypeOf(Vertex))->size()=5)->size()=5"
+				+ " and Transition.allInstances()->forAll(t|t.effect.oclIsTypeOf(OpaqueBehavior) and t.trigger.oclIsTypeOf(Trigger))"
+				+ " and Trigger.allInstances()->forAll(t|t.event.oclIsKindOf(Event))"
+	             ;
+	              
+	//	result = mofe1.SolveQuery(query1);	
+		String query2 = ""
+				+ "Transition.allInstances()->select(t|t.source.oclIsTypeOf(Pseudostate) and t.target.oclIsTypeOf(FinalState))->size()=1 " 
+				+ "and Region.allInstances()->forAll(r| r.transition->forAll(t| t.oclIsTypeOf(Transition))) "
+				+ "and StateMachine.allInstances()->forAll(sm| sm.region->forAll(r| r.oclIsTypeOf(Region))) "
+				+ "and Class.allInstances()->forAll(c| c.ownedBehavior->forAll(o| o.oclIsTypeOf(StateMachine)) and " 
+				+ "c.ownedOperation->forAll(o| o.oclIsTypeOf(Operation)) and c.ownedReception->forAll(o| o.oclIsTypeOf(Reception)))"
+	//			+ "and Class.allInstances()->exists(c| c.isActive=true and c.stereotype5='Con')" 
+	//			+ "and Trigger.allInstances()->forAll(t|t.event.oclIsKindOf(Event))"
+				;
+		String query21 = ""
+				+ "Transition.allInstances()->forAll(t|t.source.oclIsTypeOf(Pseudostate) and t.target.oclIsTypeOf(FinalState))" 
+				+ "and Region.allInstances()->forAll(r| r.transition->forAll(t| t.oclIsTypeOf(Transition)))"
+				+ "and StateMachine.allInstances()->forAll(sm| sm.region->forAll(r| r.oclIsTypeOf(Region)))"
+				+ "and Class.allInstances()->forAll(c| c.ownedBehavior->forAll(o| o.oclIsTypeOf(StateMachine)))" 
+				;
+	//	MOFExperiment.SolveQuery(query21);
+	//	result=mofe1.SolveQueryWithClassifierTupple(query2, result);
+	
+		
+		String query3 = "" 
+				+ "Class.allInstances()->size()>0" 
+				+ " and Property.allInstances()->size()>0" 
+				+ " and Association.allInstances()->size()>0" 
+				+ " and Operation.allInstances()->size()>0" 
+				+ " and StateMachine.allInstances()->size()=1"
+			//	+ " and Region.allInstances()->size()>0" 
+				+ " and State.allInstances()->size()>0"
+				+ " and Transition.allInstances()->size()>0" 
+				+ " and Trigger.allInstances()->size()>0" 
+				+ " and CallEvent.allInstances()->size()>=1"
+				+ " and ChangeEvent.allInstances()->size()>=1"
+				+ " and SignalEvent.allInstances()->size()>=1" 
+				+ " and TimeEvent.allInstances()->size()>=1"
+				+ " and TimeExpression.allInstances()->size()>0" 
+				+ " and Signal.allInstances()->size()>0"
+				+ " and Reception.allInstances()->size()>0"
+				+ " and Package.allInstances()->size()>0"///1
+				+ " and OpaqueBehavior.allInstances()->size()>0"
+				+ " and CallEvent.allInstances()->exists(ca|ca.operation.oclIsTypeOf(Operation))" 
+				+ " and SignalEvent.allInstances()->exists(ca|ca.signal.oclIsTypeOf(Signal))" 
+				+ " and TimeEvent.allInstances()->exists(ca|ca.when.oclIsTypeOf(TimeExpression))"
+				+ " and ChangeEvent.allInstances()->exists(ca|ca.changeExpression.oclIsTypeOf(OpaqueExpression))"
+				+ " and TimeExpression.allInstances()->exists(ca|ca.expr.oclIsTypeOf(LiteralString))"
+				+ " and Reception.allInstances()->exists(ca|ca.signal.oclIsTypeOf(Signal))"
+				+ " and Operation.allInstances()->forAll(s|s.class.oclIsTypeOf(Class))"
+				+ " and Property.allInstances()->forAll(s|s.class.oclIsTypeOf(Class))"
+				+ " and State.allInstances()->forAll(s| s.stateInvariant.oclIsTypeOf(Constraint))"
+				+ " and Constraint.allInstances()->forAll(ss|ss.specification.oclIsTypeOf(OpaqueExpression) )"
+			//	+ " and Property.allInstances()->forAll(as|as.association.oclIsTypeOf(Association))"
+				+ " and Association.allInstances()->forAll(as|as.ownedEnd->forAll(o|o.oclIsTypeOf(Property)) and as.memberEnd->forAll(o|o.oclIsTypeOf(Property)))" 
+			//  + " and Class.allInstances()->forAll(c|c.ownedBehavior->forAll(o|o.oclIsTypeOf(StateMachine)))" 
+				+ " and Class.allInstances()->select(c|c.stereotype5='Con' and c.isActive=true and c.ownedOperation->exists(o|o.oclIsTypeOf(Operation))"
+				+ " and c.ownedAttribute->exists(a|a.oclIsTypeOf(Property)) and c.ownedReception->exists(ob| ob.oclIsTypeOf(Reception)) and c.ownedBehavior->forAll(o|o.oclIsTypeOf(StateMachine))"
+				+ ")->size()=1"
+				+ " and StateMachine.allInstances()->select(s |s.region->exists(r|r.name='r1'))->size()=1"
+				+ " and Region.allInstances()->select(m|m.name='r1')->exists(r|r.transition->exists(t|t.source.oclIsTypeOf(Pseudostate) and t.target.oclIsTypeOf(FinalState)))"
+			//	+ " and Region.allInstances()->select(m|m.name='r1')->exists(r|r.transition->exists(t|t.source.oclIsTypeOf(State) and t.target.oclIsTypeOf(FinalState)))"
+				+ " and Transition.allInstances()->forAll(t|t.effect.oclIsTypeOf(OpaqueBehavior) and t.trigger.oclIsTypeOf(Trigger))"
+				+ " and Trigger.allInstances()->forAll(t|t.event.oclIsKindOf(Event))"
+	             ;
+		
+		//result=mofe1.SolveQueryWithClassifierTupple(query3, result);
+	//	MOFExperiment.SolveQuery(query3);
+		//result=OCLTuppleFileReader(filepath);
+		MOFExperiment.SolveQuery(ALLBranchCoverageTest.Condition1());// Condition 1 coverage
+		return result;
+	
+	}
+	
+	@SuppressWarnings("unused")
+	private  ArrayList<List<Object>> OCLTuppleFileReader(String filepath){
+		ArrayList<List<Object>> result = new ArrayList<List<Object>>();		
+		BufferedReader br = null;
+		try {
+			br = new BufferedReader(new FileReader(filepath+"/OCLSolverResult.txt"));
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		    try {
+		        StringBuilder sb = new StringBuilder();
+		        String line = br.readLine();
+		       // System.out.println(line);
+		        while (line != null) {
+		            sb.append(line);  
+		            List<Object> myList=new ArrayList<Object>() ;
+		           String array[]= line.split(",");
+		          for(String s:array){
+		        	  myList.add((Object)s);
+		          }
+		          if(myList.size()<5)
+		        	 myList.add("");
+		          result.add(myList);
+		            line = br.readLine();
+		        }
+		     //   String everything = sb.toString();
+		    } catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		    finally {
+		        try {
+					br.close();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+		    }
+		    return result;
+	}
+}
+

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:REMP="http:///schemas/REMP/_MqBr0FniEeCRuehqYk0blw/21" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/REMP/_MqBr0FniEeCRuehqYk0blw/21 Profile.profile.uml#_ndeft87_EeCXw_ot-hV3nA">
+  <uml:Model xmi:id="_ndeh387_EeCXw_ot-hV3nA" name="TM08">
+    <packageImport xmi:id="_ndeh4M7_EeCXw_ot-hV3nA">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ndeh4c7_EeCXw_ot-hV3nA" name="SM" isActive="true">
+      <ownedAttribute xmi:id="_ndeh4s7_EeCXw_ot-hV3nA" name="x" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_ndeh487_EeCXw_ot-hV3nA" name="SM">
+        <region xmi:id="_ndeh5M7_EeCXw_ot-hV3nA" name="Region1">
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_ndeh5c7_EeCXw_ot-hV3nA"/>
+          <subvertex xmi:type="uml:State" xmi:id="_ndeh5s7_EeCXw_ot-hV3nA" name="A"/>
+          <subvertex xmi:type="uml:State" xmi:id="_ndeh587_EeCXw_ot-hV3nA" name="B"/>
+          <subvertex xmi:type="uml:State" xmi:id="_ndeh6M7_EeCXw_ot-hV3nA" name="C"/>
+          <subvertex xmi:type="uml:State" xmi:id="_ndeh6c7_EeCXw_ot-hV3nA" name="D"/>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_ndeh6s7_EeCXw_ot-hV3nA" kind="choice"/>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_ndeh687_EeCXw_ot-hV3nA" kind="choice"/>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_ndeh7M7_EeCXw_ot-hV3nA" kind="choice"/>
+          <subvertex xmi:type="uml:State" xmi:id="_ndeh7c7_EeCXw_ot-hV3nA" name="State1"/>
+          <transition xmi:id="_ndeh7s7_EeCXw_ot-hV3nA" source="_ndeh5c7_EeCXw_ot-hV3nA" target="_ndeh7c7_EeCXw_ot-hV3nA"/>
+          <transition xmi:id="_ndeh787_EeCXw_ot-hV3nA" source="_ndeh587_EeCXw_ot-hV3nA" target="_ndeh6c7_EeCXw_ot-hV3nA">
+            <trigger xmi:id="_ndeh8M7_EeCXw_ot-hV3nA" name="" event="_ndeiIc7_EeCXw_ot-hV3nA"/>
+          </transition>
+          <transition xmi:id="_ndeh8c7_EeCXw_ot-hV3nA" source="_ndeh6c7_EeCXw_ot-hV3nA" target="_ndeh6s7_EeCXw_ot-hV3nA">
+            <trigger xmi:id="_ndeh8s7_EeCXw_ot-hV3nA" name="" event="_ndeiIs7_EeCXw_ot-hV3nA"/>
+          </transition>
+          <transition xmi:id="_ndeh887_EeCXw_ot-hV3nA" source="_ndeh5s7_EeCXw_ot-hV3nA" target="_ndeh587_EeCXw_ot-hV3nA" guard="_ndeh9M7_EeCXw_ot-hV3nA">
+            <ownedRule xmi:id="_ndeh9M7_EeCXw_ot-hV3nA" constrainedElement="_ndeh887_EeCXw_ot-hV3nA">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_ndeh9c7_EeCXw_ot-hV3nA">
+                <language></language>
+                <body>self.x &lt; 0</body>
+              </specification>
+            </ownedRule>
+            <trigger xmi:id="_ndeh9s7_EeCXw_ot-hV3nA" name="" event="_ndeiJc7_EeCXw_ot-hV3nA"/>
+          </transition>
+          <transition xmi:id="_ndeh987_EeCXw_ot-hV3nA" source="_ndeh6s7_EeCXw_ot-hV3nA" target="_ndeh587_EeCXw_ot-hV3nA" guard="_ndeh-M7_EeCXw_ot-hV3nA">
+            <ownedRule xmi:id="_ndeh-M7_EeCXw_ot-hV3nA" constrainedElement="_ndeh987_EeCXw_ot-hV3nA">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_ndeh-c7_EeCXw_ot-hV3nA">
+                <language></language>
+                <body>self.x &lt; 0</body>
+              </specification>
+            </ownedRule>
+          </transition>
+          <transition xmi:id="_ndeh-s7_EeCXw_ot-hV3nA" source="_ndeh6s7_EeCXw_ot-hV3nA" target="_ndeh6M7_EeCXw_ot-hV3nA" guard="_ndeh-87_EeCXw_ot-hV3nA">
+            <ownedRule xmi:id="_ndeh-87_EeCXw_ot-hV3nA" constrainedElement="_ndeh-s7_EeCXw_ot-hV3nA">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_ndeh_M7_EeCXw_ot-hV3nA">
+                <language></language>
+                <body>else</body>
+              </specification>
+            </ownedRule>
+          </transition>
+          <transition xmi:id="_ndeh_c7_EeCXw_ot-hV3nA" source="_ndeh587_EeCXw_ot-hV3nA" target="_ndeh6c7_EeCXw_ot-hV3nA" guard="_ndeh_s7_EeCXw_ot-hV3nA">
+            <ownedRule xmi:id="_ndeh_s7_EeCXw_ot-hV3nA" constrainedElement="_ndeh_c7_EeCXw_ot-hV3nA">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_ndeh_87_EeCXw_ot-hV3nA">
+                <language></language>
+                <body>self.x > 0</body>
+              </specification>
+            </ownedRule>
+            <trigger xmi:id="_ndeiAM7_EeCXw_ot-hV3nA" name="" event="_ndeiKM7_EeCXw_ot-hV3nA"/>
+          </transition>
+          <transition xmi:id="_ndeiAc7_EeCXw_ot-hV3nA" source="_ndeh6c7_EeCXw_ot-hV3nA" target="_ndeh587_EeCXw_ot-hV3nA">
+            <trigger xmi:id="_ndeiAs7_EeCXw_ot-hV3nA" name="" event="_ndeiKc7_EeCXw_ot-hV3nA"/>
+          </transition>
+          <transition xmi:id="_ndeiA87_EeCXw_ot-hV3nA" source="_ndeh6c7_EeCXw_ot-hV3nA" target="_ndeh687_EeCXw_ot-hV3nA">
+            <trigger xmi:id="_ndeiBM7_EeCXw_ot-hV3nA" name="" event="_ndeiK87_EeCXw_ot-hV3nA"/>
+          </transition>
+          <transition xmi:id="_ndeiBc7_EeCXw_ot-hV3nA" source="_ndeh687_EeCXw_ot-hV3nA" target="_ndeh587_EeCXw_ot-hV3nA" guard="_ndeiBs7_EeCXw_ot-hV3nA">
+            <ownedRule xmi:id="_ndeiBs7_EeCXw_ot-hV3nA" constrainedElement="_ndeiBc7_EeCXw_ot-hV3nA">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_ndeiB87_EeCXw_ot-hV3nA">
+                <language></language>
+                <body>self.x &lt; 0</body>
+              </specification>
+            </ownedRule>
+          </transition>
+          <transition xmi:id="_ndeiCM7_EeCXw_ot-hV3nA" source="_ndeh687_EeCXw_ot-hV3nA" target="_ndeh6c7_EeCXw_ot-hV3nA" guard="_ndeiCc7_EeCXw_ot-hV3nA">
+            <ownedRule xmi:id="_ndeiCc7_EeCXw_ot-hV3nA" constrainedElement="_ndeiCM7_EeCXw_ot-hV3nA">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_ndeiCs7_EeCXw_ot-hV3nA">
+                <language></language>
+                <body>else</body>
+              </specification>
+            </ownedRule>
+          </transition>
+          <transition xmi:id="_ndeiC87_EeCXw_ot-hV3nA" source="_ndeh6c7_EeCXw_ot-hV3nA" target="_ndeh7M7_EeCXw_ot-hV3nA">
+            <trigger xmi:id="_ndeiDM7_EeCXw_ot-hV3nA" name="" event="_ndeiLc7_EeCXw_ot-hV3nA"/>
+          </transition>
+          <transition xmi:id="_ndeiDc7_EeCXw_ot-hV3nA" source="_ndeh7M7_EeCXw_ot-hV3nA" target="_ndeh587_EeCXw_ot-hV3nA" guard="_ndeiDs7_EeCXw_ot-hV3nA">
+            <ownedRule xmi:id="_ndeiDs7_EeCXw_ot-hV3nA" constrainedElement="_ndeiDc7_EeCXw_ot-hV3nA">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_ndeiD87_EeCXw_ot-hV3nA">
+                <language></language>
+                <body>self.x &lt; 0</body>
+              </specification>
+            </ownedRule>
+          </transition>
+          <transition xmi:id="_ndeiEM7_EeCXw_ot-hV3nA" source="_ndeh7M7_EeCXw_ot-hV3nA" target="_ndeh6c7_EeCXw_ot-hV3nA" guard="_ndeiEc7_EeCXw_ot-hV3nA">
+            <ownedRule xmi:id="_ndeiEc7_EeCXw_ot-hV3nA" constrainedElement="_ndeiEM7_EeCXw_ot-hV3nA">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_ndeiEs7_EeCXw_ot-hV3nA">
+                <language></language>
+                <body>else</body>
+              </specification>
+            </ownedRule>
+          </transition>
+          <transition xmi:id="_ndeiE87_EeCXw_ot-hV3nA" source="_ndeh7c7_EeCXw_ot-hV3nA" target="_ndeh5s7_EeCXw_ot-hV3nA">
+            <trigger xmi:id="_ndeiFM7_EeCXw_ot-hV3nA" name="" event="_ndeiLs7_EeCXw_ot-hV3nA"/>
+          </transition>
+          <transition xmi:id="_ndeiFc7_EeCXw_ot-hV3nA" source="_ndeh5s7_EeCXw_ot-hV3nA" target="_ndeh6c7_EeCXw_ot-hV3nA" guard="_ndeiFs7_EeCXw_ot-hV3nA">
+            <ownedRule xmi:id="_ndeiFs7_EeCXw_ot-hV3nA" constrainedElement="_ndeiFc7_EeCXw_ot-hV3nA">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_ndeiF87_EeCXw_ot-hV3nA">
+                <language></language>
+                <body>self.x = 0</body>
+              </specification>
+            </ownedRule>
+            <trigger xmi:id="_ndeiGM7_EeCXw_ot-hV3nA" name="" event="_ndeiJc7_EeCXw_ot-hV3nA"/>
+          </transition>
+          <transition xmi:id="_ndeiGc7_EeCXw_ot-hV3nA" source="_ndeh5s7_EeCXw_ot-hV3nA" target="_ndeh5s7_EeCXw_ot-hV3nA">
+            <trigger xmi:id="_ndeiGs7_EeCXw_ot-hV3nA" name="" event="_ndeiL87_EeCXw_ot-hV3nA"/>
+          </transition>
+        </region>
+      </ownedBehavior>
+      <ownedReception xmi:id="_ndeiG87_EeCXw_ot-hV3nA" signal="_ndeiHs7_EeCXw_ot-hV3nA"/>
+      <ownedReception xmi:id="_ndeiHM7_EeCXw_ot-hV3nA" signal="_ndeiH87_EeCXw_ot-hV3nA"/>
+      <ownedReception xmi:id="_ndeiHc7_EeCXw_ot-hV3nA" signal="_ndeiKs7_EeCXw_ot-hV3nA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_ndeiHs7_EeCXw_ot-hV3nA" name="Signal_a"/>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_ndeiH87_EeCXw_ot-hV3nA" name="Signal_b"/>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_ndeiIM7_EeCXw_ot-hV3nA" name="SignalEvent1" signal="_ndeiH87_EeCXw_ot-hV3nA"/>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_ndeiIc7_EeCXw_ot-hV3nA" name="SignalEvent2" signal="_ndeiHs7_EeCXw_ot-hV3nA"/>
+    <packagedElement xmi:type="uml:TimeEvent" xmi:id="_ndeiIs7_EeCXw_ot-hV3nA" name="TimeEvent1" isRelative="true">
+      <when xmi:id="_ndeiI87_EeCXw_ot-hV3nA">
+        <expr xmi:type="uml:LiteralString" xmi:id="_ndeiJM7_EeCXw_ot-hV3nA" value="5, s"/>
+      </when>
+    </packagedElement>
+    <packagedElement xmi:type="uml:TimeEvent" xmi:id="_ndeiJc7_EeCXw_ot-hV3nA" name="TimeEvent2" isRelative="true">
+      <when xmi:id="_ndeiJs7_EeCXw_ot-hV3nA">
+        <expr xmi:type="uml:LiteralString" xmi:id="_ndeiJ87_EeCXw_ot-hV3nA" value="500, ms"/>
+      </when>
+    </packagedElement>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_ndeiKM7_EeCXw_ot-hV3nA" name="" signal="_ndeiH87_EeCXw_ot-hV3nA"/>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_ndeiKc7_EeCXw_ot-hV3nA" name="" signal="_ndeiH87_EeCXw_ot-hV3nA"/>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_ndeiKs7_EeCXw_ot-hV3nA" name="Signal_c"/>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_ndeiK87_EeCXw_ot-hV3nA" name="" signal="_ndeiKs7_EeCXw_ot-hV3nA"/>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_ndeiLM7_EeCXw_ot-hV3nA" name="Signal_d"/>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_ndeiLc7_EeCXw_ot-hV3nA" name="" signal="_ndeiLM7_EeCXw_ot-hV3nA"/>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_ndeiLs7_EeCXw_ot-hV3nA" name="" signal="_ndeiKs7_EeCXw_ot-hV3nA"/>
+    <packagedElement xmi:type="uml:TimeEvent" xmi:id="_ndeiL87_EeCXw_ot-hV3nA" name="TimeEvent3" isRelative="true">
+      <when xmi:id="_ndeiMM7_EeCXw_ot-hV3nA">
+        <expr xmi:type="uml:LiteralString" xmi:id="_ndeiMc7_EeCXw_ot-hV3nA" value="900, ms"/>
+      </when>
+    </packagedElement>
+    <profileApplication xmi:id="_ndeiMs7_EeCXw_ot-hV3nA">
+      <eAnnotations xmi:id="_ndeiM87_EeCXw_ot-hV3nA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_ndeiNM7_EeCXw_ot-hV3nA">
+      <eAnnotations xmi:id="_ndeiNc7_EeCXw_ot-hV3nA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="Default.profile.uml#_ndebps7_EeCXw_ot-hV3nA"/>
+      </eAnnotations>
+      <appliedProfile href="Default.profile.uml#_ndebpM7_EeCXw_ot-hV3nA"/>
+    </profileApplication>
+    <profileApplication xmi:id="_ndeiNs7_EeCXw_ot-hV3nA">
+      <eAnnotations xmi:id="_ndeiN87_EeCXw_ot-hV3nA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="Deployment.profile.uml#_ndUs_M7_EeCXw_ot-hV3nA"/>
+      </eAnnotations>
+      <appliedProfile href="Deployment.profile.uml#_ndUs-s7_EeCXw_ot-hV3nA"/>
+    </profileApplication>
+    <profileApplication xmi:id="_ndeiOM7_EeCXw_ot-hV3nA">
+      <eAnnotations xmi:id="_ndeiOc7_EeCXw_ot-hV3nA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="Profile.profile.uml#_ndeft87_EeCXw_ot-hV3nA"/>
+      </eAnnotations>
+      <appliedProfile href="Profile.profile.uml#_ndeftc7_EeCXw_ot-hV3nA"/>
+    </profileApplication>
+  </uml:Model>
+  <REMP:Context xmi:id="_ndeiOs7_EeCXw_ot-hV3nA" base_Class="_ndeh4c7_EeCXw_ot-hV3nA"/>
+  <REMP:Error xmi:id="_ndeiO87_EeCXw_ot-hV3nA" base_State="_ndeh6M7_EeCXw_ot-hV3nA"/>
+  <REMP:NonLeaving xmi:id="_ndeiPM7_EeCXw_ot-hV3nA" base_Transition="_ndeiCM7_EeCXw_ot-hV3nA"/>
+  <REMP:NonLeaving xmi:id="_ndeiPc7_EeCXw_ot-hV3nA" base_Transition="_ndeiEM7_EeCXw_ot-hV3nA"/>
+</xmi:XMI>

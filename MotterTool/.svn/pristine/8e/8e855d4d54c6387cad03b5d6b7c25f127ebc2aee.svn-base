@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore">
+  <ecore:EPackage name="PrimitiveType">
+    <eClassifiers xsi:type="ecore:EDataType" name="String"/>
+    <eClassifiers xsi:type="ecore:EDataType" name="Boolean"/>
+    <eClassifiers xsi:type="ecore:EDataType" name="Integer"/>
+  </ecore:EPackage>
+  <ecore:EPackage name="DDMetaModel">
+    <eClassifiers xsi:type="ecore:EClass" name="DataElement" eSuperTypes="/1/NamedElement">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="valueSpecification" ordered="false" lowerBound="1" eType="/1/ValueSpecification" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="Comment" eSuperTypes="/1/ValueSpecification">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" ordered="false" unique="false" lowerBound="1" eType="/0/String"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="ValueSpecification" abstract="true" eSuperTypes="/1/NamedElement"/>
+    <eClassifiers xsi:type="ecore:EClass" name="DataConstructSpecification" abstract="true" eSuperTypes="/1/ValueSpecification">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="value" ordered="false" upperBound="-1" eType="/1/DataElement"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="LiteralSpecification" abstract="true" eSuperTypes="/1/ValueSpecification"/>
+    <eClassifiers xsi:type="ecore:EClass" name="SequenceConstruct" eSuperTypes="/1/DataConstructSpecification"/>
+    <eClassifiers xsi:type="ecore:EClass" name="LoopConstruct" eSuperTypes="/1/DataConstructSpecification"/>
+    <eClassifiers xsi:type="ecore:EClass" name="SelectionConstruct" eSuperTypes="/1/DataConstructSpecification"/>
+    <eClassifiers xsi:type="ecore:EClass" name="OptionalConstruct" eSuperTypes="/1/DataConstructSpecification"/>
+    <eClassifiers xsi:type="ecore:EClass" name="PrimitiveBoolean" eSuperTypes="/1/LiteralSpecification">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" ordered="false" unique="false" lowerBound="1" eType="/0/Boolean"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="PrimitiveInteger" eSuperTypes="/1/LiteralSpecification">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" ordered="false" unique="false" lowerBound="1" eType="/0/Integer"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="PrimitiveString" eSuperTypes="/1/LiteralSpecification">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" ordered="false" unique="false" lowerBound="1" eType="/0/String"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="DataDictionary" eSuperTypes="/1/NamedElement">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="dataElements" ordered="false" lowerBound="1" upperBound="-1" eType="/1/DataElement" containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="NamedElement" abstract="true">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" ordered="false" unique="false" lowerBound="1" eType="/0/String"/>
+    </eClassifiers>
+  </ecore:EPackage>
+</xmi:XMI>

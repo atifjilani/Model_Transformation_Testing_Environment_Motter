@@ -1,0 +1,171 @@
+<?xml version = '1.0' encoding = 'ISO-8859-1' ?>
+<XMI xmi.version = '1.2' timestamp = 'Mon Jun 13 14:40:17 CEST 2005'>
+  <XMI.header>
+    <XMI.documentation>
+      <XMI.exporter>Netbeans XMI Writer</XMI.exporter>
+      <XMI.exporterVersion>1.0</XMI.exporterVersion>
+    </XMI.documentation>
+  </XMI.header>
+  <XMI.content>
+    <JAVA.Package xmi.id = 'a1' name = 'appli.model'>
+      <JAVA.Package.classes>
+        <JAVA.JavaClass xmi.id = 'a2' name = 'BoundedInteger' isFinal = 'false'
+          isAbstract = 'false' isStatic = 'false' isPublic = 'true'>
+          <JAVA.JavaClass.members>
+            <JAVA.Field xmi.id = 'a3' name = 'minValue' isFinal = 'false' isStatic = 'false'
+              isPublic = 'true'>
+              <JAVA.ClassMember.type>
+                <JAVA.PrimitiveType xmi.idref = 'a4'/>
+              </JAVA.ClassMember.type>
+            </JAVA.Field>
+            <JAVA.Field xmi.id = 'a5' name = 'maxValue' isFinal = 'false' isStatic = 'false'
+              isPublic = 'true'>
+              <JAVA.ClassMember.type>
+                <JAVA.PrimitiveType xmi.idref = 'a4'/>
+              </JAVA.ClassMember.type>
+            </JAVA.Field>
+            <JAVA.Field xmi.id = 'a6' name = 'currentValue' isFinal = 'false' isStatic = 'false'
+              isPublic = 'true'>
+              <JAVA.ClassMember.type>
+                <JAVA.PrimitiveType xmi.idref = 'a4'/>
+              </JAVA.ClassMember.type>
+            </JAVA.Field>
+            <JAVA.Method xmi.id = 'a7' name = 'decrement' isFinal = 'false' isStatic = 'false'
+              isPublic = 'true'>
+              <JAVA.ClassMember.type>
+                <JAVA.PrimitiveType xmi.idref = 'a8'/>
+              </JAVA.ClassMember.type>
+            </JAVA.Method>
+            <JAVA.Method xmi.id = 'a9' name = 'increment' isFinal = 'false' isStatic = 'false'
+              isPublic = 'true'>
+              <JAVA.ClassMember.type>
+                <JAVA.PrimitiveType xmi.idref = 'a8'/>
+              </JAVA.ClassMember.type>
+            </JAVA.Method>
+            <JAVA.Method xmi.id = 'a10' name = 'toString' isFinal = 'false' isStatic = 'false'
+              isPublic = 'true'>
+              <JAVA.ClassMember.type>
+                <JAVA.JavaClass xmi.idref = 'a11'/>
+              </JAVA.ClassMember.type>
+            </JAVA.Method>
+            <JAVA.Method xmi.id = 'a12' name = 'BoundedInteger' isFinal = 'false' isStatic = 'false'
+              isPublic = 'true'>
+              <JAVA.ClassMember.type>
+                <JAVA.JavaClass xmi.idref = 'a2'/>
+              </JAVA.ClassMember.type>
+              <JAVA.Method.parameters>
+                <JAVA.FeatureParameter xmi.id = 'a13' name = 'current' isFinal = 'false'>
+                  <JAVA.FeatureParameter.type>
+                    <JAVA.PrimitiveType xmi.idref = 'a4'/>
+                  </JAVA.FeatureParameter.type>
+                </JAVA.FeatureParameter>
+                <JAVA.FeatureParameter xmi.id = 'a14' name = 'min' isFinal = 'false'>
+                  <JAVA.FeatureParameter.type>
+                    <JAVA.PrimitiveType xmi.idref = 'a4'/>
+                  </JAVA.FeatureParameter.type>
+                </JAVA.FeatureParameter>
+                <JAVA.FeatureParameter xmi.id = 'a15' name = 'max' isFinal = 'false'>
+                  <JAVA.FeatureParameter.type>
+                    <JAVA.PrimitiveType xmi.idref = 'a4'/>
+                  </JAVA.FeatureParameter.type>
+                </JAVA.FeatureParameter>
+              </JAVA.Method.parameters>
+            </JAVA.Method>
+          </JAVA.JavaClass.members>
+          <JAVA.JavaClass.typedElements>
+            <JAVA.Method xmi.idref = 'a12'/>
+          </JAVA.JavaClass.typedElements>
+        </JAVA.JavaClass>
+      </JAVA.Package.classes>
+    </JAVA.Package>
+    <JAVA.Package xmi.id = 'a16' name = 'java'/>
+    <JAVA.Package xmi.id = 'a17' name = 'appli'/>
+    <JAVA.Package xmi.id = 'a18' name = 'java.lang'>
+      <JAVA.Package.classes>
+        <JAVA.JavaClass xmi.id = 'a11' name = 'String' isFinal = 'false' isAbstract = 'false'
+          isStatic = 'false' isPublic = 'false'>
+          <JAVA.JavaClass.typedElements>
+            <JAVA.Method xmi.idref = 'a10'/>
+          </JAVA.JavaClass.typedElements>
+        </JAVA.JavaClass>
+        <JAVA.PrimitiveType xmi.id = 'a8' name = 'void' isFinal = 'false' isAbstract = 'false'
+          isStatic = 'false' isPublic = 'false'>
+          <JAVA.JavaClass.typedElements>
+            <JAVA.Method xmi.idref = 'a19'/>
+            <JAVA.Method xmi.idref = 'a7'/>
+            <JAVA.Method xmi.idref = 'a9'/>
+            <JAVA.Method xmi.idref = 'a20'/>
+          </JAVA.JavaClass.typedElements>
+        </JAVA.PrimitiveType>
+        <JAVA.PrimitiveType xmi.id = 'a4' name = 'int' isFinal = 'false' isAbstract = 'false'
+          isStatic = 'false' isPublic = 'false'>
+          <JAVA.JavaClass.parameters>
+            <JAVA.FeatureParameter xmi.idref = 'a21'/>
+            <JAVA.FeatureParameter xmi.idref = 'a15'/>
+            <JAVA.FeatureParameter xmi.idref = 'a14'/>
+            <JAVA.FeatureParameter xmi.idref = 'a13'/>
+          </JAVA.JavaClass.parameters>
+          <JAVA.JavaClass.typedElements>
+            <JAVA.Field xmi.idref = 'a3'/>
+            <JAVA.Field xmi.idref = 'a22'/>
+            <JAVA.Field xmi.idref = 'a23'/>
+            <JAVA.Field xmi.idref = 'a5'/>
+            <JAVA.Field xmi.idref = 'a6'/>
+            <JAVA.Method xmi.idref = 'a24'/>
+          </JAVA.JavaClass.typedElements>
+        </JAVA.PrimitiveType>
+      </JAVA.Package.classes>
+    </JAVA.Package>
+    <JAVA.Package xmi.id = 'a25' name = 'appli.view'>
+      <JAVA.Package.classes>
+        <JAVA.JavaClass xmi.id = 'a26' name = 'BoudedIntegerGraphicalView' isFinal = 'false'
+          isAbstract = 'false' isStatic = 'false' isPublic = 'true'>
+          <JAVA.JavaClass.members>
+            <JAVA.Field xmi.id = 'a23' name = 'size' isFinal = 'false' isStatic = 'false'
+              isPublic = 'false'>
+              <JAVA.ClassMember.type>
+                <JAVA.PrimitiveType xmi.idref = 'a4'/>
+              </JAVA.ClassMember.type>
+            </JAVA.Field>
+            <JAVA.Method xmi.id = 'a24' name = 'getSize' isFinal = 'false' isStatic = 'false'
+              isPublic = 'true'>
+              <JAVA.ClassMember.type>
+                <JAVA.PrimitiveType xmi.idref = 'a4'/>
+              </JAVA.ClassMember.type>
+            </JAVA.Method>
+            <JAVA.Method xmi.id = 'a20' name = 'setSize' isFinal = 'false' isStatic = 'false'
+              isPublic = 'true'>
+              <JAVA.ClassMember.type>
+                <JAVA.PrimitiveType xmi.idref = 'a8'/>
+              </JAVA.ClassMember.type>
+              <JAVA.Method.parameters>
+                <JAVA.FeatureParameter xmi.id = 'a21' name = 'n' isFinal = 'false'>
+                  <JAVA.FeatureParameter.type>
+                    <JAVA.PrimitiveType xmi.idref = 'a4'/>
+                  </JAVA.FeatureParameter.type>
+                </JAVA.FeatureParameter>
+              </JAVA.Method.parameters>
+            </JAVA.Method>
+          </JAVA.JavaClass.members>
+        </JAVA.JavaClass>
+        <JAVA.JavaClass xmi.id = 'a27' name = 'BoundedIntegerView' isFinal = 'false'
+          isAbstract = 'false' isStatic = 'false' isPublic = 'true'>
+          <JAVA.JavaClass.members>
+            <JAVA.Field xmi.id = 'a22' name = 'value' isFinal = 'false' isStatic = 'false'
+              isPublic = 'true'>
+              <JAVA.ClassMember.type>
+                <JAVA.PrimitiveType xmi.idref = 'a4'/>
+              </JAVA.ClassMember.type>
+            </JAVA.Field>
+            <JAVA.Method xmi.id = 'a19' name = 'update' isFinal = 'false' isStatic = 'false'
+              isPublic = 'true'>
+              <JAVA.ClassMember.type>
+                <JAVA.PrimitiveType xmi.idref = 'a8'/>
+              </JAVA.ClassMember.type>
+            </JAVA.Method>
+          </JAVA.JavaClass.members>
+        </JAVA.JavaClass>
+      </JAVA.Package.classes>
+    </JAVA.Package>
+  </XMI.content>
+</XMI>

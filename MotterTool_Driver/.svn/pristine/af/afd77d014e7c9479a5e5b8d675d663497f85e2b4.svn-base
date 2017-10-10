@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:REMP="http:///schemas/REMP/_nrTwkBTBEeWbsKyQNEJPlQ/23" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/REMP/_nrTwkBTBEeWbsKyQNEJPlQ/23 Profile.profile.uml#_zT6LnBTBEeWbsKyQNEJPlQ">
+  <uml:Model xmi:id="_CXVMoBTVEeWLB-zovagrHw" name="GeneratedSM">
+    <packageImport xmi:id="_CXVMoRTVEeWLB-zovagrHw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_CXVMohTVEeWLB-zovagrHw" name="-C-class">
+      <ownedAttribute xmi:id="_CXVMoxTVEeWLB-zovagrHw" name="-P-ownedAttribute">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CXVMpBTVEeWLB-zovagrHw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CXVMpRTVEeWLB-zovagrHw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_CXVMphTVEeWLB-zovagrHw" name="Class1-P-ownedAttribute">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CXVMpxTVEeWLB-zovagrHw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CXVMqBTVEeWLB-zovagrHw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_CXVMqRTVEeWLB-zovagrHw" name="-P-navigableOwnedEnd">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CXVMqhTVEeWLB-zovagrHw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CXVMqxTVEeWLB-zovagrHw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_CXVMrBTVEeWLB-zovagrHw" name="Association1-P-navigableOwnedEnd">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CXVMrRTVEeWLB-zovagrHw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CXVMrhTVEeWLB-zovagrHw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_CXVMrxTVEeWLB-zovagrHw" name="-P-memberEnd" association="_CXVzyRTVEeWLB-zovagrHw">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CXVMsBTVEeWLB-zovagrHw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CXVMsRTVEeWLB-zovagrHw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_CXVMshTVEeWLB-zovagrHw" name="Association1-P-memberEnd" association="_CXVzwhTVEeWLB-zovagrHw">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CXVMsxTVEeWLB-zovagrHw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CXVMtBTVEeWLB-zovagrHw"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_CXVMtRTVEeWLB-zovagrHw" name="-O-operation" visibility="public"/>
+      <ownedOperation xmi:id="_CXVMthTVEeWLB-zovagrHw" name="CallEvent1-O-operation" visibility="public"/>
+      <ownedOperation xmi:id="_CXVMtxTVEeWLB-zovagrHw" name="-O-ownedOperation" visibility="public"/>
+      <ownedOperation xmi:id="_CXVMuBTVEeWLB-zovagrHw" name="Class1-O-ownedOperation" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_CXVMuRTVEeWLB-zovagrHw" name="StateMachine1-C-class" isActive="true"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_CXVMuhTVEeWLB-zovagrHw" name="OpaqueBehavior1-C-class" isActive="true"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_CXVMuxTVEeWLB-zovagrHw" name="Operation1-C-class" isActive="true">
+      <ownedOperation xmi:id="_CXVMvBTVEeWLB-zovagrHw" name="Operation1" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_CXVMvRTVEeWLB-zovagrHw" name="Property1-C-class" isActive="true">
+      <ownedAttribute xmi:id="_CXVMvhTVEeWLB-zovagrHw" name="Property1">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CXVMvxTVEeWLB-zovagrHw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CXVMwBTVEeWLB-zovagrHw"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_CXVMwRTVEeWLB-zovagrHw" name="Reception1-C-class" isActive="true"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_CXVMwhTVEeWLB-zovagrHw" name="Class1" isActive="true">
+      <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_CXVMwxTVEeWLB-zovagrHw" name="Class1-S-ownedBehavior">
+        <region xmi:id="_CXVMxBTVEeWLB-zovagrHw" name="r1">
+          <subvertex xmi:type="uml:State" xmi:id="_CXVMxRTVEeWLB-zovagrHw" name="-S-target">
+            <stateInvariant xmi:id="_CXVMxhTVEeWLB-zovagrHw" name="-C-stateInvariant">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_CXVMxxTVEeWLB-zovagrHw" name="-O-specification"/>
+            </stateInvariant>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_CXVzsBTVEeWLB-zovagrHw" name="-S-source">
+            <stateInvariant xmi:id="_CXVzsRTVEeWLB-zovagrHw" name="-C-stateInvariant">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_CXVzshTVEeWLB-zovagrHw" name="-O-specification"/>
+            </stateInvariant>
+          </subvertex>
+          <transition xmi:id="_CXVzsxTVEeWLB-zovagrHw" name="-T-transition" source="_CXVzsBTVEeWLB-zovagrHw" target="_CXVMxRTVEeWLB-zovagrHw">
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_CXVztBTVEeWLB-zovagrHw" name="-O-effect"/>
+            <trigger xmi:id="_CXVztRTVEeWLB-zovagrHw" name="-T-trigger" event="_CXVz2hTVEeWLB-zovagrHw"/>
+          </transition>
+        </region>
+      </ownedBehavior>
+      <ownedReception xmi:id="_CXVzthTVEeWLB-zovagrHw" name="Class1-R-ownedReception" signal="_CXVz4xTVEeWLB-zovagrHw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_CXVztxTVEeWLB-zovagrHw" name="-C-packagedElement" isActive="true"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_CXVzuBTVEeWLB-zovagrHw" name="Package1-C-packagedElement" isActive="true">
+      <ownedReception xmi:id="_CXVzuRTVEeWLB-zovagrHw" name="-R-ownedReception" signal="_CXVz4xTVEeWLB-zovagrHw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_CXVzuhTVEeWLB-zovagrHw" name="-A-owningAssociation"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_CXVzuxTVEeWLB-zovagrHw" name="-A-owningAssociation"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_CXVzvBTVEeWLB-zovagrHw" name="Property1-A-owningAssociation"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_CXVzvRTVEeWLB-zovagrHw" name="Property1-A-owningAssociation"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_CXVzvhTVEeWLB-zovagrHw" name="-A-association"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_CXVzvxTVEeWLB-zovagrHw" name="-A-association"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_CXVzwBTVEeWLB-zovagrHw" name="Property1-A-association"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_CXVzwRTVEeWLB-zovagrHw" name="Property1-A-association"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_CXVzwhTVEeWLB-zovagrHw" name="Association1" memberEnd="_CXVzwxTVEeWLB-zovagrHw _CXVMshTVEeWLB-zovagrHw">
+      <ownedEnd xmi:id="_CXVzwxTVEeWLB-zovagrHw" name="Association1-P-ownedEnd" association="_CXVzwhTVEeWLB-zovagrHw">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CXVzxBTVEeWLB-zovagrHw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CXVzxRTVEeWLB-zovagrHw"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_CXVzxhTVEeWLB-zovagrHw" name="Association1"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_CXVzxxTVEeWLB-zovagrHw" name="-A-packagedElement"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_CXVzyBTVEeWLB-zovagrHw" name="-A-packagedElement"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_CXVzyRTVEeWLB-zovagrHw" name="Package1-A-packagedElement" memberEnd="_CXVzyhTVEeWLB-zovagrHw _CXVMrxTVEeWLB-zovagrHw">
+      <ownedEnd xmi:id="_CXVzyhTVEeWLB-zovagrHw" name="-P-ownedEnd" association="_CXVzyRTVEeWLB-zovagrHw">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CXVzyxTVEeWLB-zovagrHw" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CXVzzBTVEeWLB-zovagrHw"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_CXVzzRTVEeWLB-zovagrHw" name="Package1-A-packagedElement"/>
+    <packagedElement xmi:type="uml:CallEvent" xmi:id="_CXVzzhTVEeWLB-zovagrHw" name="-C-event" operation="_CXVMtRTVEeWLB-zovagrHw"/>
+    <packagedElement xmi:type="uml:CallEvent" xmi:id="_CXVzzxTVEeWLB-zovagrHw" name="Trigger1-C-event" operation="_CXVMtRTVEeWLB-zovagrHw"/>
+    <packagedElement xmi:type="uml:CallEvent" xmi:id="_CXVz0BTVEeWLB-zovagrHw" name="CallEvent1" operation="_CXVMthTVEeWLB-zovagrHw"/>
+    <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_CXVz0RTVEeWLB-zovagrHw" name="ChangeEvent1">
+      <changeExpression xmi:type="uml:OpaqueExpression" xmi:id="_CXVz0hTVEeWLB-zovagrHw" name="ChangeEvent1-O-changeExpression"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_CXVz0xTVEeWLB-zovagrHw" name="ChangeEvent2">
+      <changeExpression xmi:type="uml:OpaqueExpression" xmi:id="_CXVz1BTVEeWLB-zovagrHw" name="ChangeEvent2-O-changeExpression"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_CXVz1RTVEeWLB-zovagrHw" name="ChangeEvent3">
+      <changeExpression xmi:type="uml:OpaqueExpression" xmi:id="_CXVz1hTVEeWLB-zovagrHw" name="ChangeEvent3-O-changeExpression"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_CXVz1xTVEeWLB-zovagrHw" name="-S-event" signal="_CXVz4xTVEeWLB-zovagrHw"/>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_CXVz2BTVEeWLB-zovagrHw" name="Trigger1-S-event" signal="_CXVz4xTVEeWLB-zovagrHw"/>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_CXVz2RTVEeWLB-zovagrHw" name="SignalEvent1" signal="_CXVz5BTVEeWLB-zovagrHw"/>
+    <packagedElement xmi:type="uml:TimeEvent" xmi:id="_CXVz2hTVEeWLB-zovagrHw" name="-T-event">
+      <when xmi:id="_CXVz2xTVEeWLB-zovagrHw" name="-T-when">
+        <expr xmi:type="uml:OpaqueExpression" xmi:id="_CXVz3BTVEeWLB-zovagrHw" name="-O-expr"/>
+      </when>
+    </packagedElement>
+    <packagedElement xmi:type="uml:TimeEvent" xmi:id="_CXVz3RTVEeWLB-zovagrHw" name="Trigger1-T-event">
+      <when xmi:id="_CXVz3hTVEeWLB-zovagrHw" name="-T-when">
+        <expr xmi:type="uml:OpaqueExpression" xmi:id="_CXVz3xTVEeWLB-zovagrHw" name="-O-expr"/>
+      </when>
+    </packagedElement>
+    <packagedElement xmi:type="uml:TimeEvent" xmi:id="_CXVz4BTVEeWLB-zovagrHw" name="TimeEvent1">
+      <when xmi:id="_CXVz4RTVEeWLB-zovagrHw" name="TimeEvent1-T-when">
+        <expr xmi:type="uml:OpaqueExpression" xmi:id="_CXVz4hTVEeWLB-zovagrHw" name="-O-expr"/>
+      </when>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_CXVz4xTVEeWLB-zovagrHw" name="-S-signal"/>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_CXVz5BTVEeWLB-zovagrHw" name="SignalEvent1-S-signal"/>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_CXVz5RTVEeWLB-zovagrHw" name="Reception1-S-signal"/>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_CXVz5hTVEeWLB-zovagrHw" name="Signal1"/>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_CXVz5xTVEeWLB-zovagrHw" name="-S-packagedElement"/>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_CXVz6BTVEeWLB-zovagrHw" name="Package1-S-packagedElement"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_CXVz6RTVEeWLB-zovagrHw" name="-P-packagedElement"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_CXVz6hTVEeWLB-zovagrHw" name="Package1-P-packagedElement"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_CXVz6xTVEeWLB-zovagrHw" name="Package1"/>
+    <packagedElement xmi:type="uml:AnyReceiveEvent" xmi:id="_CXVz7BTVEeWLB-zovagrHw" name="-A-event"/>
+    <packagedElement xmi:type="uml:AnyReceiveEvent" xmi:id="_CXVz7RTVEeWLB-zovagrHw" name="Trigger1-A-event"/>
+    <profileApplication xmi:id="_CXVz7hTVEeWLB-zovagrHw">
+      <eAnnotations xmi:id="_CXVz7xTVEeWLB-zovagrHw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_CXVz8BTVEeWLB-zovagrHw">
+      <eAnnotations xmi:id="_CXVz8RTVEeWLB-zovagrHw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="Default.profile.uml#_zT9POxTBEeWbsKyQNEJPlQ"/>
+      </eAnnotations>
+      <appliedProfile href="Default.profile.uml#_zT9PORTBEeWbsKyQNEJPlQ"/>
+    </profileApplication>
+    <profileApplication xmi:id="_CXVz8hTVEeWLB-zovagrHw">
+      <eAnnotations xmi:id="_CXVz8xTVEeWLB-zovagrHw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="Profile.profile.uml#_zT6LnBTBEeWbsKyQNEJPlQ"/>
+      </eAnnotations>
+      <appliedProfile href="Profile.profile.uml#_zT6LmhTBEeWbsKyQNEJPlQ"/>
+    </profileApplication>
+  </uml:Model>
+  <REMP:System xmi:id="_CXVz9BTVEeWLB-zovagrHw" base_Class="_CXVMohTVEeWLB-zovagrHw"/>
+  <REMP:Context xmi:id="_CXVz9RTVEeWLB-zovagrHw" base_Class="_CXVMwhTVEeWLB-zovagrHw"/>
+</xmi:XMI>

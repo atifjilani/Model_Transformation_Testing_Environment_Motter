@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:REMP="http:///schemas/REMP/_MqBr0FniEeCRuehqYk0blw/21" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/REMP/_MqBr0FniEeCRuehqYk0blw/21 Profile.profile.uml#_elZuF3zIEeCzU7YhQFLA6w">
+  <uml:Model xmi:id="_elZrxXzIEeCzU7YhQFLA6w" name="Train">
+    <packageImport xmi:id="_elZrxnzIEeCzU7YhQFLA6w">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_elZrx3zIEeCzU7YhQFLA6w" name="Gate" isActive="true">
+      <ownedAttribute xmi:id="_elZryHzIEeCzU7YhQFLA6w" name="closingDelay" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_elZryXzIEeCzU7YhQFLA6w" name="openingDelay" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_elZrynzIEeCzU7YhQFLA6w" name="trains" visibility="private" type="_elZr8nzIEeCzU7YhQFLA6w" association="_elZsHHzIEeCzU7YhQFLA6w">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_elZry3zIEeCzU7YhQFLA6w" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_elZrzHzIEeCzU7YhQFLA6w"/>
+      </ownedAttribute>
+      <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_elZrzXzIEeCzU7YhQFLA6w" name="GateSM">
+        <region xmi:id="_elZrznzIEeCzU7YhQFLA6w" name="Region1">
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_elZrz3zIEeCzU7YhQFLA6w"/>
+          <subvertex xmi:type="uml:State" xmi:id="_elZr0HzIEeCzU7YhQFLA6w" name="Opened"/>
+          <subvertex xmi:type="uml:State" xmi:id="_elZr0XzIEeCzU7YhQFLA6w" name="Closing"/>
+          <subvertex xmi:type="uml:State" xmi:id="_elZr0nzIEeCzU7YhQFLA6w" name="Opening"/>
+          <subvertex xmi:type="uml:State" xmi:id="_elZr03zIEeCzU7YhQFLA6w" name="Closed"/>
+          <transition xmi:id="_elZr1HzIEeCzU7YhQFLA6w" kind="local" source="_elZr0HzIEeCzU7YhQFLA6w" target="_elZr0XzIEeCzU7YhQFLA6w">
+            <trigger xmi:id="_elZr1XzIEeCzU7YhQFLA6w" name="" event="_elZsJXzIEeCzU7YhQFLA6w"/>
+          </transition>
+          <transition xmi:id="_elZr1nzIEeCzU7YhQFLA6w" kind="local" source="_elZr0XzIEeCzU7YhQFLA6w" target="_elZr03zIEeCzU7YhQFLA6w">
+            <trigger xmi:id="_elZr13zIEeCzU7YhQFLA6w" name="" event="_elZsKnzIEeCzU7YhQFLA6w"/>
+          </transition>
+          <transition xmi:id="_elZr2HzIEeCzU7YhQFLA6w" kind="local" source="_elZr03zIEeCzU7YhQFLA6w" target="_elZr0nzIEeCzU7YhQFLA6w">
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_elZr2XzIEeCzU7YhQFLA6w" name="Effect">
+              <body>^trains.gateOpened()</body>
+            </effect>
+            <trigger xmi:id="_elZr2nzIEeCzU7YhQFLA6w" name="" event="_elZsJHzIEeCzU7YhQFLA6w"/>
+          </transition>
+          <transition xmi:id="_elZr23zIEeCzU7YhQFLA6w" kind="local" source="_elZr0nzIEeCzU7YhQFLA6w" target="_elZr0HzIEeCzU7YhQFLA6w">
+            <trigger xmi:id="_elZr3HzIEeCzU7YhQFLA6w" name="" event="_elZsJ3zIEeCzU7YhQFLA6w"/>
+          </transition>
+          <transition xmi:id="_elZr3XzIEeCzU7YhQFLA6w" kind="local" source="_elZrz3zIEeCzU7YhQFLA6w" target="_elZr0HzIEeCzU7YhQFLA6w">
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_elZr3nzIEeCzU7YhQFLA6w" name="Effect">
+              <body>action.openConnection();&#xD;&#xA;</body>
+            </effect>
+          </transition>
+          <transition xmi:id="_elZr33zIEeCzU7YhQFLA6w" source="_elZr0HzIEeCzU7YhQFLA6w" target="_elZr0HzIEeCzU7YhQFLA6w">
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_elZr4HzIEeCzU7YhQFLA6w" name="Effect">
+              <language></language>
+              <body>action.sendMessage(&quot;is_open&quot;);</body>
+            </effect>
+            <trigger xmi:id="_elZr4XzIEeCzU7YhQFLA6w" name="" event="_elZsJnzIEeCzU7YhQFLA6w"/>
+          </transition>
+          <transition xmi:id="_elZr4nzIEeCzU7YhQFLA6w" source="_elZr03zIEeCzU7YhQFLA6w" target="_elZr03zIEeCzU7YhQFLA6w">
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_elZr43zIEeCzU7YhQFLA6w" name="Effect">
+              <body>action.sendMessage(&quot;closed&quot;)</body>
+            </effect>
+            <trigger xmi:id="_elZr5HzIEeCzU7YhQFLA6w" name="" event="_elZsJnzIEeCzU7YhQFLA6w"/>
+          </transition>
+          <transition xmi:id="_elZr5XzIEeCzU7YhQFLA6w" source="_elZr0nzIEeCzU7YhQFLA6w" target="_elZr0nzIEeCzU7YhQFLA6w">
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_elZr5nzIEeCzU7YhQFLA6w" name="Effect">
+              <body>action.sendMessage(&quot;opening&quot;)</body>
+            </effect>
+            <trigger xmi:id="_elZr53zIEeCzU7YhQFLA6w" name="" event="_elZsJnzIEeCzU7YhQFLA6w"/>
+          </transition>
+          <transition xmi:id="_elZr6HzIEeCzU7YhQFLA6w" source="_elZr0XzIEeCzU7YhQFLA6w" target="_elZr0XzIEeCzU7YhQFLA6w">
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_elZr6XzIEeCzU7YhQFLA6w" name="Effect">
+              <body>action.sendMessage(&quot;closing&quot;)</body>
+            </effect>
+            <trigger xmi:id="_elZr6nzIEeCzU7YhQFLA6w" name="" event="_elZsJnzIEeCzU7YhQFLA6w"/>
+          </transition>
+        </region>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_elZr63zIEeCzU7YhQFLA6w" name="Gate"/>
+      <ownedReception xmi:id="_elZr7HzIEeCzU7YhQFLA6w" signal="_elZsHnzIEeCzU7YhQFLA6w"/>
+      <ownedReception xmi:id="_elZr7XzIEeCzU7YhQFLA6w" signal="_elZsIHzIEeCzU7YhQFLA6w"/>
+      <ownedReception xmi:id="_elZr7nzIEeCzU7YhQFLA6w" signal="_elZsIXzIEeCzU7YhQFLA6w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:CallEvent" xmi:id="_elZr73zIEeCzU7YhQFLA6w" name="CallEvent1" operation="_elZr63zIEeCzU7YhQFLA6w"/>
+    <packagedElement xmi:type="uml:CallEvent" xmi:id="_elZr8HzIEeCzU7YhQFLA6w" name="CallEvent2"/>
+    <packagedElement xmi:type="uml:CallEvent" xmi:id="_elZr8XzIEeCzU7YhQFLA6w" name="CallEvent3"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_elZr8nzIEeCzU7YhQFLA6w" name="Train" isActive="true">
+      <ownedAttribute xmi:id="_elZr83zIEeCzU7YhQFLA6w" name="nextArrivalTime" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_elZr9HzIEeCzU7YhQFLA6w" name="nextToGateTime" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_elZr9XzIEeCzU7YhQFLA6w" name="nextExitGateTime" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_elZr9nzIEeCzU7YhQFLA6w" name="nextBackToStationTime" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_elZr93zIEeCzU7YhQFLA6w" name="gate" visibility="private" type="_elZrx3zIEeCzU7YhQFLA6w" association="_elZsHHzIEeCzU7YhQFLA6w"/>
+      <ownedAttribute xmi:id="_elZr-HzIEeCzU7YhQFLA6w" name="trainId" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_elZr-XzIEeCzU7YhQFLA6w" name="TrainSM">
+        <region xmi:id="_elZr-nzIEeCzU7YhQFLA6w" name="Region1">
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_elZr-3zIEeCzU7YhQFLA6w"/>
+          <subvertex xmi:type="uml:State" xmi:id="_elZr_HzIEeCzU7YhQFLA6w" name="In Station" isLeaf="true"/>
+          <subvertex xmi:type="uml:State" xmi:id="_elZr_XzIEeCzU7YhQFLA6w" name="Next To Cross"/>
+          <subvertex xmi:type="uml:State" xmi:id="_elZr_nzIEeCzU7YhQFLA6w" name="In Cross"/>
+          <subvertex xmi:type="uml:State" xmi:id="_elZr_3zIEeCzU7YhQFLA6w" name="Environment Illegal"/>
+          <subvertex xmi:type="uml:State" xmi:id="_elZsAHzIEeCzU7YhQFLA6w" name="Gate Left"/>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_elZsAXzIEeCzU7YhQFLA6w" kind="choice"/>
+          <transition xmi:id="_elZsAnzIEeCzU7YhQFLA6w" kind="local" source="_elZr_HzIEeCzU7YhQFLA6w" target="_elZr_XzIEeCzU7YhQFLA6w">
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_elZsA3zIEeCzU7YhQFLA6w" name="Effect">
+              <body>action.trainArriving(self.trainId)</body>
+            </effect>
+            <trigger xmi:id="_elZsBHzIEeCzU7YhQFLA6w" name="" event="_elZsLXzIEeCzU7YhQFLA6w"/>
+          </transition>
+          <transition xmi:id="_elZsBXzIEeCzU7YhQFLA6w" kind="local" source="_elZr_XzIEeCzU7YhQFLA6w" target="_elZsAXzIEeCzU7YhQFLA6w">
+            <trigger xmi:id="_elZsBnzIEeCzU7YhQFLA6w" name="" event="_elZsMHzIEeCzU7YhQFLA6w"/>
+          </transition>
+          <transition xmi:id="_elZsB3zIEeCzU7YhQFLA6w" kind="local" source="_elZsAXzIEeCzU7YhQFLA6w" target="_elZr_3zIEeCzU7YhQFLA6w" guard="_elZsCHzIEeCzU7YhQFLA6w">
+            <ownedRule xmi:id="_elZsCHzIEeCzU7YhQFLA6w" constrainedElement="_elZsB3zIEeCzU7YhQFLA6w">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_elZsCXzIEeCzU7YhQFLA6w">
+                <language></language>
+                <body>not self.gate.oclInState(Closed)</body>
+              </specification>
+            </ownedRule>
+          </transition>
+          <transition xmi:id="_elZsCnzIEeCzU7YhQFLA6w" kind="local" source="_elZr_nzIEeCzU7YhQFLA6w" target="_elZsAHzIEeCzU7YhQFLA6w">
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_elZsC3zIEeCzU7YhQFLA6w" name="Effect">
+              <body>action.trainLeaving(self.trainId)</body>
+            </effect>
+            <trigger xmi:id="_elZsDHzIEeCzU7YhQFLA6w" name="" event="_elZsM3zIEeCzU7YhQFLA6w"/>
+          </transition>
+          <transition xmi:id="_elZsDXzIEeCzU7YhQFLA6w" kind="local" source="_elZsAHzIEeCzU7YhQFLA6w" target="_elZr_HzIEeCzU7YhQFLA6w">
+            <trigger xmi:id="_elZsDnzIEeCzU7YhQFLA6w" name="" event="_elZsNnzIEeCzU7YhQFLA6w"/>
+          </transition>
+          <transition xmi:id="_elZsD3zIEeCzU7YhQFLA6w" kind="local" source="_elZsAXzIEeCzU7YhQFLA6w" target="_elZr_nzIEeCzU7YhQFLA6w" guard="_elZsEHzIEeCzU7YhQFLA6w">
+            <ownedRule xmi:id="_elZsEHzIEeCzU7YhQFLA6w" constrainedElement="_elZsD3zIEeCzU7YhQFLA6w">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_elZsEXzIEeCzU7YhQFLA6w">
+                <language></language>
+                <body>self.gate.oclInState(Closed)</body>
+              </specification>
+            </ownedRule>
+          </transition>
+          <transition xmi:id="_elZsEnzIEeCzU7YhQFLA6w" name="" kind="local" source="_elZr_nzIEeCzU7YhQFLA6w" target="_elZr_3zIEeCzU7YhQFLA6w">
+            <trigger xmi:id="_elZsE3zIEeCzU7YhQFLA6w" name="" event="_elZsGnzIEeCzU7YhQFLA6w"/>
+          </transition>
+          <transition xmi:id="_elZsFHzIEeCzU7YhQFLA6w" kind="local" source="_elZr-3zIEeCzU7YhQFLA6w" target="_elZr_HzIEeCzU7YhQFLA6w">
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_elZsFXzIEeCzU7YhQFLA6w" name="Effect">
+              <body>action.openConnection();</body>
+            </effect>
+          </transition>
+        </region>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_elZsFnzIEeCzU7YhQFLA6w" name="Train">
+        <ownedParameter xmi:id="_elZsF3zIEeCzU7YhQFLA6w" name="id"/>
+      </ownedOperation>
+      <ownedReception xmi:id="_elZsGHzIEeCzU7YhQFLA6w" signal="_elZsG3zIEeCzU7YhQFLA6w"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:CallEvent" xmi:id="_elZsGXzIEeCzU7YhQFLA6w" name="CallEvent4" operation="_elZsFnzIEeCzU7YhQFLA6w"/>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_elZsGnzIEeCzU7YhQFLA6w" name="SignalEvent1" signal="_elZsG3zIEeCzU7YhQFLA6w"/>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_elZsG3zIEeCzU7YhQFLA6w" name="gateOpened"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_elZsHHzIEeCzU7YhQFLA6w" memberEnd="_elZrynzIEeCzU7YhQFLA6w _elZr93zIEeCzU7YhQFLA6w"/>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_elZsHXzIEeCzU7YhQFLA6w" name="Signal1"/>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_elZsHnzIEeCzU7YhQFLA6w" name="getStatus"/>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_elZsH3zIEeCzU7YhQFLA6w" name="Signal2"/>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_elZsIHzIEeCzU7YhQFLA6w" name="open"/>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_elZsIXzIEeCzU7YhQFLA6w" name="close"/>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_elZsInzIEeCzU7YhQFLA6w" name="Signal3"/>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_elZsI3zIEeCzU7YhQFLA6w" name="Signal4"/>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_elZsJHzIEeCzU7YhQFLA6w" name="SignalEvent2" signal="_elZsIHzIEeCzU7YhQFLA6w"/>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_elZsJXzIEeCzU7YhQFLA6w" name="SignalEvent3" signal="_elZsIXzIEeCzU7YhQFLA6w"/>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_elZsJnzIEeCzU7YhQFLA6w" name="SignalEvent4" signal="_elZsHnzIEeCzU7YhQFLA6w"/>
+    <packagedElement xmi:type="uml:TimeEvent" xmi:id="_elZsJ3zIEeCzU7YhQFLA6w" name="TimeEvent7" isRelative="true">
+      <when xmi:id="_elZsKHzIEeCzU7YhQFLA6w">
+        <expr xmi:type="uml:LiteralString" xmi:id="_elZsKXzIEeCzU7YhQFLA6w" value="openingDelay, ms"/>
+      </when>
+    </packagedElement>
+    <packagedElement xmi:type="uml:TimeEvent" xmi:id="_elZsKnzIEeCzU7YhQFLA6w" name="TimeEvent8" isRelative="true">
+      <when xmi:id="_elZsK3zIEeCzU7YhQFLA6w">
+        <expr xmi:type="uml:LiteralString" xmi:id="_elZsLHzIEeCzU7YhQFLA6w" value="closingDelay, ms"/>
+      </when>
+    </packagedElement>
+    <packagedElement xmi:type="uml:TimeEvent" xmi:id="_elZsLXzIEeCzU7YhQFLA6w" name="TimeEvent9" isRelative="true">
+      <when xmi:id="_elZsLnzIEeCzU7YhQFLA6w">
+        <expr xmi:type="uml:LiteralString" xmi:id="_elZsL3zIEeCzU7YhQFLA6w" value="nextArrivalTime, ms"/>
+      </when>
+    </packagedElement>
+    <packagedElement xmi:type="uml:TimeEvent" xmi:id="_elZsMHzIEeCzU7YhQFLA6w" name="TimeEvent10" isRelative="true">
+      <when xmi:id="_elZsMXzIEeCzU7YhQFLA6w">
+        <expr xmi:type="uml:LiteralString" xmi:id="_elZsMnzIEeCzU7YhQFLA6w" value="nextToGateTime, ms"/>
+      </when>
+    </packagedElement>
+    <packagedElement xmi:type="uml:TimeEvent" xmi:id="_elZsM3zIEeCzU7YhQFLA6w" name="TimeEvent11" isRelative="true">
+      <when xmi:id="_elZsNHzIEeCzU7YhQFLA6w">
+        <expr xmi:type="uml:LiteralString" xmi:id="_elZsNXzIEeCzU7YhQFLA6w" value="nextExitGateTime, ms"/>
+      </when>
+    </packagedElement>
+    <packagedElement xmi:type="uml:TimeEvent" xmi:id="_elZsNnzIEeCzU7YhQFLA6w" name="TimeEvent12" isRelative="true">
+      <when xmi:id="_elZsN3zIEeCzU7YhQFLA6w">
+        <expr xmi:type="uml:LiteralString" xmi:id="_elZsOHzIEeCzU7YhQFLA6w" value="nextBackToStationTime, ms"/>
+      </when>
+    </packagedElement>
+    <profileApplication xmi:id="_elZsOXzIEeCzU7YhQFLA6w">
+      <eAnnotations xmi:id="_elZsOnzIEeCzU7YhQFLA6w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_elZsO3zIEeCzU7YhQFLA6w">
+      <eAnnotations xmi:id="_elZsPHzIEeCzU7YhQFLA6w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="Default.profile.uml#_elZk6HzIEeCzU7YhQFLA6w"/>
+      </eAnnotations>
+      <appliedProfile href="Default.profile.uml#_elZk5nzIEeCzU7YhQFLA6w"/>
+    </profileApplication>
+    <profileApplication xmi:id="_elZsPXzIEeCzU7YhQFLA6w">
+      <eAnnotations xmi:id="_elZsPnzIEeCzU7YhQFLA6w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="Deployment.profile.uml#_elZpOHzIEeCzU7YhQFLA6w"/>
+      </eAnnotations>
+      <appliedProfile href="Deployment.profile.uml#_elZpNnzIEeCzU7YhQFLA6w"/>
+    </profileApplication>
+    <profileApplication xmi:id="_elZsP3zIEeCzU7YhQFLA6w">
+      <eAnnotations xmi:id="_elZsQHzIEeCzU7YhQFLA6w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="Profile.profile.uml#_elZuF3zIEeCzU7YhQFLA6w"/>
+      </eAnnotations>
+      <appliedProfile href="Profile.profile.uml#_elZuFXzIEeCzU7YhQFLA6w"/>
+    </profileApplication>
+  </uml:Model>
+  <REMP:Error xmi:id="_elZsQXzIEeCzU7YhQFLA6w" base_State="_elZr_3zIEeCzU7YhQFLA6w"/>
+  <REMP:NonDeterministic xmi:id="_elZsQnzIEeCzU7YhQFLA6w" upperBound="10000" lowerBound="2000" base_Property="_elZr83zIEeCzU7YhQFLA6w"/>
+  <REMP:Context xmi:id="_elZsQ3zIEeCzU7YhQFLA6w" base_Class="_elZr8nzIEeCzU7YhQFLA6w"/>
+  <REMP:Context xmi:id="_elZsRHzIEeCzU7YhQFLA6w" base_Class="_elZrx3zIEeCzU7YhQFLA6w"/>
+  <REMP:NonDeterministic xmi:id="_elZsRXzIEeCzU7YhQFLA6w" upperBound="40" lowerBound="20" base_Property="_elZryHzIEeCzU7YhQFLA6w"/>
+  <REMP:NonDeterministic xmi:id="_elZsRnzIEeCzU7YhQFLA6w" upperBound="40" lowerBound="20" base_Property="_elZryXzIEeCzU7YhQFLA6w"/>
+  <REMP:NonDeterministic xmi:id="_elZsR3zIEeCzU7YhQFLA6w" upperBound="270" lowerBound="250" base_Property="_elZr9HzIEeCzU7YhQFLA6w"/>
+  <REMP:NonDeterministic xmi:id="_elZsSHzIEeCzU7YhQFLA6w" upperBound="1020" lowerBound="1000" base_Property="_elZr9XzIEeCzU7YhQFLA6w"/>
+  <REMP:NonDeterministic xmi:id="_elZsSXzIEeCzU7YhQFLA6w" upperBound="10000" lowerBound="2000" base_Property="_elZr9nzIEeCzU7YhQFLA6w"/>
+</xmi:XMI>

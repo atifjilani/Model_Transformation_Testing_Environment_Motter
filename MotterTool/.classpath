@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="resources"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/VERDE_SbOCL"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/OCLSolver"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/VERDE_SimulatorGenerator"/>
+	<classpathentry exported="true" kind="lib" path="Lib_Instance2.5-3.1/org.eclipse.uml2.uml.resources_3.1.1.v201008191505.jar"/>
+	<classpathentry kind="lib" path="ATL_Lib/org.eclipse.m2m.atl.common_3.4.0.v201305211502.jar"/>
+	<classpathentry kind="lib" path="ATL_Lib/org.eclipse.m2m.atl.core_3.4.0.v201305211502.jar"/>
+	<classpathentry kind="lib" path="ATL_Lib/org.eclipse.m2m.atl.core.emf_3.4.0.v201305211502.jar"/>
+	<classpathentry kind="lib" path="ATL_Lib/org.eclipse.m2m.atl.drivers.emf4atl_3.4.0.v201305211502.jar"/>
+	<classpathentry kind="lib" path="ATL_Lib/org.eclipse.m2m.atl.dsls_3.4.0.v201305211502.jar"/>
+	<classpathentry kind="lib" path="ATL_Lib/org.eclipse.m2m.atl.emftvm_3.4.0.v201305211502.jar"/>
+	<classpathentry kind="lib" path="ATL_Lib/org.eclipse.m2m.atl.engine_3.4.0.v201305211502.jar"/>
+	<classpathentry kind="lib" path="ATL_Lib/org.eclipse.m2m.atl.engine.emfvm_3.4.0.v201305211502.jar"/>
+	<classpathentry kind="lib" path="ATL_Lib/org.eclipse.m2m.atl.engine.emfvm.launch_3.4.0.v201305211502.jar"/>
+	<classpathentry kind="lib" path="ATL_Lib/org.eclipse.m2m.atl.engine.vm_3.4.0.v201305211502.jar"/>
+	<classpathentry kind="lib" path="EMF_Lib/org.eclipse.core.runtime_3.9.0.v20130326-1255.jar"/>
+	<classpathentry kind="lib" path="/OCLSolver/EMF_Lib/log4j-api-2.1.jar"/>
+	<classpathentry kind="lib" path="EMF_Lib/org.eclipse.equinox.common_3.6.200.v20130402-1505.jar"/>
+	<classpathentry kind="lib" path="Lib_Instance2.5-3.1/org.eclipse.emf_2.5.0.v200906151043.jar"/>
+	<classpathentry kind="lib" path="Lib_Instance2.5-3.1/org.eclipse.emf.common_2.5.0.v200906151043.jar"/>
+	<classpathentry kind="lib" path="Lib_Instance2.5-3.1/org.eclipse.emf.ecore.xmi_2.5.0.v200906151043.jar"/>
+	<classpathentry kind="lib" path="Lib_Instance2.5-3.1/org.eclipse.emf.mapping_2.5.0.v200906151043.jar"/>
+	<classpathentry kind="lib" path="Lib_Instance2.5-3.1/org.eclipse.emf.mapping.ecore_2.5.0.v200906151043.jar"/>
+	<classpathentry kind="lib" path="Lib_Instance2.5-3.1/org.eclipse.emf.mapping.ecore2ecore_2.5.0.v200906151043.jar"/>
+	<classpathentry kind="lib" path="Lib_Instance2.5-3.1/org.eclipse.emf.mapping.ecore2xml_2.5.0.v200906151043.jar"/>
+	<classpathentry kind="lib" path="Lib_Instance2.5-3.1/org.eclipse.uml2.common_1.5.0.v201005031530.jar"/>
+	<classpathentry kind="lib" path="Lib_Instance2.5-3.1/org.eclipse.uml2.uml_3.1.2.v201010261927.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="/VERDE_SimulatorGenerator/simulator-generator_lib/org.eclipse.emf.ecore_2.5.0.v200906151043.jar"/>
+	<classpathentry kind="lib" path="/ATLExecutor/lib/org.eclipse.emf.ecore_2.9.0.v20130528-0742.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

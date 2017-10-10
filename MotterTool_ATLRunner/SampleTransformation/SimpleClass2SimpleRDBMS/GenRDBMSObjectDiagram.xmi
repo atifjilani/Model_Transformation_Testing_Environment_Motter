@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="SimpleRDBMS">
+  <Table name="Class1-C-parent"/>
+  <Table name="-C-dest"/>
+  <Table name="-C-src"/>
+  <Table name="-C-parent"/>
+  <Table name="Association1-C-src">
+    <fkeys references="/5"/>
+  </Table>
+  <Table name="Association1-C-dest"/>
+</xmi:XMI>

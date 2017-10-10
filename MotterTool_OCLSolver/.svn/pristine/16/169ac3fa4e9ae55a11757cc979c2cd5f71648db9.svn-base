@@ -1,0 +1,91 @@
+package org.questlab.motter.oclSolver.driver;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import org.questlab.motter.oclSolver.MOFExperiment;
+
+
+ public class OCLDriverforATL {
+
+//	private ArrayList<String> logs = new ArrayList<String>();
+
+	public static void main(String[] args) {
+		try {
+			String umlFile = null;
+			String objDiagramPath=null;
+            if(args.length !=0){
+                umlFile = args[0];
+    			objDiagramPath = args[1];
+            }
+
+			int noOfIterations = 1000;
+			int noOfRuns = 1;
+			MOFExperiment.setUpExperiment(noOfIterations, noOfRuns,1, umlFile, objDiagramPath);
+			SetUpDiagram(objDiagramPath);
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	private static ArrayList<List<Object>> SetUpDiagram(String filepath){
+		ArrayList<List<Object>> result = new ArrayList<List<Object>>();
+		
+		String query1 = "Class.allInstances()->select(c |c.is_persistent=true )-> size() > 0 "
+//			     + "and Class.allInstances()->select(ca |ca.attrs->forAll(attr|attr.is_primary = true))->size() =1  "
+			     + "and Association.allInstances()->size() > 1 "
+			     + "and Class.allInstances()->size() > 0 "
+//			     + "and PrimitiveDataType.allInstances()->size() > 0 "
+			     + "and Classifier.allInstances()->size() > 0 "
+//			     + "and Attribute.allInstances()->select(at : Attribute | at.type.oclIsTypeOf(SimpleClass::Class)) ";
+//		         + "and Attribute.allInstances()->select(at |at.is_primary=true ) -> size() = 5 ";
+//			     +" and Attribute.allInstances()->forAll(at |at.type.oclIsTypeOf(Class)) "
+//			     + "and Attribute.allInstances()->forAll(at |at.type.oclIsKindOf(PrimitiveDataType))->size() > 0 "
+			     + ""
+				;
+		MOFExperiment.SolveQuery(query1);
+		
+		BufferedReader br = null;
+		try {
+			br = new BufferedReader(new FileReader(filepath+"/OCLSolverResult.txt"));
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		    try {
+		        StringBuilder sb = new StringBuilder();
+		        String line = br.readLine();
+		       // System.out.println(line);
+		        while (line != null) {
+		            sb.append(line);  
+		            List<Object> myList=new ArrayList<Object>() ;
+		           String array[]= line.split(",");
+		          for(String s:array){
+		        	  myList.add((Object)s);
+		          }
+		          result.add(myList);
+		            line = br.readLine();
+		        }
+		     //   String everything = sb.toString();
+		    } catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		    finally {
+		        try {
+					br.close();
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+		    }
+		
+		return result;
+	
+	}
+}
+

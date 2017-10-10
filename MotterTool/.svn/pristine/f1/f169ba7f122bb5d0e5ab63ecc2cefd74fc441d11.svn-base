@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Profile xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_KV-XcPTGEeSyC_yr1GjTxQ" name="ecore" metaclassReference="_KV_lm_TGEeSyC_yr1GjTxQ">
+  <eAnnotations xmi:id="_KV-XcfTGEeSyC_yr1GjTxQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+    <contents xmi:type="ecore:EPackage" xmi:id="_KV-XcvTGEeSyC_yr1GjTxQ" name="ecore" nsURI="http:///schemas/ecore/_KVzYUPTGEeSyC_yr1GjTxQ/0" nsPrefix="ecore">
+      <eClassifiers xmi:type="ecore:EEnum" xmi:id="_KV-Xc_TGEeSyC_yr1GjTxQ" name="VisibilityKind">
+        <eAnnotations xmi:id="_KV-XdPTGEeSyC_yr1GjTxQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_KV_lnPTGEeSyC_yr1GjTxQ"/>
+        <eLiterals xmi:id="_KV-XdfTGEeSyC_yr1GjTxQ" name="Unspecified"/>
+        <eLiterals xmi:id="_KV--gPTGEeSyC_yr1GjTxQ" name="None" value="1"/>
+        <eLiterals xmi:id="_KV--gfTGEeSyC_yr1GjTxQ" name="ReadOnly" value="2"/>
+        <eLiterals xmi:id="_KV--gvTGEeSyC_yr1GjTxQ" name="ReadWrite" value="3"/>
+        <eLiterals xmi:id="_KV--g_TGEeSyC_yr1GjTxQ" name="ReadOnlyUnsettable" value="4"/>
+        <eLiterals xmi:id="_KV--hPTGEeSyC_yr1GjTxQ" name="ReadWriteUnsettable" value="5"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EEnum" xmi:id="_KV--hfTGEeSyC_yr1GjTxQ" name="FeatureKind">
+        <eAnnotations xmi:id="_KV--hvTGEeSyC_yr1GjTxQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_KV_lo_TGEeSyC_yr1GjTxQ"/>
+        <eLiterals xmi:id="_KV--h_TGEeSyC_yr1GjTxQ" name="Unspecified"/>
+        <eLiterals xmi:id="_KV--iPTGEeSyC_yr1GjTxQ" name="Simple" value="1"/>
+        <eLiterals xmi:id="_KV--ifTGEeSyC_yr1GjTxQ" name="Attribute" value="2"/>
+        <eLiterals xmi:id="_KV--ivTGEeSyC_yr1GjTxQ" name="Element" value="3"/>
+        <eLiterals xmi:id="_KV--i_TGEeSyC_yr1GjTxQ" name="AttributeWildcard" value="4"/>
+        <eLiterals xmi:id="_KV--jPTGEeSyC_yr1GjTxQ" name="ElementWildcard" value="5"/>
+        <eLiterals xmi:id="_KV--jfTGEeSyC_yr1GjTxQ" name="Group" value="6"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_KV--jvTGEeSyC_yr1GjTxQ" name="EStructuralFeature" abstract="true">
+        <eAnnotations xmi:id="_KV--j_TGEeSyC_yr1GjTxQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_KV_lq_TGEeSyC_yr1GjTxQ"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_KV--kPTGEeSyC_yr1GjTxQ" name="isTransient" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//Boolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_KV--kvTGEeSyC_yr1GjTxQ" name="isUnsettable" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//Boolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_KV--lPTGEeSyC_yr1GjTxQ" name="isVolatile" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//Boolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_KV--lvTGEeSyC_yr1GjTxQ" name="visibility" ordered="false" eType="_KV-Xc_TGEeSyC_yr1GjTxQ" defaultValueLiteral="Unspecified"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_KV--mPTGEeSyC_yr1GjTxQ" name="xmlName" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_KV--mvTGEeSyC_yr1GjTxQ" name="xmlNamespace" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_KV--nPTGEeSyC_yr1GjTxQ" name="xmlFeatureKind" ordered="false" eType="_KV--hfTGEeSyC_yr1GjTxQ" defaultValueLiteral="Unspecified"/>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_KV--nvTGEeSyC_yr1GjTxQ" name="EAttribute" eSuperTypes="_KV--jvTGEeSyC_yr1GjTxQ">
+        <eAnnotations xmi:id="_KV--n_TGEeSyC_yr1GjTxQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_KWAMtvTGEeSyC_yr1GjTxQ"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_KV--oPTGEeSyC_yr1GjTxQ" name="attributeName" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_KV--ovTGEeSyC_yr1GjTxQ" name="base_Property" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+      <eClassifiers xmi:type="ecore:EClass" xmi:id="_KV_lkPTGEeSyC_yr1GjTxQ" name="EReference" eSuperTypes="_KV--jvTGEeSyC_yr1GjTxQ">
+        <eAnnotations xmi:id="_KV_lkfTGEeSyC_yr1GjTxQ" source="http://www.eclipse.org/uml2/2.0.0/UML" references="_KWAzsPTGEeSyC_yr1GjTxQ"/>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_KV_lkvTGEeSyC_yr1GjTxQ" name="referenceName" ordered="false">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//String"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="_KV_llPTGEeSyC_yr1GjTxQ" name="isResolveProxies" ordered="false" defaultValueLiteral="true">
+          <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/uml2/5.0.0/Types#//Boolean"/>
+        </eStructuralFeatures>
+        <eStructuralFeatures xmi:type="ecore:EReference" xmi:id="_KV_llvTGEeSyC_yr1GjTxQ" name="base_Property" ordered="false" lowerBound="1">
+          <eType xmi:type="ecore:EClass" href="http://www.eclipse.org/uml2/5.0.0/UML#//Property"/>
+        </eStructuralFeatures>
+      </eClassifiers>
+    </contents>
+  </eAnnotations>
+  <elementImport xmi:id="_KV_lmfTGEeSyC_yr1GjTxQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_KV_lmvTGEeSyC_yr1GjTxQ">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <elementImport xmi:id="_KV_lm_TGEeSyC_yr1GjTxQ">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Property"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Enumeration" xmi:id="_KV_lnPTGEeSyC_yr1GjTxQ" name="VisibilityKind">
+    <ownedLiteral xmi:id="_KV_lnfTGEeSyC_yr1GjTxQ" name="Unspecified"/>
+    <ownedLiteral xmi:id="_KV_lnvTGEeSyC_yr1GjTxQ" name="None"/>
+    <ownedLiteral xmi:id="_KV_ln_TGEeSyC_yr1GjTxQ" name="ReadOnly"/>
+    <ownedLiteral xmi:id="_KV_loPTGEeSyC_yr1GjTxQ" name="ReadWrite"/>
+    <ownedLiteral xmi:id="_KV_lofTGEeSyC_yr1GjTxQ" name="ReadOnlyUnsettable"/>
+    <ownedLiteral xmi:id="_KV_lovTGEeSyC_yr1GjTxQ" name="ReadWriteUnsettable"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Enumeration" xmi:id="_KV_lo_TGEeSyC_yr1GjTxQ" name="FeatureKind">
+    <ownedLiteral xmi:id="_KV_lpPTGEeSyC_yr1GjTxQ" name="Unspecified"/>
+    <ownedLiteral xmi:id="_KV_lpfTGEeSyC_yr1GjTxQ" name="Simple"/>
+    <ownedLiteral xmi:id="_KV_lpvTGEeSyC_yr1GjTxQ" name="Attribute"/>
+    <ownedLiteral xmi:id="_KV_lp_TGEeSyC_yr1GjTxQ" name="Element"/>
+    <ownedLiteral xmi:id="_KV_lqPTGEeSyC_yr1GjTxQ" name="AttributeWildcard"/>
+    <ownedLiteral xmi:id="_KV_lqfTGEeSyC_yr1GjTxQ" name="ElementWildcard"/>
+    <ownedLiteral xmi:id="_KV_lqvTGEeSyC_yr1GjTxQ" name="Group"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_KV_lq_TGEeSyC_yr1GjTxQ" name="EStructuralFeature" isAbstract="true">
+    <ownedAttribute xmi:id="_KV_lrPTGEeSyC_yr1GjTxQ" name="isTransient">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KWAMoPTGEeSyC_yr1GjTxQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KWAMofTGEeSyC_yr1GjTxQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_KWAMovTGEeSyC_yr1GjTxQ" name="isUnsettable">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KWAMo_TGEeSyC_yr1GjTxQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KWAMpPTGEeSyC_yr1GjTxQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_KWAMpfTGEeSyC_yr1GjTxQ" name="isVolatile">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KWAMpvTGEeSyC_yr1GjTxQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KWAMp_TGEeSyC_yr1GjTxQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_KWAMqPTGEeSyC_yr1GjTxQ" name="visibility" type="_KV_lnPTGEeSyC_yr1GjTxQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KWAMqfTGEeSyC_yr1GjTxQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KWAMqvTGEeSyC_yr1GjTxQ" value="1"/>
+      <defaultValue xmi:type="uml:InstanceValue" xmi:id="_KWAMq_TGEeSyC_yr1GjTxQ" instance="_KV_lnfTGEeSyC_yr1GjTxQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_KWAMrPTGEeSyC_yr1GjTxQ" name="xmlName">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KWAMrfTGEeSyC_yr1GjTxQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KWAMrvTGEeSyC_yr1GjTxQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_KWAMr_TGEeSyC_yr1GjTxQ" name="xmlNamespace">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KWAMsPTGEeSyC_yr1GjTxQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KWAMsfTGEeSyC_yr1GjTxQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_KWAMsvTGEeSyC_yr1GjTxQ" name="xmlFeatureKind" type="_KV_lo_TGEeSyC_yr1GjTxQ">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KWAMs_TGEeSyC_yr1GjTxQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KWAMtPTGEeSyC_yr1GjTxQ" value="1"/>
+      <defaultValue xmi:type="uml:InstanceValue" xmi:id="_KWAMtfTGEeSyC_yr1GjTxQ" instance="_KV_lpPTGEeSyC_yr1GjTxQ"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_KWAMtvTGEeSyC_yr1GjTxQ" name="EAttribute">
+    <generalization xmi:id="_KWAMt_TGEeSyC_yr1GjTxQ" general="_KV_lq_TGEeSyC_yr1GjTxQ"/>
+    <ownedAttribute xmi:id="_KWAMuPTGEeSyC_yr1GjTxQ" name="attributeName">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KWAMufTGEeSyC_yr1GjTxQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KWAMuvTGEeSyC_yr1GjTxQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_KWAMu_TGEeSyC_yr1GjTxQ" name="base_Property" association="_KWAzuvTGEeSyC_yr1GjTxQ">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Property"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_KWAzsPTGEeSyC_yr1GjTxQ" name="EReference">
+    <generalization xmi:id="_KWAzsfTGEeSyC_yr1GjTxQ" general="_KV_lq_TGEeSyC_yr1GjTxQ"/>
+    <ownedAttribute xmi:id="_KWAzsvTGEeSyC_yr1GjTxQ" name="referenceName">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KWAzs_TGEeSyC_yr1GjTxQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KWAztPTGEeSyC_yr1GjTxQ" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_KWAztfTGEeSyC_yr1GjTxQ" name="isResolveProxies">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KWAztvTGEeSyC_yr1GjTxQ"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KWAzt_TGEeSyC_yr1GjTxQ" value="1"/>
+      <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_KWAzuPTGEeSyC_yr1GjTxQ" value="true"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_KWAzufTGEeSyC_yr1GjTxQ" name="base_Property" association="_KWAzvPTGEeSyC_yr1GjTxQ">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Property"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_KWAzuvTGEeSyC_yr1GjTxQ" name="Property_EAttribute" memberEnd="_KWAzu_TGEeSyC_yr1GjTxQ _KWAMu_TGEeSyC_yr1GjTxQ">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_KWAzu_TGEeSyC_yr1GjTxQ" name="extension_EAttribute" type="_KWAMtvTGEeSyC_yr1GjTxQ" aggregation="composite" association="_KWAzuvTGEeSyC_yr1GjTxQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_KWAzvPTGEeSyC_yr1GjTxQ" name="Property_EReference" memberEnd="_KWAzvfTGEeSyC_yr1GjTxQ _KWAzufTGEeSyC_yr1GjTxQ">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_KWAzvfTGEeSyC_yr1GjTxQ" name="extension_EReference" type="_KWAzsPTGEeSyC_yr1GjTxQ" aggregation="composite" association="_KWAzvPTGEeSyC_yr1GjTxQ"/>
+  </packagedElement>
+</uml:Profile>

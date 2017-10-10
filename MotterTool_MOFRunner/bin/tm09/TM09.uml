@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:REMP="http:///schemas/REMP/_MqBr0FniEeCRuehqYk0blw/21" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/REMP/_MqBr0FniEeCRuehqYk0blw/21 Profile.profile.uml#_iarxN87-EeCXw_ot-hV3nA">
+  <uml:Model xmi:id="_iarvMs7-EeCXw_ot-hV3nA" name="TM09">
+    <packageImport xmi:id="_iarvM87-EeCXw_ot-hV3nA">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_iarvNM7-EeCXw_ot-hV3nA" name="SM" isActive="true">
+      <ownedAttribute xmi:id="_iarvNc7-EeCXw_ot-hV3nA" name="x" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+      </ownedAttribute>
+      <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_iarvNs7-EeCXw_ot-hV3nA" name="SM">
+        <region xmi:id="_iarvN87-EeCXw_ot-hV3nA" name="Region1">
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_iarvOM7-EeCXw_ot-hV3nA"/>
+          <subvertex xmi:type="uml:State" xmi:id="_iarvOc7-EeCXw_ot-hV3nA" name="A"/>
+          <subvertex xmi:type="uml:State" xmi:id="_iarvOs7-EeCXw_ot-hV3nA" name="B"/>
+          <subvertex xmi:type="uml:State" xmi:id="_iarvO87-EeCXw_ot-hV3nA" name="C"/>
+          <subvertex xmi:type="uml:State" xmi:id="_iarvPM7-EeCXw_ot-hV3nA" name="D"/>
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_iarvPc7-EeCXw_ot-hV3nA" kind="choice"/>
+          <transition xmi:id="_iarvPs7-EeCXw_ot-hV3nA" source="_iarvOM7-EeCXw_ot-hV3nA" target="_iarvOc7-EeCXw_ot-hV3nA"/>
+          <transition xmi:id="_iarvP87-EeCXw_ot-hV3nA" source="_iarvOc7-EeCXw_ot-hV3nA" target="_iarvPM7-EeCXw_ot-hV3nA" guard="_iarvQM7-EeCXw_ot-hV3nA">
+            <ownedRule xmi:id="_iarvQM7-EeCXw_ot-hV3nA" constrainedElement="_iarvP87-EeCXw_ot-hV3nA">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_iarvQc7-EeCXw_ot-hV3nA">
+                <language></language>
+                <body>self.x &lt; 0</body>
+              </specification>
+            </ownedRule>
+            <trigger xmi:id="_iarvQs7-EeCXw_ot-hV3nA" name="" event="_iarvWc7-EeCXw_ot-hV3nA"/>
+          </transition>
+          <transition xmi:id="_iarvQ87-EeCXw_ot-hV3nA" source="_iarvOs7-EeCXw_ot-hV3nA" target="_iarvOc7-EeCXw_ot-hV3nA">
+            <trigger xmi:id="_iarvRM7-EeCXw_ot-hV3nA" name="" event="_iarvWs7-EeCXw_ot-hV3nA"/>
+          </transition>
+          <transition xmi:id="_iarvRc7-EeCXw_ot-hV3nA" source="_iarvOs7-EeCXw_ot-hV3nA" target="_iarvPc7-EeCXw_ot-hV3nA">
+            <trigger xmi:id="_iarvRs7-EeCXw_ot-hV3nA" name="" event="_iarvW87-EeCXw_ot-hV3nA"/>
+          </transition>
+          <transition xmi:id="_iarvR87-EeCXw_ot-hV3nA" source="_iarvOc7-EeCXw_ot-hV3nA" target="_iarvOs7-EeCXw_ot-hV3nA" guard="_iarvSM7-EeCXw_ot-hV3nA">
+            <ownedRule xmi:id="_iarvSM7-EeCXw_ot-hV3nA" constrainedElement="_iarvR87-EeCXw_ot-hV3nA">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_iarvSc7-EeCXw_ot-hV3nA">
+                <language></language>
+                <body>self.x > 0</body>
+              </specification>
+            </ownedRule>
+            <trigger xmi:id="_iarvSs7-EeCXw_ot-hV3nA" name="" event="_iarvWc7-EeCXw_ot-hV3nA"/>
+          </transition>
+          <transition xmi:id="_iarvS87-EeCXw_ot-hV3nA" source="_iarvPM7-EeCXw_ot-hV3nA" target="_iarvOc7-EeCXw_ot-hV3nA">
+            <trigger xmi:id="_iarvTM7-EeCXw_ot-hV3nA" name="" event="_iarvXs7-EeCXw_ot-hV3nA"/>
+          </transition>
+          <transition xmi:id="_iarvTc7-EeCXw_ot-hV3nA" source="_iarvPc7-EeCXw_ot-hV3nA" target="_iarvOs7-EeCXw_ot-hV3nA" guard="_iarvTs7-EeCXw_ot-hV3nA">
+            <ownedRule xmi:id="_iarvTs7-EeCXw_ot-hV3nA" constrainedElement="_iarvTc7-EeCXw_ot-hV3nA">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_iarvT87-EeCXw_ot-hV3nA">
+                <language></language>
+                <body>self.x > 0</body>
+              </specification>
+            </ownedRule>
+          </transition>
+          <transition xmi:id="_iarvUM7-EeCXw_ot-hV3nA" source="_iarvPc7-EeCXw_ot-hV3nA" target="_iarvO87-EeCXw_ot-hV3nA" guard="_iarvUc7-EeCXw_ot-hV3nA">
+            <ownedRule xmi:id="_iarvUc7-EeCXw_ot-hV3nA" constrainedElement="_iarvUM7-EeCXw_ot-hV3nA">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_iarvUs7-EeCXw_ot-hV3nA">
+                <language></language>
+                <body>else</body>
+              </specification>
+            </ownedRule>
+          </transition>
+          <transition xmi:id="_iarvU87-EeCXw_ot-hV3nA" source="_iarvOs7-EeCXw_ot-hV3nA" target="_iarvO87-EeCXw_ot-hV3nA">
+            <trigger xmi:id="_iarvVM7-EeCXw_ot-hV3nA" name="" event="_iarvX87-EeCXw_ot-hV3nA"/>
+          </transition>
+        </region>
+      </ownedBehavior>
+      <ownedReception xmi:id="_iarvVc7-EeCXw_ot-hV3nA" signal="_iarvV87-EeCXw_ot-hV3nA"/>
+      <ownedReception xmi:id="_iarvVs7-EeCXw_ot-hV3nA" signal="_iarvWM7-EeCXw_ot-hV3nA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_iarvV87-EeCXw_ot-hV3nA" name="Signal_a"/>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_iarvWM7-EeCXw_ot-hV3nA" name="Signal_b"/>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_iarvWc7-EeCXw_ot-hV3nA" name="SignalEvent1" signal="_iarvWM7-EeCXw_ot-hV3nA"/>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_iarvWs7-EeCXw_ot-hV3nA" name="SignalEvent2" signal="_iarvV87-EeCXw_ot-hV3nA"/>
+    <packagedElement xmi:type="uml:TimeEvent" xmi:id="_iarvW87-EeCXw_ot-hV3nA" name="TimeEvent1" isRelative="true">
+      <when xmi:id="_iarvXM7-EeCXw_ot-hV3nA">
+        <expr xmi:type="uml:LiteralString" xmi:id="_iarvXc7-EeCXw_ot-hV3nA" value="1, s"/>
+      </when>
+    </packagedElement>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_iarvXs7-EeCXw_ot-hV3nA" name="" signal="_iarvV87-EeCXw_ot-hV3nA"/>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_iarvX87-EeCXw_ot-hV3nA" name="" signal="_iarvWM7-EeCXw_ot-hV3nA"/>
+    <profileApplication xmi:id="_iarvYM7-EeCXw_ot-hV3nA">
+      <eAnnotations xmi:id="_iarvYc7-EeCXw_ot-hV3nA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_iarvYs7-EeCXw_ot-hV3nA">
+      <eAnnotations xmi:id="_iarvY87-EeCXw_ot-hV3nA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="Default.profile.uml#_iar1SM7-EeCXw_ot-hV3nA"/>
+      </eAnnotations>
+      <appliedProfile href="Default.profile.uml#_iar1Rs7-EeCXw_ot-hV3nA"/>
+    </profileApplication>
+    <profileApplication xmi:id="_iarvZM7-EeCXw_ot-hV3nA">
+      <eAnnotations xmi:id="_iarvZc7-EeCXw_ot-hV3nA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="Deployment.profile.uml#_iarr0s7-EeCXw_ot-hV3nA"/>
+      </eAnnotations>
+      <appliedProfile href="Deployment.profile.uml#_iarr0M7-EeCXw_ot-hV3nA"/>
+    </profileApplication>
+    <profileApplication xmi:id="_iarvZs7-EeCXw_ot-hV3nA">
+      <eAnnotations xmi:id="_iarvZ87-EeCXw_ot-hV3nA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="Profile.profile.uml#_iarxN87-EeCXw_ot-hV3nA"/>
+      </eAnnotations>
+      <appliedProfile href="Profile.profile.uml#_iarxNc7-EeCXw_ot-hV3nA"/>
+    </profileApplication>
+  </uml:Model>
+  <REMP:Context xmi:id="_iarvaM7-EeCXw_ot-hV3nA" base_Class="_iarvNM7-EeCXw_ot-hV3nA"/>
+  <REMP:Error xmi:id="_iarvac7-EeCXw_ot-hV3nA" base_State="_iarvO87-EeCXw_ot-hV3nA"/>
+</xmi:XMI>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:REMP="http:///schemas/REMP/_MqBr0FniEeCRuehqYk0blw/21" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/REMP/_MqBr0FniEeCRuehqYk0blw/21 Profile.profile.uml#_TPtxKsTNEeCVed6reOoRVg">
+  <uml:Model xmi:id="_TPj-PcTNEeCVed6reOoRVg" name="TM03">
+    <packageImport xmi:id="_TPj-PsTNEeCVed6reOoRVg">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_TPj-P8TNEeCVed6reOoRVg" name="Class1" isActive="true">
+      <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_TPj-QMTNEeCVed6reOoRVg" name="StateMachine1">
+        <region xmi:id="_TPj-QcTNEeCVed6reOoRVg" name="Region1">
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_TPj-QsTNEeCVed6reOoRVg"/>
+          <subvertex xmi:type="uml:State" xmi:id="_TPj-Q8TNEeCVed6reOoRVg" name="State1"/>
+          <subvertex xmi:type="uml:State" xmi:id="_TPj-RMTNEeCVed6reOoRVg" name="State2"/>
+          <subvertex xmi:type="uml:State" xmi:id="_TPj-RcTNEeCVed6reOoRVg" name="State3"/>
+          <subvertex xmi:type="uml:State" xmi:id="_TPj-RsTNEeCVed6reOoRVg" name="State4"/>
+          <transition xmi:id="_TPj-R8TNEeCVed6reOoRVg" source="_TPj-QsTNEeCVed6reOoRVg" target="_TPj-Q8TNEeCVed6reOoRVg"/>
+          <transition xmi:id="_TPj-SMTNEeCVed6reOoRVg" source="_TPj-Q8TNEeCVed6reOoRVg" target="_TPj-RMTNEeCVed6reOoRVg">
+            <trigger xmi:id="_TPj-ScTNEeCVed6reOoRVg" name="" event="_TPj-WMTNEeCVed6reOoRVg"/>
+          </transition>
+          <transition xmi:id="_TPj-SsTNEeCVed6reOoRVg" source="_TPj-RMTNEeCVed6reOoRVg" target="_TPj-RsTNEeCVed6reOoRVg">
+            <trigger xmi:id="_TPj-S8TNEeCVed6reOoRVg" name="" event="_TPj-WcTNEeCVed6reOoRVg"/>
+          </transition>
+          <transition xmi:id="_TPj-TMTNEeCVed6reOoRVg" source="_TPj-Q8TNEeCVed6reOoRVg" target="_TPj-Q8TNEeCVed6reOoRVg">
+            <trigger xmi:id="_TPj-TcTNEeCVed6reOoRVg" name="" event="_TPj-W8TNEeCVed6reOoRVg"/>
+          </transition>
+          <transition xmi:id="_TPj-TsTNEeCVed6reOoRVg" source="_TPj-RsTNEeCVed6reOoRVg" target="_TPj-RcTNEeCVed6reOoRVg">
+            <trigger xmi:id="_TPj-T8TNEeCVed6reOoRVg" name="" event="_TPj-WsTNEeCVed6reOoRVg"/>
+          </transition>
+        </region>
+      </ownedBehavior>
+      <ownedReception xmi:id="_TPj-UMTNEeCVed6reOoRVg" signal="_TPj-VMTNEeCVed6reOoRVg"/>
+      <ownedReception xmi:id="_TPj-UcTNEeCVed6reOoRVg" signal="_TPj-VcTNEeCVed6reOoRVg"/>
+      <ownedReception xmi:id="_TPj-UsTNEeCVed6reOoRVg" signal="_TPj-VsTNEeCVed6reOoRVg"/>
+      <ownedReception xmi:id="_TPj-U8TNEeCVed6reOoRVg" signal="_TPj-V8TNEeCVed6reOoRVg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_TPj-VMTNEeCVed6reOoRVg" name="Signal1"/>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_TPj-VcTNEeCVed6reOoRVg" name="Signal2"/>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_TPj-VsTNEeCVed6reOoRVg" name="Signal3"/>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_TPj-V8TNEeCVed6reOoRVg" name="Signal4"/>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_TPj-WMTNEeCVed6reOoRVg" name="" signal="_TPj-VMTNEeCVed6reOoRVg"/>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_TPj-WcTNEeCVed6reOoRVg" name="" signal="_TPj-VcTNEeCVed6reOoRVg"/>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_TPj-WsTNEeCVed6reOoRVg" name="" signal="_TPj-VsTNEeCVed6reOoRVg"/>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_TPj-W8TNEeCVed6reOoRVg" name="" signal="_TPj-V8TNEeCVed6reOoRVg"/>
+    <profileApplication xmi:id="_TPj-XMTNEeCVed6reOoRVg">
+      <eAnnotations xmi:id="_TPj-XcTNEeCVed6reOoRVg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_TPj-XsTNEeCVed6reOoRVg">
+      <eAnnotations xmi:id="_TPj-X8TNEeCVed6reOoRVg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="Default.profile.uml#_TPttGcTNEeCVed6reOoRVg"/>
+      </eAnnotations>
+      <appliedProfile href="Default.profile.uml#_TPttF8TNEeCVed6reOoRVg"/>
+    </profileApplication>
+    <profileApplication xmi:id="_TPj-YMTNEeCVed6reOoRVg">
+      <eAnnotations xmi:id="_TPj-YcTNEeCVed6reOoRVg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="Deployment.profile.uml#_TPj8DMTNEeCVed6reOoRVg"/>
+      </eAnnotations>
+      <appliedProfile href="Deployment.profile.uml#_TPj8CsTNEeCVed6reOoRVg"/>
+    </profileApplication>
+    <profileApplication xmi:id="_TPj-YsTNEeCVed6reOoRVg">
+      <eAnnotations xmi:id="_TPj-Y8TNEeCVed6reOoRVg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="Profile.profile.uml#_TPtxKsTNEeCVed6reOoRVg"/>
+      </eAnnotations>
+      <appliedProfile href="Profile.profile.uml#_TPtxKMTNEeCVed6reOoRVg"/>
+    </profileApplication>
+  </uml:Model>
+  <REMP:Context xmi:id="_TPj-ZMTNEeCVed6reOoRVg" base_Class="_TPj-P8TNEeCVed6reOoRVg"/>
+  <REMP:Error xmi:id="_TPj-ZcTNEeCVed6reOoRVg" base_State="_TPj-RcTNEeCVed6reOoRVg"/>
+</xmi:XMI>

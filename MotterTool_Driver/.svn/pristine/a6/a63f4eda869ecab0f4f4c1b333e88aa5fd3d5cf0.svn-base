@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:REMP="http:///schemas/REMP/_nrTwkBTBEeWbsKyQNEJPlQ/23" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/REMP/_nrTwkBTBEeWbsKyQNEJPlQ/23 Profile.profile.uml#_zT6LnBTBEeWbsKyQNEJPlQ">
+  <uml:Model xmi:id="_Pp6LEBTXEeW2Aokkt65kCA" name="GeneratedSM">
+    <packageImport xmi:id="_Pp6LERTXEeW2Aokkt65kCA">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Pp6LEhTXEeW2Aokkt65kCA" name="-C-class">
+      <ownedAttribute xmi:id="_Pp6LExTXEeW2Aokkt65kCA" name="-P-ownedAttribute">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Pp6LFBTXEeW2Aokkt65kCA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Pp6LFRTXEeW2Aokkt65kCA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Pp6LFhTXEeW2Aokkt65kCA" name="Class1-P-ownedAttribute">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Pp6LFxTXEeW2Aokkt65kCA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Pp6LGBTXEeW2Aokkt65kCA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Pp6LGRTXEeW2Aokkt65kCA" name="-P-navigableOwnedEnd">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Pp6LGhTXEeW2Aokkt65kCA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Pp6LGxTXEeW2Aokkt65kCA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Pp6LHBTXEeW2Aokkt65kCA" name="Association1-P-navigableOwnedEnd">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Pp6LHRTXEeW2Aokkt65kCA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Pp6LHhTXEeW2Aokkt65kCA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Pp6LHxTXEeW2Aokkt65kCA" name="-P-memberEnd" association="_Pp6LURTXEeW2Aokkt65kCA">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Pp6LIBTXEeW2Aokkt65kCA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Pp6LIRTXEeW2Aokkt65kCA"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_Pp6LIhTXEeW2Aokkt65kCA" name="Association1-P-memberEnd" association="_Pp6LShTXEeW2Aokkt65kCA">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Pp6LIxTXEeW2Aokkt65kCA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Pp6LJBTXEeW2Aokkt65kCA"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_Pp6LJRTXEeW2Aokkt65kCA" name="-O-operation" visibility="public"/>
+      <ownedOperation xmi:id="_Pp6LJhTXEeW2Aokkt65kCA" name="CallEvent1-O-operation" visibility="public"/>
+      <ownedOperation xmi:id="_Pp6LJxTXEeW2Aokkt65kCA" name="-O-ownedOperation" visibility="public"/>
+      <ownedOperation xmi:id="_Pp6LKBTXEeW2Aokkt65kCA" name="Class1-O-ownedOperation" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Pp6LKRTXEeW2Aokkt65kCA" name="StateMachine1-C-class" isActive="true"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Pp6LKhTXEeW2Aokkt65kCA" name="OpaqueBehavior1-C-class" isActive="true"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Pp6LKxTXEeW2Aokkt65kCA" name="Operation1-C-class" isActive="true">
+      <ownedOperation xmi:id="_Pp6LLBTXEeW2Aokkt65kCA" name="Operation1" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Pp6LLRTXEeW2Aokkt65kCA" name="Property1-C-class" isActive="true">
+      <ownedAttribute xmi:id="_Pp6LLhTXEeW2Aokkt65kCA" name="Property1">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Pp6LLxTXEeW2Aokkt65kCA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Pp6LMBTXEeW2Aokkt65kCA"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Pp6LMRTXEeW2Aokkt65kCA" name="Reception1-C-class" isActive="true"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Pp6LMhTXEeW2Aokkt65kCA" name="Class1" isActive="true">
+      <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_Pp6LMxTXEeW2Aokkt65kCA" name="Class1-S-ownedBehavior">
+        <region xmi:id="_Pp6LNBTXEeW2Aokkt65kCA" name="r1">
+          <subvertex xmi:type="uml:State" xmi:id="_Pp6LNRTXEeW2Aokkt65kCA" name="-S-target">
+            <stateInvariant xmi:id="_Pp6LNhTXEeW2Aokkt65kCA" name="-C-stateInvariant">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_Pp6LNxTXEeW2Aokkt65kCA" name="-O-specification"/>
+            </stateInvariant>
+          </subvertex>
+          <subvertex xmi:type="uml:State" xmi:id="_Pp6LOBTXEeW2Aokkt65kCA" name="-S-source">
+            <stateInvariant xmi:id="_Pp6LORTXEeW2Aokkt65kCA" name="-C-stateInvariant">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_Pp6LOhTXEeW2Aokkt65kCA" name="-O-specification"/>
+            </stateInvariant>
+          </subvertex>
+          <transition xmi:id="_Pp6LOxTXEeW2Aokkt65kCA" name="-T-transition" source="_Pp6LOBTXEeW2Aokkt65kCA" target="_Pp6LNRTXEeW2Aokkt65kCA">
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_Pp6LPBTXEeW2Aokkt65kCA" name="-O-effect"/>
+            <trigger xmi:id="_Pp6LPRTXEeW2Aokkt65kCA" name="-T-trigger" event="_Pp6LYhTXEeW2Aokkt65kCA"/>
+          </transition>
+        </region>
+      </ownedBehavior>
+      <ownedReception xmi:id="_Pp6LPhTXEeW2Aokkt65kCA" name="Class1-R-ownedReception" signal="_Pp6LaxTXEeW2Aokkt65kCA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Pp6LPxTXEeW2Aokkt65kCA" name="-C-packagedElement" isActive="true"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Pp6LQBTXEeW2Aokkt65kCA" name="Package1-C-packagedElement" isActive="true">
+      <ownedReception xmi:id="_Pp6LQRTXEeW2Aokkt65kCA" name="-R-ownedReception" signal="_Pp6LaxTXEeW2Aokkt65kCA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Pp6LQhTXEeW2Aokkt65kCA" name="-A-owningAssociation"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Pp6LQxTXEeW2Aokkt65kCA" name="-A-owningAssociation"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Pp6LRBTXEeW2Aokkt65kCA" name="Property1-A-owningAssociation"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Pp6LRRTXEeW2Aokkt65kCA" name="Property1-A-owningAssociation"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Pp6LRhTXEeW2Aokkt65kCA" name="-A-association"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Pp6LRxTXEeW2Aokkt65kCA" name="-A-association"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Pp6LSBTXEeW2Aokkt65kCA" name="Property1-A-association"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Pp6LSRTXEeW2Aokkt65kCA" name="Property1-A-association"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Pp6LShTXEeW2Aokkt65kCA" name="Association1" memberEnd="_Pp6LSxTXEeW2Aokkt65kCA _Pp6LIhTXEeW2Aokkt65kCA">
+      <ownedEnd xmi:id="_Pp6LSxTXEeW2Aokkt65kCA" name="Association1-P-ownedEnd" association="_Pp6LShTXEeW2Aokkt65kCA">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Pp6LTBTXEeW2Aokkt65kCA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Pp6LTRTXEeW2Aokkt65kCA"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Pp6LThTXEeW2Aokkt65kCA" name="Association1"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Pp6LTxTXEeW2Aokkt65kCA" name="-A-packagedElement"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Pp6LUBTXEeW2Aokkt65kCA" name="-A-packagedElement"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Pp6LURTXEeW2Aokkt65kCA" name="Package1-A-packagedElement" memberEnd="_Pp6LUhTXEeW2Aokkt65kCA _Pp6LHxTXEeW2Aokkt65kCA">
+      <ownedEnd xmi:id="_Pp6LUhTXEeW2Aokkt65kCA" name="-P-ownedEnd" association="_Pp6LURTXEeW2Aokkt65kCA">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Pp6LUxTXEeW2Aokkt65kCA" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Pp6LVBTXEeW2Aokkt65kCA"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Pp6LVRTXEeW2Aokkt65kCA" name="Package1-A-packagedElement"/>
+    <packagedElement xmi:type="uml:CallEvent" xmi:id="_Pp6LVhTXEeW2Aokkt65kCA" name="-C-event" operation="_Pp6LJRTXEeW2Aokkt65kCA"/>
+    <packagedElement xmi:type="uml:CallEvent" xmi:id="_Pp6LVxTXEeW2Aokkt65kCA" name="Trigger1-C-event" operation="_Pp6LJRTXEeW2Aokkt65kCA"/>
+    <packagedElement xmi:type="uml:CallEvent" xmi:id="_Pp6LWBTXEeW2Aokkt65kCA" name="CallEvent1" operation="_Pp6LJhTXEeW2Aokkt65kCA"/>
+    <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_Pp6LWRTXEeW2Aokkt65kCA" name="ChangeEvent1">
+      <changeExpression xmi:type="uml:OpaqueExpression" xmi:id="_Pp6LWhTXEeW2Aokkt65kCA" name="ChangeEvent1-O-changeExpression"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_Pp6LWxTXEeW2Aokkt65kCA" name="ChangeEvent2">
+      <changeExpression xmi:type="uml:OpaqueExpression" xmi:id="_Pp6LXBTXEeW2Aokkt65kCA" name="ChangeEvent2-O-changeExpression"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_Pp6LXRTXEeW2Aokkt65kCA" name="ChangeEvent3">
+      <changeExpression xmi:type="uml:OpaqueExpression" xmi:id="_Pp6LXhTXEeW2Aokkt65kCA" name="ChangeEvent3-O-changeExpression"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_Pp6LXxTXEeW2Aokkt65kCA" name="-S-event" signal="_Pp6LaxTXEeW2Aokkt65kCA"/>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_Pp6LYBTXEeW2Aokkt65kCA" name="Trigger1-S-event" signal="_Pp6LaxTXEeW2Aokkt65kCA"/>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_Pp6LYRTXEeW2Aokkt65kCA" name="SignalEvent1" signal="_Pp6LbBTXEeW2Aokkt65kCA"/>
+    <packagedElement xmi:type="uml:TimeEvent" xmi:id="_Pp6LYhTXEeW2Aokkt65kCA" name="-T-event">
+      <when xmi:id="_Pp6LYxTXEeW2Aokkt65kCA" name="-T-when">
+        <expr xmi:type="uml:OpaqueExpression" xmi:id="_Pp6LZBTXEeW2Aokkt65kCA" name="-O-expr"/>
+      </when>
+    </packagedElement>
+    <packagedElement xmi:type="uml:TimeEvent" xmi:id="_Pp6LZRTXEeW2Aokkt65kCA" name="Trigger1-T-event">
+      <when xmi:id="_Pp6LZhTXEeW2Aokkt65kCA" name="-T-when">
+        <expr xmi:type="uml:OpaqueExpression" xmi:id="_Pp6LZxTXEeW2Aokkt65kCA" name="-O-expr"/>
+      </when>
+    </packagedElement>
+    <packagedElement xmi:type="uml:TimeEvent" xmi:id="_Pp6LaBTXEeW2Aokkt65kCA" name="TimeEvent1">
+      <when xmi:id="_Pp6LaRTXEeW2Aokkt65kCA" name="TimeEvent1-T-when">
+        <expr xmi:type="uml:OpaqueExpression" xmi:id="_Pp6LahTXEeW2Aokkt65kCA" name="-O-expr"/>
+      </when>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_Pp6LaxTXEeW2Aokkt65kCA" name="-S-signal"/>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_Pp6LbBTXEeW2Aokkt65kCA" name="SignalEvent1-S-signal"/>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_Pp6LbRTXEeW2Aokkt65kCA" name="Reception1-S-signal"/>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_Pp6LbhTXEeW2Aokkt65kCA" name="Signal1"/>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_Pp6LbxTXEeW2Aokkt65kCA" name="-S-packagedElement"/>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_Pp6LcBTXEeW2Aokkt65kCA" name="Package1-S-packagedElement"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Pp6LcRTXEeW2Aokkt65kCA" name="-P-packagedElement"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Pp6LchTXEeW2Aokkt65kCA" name="Package1-P-packagedElement"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Pp6LcxTXEeW2Aokkt65kCA" name="Package1"/>
+    <packagedElement xmi:type="uml:AnyReceiveEvent" xmi:id="_Pp6LdBTXEeW2Aokkt65kCA" name="-A-event"/>
+    <packagedElement xmi:type="uml:AnyReceiveEvent" xmi:id="_Pp6LdRTXEeW2Aokkt65kCA" name="Trigger1-A-event"/>
+    <profileApplication xmi:id="_Pp6LdhTXEeW2Aokkt65kCA">
+      <eAnnotations xmi:id="_Pp6LdxTXEeW2Aokkt65kCA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_Pp6LeBTXEeW2Aokkt65kCA">
+      <eAnnotations xmi:id="_Pp6LeRTXEeW2Aokkt65kCA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="Default.profile.uml#_zT9POxTBEeWbsKyQNEJPlQ"/>
+      </eAnnotations>
+      <appliedProfile href="Default.profile.uml#_zT9PORTBEeWbsKyQNEJPlQ"/>
+    </profileApplication>
+    <profileApplication xmi:id="_Pp6LehTXEeW2Aokkt65kCA">
+      <eAnnotations xmi:id="_Pp6LexTXEeW2Aokkt65kCA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="Profile.profile.uml#_zT6LnBTBEeWbsKyQNEJPlQ"/>
+      </eAnnotations>
+      <appliedProfile href="Profile.profile.uml#_zT6LmhTBEeWbsKyQNEJPlQ"/>
+    </profileApplication>
+  </uml:Model>
+  <REMP:System xmi:id="_Pp6LfBTXEeW2Aokkt65kCA" base_Class="_Pp6LEhTXEeW2Aokkt65kCA"/>
+  <REMP:Context xmi:id="_Pp6yIBTXEeW2Aokkt65kCA" base_Class="_Pp6LMhTXEeW2Aokkt65kCA"/>
+</xmi:XMI>

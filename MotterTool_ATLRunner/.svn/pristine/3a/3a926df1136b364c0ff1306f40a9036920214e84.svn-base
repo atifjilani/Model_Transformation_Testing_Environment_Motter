@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/2.1.0/UML">
+  <uml:Package xmi:id="_W9MuYDrTEd2xX-zTpxDRuw" name="Safe House">
+    <packagedElement xmi:type="uml:Class" xmi:id="_W-ZBMDrTEd2xX-zTpxDRuw" name="ConfigurationData">
+      <ownedAttribute xmi:id="_W-r8IDrTEd2xX-zTpxDRuw" name="ConfigurationData" visibility="public" type="_W_bjADrTEd2xX-zTpxDRuw">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_W-1tIDrTEd2xX-zTpxDRuw" value="emptyComment"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_W_lUADrTEd2xX-zTpxDRuw" name="TelephoneNo">
+      <ownedAttribute xmi:id="_W_lUATrTEd2xX-zTpxDRuw" name="TelephoneNo" visibility="public" type="_W_bjADrTEd2xX-zTpxDRuw">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_W_lUAjrTEd2xX-zTpxDRuw" value="emptyComment"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_XAn10DrTEd2xX-zTpxDRuw" name="ControlPanel">
+      <ownedAttribute xmi:id="_XAn10TrTEd2xX-zTpxDRuw" name="Password" visibility="public" type="_W_bjADrTEd2xX-zTpxDRuw">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_XAn10jrTEd2xX-zTpxDRuw" value="emptyString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_XAxm0DrTEd2xX-zTpxDRuw" name="StartStop" visibility="public" type="_XAxm0jrTEd2xX-zTpxDRuw">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_XAxm0TrTEd2xX-zTpxDRuw" value="false"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_XAxm0zrTEd2xX-zTpxDRuw" name="ConfigurationRequest" visibility="public" type="_XAxm0jrTEd2xX-zTpxDRuw">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_XAxm1DrTEd2xX-zTpxDRuw" value="false"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_XBOSwDrTEd2xX-zTpxDRuw" name="InteractWithUser" visibility="public">
+        <ownedParameter xmi:id="_XBOSwTrTEd2xX-zTpxDRuw" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_XBOSwjrTEd2xX-zTpxDRuw" name="ConfigureSystem" visibility="public">
+        <ownedParameter xmi:id="_XBOSwzrTEd2xX-zTpxDRuw" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_XBOSxDrTEd2xX-zTpxDRuw" name="ProcessPassword" visibility="public">
+        <ownedParameter xmi:id="_XBOSxTrTEd2xX-zTpxDRuw" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_XBOSxjrTEd2xX-zTpxDRuw" name="ActivateDeactivateSystem" visibility="public">
+        <ownedParameter xmi:id="_XBOSxzrTEd2xX-zTpxDRuw" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_XB95oDrTEd2xX-zTpxDRuw" name="Alarm">
+      <ownedAttribute xmi:id="_XB95oTrTEd2xX-zTpxDRuw" name="AlarmType" visibility="public" type="_W_bjADrTEd2xX-zTpxDRuw">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_XB95ojrTEd2xX-zTpxDRuw" value="emptyString"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_XCHDkDrTEd2xX-zTpxDRuw" name="GenerateAlarmSignal" visibility="public">
+        <ownedParameter xmi:id="_XCHDkTrTEd2xX-zTpxDRuw" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_XCtggDrTEd2xX-zTpxDRuw" name="SensorInformation">
+      <ownedAttribute xmi:id="_XCtggTrTEd2xX-zTpxDRuw" name="SensorType" visibility="public" type="_W_bjADrTEd2xX-zTpxDRuw">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_XCtggjrTEd2xX-zTpxDRuw" value="emptyString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_XCtggzrTEd2xX-zTpxDRuw" name="SensorId" visibility="public" type="_XC3RgDrTEd2xX-zTpxDRuw">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_XCtghDrTEd2xX-zTpxDRuw" value="-1"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_XC3RgTrTEd2xX-zTpxDRuw" name="SensorLocation" visibility="public" type="_W_bjADrTEd2xX-zTpxDRuw">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_XC3RgjrTEd2xX-zTpxDRuw" value="emptyString"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_XC3RgzrTEd2xX-zTpxDRuw" name="FormatForDisplay" visibility="public">
+        <ownedParameter xmi:id="_XC3RhDrTEd2xX-zTpxDRuw" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_XDdHYDrTEd2xX-zTpxDRuw" name="Sensors">
+      <ownedAttribute xmi:id="_XDdHYTrTEd2xX-zTpxDRuw" name="SensorType" visibility="public" type="_W_bjADrTEd2xX-zTpxDRuw">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_XDdHYjrTEd2xX-zTpxDRuw" value="emptyString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_XDdHYzrTEd2xX-zTpxDRuw" name="SensorId" visibility="public" type="_XC3RgDrTEd2xX-zTpxDRuw">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_XDdHZDrTEd2xX-zTpxDRuw" value="-1"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_XDm4YDrTEd2xX-zTpxDRuw" name="ReadSensor" visibility="public">
+        <ownedParameter xmi:id="_XDm4YTrTEd2xX-zTpxDRuw" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_XEMuQDrTEd2xX-zTpxDRuw" name="ControlPanelDisplay"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_XEzLMDrTEd2xX-zTpxDRuw" name="TelephoneLine">
+      <ownedAttribute xmi:id="_XEzLMTrTEd2xX-zTpxDRuw" name="TelephoneNumberTones" visibility="public" type="_XAxm0jrTEd2xX-zTpxDRuw">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_XEzLMjrTEd2xX-zTpxDRuw" value="false"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_XEzLMzrTEd2xX-zTpxDRuw" name="DialPhone" visibility="public">
+        <ownedParameter xmi:id="_XEzLNDrTEd2xX-zTpxDRuw" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_XE8VIDrTEd2xX-zTpxDRuw" name="Association_ControlPanelDisplay_ConfigurationData" memberEnd="_XE8VITrTEd2xX-zTpxDRuw _XE8VIjrTEd2xX-zTpxDRuw">
+      <ownedEnd xmi:id="_XE8VITrTEd2xX-zTpxDRuw" name="controlpaneldisplay" type="_XEMuQDrTEd2xX-zTpxDRuw" association="_XE8VIDrTEd2xX-zTpxDRuw"/>
+      <ownedEnd xmi:id="_XE8VIjrTEd2xX-zTpxDRuw" name="configurationdata" type="_W-ZBMDrTEd2xX-zTpxDRuw" aggregation="composite" association="_XE8VIDrTEd2xX-zTpxDRuw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_XFGGIDrTEd2xX-zTpxDRuw" name="Association_ControlPanelDisplay_SensorInformation" memberEnd="_XFGGITrTEd2xX-zTpxDRuw _XFGGIjrTEd2xX-zTpxDRuw">
+      <ownedEnd xmi:id="_XFGGITrTEd2xX-zTpxDRuw" name="controlpaneldisplay" type="_XEMuQDrTEd2xX-zTpxDRuw" association="_XFGGIDrTEd2xX-zTpxDRuw"/>
+      <ownedEnd xmi:id="_XFGGIjrTEd2xX-zTpxDRuw" name="sensorinformation" type="_XCtggDrTEd2xX-zTpxDRuw" aggregation="composite" association="_XFGGIDrTEd2xX-zTpxDRuw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_XFGGIzrTEd2xX-zTpxDRuw" name="Association_TelephoneLine_TelephoneNo" memberEnd="_XFGGJTrTEd2xX-zTpxDRuw _XFGGJDrTEd2xX-zTpxDRuw">
+      <ownedEnd xmi:id="_XFGGJTrTEd2xX-zTpxDRuw" name="telephoneno" type="_W_lUADrTEd2xX-zTpxDRuw" aggregation="composite" association="_XFGGIzrTEd2xX-zTpxDRuw"/>
+      <ownedEnd xmi:id="_XFGGJDrTEd2xX-zTpxDRuw" name="telephoneline" type="_XEzLMDrTEd2xX-zTpxDRuw" association="_XFGGIzrTEd2xX-zTpxDRuw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_XFP3IDrTEd2xX-zTpxDRuw" name="DisplayMessagesAndStatus">
+      <ownedAttribute xmi:id="_XFP3ITrTEd2xX-zTpxDRuw" name="ValidIdMessage" visibility="public" type="_XAxm0jrTEd2xX-zTpxDRuw">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_XFP3IjrTEd2xX-zTpxDRuw" value="false"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_XFP3IzrTEd2xX-zTpxDRuw" name="ActivateDeactivateMessage" visibility="public" type="_XAxm0jrTEd2xX-zTpxDRuw">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_XFP3JDrTEd2xX-zTpxDRuw" value="false"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_XFP3JTrTEd2xX-zTpxDRuw" name="DisplayMessagesAndStatus" visibility="public">
+        <ownedParameter xmi:id="_XFP3JjrTEd2xX-zTpxDRuw" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_XFZBEDrTEd2xX-zTpxDRuw" name="Association_DisplayMessagesAndStatus_SensorInformation" memberEnd="_XFZBETrTEd2xX-zTpxDRuw _XFZBEjrTEd2xX-zTpxDRuw">
+      <ownedEnd xmi:id="_XFZBETrTEd2xX-zTpxDRuw" name="displaymessagesandstatus" type="_XFP3IDrTEd2xX-zTpxDRuw" association="_XFZBEDrTEd2xX-zTpxDRuw"/>
+      <ownedEnd xmi:id="_XFZBEjrTEd2xX-zTpxDRuw" name="sensorinformation" type="_XCtggDrTEd2xX-zTpxDRuw" aggregation="composite" association="_XFZBEDrTEd2xX-zTpxDRuw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_XFZBEzrTEd2xX-zTpxDRuw" name="Association_DisplayMessagesAndStatus_ConfigurationData" memberEnd="_XFZBFTrTEd2xX-zTpxDRuw _XFZBFDrTEd2xX-zTpxDRuw">
+      <ownedEnd xmi:id="_XFZBFTrTEd2xX-zTpxDRuw" name="configurationdata" type="_W-ZBMDrTEd2xX-zTpxDRuw" aggregation="composite" association="_XFZBEzrTEd2xX-zTpxDRuw"/>
+      <ownedEnd xmi:id="_XFZBFDrTEd2xX-zTpxDRuw" name="displaymessagesandstatus" type="_XFP3IDrTEd2xX-zTpxDRuw" association="_XFZBEzrTEd2xX-zTpxDRuw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_XFZBFjrTEd2xX-zTpxDRuw" name="AssesAgainstSetup">
+      <ownedAttribute xmi:id="_XFZBFzrTEd2xX-zTpxDRuw" name="SensorType" visibility="public" type="_W_bjADrTEd2xX-zTpxDRuw">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_XFZBGDrTEd2xX-zTpxDRuw" value="emptyString"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_XFiyEDrTEd2xX-zTpxDRuw" name="SensorId" visibility="public" type="_XC3RgDrTEd2xX-zTpxDRuw">
+        <defaultValue xmi:type="uml:LiteralString" xmi:id="_XFiyETrTEd2xX-zTpxDRuw" value="-1"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_XFiyEjrTEd2xX-zTpxDRuw" name="AssesAgainstSetup" visibility="public">
+        <ownedParameter xmi:id="_XFiyEzrTEd2xX-zTpxDRuw" direction="return"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_XFiyFDrTEd2xX-zTpxDRuw" name="Association_AssesAgainstSetup_ConfigurationData" memberEnd="_XFiyFjrTEd2xX-zTpxDRuw _XFiyFTrTEd2xX-zTpxDRuw">
+      <ownedEnd xmi:id="_XFiyFjrTEd2xX-zTpxDRuw" name="configurationdata" type="_W-ZBMDrTEd2xX-zTpxDRuw" aggregation="composite" association="_XFiyFDrTEd2xX-zTpxDRuw"/>
+      <ownedEnd xmi:id="_XFiyFTrTEd2xX-zTpxDRuw" name="assesagainstsetup" type="_XFZBFjrTEd2xX-zTpxDRuw" association="_XFiyFDrTEd2xX-zTpxDRuw"/>
+    </packagedElement>
+  </uml:Package>
+  <uml:DataType xmi:id="_W_bjADrTEd2xX-zTpxDRuw" name="String"/>
+  <uml:DataType xmi:id="_XAxm0jrTEd2xX-zTpxDRuw" name="Boolean"/>
+  <uml:DataType xmi:id="_XC3RgDrTEd2xX-zTpxDRuw" name="Integer"/>
+</xmi:XMI>

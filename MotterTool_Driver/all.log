@@ -1,0 +1,2 @@
+17-07-23 13:50:56.519 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - Loading model..
+17-07-23 13:50:56.544 [main] ERROR snt.oclsolver.reader.ObjScriptGenerator - org.eclipse.emf.ecore.resource.impl.ResourceSetImpl$1DiagnosticWrappedException: java.io.FileNotFoundException: EMF_Lib\org.eclipse.uml2.uml_4.1.1.v20130902-0826.jar (The system cannot find the path specified)

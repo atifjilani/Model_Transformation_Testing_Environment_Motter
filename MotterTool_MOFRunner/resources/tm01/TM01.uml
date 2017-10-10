@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:REMP="http:///schemas/REMP/_MqBr0FniEeCRuehqYk0blw/21" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/REMP/_MqBr0FniEeCRuehqYk0blw/21 Profile.profile.uml#_IHXGTcQCEeComd5DKq4xrg">
+  <uml:Model xmi:id="_IHgs3sQCEeComd5DKq4xrg" name="TM01">
+    <packageImport xmi:id="_IHgs38QCEeComd5DKq4xrg">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_IHgs4MQCEeComd5DKq4xrg" name="SM" isActive="true">
+      <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_IHgs4cQCEeComd5DKq4xrg" name="SM">
+        <region xmi:id="_IHgs4sQCEeComd5DKq4xrg" name="Region1">
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_IHgs48QCEeComd5DKq4xrg"/>
+          <subvertex xmi:type="uml:State" xmi:id="_IHgs5MQCEeComd5DKq4xrg" name="A"/>
+          <subvertex xmi:type="uml:State" xmi:id="_IHgs5cQCEeComd5DKq4xrg" name="B"/>
+          <subvertex xmi:type="uml:State" xmi:id="_IHgs5sQCEeComd5DKq4xrg" name="C"/>
+          <transition xmi:id="_IHgs58QCEeComd5DKq4xrg" source="_IHgs48QCEeComd5DKq4xrg" target="_IHgs5MQCEeComd5DKq4xrg"/>
+          <transition xmi:id="_IHgs6MQCEeComd5DKq4xrg" source="_IHgs5MQCEeComd5DKq4xrg" target="_IHgs5cQCEeComd5DKq4xrg">
+            <trigger xmi:id="_IHgs6cQCEeComd5DKq4xrg" name="" event="_IHgs8sQCEeComd5DKq4xrg"/>
+          </transition>
+          <transition xmi:id="_IHgs6sQCEeComd5DKq4xrg" source="_IHgs5cQCEeComd5DKq4xrg" target="_IHgs5MQCEeComd5DKq4xrg">
+            <trigger xmi:id="_IHgs68QCEeComd5DKq4xrg" name="" event="_IHgs88QCEeComd5DKq4xrg"/>
+          </transition>
+          <transition xmi:id="_IHgs7MQCEeComd5DKq4xrg" source="_IHgs5cQCEeComd5DKq4xrg" target="_IHgs5sQCEeComd5DKq4xrg">
+            <trigger xmi:id="_IHgs7cQCEeComd5DKq4xrg" name="" event="_IHgs9MQCEeComd5DKq4xrg"/>
+          </transition>
+        </region>
+      </ownedBehavior>
+      <ownedReception xmi:id="_IHgs7sQCEeComd5DKq4xrg" signal="_IHgs8MQCEeComd5DKq4xrg"/>
+      <ownedReception xmi:id="_IHgs78QCEeComd5DKq4xrg" signal="_IHgs8cQCEeComd5DKq4xrg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_IHgs8MQCEeComd5DKq4xrg" name="Signal_a"/>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_IHgs8cQCEeComd5DKq4xrg" name="Signal_b"/>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_IHgs8sQCEeComd5DKq4xrg" name="SignalEvent1" signal="_IHgs8cQCEeComd5DKq4xrg"/>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_IHgs88QCEeComd5DKq4xrg" name="SignalEvent2" signal="_IHgs8MQCEeComd5DKq4xrg"/>
+    <packagedElement xmi:type="uml:TimeEvent" xmi:id="_IHgs9MQCEeComd5DKq4xrg" name="TimeEvent1" isRelative="true">
+      <when xmi:id="_IHgs9cQCEeComd5DKq4xrg">
+        <expr xmi:type="uml:LiteralString" xmi:id="_IHgs9sQCEeComd5DKq4xrg" value="5, s"/>
+      </when>
+    </packagedElement>
+    <profileApplication xmi:id="_IHgs98QCEeComd5DKq4xrg">
+      <eAnnotations xmi:id="_IHgs-MQCEeComd5DKq4xrg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_IHgs-cQCEeComd5DKq4xrg">
+      <eAnnotations xmi:id="_IHgs-sQCEeComd5DKq4xrg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="Default.profile.uml#_IHXBHMQCEeComd5DKq4xrg"/>
+      </eAnnotations>
+      <appliedProfile href="Default.profile.uml#_IHXBGsQCEeComd5DKq4xrg"/>
+    </profileApplication>
+    <profileApplication xmi:id="_IHgs-8QCEeComd5DKq4xrg">
+      <eAnnotations xmi:id="_IHgs_MQCEeComd5DKq4xrg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="Deployment.profile.uml#_IHW8zMQCEeComd5DKq4xrg"/>
+      </eAnnotations>
+      <appliedProfile href="Deployment.profile.uml#_IHW8ysQCEeComd5DKq4xrg"/>
+    </profileApplication>
+    <profileApplication xmi:id="_IHgs_cQCEeComd5DKq4xrg">
+      <eAnnotations xmi:id="_IHgs_sQCEeComd5DKq4xrg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="Profile.profile.uml#_IHXGTcQCEeComd5DKq4xrg"/>
+      </eAnnotations>
+      <appliedProfile href="Profile.profile.uml#_IHXGS8QCEeComd5DKq4xrg"/>
+    </profileApplication>
+  </uml:Model>
+  <REMP:Context xmi:id="_IHgs_8QCEeComd5DKq4xrg" base_Class="_IHgs4MQCEeComd5DKq4xrg"/>
+  <REMP:Error xmi:id="_IHgtAMQCEeComd5DKq4xrg" base_State="_IHgs5sQCEeComd5DKq4xrg"/>
+</xmi:XMI>

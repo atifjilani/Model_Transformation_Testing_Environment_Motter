@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_ydIi8G-dEeeliZ3EZMMn_A" name="GeneratedSM">
+  <packageImport xmi:id="_ydJKAG-dEeeliZ3EZMMn_A">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ydJKAW-dEeeliZ3EZMMn_A" name="Class1" isActive="true">
+    <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_ydJKAm-dEeeliZ3EZMMn_A" name="Class1-Sta-ownedBehavior">
+      <region xmi:id="_ydJKA2-dEeeliZ3EZMMn_A" name="Region1">
+        <subvertex xmi:type="uml:FinalState" xmi:id="_ydJKBG-dEeeliZ3EZMMn_A" name="-Fin-target"/>
+        <subvertex xmi:type="uml:State" xmi:id="_ydJKBW-dEeeliZ3EZMMn_A" name="state1">
+          <region xmi:id="_ydJKBm-dEeeliZ3EZMMn_A" name="StateMachine-Region">
+            <subvertex xmi:type="uml:FinalState" xmi:id="_ydJKB2-dEeeliZ3EZMMn_A" name="2-Fin-target"/>
+            <subvertex xmi:type="uml:State" xmi:id="_ydJKCG-dEeeliZ3EZMMn_A" name="state2"/>
+            <subvertex xmi:type="uml:Pseudostate" xmi:id="_ydJKCW-dEeeliZ3EZMMn_A" name="2-Pse-source"/>
+            <transition xmi:id="_ydJKCm-dEeeliZ3EZMMn_A" name="2-Tra-transition" source="_ydJKCG-dEeeliZ3EZMMn_A" target="_ydJKB2-dEeeliZ3EZMMn_A">
+              <effect xmi:type="uml:OpaqueBehavior" xmi:id="_ydJKC2-dEeeliZ3EZMMn_A" name="2-Opa-effect">
+                <language>OCL</language>
+                <body>default.body</body>
+              </effect>
+              <trigger xmi:id="_ydJKDG-dEeeliZ3EZMMn_A" name="2-Tri-trigger" event="_ydJxFm-dEeeliZ3EZMMn_A"/>
+            </transition>
+            <transition xmi:id="_ydJKDW-dEeeliZ3EZMMn_A" name="Region2-Tra-transition" source="_ydJKCW-dEeeliZ3EZMMn_A" target="_ydJKCG-dEeeliZ3EZMMn_A"/>
+          </region>
+        </subvertex>
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_ydJKDm-dEeeliZ3EZMMn_A" name="-Pse-source"/>
+        <transition xmi:id="_ydJKD2-dEeeliZ3EZMMn_A" name="-Tra-transition" source="_ydJKBW-dEeeliZ3EZMMn_A" target="_ydJKBG-dEeeliZ3EZMMn_A">
+          <effect xmi:type="uml:OpaqueBehavior" xmi:id="_ydJKEG-dEeeliZ3EZMMn_A" name="-Opa-effect">
+            <language>OCL</language>
+            <body>default.body</body>
+          </effect>
+          <trigger xmi:id="_ydJKEW-dEeeliZ3EZMMn_A" name="-Tri-trigger" event="_ydJxFm-dEeeliZ3EZMMn_A"/>
+        </transition>
+        <transition xmi:id="_ydJKEm-dEeeliZ3EZMMn_A" name="Region1-Tra-transition" source="_ydJKDm-dEeeliZ3EZMMn_A" target="_ydJKBW-dEeeliZ3EZMMn_A"/>
+      </region>
+    </ownedBehavior>
+    <ownedOperation xmi:id="_ydJKE2-dEeeliZ3EZMMn_A" name="Class1"/>
+    <ownedOperation xmi:id="_ydJKFG-dEeeliZ3EZMMn_A" name="Class1-Ope-ownedOperation"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ydJxEG-dEeeliZ3EZMMn_A" name="-Cla-class">
+    <ownedAttribute xmi:id="_ydJxEW-dEeeliZ3EZMMn_A" name="Class1-Pro-ownedAttribute">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ydJxEm-dEeeliZ3EZMMn_A" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ydJxE2-dEeeliZ3EZMMn_A"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_ydJxFG-dEeeliZ3EZMMn_A" name="-Cla-class"/>
+    <ownedOperation xmi:id="_ydJxFW-dEeeliZ3EZMMn_A" name="Class1-Ope-ownedOperation" visibility="public"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:TimeEvent" xmi:id="_ydJxFm-dEeeliZ3EZMMn_A" name="-Tim-event"/>
+  <packagedElement xmi:type="uml:TimeEvent" xmi:id="_ydJxF2-dEeeliZ3EZMMn_A" name="2-Tim-event"/>
+  <profileApplication xmi:id="_ydJxGG-dEeeliZ3EZMMn_A">
+    <eAnnotations xmi:id="_ydJxGW-dEeeliZ3EZMMn_A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+  </profileApplication>
+  <profileApplication xmi:id="_ydJxGm-dEeeliZ3EZMMn_A">
+    <eAnnotations xmi:id="_ydJxG2-dEeeliZ3EZMMn_A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="Default.profile.uml#_zT9POxTBEeWbsKyQNEJPlQ"/>
+    </eAnnotations>
+    <appliedProfile href="Default.profile.uml#_zT9PORTBEeWbsKyQNEJPlQ"/>
+  </profileApplication>
+  <profileApplication xmi:id="_ydJxHG-dEeeliZ3EZMMn_A">
+    <eAnnotations xmi:id="_ydJxHW-dEeeliZ3EZMMn_A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="Profile.profile.uml#_zT6LnBTBEeWbsKyQNEJPlQ"/>
+    </eAnnotations>
+    <appliedProfile href="Profile.profile.uml#_zT6LmhTBEeWbsKyQNEJPlQ"/>
+  </profileApplication>
+</uml:Model>

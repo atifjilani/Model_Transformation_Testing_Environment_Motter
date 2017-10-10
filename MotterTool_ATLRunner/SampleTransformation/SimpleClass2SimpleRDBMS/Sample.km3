@@ -1,0 +1,60 @@
+package Sample {
+	class Person {
+		attribute name_primary : String;
+		reference address[1-1] : Address;
+		attribute works_for : Organization;
+		reference performsTask[1-1] : Task;
+		attribute persistent : String; 
+	}	
+
+	class Student extends Person {
+		attribute studiesIn : University;
+		attribute supervisor : Person;
+	}
+
+	class Organization {
+	    attribute name_primary : String;
+	    attribute address : Address;
+	    attribute persistent : String;
+	}
+	
+	class University extends Organization {
+		attribute faculty : Faculty;
+	}
+	
+	class Company extends Organization {
+		attribute manager : Person;
+	}
+	
+	class AcademicInstitution {
+		attribute name_primary : String;
+	}
+	
+	class Faculty extends AcademicInstitution {
+		attribute address : Address;
+		attribute dean : Person;
+	}
+	
+	class Address {
+	    attribute city : String;
+	    attribute street : String;
+	    attribute postcode : String;
+	}
+	
+	class Task {
+		attribute name_primary : String;
+		attribute number_primary : Integer;
+		attribute description : Document;
+		attribute persistent : String;
+	}
+	
+	class Document{
+		attribute number_primary : Integer;
+		attribute author : Person;
+		attribute content : String;
+		attribute persistent : String;
+	}
+	
+	datatype String;
+	datatype Integer;
+}

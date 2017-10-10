@@ -1,0 +1,15 @@
+<atlTransformation>
+ <shortName>UMLSD2STMD</shortName>
+ <name>UML Sequence Diagrams to Statechart Diagram</name>
+ <docLink>http://www.st.ewi.tudelft.nl/~basgraaf/software/mde/atl/UMLSD2STMD/README.txt</docLink>
+ <sourceLink>http://www.st.ewi.tudelft.nl/~basgraaf/software/mde/atl/UMLSD2STMD/UMLSD2STMD.zip</sourceLink>
+ <description>
+These transformations are used by <a
+href="http://www.st.ewi.tudelft.nl/~basgraaf">Bas Graaf</a> to check
+the conformance of behavioural specifications.  These transformations
+transform a set of UML Sequence Diagrams into a (hierarchical) UML
+State Machine. The complete generation of a State Machine from a set
+of scenarios comprises four consecutive model transformations.
+ </description>
+ <pubDate></pubDate>
+</atlTransformation>

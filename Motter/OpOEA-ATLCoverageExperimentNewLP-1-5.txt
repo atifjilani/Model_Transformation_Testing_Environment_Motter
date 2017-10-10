@@ -1,0 +1,5 @@
+OpOEA	Break 	 1 	 108 	 100.0 	 113 	 113 	 true 	 14.759 	 92.489
+OpOEA	Break 	 2 	 108 	 100.0 	 113 	 113 	 true 	 12.104 	 84.117
+OpOEA	Break 	 3 	 108 	 100.0 	 113 	 113 	 true 	 12.353 	 86.933
+OpOEA	Break 	 4 	 108 	 100.0 	 113 	 113 	 true 	 12.774 	 91.332
+OpOEA	Break 	 5 	 108 	 100.0 	 113 	 113 	 true 	 11.991 	 90.258

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="lib" path="Lib_ATLRunner/org.eclipse.m2m.atl.common_3.4.0.v201305211502.jar"/>
+	<classpathentry kind="lib" path="Lib_ATLRunner/org.eclipse.m2m.atl.core_3.4.0.v201305211502.jar"/>
+	<classpathentry kind="lib" path="Lib_ATLRunner/org.eclipse.m2m.atl.core.emf_3.4.0.v201305211502.jar"/>
+	<classpathentry kind="lib" path="Lib_ATLRunner/org.eclipse.m2m.atl.drivers.emf4atl_3.4.0.v201305211502.jar"/>
+	<classpathentry kind="lib" path="Lib_ATLRunner/org.eclipse.m2m.atl.dsls_3.4.0.v201305211502.jar"/>
+	<classpathentry kind="lib" path="Lib_ATLRunner/org.eclipse.m2m.atl.emftvm_3.4.0.v201305211502.jar"/>
+	<classpathentry kind="lib" path="Lib_ATLRunner/org.eclipse.m2m.atl.engine_3.4.0.v201305211502.jar"/>
+	<classpathentry kind="lib" path="Lib_ATLRunner/org.eclipse.m2m.atl.engine.emfvm_3.4.0.v201305211502.jar"/>
+	<classpathentry kind="lib" path="Lib_ATLRunner/org.eclipse.m2m.atl.engine.emfvm.launch_3.4.0.v201305211502.jar"/>
+	<classpathentry kind="lib" path="Lib_ATLRunner/org.eclipse.m2m.atl.engine.vm_3.4.0.v201305211502.jar"/>
+	<classpathentry kind="lib" path="Lib_ATLRunner/org.eclipse.emf_2.5.0.v200906151043.jar"/>
+	<classpathentry kind="lib" path="Lib_ATLRunner/org.eclipse.emf.common_2.5.0.v200906151043.jar"/>
+	<classpathentry kind="lib" path="Lib_ATLRunner/org.eclipse.emf.ecore_2.5.0.v200906151043.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/MotterTool_Common"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

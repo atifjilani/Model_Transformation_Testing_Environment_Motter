@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_uhL1oIZMEeaHeLuEGE_zSg" name="GeneratedSM">
+  <packageImport xmi:id="_uhL1oYZMEeaHeLuEGE_zSg">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_uhL1ooZMEeaHeLuEGE_zSg" name="-Cla-class">
+    <ownedOperation xmi:id="_uhL1o4ZMEeaHeLuEGE_zSg" name="-Cla-class"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_uhL1pIZMEeaHeLuEGE_zSg" name="StateMachine1-Cla-class">
+    <ownedOperation xmi:id="_uhL1pYZMEeaHeLuEGE_zSg" name="StateMachine1-Cla-class"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_uhL1poZMEeaHeLuEGE_zSg" name="OpaqueBehavior1-Cla-class">
+    <ownedOperation xmi:id="_uhL1p4ZMEeaHeLuEGE_zSg" name="OpaqueBehavior1-Cla-class"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_uhL1qIZMEeaHeLuEGE_zSg" name="Operation1-Cla-class">
+    <ownedOperation xmi:id="_uhL1qYZMEeaHeLuEGE_zSg" name="Operation1-Cla-class"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_uhL1qoZMEeaHeLuEGE_zSg" name="Property1-Cla-class">
+    <ownedOperation xmi:id="_uhL1q4ZMEeaHeLuEGE_zSg" name="Property1-Cla-class"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_uhL1rIZMEeaHeLuEGE_zSg" name="Reception1-Cla-class">
+    <ownedOperation xmi:id="_uhL1rYZMEeaHeLuEGE_zSg" name="Reception1-Cla-class"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_uhL1roZMEeaHeLuEGE_zSg" name="Class1">
+    <ownedAttribute xmi:id="_uhL1r4ZMEeaHeLuEGE_zSg" name="Class1-Pro-ownedAttribute">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uhL1sIZMEeaHeLuEGE_zSg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uhL1sYZMEeaHeLuEGE_zSg"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_uhL1soZMEeaHeLuEGE_zSg" name="Class1"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_uhL1s4ZMEeaHeLuEGE_zSg" name="-Cla-packagedElement">
+    <ownedOperation xmi:id="_uhL1tIZMEeaHeLuEGE_zSg" name="-Cla-packagedElement"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_uhL1tYZMEeaHeLuEGE_zSg" name="Package1-Cla-packagedElement">
+    <ownedAttribute xmi:id="_uhL1toZMEeaHeLuEGE_zSg" name="-Pro-ownedAttribute">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_uhL1t4ZMEeaHeLuEGE_zSg" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_uhL1uIZMEeaHeLuEGE_zSg"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_uhL1uYZMEeaHeLuEGE_zSg" name="Package1-Cla-packagedElement"/>
+  </packagedElement>
+  <profileApplication xmi:id="_uhL1uoZMEeaHeLuEGE_zSg">
+    <eAnnotations xmi:id="_uhL1u4ZMEeaHeLuEGE_zSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+    </eAnnotations>
+    <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+  </profileApplication>
+  <profileApplication xmi:id="_uhL1vIZMEeaHeLuEGE_zSg">
+    <eAnnotations xmi:id="_uhL1vYZMEeaHeLuEGE_zSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="Default.profile.uml#_zT9POxTBEeWbsKyQNEJPlQ"/>
+    </eAnnotations>
+    <appliedProfile href="Default.profile.uml#_zT9PORTBEeWbsKyQNEJPlQ"/>
+  </profileApplication>
+  <profileApplication xmi:id="_uhL1voZMEeaHeLuEGE_zSg">
+    <eAnnotations xmi:id="_uhL1v4ZMEeaHeLuEGE_zSg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="Profile.profile.uml#_zT6LnBTBEeWbsKyQNEJPlQ"/>
+    </eAnnotations>
+    <appliedProfile href="Profile.profile.uml#_zT6LmhTBEeWbsKyQNEJPlQ"/>
+  </profileApplication>
+</uml:Model>

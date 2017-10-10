@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DFDMetaModel.DFDMetaModel:Package xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:DFDMetaModel.DFDMetaModel="DFDMetaModel" name="Library System">
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:ExternalElement" name="LibraryTerminal"/>
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:ExternalElement" name="DisplayTerminal"/>
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:ExternalElement" name="Printer"/>
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:DataStore" name="BookData"/>
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:DataStore" name="BorrowerData"/>
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:Process" name="ReadTerminal"/>
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:Process" name="PerformAthentication"/>
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:Process" name="FindRequestBook"/>
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:Process" name="UpdateBookRecord"/>
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:Process" name="UpdateBorrowerRecord"/>
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:Process" name="BorrowCopy"/>
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:Process" name="DisplayMessage"/>
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:Process" name="GenerateForm"/>
+ 
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:DataFlow" name="DataFlow_LibraryTerminal_ReadTerminal">
+    <data name="UserData"/>
+    <connection name="LibraryTerminal" direction="From">
+      <type xsi:type="DFDMetaModel.DFDMetaModel:ExternalElement" name=""/>
+    </connection>
+    <connection name="ReadTerminal" direction="To">
+      <type xsi:type="DFDMetaModel.DFDMetaModel:Process" name=""/>
+    </connection>
+  </modelElement>
+  
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:DataFlow" name="DataFlow_ReadTerminal_PerformAthentication">
+     <data name="BorrowerPassword"/>
+     <data name="BorrowerCode"/>
+    <connection name="ReadTerminal" direction="From">
+      <type xsi:type="DFDMetaModel.DFDMetaModel:Process" name=""/>
+    </connection>
+    <connection name="PerformAthentication" direction="To">
+      <type xsi:type="DFDMetaModel.DFDMetaModel:Process" name=""/>
+    </connection>
+  </modelElement>
+
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:DataFlow" name="DataFlow_ReadTerminal_FindRequestBook">
+   <data name="BookTitle"/>
+    <connection name="ReadTerminal" direction="From">
+      <type xsi:type="DFDMetaModel.DFDMetaModel:Process" name=""/>
+    </connection>
+    <connection name="FindRequestBook" direction="To">
+      <type xsi:type="DFDMetaModel.DFDMetaModel:Process" name=""/>
+    </connection>
+  </modelElement>
+  
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:DataFlow" name="DataFlow_PerformAthentication_FindRequestBook">
+    <connection name="PerformAthentication" direction="From">
+      <type xsi:type="DFDMetaModel.DFDMetaModel:Process" name=""/>
+    </connection>
+    <connection name="FindRequestBook" direction="To">
+      <type xsi:type="DFDMetaModel.DFDMetaModel:Process" name=""/>
+    </connection>
+   <data name="BorrowerCode"/>
+  </modelElement>
+  
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:DataFlow" name="DataFlow_BorrowerData_PerformAthentication">
+   <data name="BorrowerInformation"/>
+    <connection name="BorrowerData" direction="From">
+      <type xsi:type="DFDMetaModel.DFDMetaModel:DataStore" name=""/>
+    </connection>
+    <connection name="PerformAthentication" direction="To">
+      <type xsi:type="DFDMetaModel.DFDMetaModel:Process" name=""/>
+    </connection>
+  </modelElement>
+  
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:DataFlow" name="DataFlow_BookData_FindRequestBook">
+   <data name="BookInformation"/>
+    <connection name="BookData" direction="From">
+      <type xsi:type="DFDMetaModel.DFDMetaModel:DataStore" name=""/>
+    </connection>
+    <connection name="FindRequestBook" direction="To">
+      <type xsi:type="DFDMetaModel.DFDMetaModel:Process" name=""/>
+    </connection>
+  </modelElement>
+  
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:DataFlow" name="DataFlow_UpdateBookRecord_BookData">
+   <data  name="BookInformation"/>
+    <connection name="UpdateBookRecord" direction="From">
+      <type xsi:type="DFDMetaModel.DFDMetaModel:Process" name=""/>
+    </connection>
+    <connection name="BookData" direction="To">
+      <type xsi:type="DFDMetaModel.DFDMetaModel:DataStore" name=""/> 
+    </connection>
+  </modelElement>
+  
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:DataFlow" name="DataFlow_UpdateBorrowerRecord_BorrowerData">
+   <data name="BorrowerInformation"/>
+    <connection name="UpdateBorrowerRecord" direction="From">
+      <type xsi:type="DFDMetaModel.DFDMetaModel:Process" name=""/>
+    </connection>
+    <connection name="BorrowerData" direction="To">
+      <type xsi:type="DFDMetaModel.DFDMetaModel:DataStore" name=""/>
+    </connection>
+  </modelElement>
+  
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:DataFlow" name="DataFlow_FindRequestBook_BorrowCopy">
+    <connection name="FindRequestBook" direction="From">
+      <type xsi:type="DFDMetaModel.DFDMetaModel:Process" name=""/>
+    </connection>
+    <connection name="BorrowCopy" direction="To">
+      <type xsi:type="DFDMetaModel.DFDMetaModel:Process" name=""/>
+    </connection>
+  	<modelElement xsi:type="DFDMetaModel.DFDMetaModel:Data" name="BorrowerCode"/>
+   <data name="BookCopyID"/>
+   <data  name="BorrowerCode"/>
+  </modelElement>
+  
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:DataFlow" name="DataFlow_BorrowCopy_UpdateBookRecord">
+    <connection name="UpdateBookRecord" direction="To">
+      <type xsi:type="DFDMetaModel.DFDMetaModel:Process" name=""/>
+    </connection>
+    <connection name="BorrowCopy" direction="From">
+      <type xsi:type="DFDMetaModel.DFDMetaModel:Process" name=""/>
+    </connection>
+   <data name="BookCopyID"/>
+  </modelElement>
+  
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:DataFlow" name="DataFlow_BorrowCopy_UpdateBorrowerRecord">
+    <connection name="UpdateBorrowerRecord" direction="To">
+      <type xsi:type="DFDMetaModel.DFDMetaModel:Process" name=""/>
+    </connection>
+    <connection name="BorrowCopy" direction="From">
+      <type xsi:type="DFDMetaModel.DFDMetaModel:Process" name=""/>
+    </connection>
+   <data  name="BorrowerCode"/>
+  </modelElement>
+  
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:DataFlow" name="DataFlow_BorrowCopy_DisplayMessage">
+    <connection name="DisplayMessage" direction="To">
+      <type xsi:type="DFDMetaModel.DFDMetaModel:Process" name=""/>
+    </connection>
+    <connection name="BorrowCopy" direction="From">
+      <type xsi:type="DFDMetaModel.DFDMetaModel:Process" name=""/>
+    </connection>
+  <data name="Item-NoItemMessage"/>
+  </modelElement>
+  
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:DataFlow" name="DataFlow_BorrowCopy_GenerateForm">
+    <connection name="GenerateForm" direction="To">
+      <type xsi:type="DFDMetaModel.DFDMetaModel:Process" name=""/> 
+    </connection>
+    <connection name="BorrowCopy" direction="From">
+      <type xsi:type="DFDMetaModel.DFDMetaModel:Process" name=""/>
+    </connection>
+   <data name="ReservationFormData"/>
+  </modelElement>
+  
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:DataFlow" name="DataFlow_DisplayMessage_DisplayTerminal">
+    <connection name="DisplayTerminal" direction="To">
+      <type xsi:type="DFDMetaModel.DFDMetaModel:ExternalElement" name=""/>
+    </connection>
+    <connection name="DisplayMessage" direction="From">
+      <type xsi:type="DFDMetaModel.DFDMetaModel:Process" name=""/>
+    </connection>
+   <data name="DisplayInformation"/>
+  </modelElement>
+  
+  <modelElement xsi:type="DFDMetaModel.DFDMetaModel:DataFlow" name="DataFlow_GenerateForm_Printer">
+    <connection name="Printer" direction="To">
+      <type xsi:type="DFDMetaModel.DFDMetaModel:ExternalElement" name=""/>
+    </connection>
+    <connection name="GenerateForm" direction="From">
+      <type xsi:type="DFDMetaModel.DFDMetaModel:Process" name=""/>
+    </connection>
+   <data name="ReservationForm"/>
+  </modelElement>
+</DFDMetaModel.DFDMetaModel:Package>

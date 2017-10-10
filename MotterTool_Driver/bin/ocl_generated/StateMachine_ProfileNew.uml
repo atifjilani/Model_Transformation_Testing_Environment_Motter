@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:REMP="http:///schemas/REMP/_nrTwkBTBEeWbsKyQNEJPlQ/23" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/REMP/_nrTwkBTBEeWbsKyQNEJPlQ/23 Profile.profile.uml#_zT6LnBTBEeWbsKyQNEJPlQ">
+  <uml:Model xmi:id="_ErOnEBTDEeWgF4CeF4bOsQ" name="epo2">
+    <packageImport xmi:id="_ErOnERTDEeWgF4CeF4bOsQ">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ErOnEhTDEeWgF4CeF4bOsQ" name="Supplier" isActive="true">
+      <ownedAttribute xmi:id="_ErOnExTDEeWgF4CeF4bOsQ" name="name">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ErOnFBTDEeWgF4CeF4bOsQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ErOnFRTDEeWgF4CeF4bOsQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ErOnFhTDEeWgF4CeF4bOsQ" name="Nummber">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ErOnFxTDEeWgF4CeF4bOsQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ErOnGBTDEeWgF4CeF4bOsQ"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_ErOnGRTDEeWgF4CeF4bOsQ" name="addr" type="_ErOnLRTDEeWgF4CeF4bOsQ" association="_ErOnMhTDEeWgF4CeF4bOsQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ErOnGhTDEeWgF4CeF4bOsQ" value="*"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ErOnGxTDEeWgF4CeF4bOsQ"/>
+      </ownedAttribute>
+      <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_ErOnHBTDEeWgF4CeF4bOsQ" name="SupplierMachine">
+        <region xmi:id="_ErOnHRTDEeWgF4CeF4bOsQ" name="SupplierMachine">
+          <subvertex xmi:type="uml:State" xmi:id="_ErOnHhTDEeWgF4CeF4bOsQ" name="Run"/>
+          <subvertex xmi:type="uml:State" xmi:id="_ErOnHxTDEeWgF4CeF4bOsQ" name="Stop"/>
+          <subvertex xmi:type="uml:FinalState" xmi:id="_ErOnIBTDEeWgF4CeF4bOsQ" name="Dead"/>
+          <transition xmi:id="_ErOnIRTDEeWgF4CeF4bOsQ" name="trans1" kind="local" source="_ErOnHhTDEeWgF4CeF4bOsQ" target="_ErOnHxTDEeWgF4CeF4bOsQ">
+            <ownedRule xmi:id="_ErOnIhTDEeWgF4CeF4bOsQ" name="Const" constrainedElement="_ErOnIRTDEeWgF4CeF4bOsQ">
+              <specification xmi:type="uml:OpaqueExpression" xmi:id="_ErOnIxTDEeWgF4CeF4bOsQ">
+                <language>OCL</language>
+                <body>mybody.action</body>
+              </specification>
+            </ownedRule>
+            <trigger xmi:id="_ErOnJBTDEeWgF4CeF4bOsQ" name="Mytrigger1" event="_ErOnOBTDEeWgF4CeF4bOsQ"/>
+          </transition>
+          <transition xmi:id="_ErOnJRTDEeWgF4CeF4bOsQ" name="trans2" kind="local" source="_ErOnHxTDEeWgF4CeF4bOsQ" target="_ErOnHhTDEeWgF4CeF4bOsQ">
+            <trigger xmi:id="_ErOnJhTDEeWgF4CeF4bOsQ" name="Mytrigger2" event="_ErOnOhTDEeWgF4CeF4bOsQ"/>
+          </transition>
+          <transition xmi:id="_ErOnJxTDEeWgF4CeF4bOsQ" name="trans3" kind="local" source="_ErOnHxTDEeWgF4CeF4bOsQ" target="_ErOnIBTDEeWgF4CeF4bOsQ">
+            <effect xmi:type="uml:OpaqueBehavior" xmi:id="_ErOnKBTDEeWgF4CeF4bOsQ" name="OpaqBehavior1">
+              <language>OCL</language>
+              <body>mybody.action</body>
+            </effect>
+            <trigger xmi:id="_ErOnKRTDEeWgF4CeF4bOsQ" name="Mytrigger3" event="_ErOnOxTDEeWgF4CeF4bOsQ"/>
+          </transition>
+        </region>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_ErOnKhTDEeWgF4CeF4bOsQ" name="add" visibility="public"/>
+      <ownedOperation xmi:id="_ErOnKxTDEeWgF4CeF4bOsQ" name="Op1" visibility="public"/>
+      <ownedReception xmi:id="_ErOnLBTDEeWgF4CeF4bOsQ" name="Reception1" signal="_ErOnORTDEeWgF4CeF4bOsQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_ErOnLRTDEeWgF4CeF4bOsQ" name="SupplierAddress">
+      <ownedAttribute xmi:id="_ErOnLhTDEeWgF4CeF4bOsQ" name="AddressName">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ErOnLxTDEeWgF4CeF4bOsQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ErOnMBTDEeWgF4CeF4bOsQ"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_ErOnMRTDEeWgF4CeF4bOsQ" name="add" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_ErOnMhTDEeWgF4CeF4bOsQ" name="Supplier-SupplierAddress" memberEnd="_ErOnGRTDEeWgF4CeF4bOsQ _ErOnMxTDEeWgF4CeF4bOsQ">
+      <ownedEnd xmi:id="_ErOnMxTDEeWgF4CeF4bOsQ" name="" type="_ErOnEhTDEeWgF4CeF4bOsQ" association="_ErOnMhTDEeWgF4CeF4bOsQ">
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_ErOnNBTDEeWgF4CeF4bOsQ" value="1"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ErOnNRTDEeWgF4CeF4bOsQ" value="1"/>
+      </ownedEnd>
+    </packagedElement>
+    <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_ErOnNhTDEeWgF4CeF4bOsQ" name="ChangeEvent" visibility="private">
+      <changeExpression xmi:type="uml:OpaqueExpression" xmi:id="_ErOnNxTDEeWgF4CeF4bOsQ" name="OPEXPR1">
+        <language>OCL</language>
+        <body>body.action</body>
+      </changeExpression>
+    </packagedElement>
+    <packagedElement xmi:type="uml:AnyReceiveEvent" xmi:id="_ErOnOBTDEeWgF4CeF4bOsQ" name="AnyReceieveEvent"/>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_ErOnORTDEeWgF4CeF4bOsQ" name="Signal1"/>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_ErOnOhTDEeWgF4CeF4bOsQ" name="SignalEvent" signal="_ErOnORTDEeWgF4CeF4bOsQ"/>
+    <packagedElement xmi:type="uml:CallEvent" xmi:id="_ErOnOxTDEeWgF4CeF4bOsQ" name="CallEvent" operation="_ErOnKxTDEeWgF4CeF4bOsQ"/>
+    <profileApplication xmi:id="_ErOnPBTDEeWgF4CeF4bOsQ">
+      <eAnnotations xmi:id="_ErOnPRTDEeWgF4CeF4bOsQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_ErOnPhTDEeWgF4CeF4bOsQ">
+      <eAnnotations xmi:id="_ErOnPxTDEeWgF4CeF4bOsQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="Default.profile.uml#_zT9POxTBEeWbsKyQNEJPlQ"/>
+      </eAnnotations>
+      <appliedProfile href="Default.profile.uml#_zT9PORTBEeWbsKyQNEJPlQ"/>
+    </profileApplication>
+    <profileApplication xmi:id="_ErOnQBTDEeWgF4CeF4bOsQ">
+      <eAnnotations xmi:id="_ErOnQRTDEeWgF4CeF4bOsQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="Profile.profile.uml#_zT6LnBTBEeWbsKyQNEJPlQ"/>
+      </eAnnotations>
+      <appliedProfile href="Profile.profile.uml#_zT6LmhTBEeWbsKyQNEJPlQ"/>
+    </profileApplication>
+  </uml:Model>
+  <REMP:Context xmi:id="_ErOnQhTDEeWgF4CeF4bOsQ" base_Class="_ErOnEhTDEeWgF4CeF4bOsQ"/>
+  <REMP:System xmi:id="_ErPOIBTDEeWgF4CeF4bOsQ" base_Class="_ErOnLRTDEeWgF4CeF4bOsQ"/>
+</xmi:XMI>

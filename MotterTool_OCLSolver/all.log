@@ -1,0 +1,351 @@
+17-07-23 13:57:52.605 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - Loading model..
+17-07-23 13:57:52.950 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - Model loaded
+17-07-23 13:57:52.951 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - Model 'Object Diagram' created.
+17-07-23 13:57:53.085 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  name:n1
+17-07-23 13:57:53.086 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  region:r1
+17-07-23 13:57:53.087 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  connectionPoint:c1
+17-07-23 13:57:53.087 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  submachineState:s1
+17-07-23 13:57:53.088 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  class:c1
+17-07-23 13:57:53.092 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  name:n1
+17-07-23 13:57:53.093 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  stateMachine:s1
+17-07-23 13:57:53.094 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  subvertex:s1
+17-07-23 13:57:53.094 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  transition:t1
+17-07-23 13:57:53.095 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  state:s1
+17-07-23 13:57:53.099 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  kind:k1
+17-07-23 13:57:53.099 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  container:c1
+17-07-23 13:57:53.100 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  effect:e1
+17-07-23 13:57:53.100 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  trigger:t1
+17-07-23 13:57:53.101 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  guard:g1
+17-07-23 13:57:53.101 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  source:s1
+17-07-23 13:57:53.101 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  target:t1
+17-07-23 13:57:53.106 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  name:n1
+17-07-23 13:57:53.107 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  event:e1
+17-07-23 13:57:53.109 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  stateMachine:s1
+17-07-23 13:57:53.109 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  state:s1
+17-07-23 13:57:53.110 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  kind:k1
+17-07-23 13:57:53.110 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  name:n1
+17-07-23 13:57:53.110 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  container:c1
+17-07-23 13:57:53.111 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  outgoing:o1
+17-07-23 13:57:53.111 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  incoming:i1
+17-07-23 13:57:53.115 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  isComposite:i1
+17-07-23 13:57:53.115 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  isOrthogonal:i1
+17-07-23 13:57:53.115 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  isSimple:i1
+17-07-23 13:57:53.115 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  isSubmachineState:i1
+17-07-23 13:57:53.116 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  region:r1
+17-07-23 13:57:53.116 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  connectionPoint:c1
+17-07-23 13:57:53.116 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  defferableTrigger:d1
+17-07-23 13:57:53.117 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  submachine:s1
+17-07-23 13:57:53.117 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  stateInvariant:s1
+17-07-23 13:57:53.117 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  doActivity:d1
+17-07-23 13:57:53.118 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  entry:e1
+17-07-23 13:57:53.118 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  exit:e1
+17-07-23 13:57:53.118 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  connection:c1
+17-07-23 13:57:53.123 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  name:n1
+17-07-23 13:57:53.123 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  Body:B1
+17-07-23 13:57:53.124 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  language:l1
+17-07-23 13:57:53.126 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  signal:s1
+17-07-23 13:57:53.128 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  operation:o1
+17-07-23 13:57:53.130 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  name:n1
+17-07-23 13:57:53.130 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  visibility:v1
+17-07-23 13:57:53.132 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  class:c1
+17-07-23 13:57:53.132 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  name:n1
+17-07-23 13:57:53.132 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  visibility:v1
+17-07-23 13:57:53.133 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  type:t1
+17-07-23 13:57:53.136 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  changeExpression:c1
+17-07-23 13:57:53.138 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  body:b1
+17-07-23 13:57:53.139 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  language:l1
+17-07-23 13:57:53.139 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  name:n1
+17-07-23 13:57:53.141 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  isRelative:i1
+17-07-23 13:57:53.142 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  when:w1
+17-07-23 13:57:53.145 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  expr:e1
+17-07-23 13:57:53.147 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  isActive:i1
+17-07-23 13:57:53.147 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  isAbstract:i1
+17-07-23 13:57:53.148 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  ownedOperation:o1
+17-07-23 13:57:53.148 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  ownedAttribute:o1
+17-07-23 13:57:53.149 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  ownedReception:o1
+17-07-23 13:57:53.149 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  ownedBehavior:o1
+17-07-23 13:57:53.152 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  isDerived:i1
+17-07-23 13:57:53.152 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  isReadOnly:i1
+17-07-23 13:57:53.153 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  isDerivedUnion:i1
+17-07-23 13:57:53.153 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  default:d1
+17-07-23 13:57:53.153 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  aggregation:a1
+17-07-23 13:57:53.154 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  isComposite:i1
+17-07-23 13:57:53.154 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  isID:i1
+17-07-23 13:57:53.154 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  upperValue:u1
+17-07-23 13:57:53.155 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  lowerValue:l1
+17-07-23 13:57:53.155 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  owningAssociation:o1
+17-07-23 13:57:53.155 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  defaultValue:d1
+17-07-23 13:57:53.156 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  association:a1
+17-07-23 13:57:53.156 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  class:c1
+17-07-23 13:57:53.161 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  isDerived:i1
+17-07-23 13:57:53.161 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  navigableOwnedEnd:n1
+17-07-23 13:57:53.161 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  ownedEnd:o1
+17-07-23 13:57:53.161 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  memberEnd:m1
+17-07-23 13:57:53.164 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  signal:s1
+17-07-23 13:57:53.164 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  class:c1
+17-07-23 13:57:53.166 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  URI:U1
+17-07-23 13:57:53.166 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  packagedElement:p1
+17-07-23 13:57:53.168 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  specification:s1
+17-07-23 13:57:53.170 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  value:v1
+17-07-23 13:57:53.171 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  entry:e1
+17-07-23 13:57:53.172 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator -  exit:e1
+17-07-23 13:57:53.360 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - Saved .....
+17-07-23 13:57:53.361 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = StateMachine:StateMachine1
+17-07-23 13:57:53.361 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = Region:Region1
+17-07-23 13:57:53.362 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = Transition:Transition1
+17-07-23 13:57:53.362 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = Trigger:Trigger1
+17-07-23 13:57:53.362 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = Pseudostate:Pseudostate1
+17-07-23 13:57:53.363 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = State:State1
+17-07-23 13:57:53.363 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = FinalState:FinalState1
+17-07-23 13:57:53.363 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = OpaqueBehavior:OpaqueBehavior1
+17-07-23 13:57:53.364 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = AnyRecieveEvent:AnyRecieveEvent1
+17-07-23 13:57:53.364 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = SignalEvent:SignalEvent1
+17-07-23 13:57:53.364 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = CallEvent:CallEvent1
+17-07-23 13:57:53.365 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = Signal:Signal1
+17-07-23 13:57:53.365 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = Operation:Operation1
+17-07-23 13:57:53.365 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = ChangeEvent:ChangeEvent1
+17-07-23 13:57:53.365 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = OpaqueExpression:OpaqueExpression1
+17-07-23 13:57:53.366 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = TimeEvent:TimeEvent1
+17-07-23 13:57:53.366 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = TimeExpression:TimeExpression1
+17-07-23 13:57:53.366 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = Class:Class1
+17-07-23 13:57:53.366 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = Property:Property1
+17-07-23 13:57:53.367 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = Association:Association1
+17-07-23 13:57:53.367 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = Reception:Reception1
+17-07-23 13:57:53.367 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = Package:Package1
+17-07-23 13:57:53.368 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = Constraint:Constraint1
+17-07-23 13:57:53.368 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = LiteralString:LiteralString1
+17-07-23 13:57:53.368 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = ConnectionPointReference:ConnectionPointReference1
+17-07-23 13:57:53.368 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = null
+17-07-23 13:57:53.369 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = A outgoing source vertex
+17-07-23 13:57:53.369 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = A outgoing target vertex
+17-07-23 13:57:53.369 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = null
+17-07-23 13:57:53.370 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = null
+17-07-23 13:57:53.370 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = null
+17-07-23 13:57:53.370 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = 
+17-07-23 13:57:53.370 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = null
+17-07-23 13:57:53.371 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = null
+17-07-23 13:57:53.371 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = null
+17-07-23 13:57:53.371 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = null
+17-07-23 13:57:53.371 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = null
+17-07-23 13:57:53.372 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = null
+17-07-23 13:57:53.372 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = null
+17-07-23 13:57:53.372 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = null
+17-07-23 13:57:53.373 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = null
+17-07-23 13:57:53.373 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = null
+17-07-23 13:57:53.373 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = null
+17-07-23 13:57:53.373 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = null
+17-07-23 13:57:53.374 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = null
+17-07-23 13:57:53.374 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = null
+17-07-23 13:57:53.374 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = null
+17-07-23 13:57:53.375 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = null
+17-07-23 13:57:53.375 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = null
+17-07-23 13:57:53.375 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = null
+17-07-23 13:57:53.375 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = null
+17-07-23 13:57:53.376 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = null
+17-07-23 13:57:53.376 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = null
+17-07-23 13:57:53.376 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = null
+17-07-23 13:57:53.377 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = null
+17-07-23 13:57:53.377 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = null
+17-07-23 13:57:53.377 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = null
+17-07-23 13:57:53.378 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = null
+17-07-23 13:57:53.378 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = null
+17-07-23 13:57:53.378 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = null
+17-07-23 13:57:53.378 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = null
+17-07-23 13:57:53.379 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = null
+17-07-23 13:57:53.379 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - name = null
+17-07-23 13:57:53.399 [main] INFO  snt.oclsolver.reader.ObjScriptGenerator - input resource fetched
+17-07-23 13:57:55.156 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Ope-operation
+17-07-23 13:57:55.157 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: CallEvent1-Ope-operation
+17-07-23 13:57:55.158 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Operation1
+17-07-23 13:57:55.159 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Ope-ownedOperation
+17-07-23 13:57:55.160 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Class1-Ope-ownedOperation
+17-07-23 13:57:55.241 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Ass-owningAssociation
+17-07-23 13:57:55.243 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Property1-Ass-owningAssociation
+17-07-23 13:57:55.245 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Ass-association
+17-07-23 13:57:55.246 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Property1-Ass-association
+17-07-23 13:57:55.247 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Association1
+17-07-23 13:57:55.248 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Ass-packagedElement
+17-07-23 13:57:55.249 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Package1-Ass-packagedElement
+17-07-23 13:57:55.324 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Con-guard
+17-07-23 13:57:55.325 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Transition1-Con-guard
+17-07-23 13:57:55.326 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Con-stateInvariant
+17-07-23 13:57:55.328 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: State1-Con-stateInvariant
+17-07-23 13:57:55.331 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: FinalState1-Con-stateInvariant
+17-07-23 13:57:55.333 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Con-packagedElement
+17-07-23 13:57:55.336 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Package1-Con-packagedElement
+17-07-23 13:57:55.337 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Constraint1
+17-07-23 13:57:55.396 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Cal-event
+17-07-23 13:57:55.398 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Trigger1-Cal-event
+17-07-23 13:57:55.399 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: CallEvent1
+17-07-23 13:57:55.457 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Pro-ownedAttribute
+17-07-23 13:57:55.458 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Class1-Pro-ownedAttribute
+17-07-23 13:57:55.459 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Property1
+17-07-23 13:57:55.460 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Pro-navigableOwnedEnd
+17-07-23 13:57:55.461 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Association1-Pro-navigableOwnedEnd
+17-07-23 13:57:55.462 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Pro-ownedEnd
+17-07-23 13:57:55.463 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Association1-Pro-ownedEnd
+17-07-23 13:57:55.463 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Pro-memberEnd
+17-07-23 13:57:55.464 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Association1-Pro-memberEnd
+17-07-23 13:57:55.526 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Pse-connectionPoint
+17-07-23 13:57:55.527 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: StateMachine1-Pse-connectionPoint
+17-07-23 13:57:55.528 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: State1-Pse-connectionPoint
+17-07-23 13:57:55.529 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: FinalState1-Pse-connectionPoint
+17-07-23 13:57:55.530 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Pse-subvertex
+17-07-23 13:57:55.531 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Region1-Pse-subvertex
+17-07-23 13:57:55.531 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Pse-source
+17-07-23 13:57:55.533 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Transition1-Pse-source
+17-07-23 13:57:55.534 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Pse-target
+17-07-23 13:57:55.535 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Transition1-Pse-target
+17-07-23 13:57:55.537 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Pseudostate1
+17-07-23 13:57:55.538 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Pse-entry
+17-07-23 13:57:55.539 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: ConnectionPointReference1-Pse-entry
+17-07-23 13:57:55.541 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Pse-exit
+17-07-23 13:57:55.542 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: ConnectionPointReference1-Pse-exit
+17-07-23 13:57:55.609 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Opa-effect
+17-07-23 13:57:55.610 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Transition1-Opa-effect
+17-07-23 13:57:55.611 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Opa-doActivity
+17-07-23 13:57:55.612 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: State1-Opa-doActivity
+17-07-23 13:57:55.613 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: FinalState1-Opa-doActivity
+17-07-23 13:57:55.614 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Opa-entry
+17-07-23 13:57:55.615 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: State1-Opa-entry
+17-07-23 13:57:55.616 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: FinalState1-Opa-entry
+17-07-23 13:57:55.617 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Opa-exit
+17-07-23 13:57:55.618 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: State1-Opa-exit
+17-07-23 13:57:55.618 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: FinalState1-Opa-exit
+17-07-23 13:57:55.619 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: OpaqueBehavior1
+17-07-23 13:57:55.620 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Opa-ownedBehavior
+17-07-23 13:57:55.621 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Class1-Opa-ownedBehavior
+17-07-23 13:57:55.673 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Tri-trigger
+17-07-23 13:57:55.675 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Transition1-Tri-trigger
+17-07-23 13:57:55.676 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Trigger1
+17-07-23 13:57:55.677 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Tri-defferableTrigger
+17-07-23 13:57:55.678 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: State1-Tri-defferableTrigger
+17-07-23 13:57:55.679 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: FinalState1-Tri-defferableTrigger
+17-07-23 13:57:55.757 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Reg-region
+17-07-23 13:57:55.759 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: StateMachine1-Reg-region
+17-07-23 13:57:55.760 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: State1-Reg-region
+17-07-23 13:57:55.761 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: FinalState1-Reg-region
+17-07-23 13:57:55.762 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Region1
+17-07-23 13:57:55.763 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Reg-container
+17-07-23 13:57:55.764 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Transition1-Reg-container
+17-07-23 13:57:55.765 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Pseudostate1-Reg-container
+17-07-23 13:57:55.766 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: State1-Reg-container
+17-07-23 13:57:55.768 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: FinalState1-Reg-container
+17-07-23 13:57:55.769 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: ConnectionPointReference1-Reg-container
+17-07-23 13:57:55.853 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: FinalState1
+17-07-23 13:57:55.933 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Pac-packagedElement
+17-07-23 13:57:55.934 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Package1-Pac-packagedElement
+17-07-23 13:57:55.936 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Package1
+17-07-23 13:57:56.009 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Any-event
+17-07-23 13:57:56.011 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Trigger1-Any-event
+17-07-23 13:57:56.013 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: AnyRecieveEvent1
+17-07-23 13:57:56.092 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Tim-event
+17-07-23 13:57:56.093 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Trigger1-Tim-event
+17-07-23 13:57:56.094 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: TimeEvent1
+17-07-23 13:57:56.141 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Opa-type
+17-07-23 13:57:56.142 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Operation1-Opa-type
+17-07-23 13:57:56.143 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Property1-Opa-type
+17-07-23 13:57:56.144 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Opa-changeExpression
+17-07-23 13:57:56.144 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: ChangeEvent1-Opa-changeExpression
+17-07-23 13:57:56.145 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: OpaqueExpression1
+17-07-23 13:57:56.146 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Opa-expr
+17-07-23 13:57:56.146 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: TimeExpression1-Opa-expr
+17-07-23 13:57:56.147 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Opa-defaultValue
+17-07-23 13:57:56.148 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Property1-Opa-defaultValue
+17-07-23 13:57:56.148 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Opa-specification
+17-07-23 13:57:56.149 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Constraint1-Opa-specification
+17-07-23 13:57:56.180 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Sig-signal
+17-07-23 13:57:56.181 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: SignalEvent1-Sig-signal
+17-07-23 13:57:56.182 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Reception1-Sig-signal
+17-07-23 13:57:56.183 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Signal1
+17-07-23 13:57:56.184 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Sig-packagedElement
+17-07-23 13:57:56.184 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Package1-Sig-packagedElement
+17-07-23 13:57:56.214 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Cha-event
+17-07-23 13:57:56.215 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Trigger1-Cha-event
+17-07-23 13:57:56.216 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: ChangeEvent1
+17-07-23 13:57:56.250 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Con-subvertex
+17-07-23 13:57:56.251 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Region1-Con-subvertex
+17-07-23 13:57:56.252 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Con-source
+17-07-23 13:57:56.253 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Transition1-Con-source
+17-07-23 13:57:56.254 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Con-target
+17-07-23 13:57:56.255 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Transition1-Con-target
+17-07-23 13:57:56.256 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Con-connection
+17-07-23 13:57:56.257 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: State1-Con-connection
+17-07-23 13:57:56.257 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: FinalState1-Con-connection
+17-07-23 13:57:56.258 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: ConnectionPointReference1
+17-07-23 13:57:56.290 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Rec-ownedReception
+17-07-23 13:57:56.291 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Class1-Rec-ownedReception
+17-07-23 13:57:56.291 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Reception1
+17-07-23 13:57:56.320 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Sta-submachineState
+17-07-23 13:57:56.321 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: StateMachine1-Sta-submachineState
+17-07-23 13:57:56.321 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Sta-subvertex
+17-07-23 13:57:56.322 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Region1-Sta-subvertex
+17-07-23 13:57:56.323 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Sta-state
+17-07-23 13:57:56.323 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Region1-Sta-state
+17-07-23 13:57:56.324 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Pseudostate1-Sta-state
+17-07-23 13:57:56.324 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Sta-source
+17-07-23 13:57:56.325 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Transition1-Sta-source
+17-07-23 13:57:56.326 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Sta-target
+17-07-23 13:57:56.326 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Transition1-Sta-target
+17-07-23 13:57:56.327 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: State1
+17-07-23 13:57:56.355 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: StateMachine1
+17-07-23 13:57:56.356 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Sta-stateMachine
+17-07-23 13:57:56.356 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Region1-Sta-stateMachine
+17-07-23 13:57:56.357 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Pseudostate1-Sta-stateMachine
+17-07-23 13:57:56.358 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Sta-submachine
+17-07-23 13:57:56.358 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: State1-Sta-submachine
+17-07-23 13:57:56.359 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: FinalState1-Sta-submachine
+17-07-23 13:57:56.360 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Sta-doActivity
+17-07-23 13:57:56.360 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: State1-Sta-doActivity
+17-07-23 13:57:56.361 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: FinalState1-Sta-doActivity
+17-07-23 13:57:56.361 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Sta-entry
+17-07-23 13:57:56.362 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: State1-Sta-entry
+17-07-23 13:57:56.363 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: FinalState1-Sta-entry
+17-07-23 13:57:56.363 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Sta-exit
+17-07-23 13:57:56.364 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: State1-Sta-exit
+17-07-23 13:57:56.365 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: FinalState1-Sta-exit
+17-07-23 13:57:56.366 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Sta-ownedBehavior
+17-07-23 13:57:56.366 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Class1-Sta-ownedBehavior
+17-07-23 13:57:56.394 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Cla-class
+17-07-23 13:57:56.395 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: StateMachine1-Cla-class
+17-07-23 13:57:56.396 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: OpaqueBehavior1-Cla-class
+17-07-23 13:57:56.396 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Operation1-Cla-class
+17-07-23 13:57:56.397 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Property1-Cla-class
+17-07-23 13:57:56.397 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Reception1-Cla-class
+17-07-23 13:57:56.398 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Class1
+17-07-23 13:57:56.398 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Cla-packagedElement
+17-07-23 13:57:56.399 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Package1-Cla-packagedElement
+17-07-23 13:57:56.426 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Sig-event
+17-07-23 13:57:56.427 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Trigger1-Sig-event
+17-07-23 13:57:56.428 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: SignalEvent1
+17-07-23 13:57:56.456 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Tra-transition
+17-07-23 13:57:56.457 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Region1-Tra-transition
+17-07-23 13:57:56.457 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Tra-outgoing
+17-07-23 13:57:56.458 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Pseudostate1-Tra-outgoing
+17-07-23 13:57:56.459 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: State1-Tra-outgoing
+17-07-23 13:57:56.459 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: FinalState1-Tra-outgoing
+17-07-23 13:57:56.460 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: ConnectionPointReference1-Tra-outgoing
+17-07-23 13:57:56.461 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Tra-incoming
+17-07-23 13:57:56.461 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Pseudostate1-Tra-incoming
+17-07-23 13:57:56.462 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: State1-Tra-incoming
+17-07-23 13:57:56.462 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: FinalState1-Tra-incoming
+17-07-23 13:57:56.463 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: ConnectionPointReference1-Tra-incoming
+17-07-23 13:57:56.464 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Transition1
+17-07-23 13:57:56.493 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Lit-type
+17-07-23 13:57:56.494 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Operation1-Lit-type
+17-07-23 13:57:56.494 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Property1-Lit-type
+17-07-23 13:57:56.495 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Lit-changeExpression
+17-07-23 13:57:56.495 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: ChangeEvent1-Lit-changeExpression
+17-07-23 13:57:56.496 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Lit-expr
+17-07-23 13:57:56.497 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: TimeExpression1-Lit-expr
+17-07-23 13:57:56.497 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Lit-defaultValue
+17-07-23 13:57:56.498 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Property1-Lit-defaultValue
+17-07-23 13:57:56.498 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Lit-specification
+17-07-23 13:57:56.499 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: Constraint1-Lit-specification
+17-07-23 13:57:56.499 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: LiteralString1
+17-07-23 13:57:56.526 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: -Tim-when
+17-07-23 13:57:56.527 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: TimeEvent1-Tim-when
+17-07-23 13:57:56.527 [main] INFO  snt.oclsolver.eocl.EclipseOCLWrapper - called insertObject :: TimeExpression1
+17-07-23 13:57:57.900 [main] ERROR snt.oclsolver.eocl.EclipseOCLWrapper - org.eclipse.ocl.SemanticException: Cannot find operation (and(Bag(Boolean))) for the type (Boolean)
+17-07-23 13:57:57.901 [main] ERROR snt.oclsolver.eocl.EclipseOCLWrapper - Invalid Query: Class.allInstances()->size()>0 and StateMachine.allInstances()->size()=1 and Region.allInstances()->size()=10 and State.allInstances()->size()>0 and Transition.allInstances()->size()>0 and Package.allInstances()->size()>0 and Class.allInstances()->select(c| c.isActive=true and c.ownedOperation->exists(o|o.oclIsTypeOf(Operation)) and c.ownedAttribute->exists(a|a.oclIsTypeOf(Property)) and c.ownedReception->exists(ob| ob.oclIsTypeOf(Reception)) and c.ownedBehavior->forAll(o|o.oclIsTypeOf(StateMachine)))->size()=1 and StateMachine.allInstances()->select(s |s.region->exists(r|r.name='r1'))->size()=1 and Region.allInstances()->select(m|m.name='r1')->exists(r|r.transition->exists(t|t.source.oclIsTypeOf(Pseudostate) and t.target.oclIsTypeOf(FinalState))) and Transition.allInstances()->forAll(t|t.effect.oclIsTypeOf(OpaqueBehavior) and t.trigger.oclIsTypeOf(Trigger))
+17-07-23 13:57:57.902 [main] ERROR snt.oclsolver.eocl.EclipseOCLWrapper - -- Exiting Solver with Code 03 --

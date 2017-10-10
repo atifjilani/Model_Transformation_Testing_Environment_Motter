@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:REMP="http:///schemas/REMP/_MqBr0FniEeCRuehqYk0blw/21" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xsi:schemaLocation="http:///schemas/REMP/_MqBr0FniEeCRuehqYk0blw/21 Profile.profile.uml#_gj-ImcjEEeCXffn3FYp59g">
+  <uml:Model xmi:id="_gj-KjcjEEeCXffn3FYp59g" name="TM07">
+    <packageImport xmi:id="_gj-KjsjEEeCXffn3FYp59g">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Class" xmi:id="_gj-Kj8jEEeCXffn3FYp59g" name="SM" isActive="true">
+      <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_gj-KkMjEEeCXffn3FYp59g" name="SM">
+        <region xmi:id="_gj-KkcjEEeCXffn3FYp59g" name="Region1">
+          <subvertex xmi:type="uml:Pseudostate" xmi:id="_gj-KksjEEeCXffn3FYp59g"/>
+          <subvertex xmi:type="uml:State" xmi:id="_gj-Kk8jEEeCXffn3FYp59g" name="A"/>
+          <subvertex xmi:type="uml:State" xmi:id="_gj-KlMjEEeCXffn3FYp59g" name="B"/>
+          <subvertex xmi:type="uml:State" xmi:id="_gj-KlcjEEeCXffn3FYp59g" name="State1">
+            <region xmi:id="_gj-KlsjEEeCXffn3FYp59g" name="InternalRegion">
+              <subvertex xmi:type="uml:Pseudostate" xmi:id="_gj-Kl8jEEeCXffn3FYp59g"/>
+              <subvertex xmi:type="uml:State" xmi:id="_gj-KmMjEEeCXffn3FYp59g" name="Internal1"/>
+              <subvertex xmi:type="uml:State" xmi:id="_gj-KmcjEEeCXffn3FYp59g" name="Internal2"/>
+              <transition xmi:id="_gj-KmsjEEeCXffn3FYp59g" source="_gj-Kl8jEEeCXffn3FYp59g" target="_gj-KmMjEEeCXffn3FYp59g"/>
+              <transition xmi:id="_gj-Km8jEEeCXffn3FYp59g" source="_gj-KmMjEEeCXffn3FYp59g" target="_gj-KmMjEEeCXffn3FYp59g">
+                <trigger xmi:id="_gj-KnMjEEeCXffn3FYp59g" name="" event="_gj-KrMjEEeCXffn3FYp59g"/>
+              </transition>
+              <transition xmi:id="_gj-KncjEEeCXffn3FYp59g" source="_gj-KmMjEEeCXffn3FYp59g" target="_gj-KmcjEEeCXffn3FYp59g">
+                <trigger xmi:id="_gj-KnsjEEeCXffn3FYp59g" name="" event="_gj-KrcjEEeCXffn3FYp59g"/>
+              </transition>
+            </region>
+          </subvertex>
+          <transition xmi:id="_gj-Kn8jEEeCXffn3FYp59g" source="_gj-KksjEEeCXffn3FYp59g" target="_gj-KlMjEEeCXffn3FYp59g"/>
+          <transition xmi:id="_gj-KoMjEEeCXffn3FYp59g" source="_gj-KlMjEEeCXffn3FYp59g" target="_gj-KlcjEEeCXffn3FYp59g">
+            <trigger xmi:id="_gj-KocjEEeCXffn3FYp59g" name="" event="_gj-KqcjEEeCXffn3FYp59g"/>
+          </transition>
+          <transition xmi:id="_gj-KosjEEeCXffn3FYp59g" source="_gj-KlcjEEeCXffn3FYp59g" target="_gj-Kk8jEEeCXffn3FYp59g">
+            <trigger xmi:id="_gj-Ko8jEEeCXffn3FYp59g" name="" event="_gj-KqsjEEeCXffn3FYp59g"/>
+          </transition>
+        </region>
+      </ownedBehavior>
+      <ownedReception xmi:id="_gj-KpMjEEeCXffn3FYp59g" signal="_gj-Kp8jEEeCXffn3FYp59g"/>
+      <ownedReception xmi:id="_gj-KpcjEEeCXffn3FYp59g" signal="_gj-KqMjEEeCXffn3FYp59g"/>
+      <ownedReception xmi:id="_gj-KpsjEEeCXffn3FYp59g" signal="_gj-Kq8jEEeCXffn3FYp59g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_gj-Kp8jEEeCXffn3FYp59g" name="Signal_a"/>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_gj-KqMjEEeCXffn3FYp59g" name="Signal_b"/>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_gj-KqcjEEeCXffn3FYp59g" name="SignalEvent1" signal="_gj-KqMjEEeCXffn3FYp59g"/>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_gj-KqsjEEeCXffn3FYp59g" name="SignalEvent2" signal="_gj-Kp8jEEeCXffn3FYp59g"/>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_gj-Kq8jEEeCXffn3FYp59g" name="Signal_c"/>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_gj-KrMjEEeCXffn3FYp59g" name="" signal="_gj-Kq8jEEeCXffn3FYp59g"/>
+    <packagedElement xmi:type="uml:SignalEvent" xmi:id="_gj-KrcjEEeCXffn3FYp59g" name="" signal="_gj-KqMjEEeCXffn3FYp59g"/>
+    <profileApplication xmi:id="_gj-KrsjEEeCXffn3FYp59g">
+      <eAnnotations xmi:id="_gj-Kr8jEEeCXffn3FYp59g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UML_PROFILES/Standard.profile.uml#_yzU58YinEdqtvbnfB2L_5w"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:id="_gj-KsMjEEeCXffn3FYp59g">
+      <eAnnotations xmi:id="_gj-KscjEEeCXffn3FYp59g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="Default.profile.uml#_gj-EiMjEEeCXffn3FYp59g"/>
+      </eAnnotations>
+      <appliedProfile href="Default.profile.uml#_gj-EhsjEEeCXffn3FYp59g"/>
+    </profileApplication>
+    <profileApplication xmi:id="_gj-KssjEEeCXffn3FYp59g">
+      <eAnnotations xmi:id="_gj-Ks8jEEeCXffn3FYp59g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="Deployment.profile.uml#_gj-MxMjEEeCXffn3FYp59g"/>
+      </eAnnotations>
+      <appliedProfile href="Deployment.profile.uml#_gj-MwsjEEeCXffn3FYp59g"/>
+    </profileApplication>
+    <profileApplication xmi:id="_gj-KtMjEEeCXffn3FYp59g">
+      <eAnnotations xmi:id="_gj-KtcjEEeCXffn3FYp59g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="Profile.profile.uml#_gj-ImcjEEeCXffn3FYp59g"/>
+      </eAnnotations>
+      <appliedProfile href="Profile.profile.uml#_gj-Il8jEEeCXffn3FYp59g"/>
+    </profileApplication>
+  </uml:Model>
+  <REMP:Context xmi:id="_gj-KtsjEEeCXffn3FYp59g" base_Class="_gj-Kj8jEEeCXffn3FYp59g"/>
+  <REMP:Error xmi:id="_gj-Kt8jEEeCXffn3FYp59g" base_State="_gj-Kk8jEEeCXffn3FYp59g"/>
+</xmi:XMI>

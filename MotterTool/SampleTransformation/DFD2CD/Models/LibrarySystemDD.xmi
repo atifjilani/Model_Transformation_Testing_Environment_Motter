@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DDMetaModel.DDMetaModel:DataDictionary xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:DDMetaModel.DDMetaModel="DDMetaModel" name="Library System">
+  <dataElements name="BorrowerPassword">
+    <valueSpecification xsi:type="DDMetaModel.DDMetaModel:PrimitiveString" name="String" value="EmptyString"/>
+  </dataElements>
+  <dataElements name="BorrowerCode">
+    <valueSpecification xsi:type="DDMetaModel.DDMetaModel:PrimitiveString" name="String" value="EmptyString"/>
+  </dataElements>
+  <dataElements name="BookTitle">
+    <valueSpecification xsi:type="DDMetaModel.DDMetaModel:PrimitiveString" name="String" value="EmptyString"/>
+  </dataElements>
+  <dataElements name="BookCopyID">
+    <valueSpecification xsi:type="DDMetaModel.DDMetaModel:PrimitiveString" name="String" value="EmptyString"/>
+  </dataElements>
+  <dataElements name="Item-NoItemMessage">
+    <valueSpecification xsi:type="DDMetaModel.DDMetaModel:PrimitiveString" name="String" value="EmptyString"/>
+  </dataElements>
+  <dataElements name="UserData">
+    <valueSpecification xsi:type="DDMetaModel.DDMetaModel:SequenceConstruct" value="//@dataElements.0 //@dataElements.1 //@dataElements.2"/>
+  </dataElements>
+  <dataElements name="BorrowerInformation">
+    <valueSpecification xsi:type="DDMetaModel.DDMetaModel:SequenceConstruct" name="" value="//@dataElements.0 //@dataElements.1"/>
+  </dataElements>
+  <dataElements name="BookInformation">
+    <valueSpecification xsi:type="DDMetaModel.DDMetaModel:SequenceConstruct" value="//@dataElements.2 //@dataElements.3"/>
+  </dataElements>
+  <dataElements name="DisplayInformation">
+    <valueSpecification xsi:type="DDMetaModel.DDMetaModel:SequenceConstruct" value="//@dataElements.4"/>
+  </dataElements>
+  <dataElements name="ReservationFormData">
+    <valueSpecification xsi:type="DDMetaModel.DDMetaModel:SequenceConstruct" value="//@dataElements.3 //@dataElements.1"/>
+  </dataElements>
+  <dataElements name="ReservationForm">
+    <valueSpecification xsi:type="DDMetaModel.DDMetaModel:SequenceConstruct" value="//@dataElements.9"/>
+  </dataElements>
+</DDMetaModel.DDMetaModel:DataDictionary>
